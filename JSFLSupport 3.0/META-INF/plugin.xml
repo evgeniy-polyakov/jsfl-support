@@ -1,0 +1,124 @@
+<!--
+Copyright 2011 Evgeniy Polyakov
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+<idea-plugin version="2">
+
+    <name>JSFL Support</name>
+    <version>3.1.1</version>
+    <vendor>Evgeniy Polyakov</vendor>
+    <description>Support of JSFL, the scripting language for automating Adobe Flash.</description>
+    <change-notes>
+        <![CDATA[
+        <p>3.1.1</p>
+        Reworked annotations in JSFL API:
+        <ul>
+            <li>Added braces in @type and @return annotations.</li>
+            <li>Added missing array element types.</li>
+            <li>Added ElementFindAndSelect type.</li>
+            <li>Added @class and @extends annotations.</li>
+            <li>Changed {String} to {*} in trace methods.</li>
+            <li>Added annotations for duck-typing objects like points, rectangles etc.</li>
+            <li>Added annotations for alternative argument type, mostly for color values {String|Number}.</li>
+            <li>Various fixes in API description.</li>
+        </ul>
+        <p>3.1.0</p>
+        <ul>
+            <li>Language dialect of *.jsfl files has been set to JavaScript 1.8 since Flash environment supports it starting Flash CC. For the complete list of new language features see https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/1.8.</li>
+            <li>Added link to external documentation for most of API elements. The documentation is available via Shift+F1 or Quick Documentation Lookup. For more details see https://www.jetbrains.com/idea/help/viewing-external-documentation.html.</li>
+            <li>Reworked description of JSFL API. All methods and fields are now defined in the prototype that allows to display more info in code completion and hints. Cache invalidation might be required to get updated JSFL libraries!</li>
+            <li>Fixed description of some API elements (SpriteSheetExporter, SymbolInstance.useBackgroundColor, FontItem, etc)</li>
+            <li>Added element type of all arrays.</li>
+        </ul>
+        <p>3.0.2</p>
+        Compatible with IntelliJ IDEA 14.
+        <p>3.0.1</p>
+        Compatible with IntelliJ IDEA 13.1.
+        <p>3.0.0</p>
+        Compatible with IntelliJ IDEA 13.
+        JSFL library has been updated for Flash CC http://help.adobe.com/en_US/flash/cs/extend/WS5b3ccc516d4fbf351e63e3d118a9024f3f-7fe7CS5.html
+        <p>2.1.1</p>
+        Compatible with IntelliJ IDEA 12.1.6.
+        <p>2.1.0</p>
+        Compatible with IntelliJ IDEA 12.1.
+        <p>2.0.2</p>
+        Language dialect of *.jsfl files is set to JavaScript 1.6 because Flash environment uses this version of the language.
+        Earlier language dialect depended on JavaScript settings. Now it is strictly defined.
+        For more information see https://developer.mozilla.org/en-US/docs/JavaScript/New_in_JavaScript/1.6.
+        <p>2.0.1</p>
+        Decreased JDK version. Now the plugin can be run on 1.6 JDK.
+        <p>2.0.0</p>
+        Compatible with IntelliJ IDEA 12.
+        <p>1.1.1</p>
+        Changed icons. Now they are more compatible with IntelliJ IDEA design.
+        <p>1.1</p>
+        JSFL library has been verified according to an official documentation http://help.adobe.com/en_US/flash/cs/extend/index.html
+        <ul>
+            <li>Added Flash CS5, CS5.5, CS6 API</li>
+            <li>Added version information of each of API elements</li>
+            <li>Removed API elements that are not available since Flash CS5: Screen, ScreenOutline, document versioning</li>
+            <li>Added marking of optional method parameters</li>
+            <li>Added marking of read-only properties</li>
+        </ul>
+        <p>1.0</p>
+        <ul>
+            <li>JSFL files based on JavaScript files</li>
+            <li>Core library for Flash CS5 and earlier versions</li>
+            <li>Running JSFL files in associated application</li>
+            <li>Templates for JSFL commands and tools</li>
+        </ul>
+        ]]>
+    </change-notes>
+
+    <depends>JavaScript</depends>
+    <depends>com.intellij.modules.lang</depends>
+
+    <!-- please see http://confluence.jetbrains.net/display/IDEADEV/Build+Number+Ranges for description -->
+    <idea-version since-build="133.193" until-build="140.9999"/>
+
+    <application-components>
+    </application-components>
+
+    <project-components>
+    </project-components>
+
+    <resource-bundle>org.jsflsupport.docs.docs</resource-bundle>
+
+    <actions>
+        <action id="RunJSFLFile" class="org.jsflsupport.actions.RunJSFLFileAction"
+                icon="/org/jsflsupport/icons/run.png"
+                text="Run JSFL Script" description="Run JSFL Script in Flash IDE">
+            <add-to-group group-id="ProjectViewPopupMenu"/>
+            <add-to-group group-id="EditorTabPopupMenu"/>
+            <add-to-group group-id="EditorPopupMenu"/>
+        </action>
+        <action id="NewJSFLFile" class="org.jsflsupport.actions.CreateJSFLFileAction">
+            <add-to-group group-id="NewGroup" anchor="before" relative-to-action="NewFromTemplate"/>
+        </action>
+    </actions>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <fileTypeFactory implementation="org.jsflsupport.JSFLFileTypeFactory"/>
+        <syntaxHighlighter key="JSFL" factoryClass="org.jsflsupport.JSFLSyntaxHighlighterProvider"/>
+        <resolveScopeEnlarger implementation="org.jsflsupport.JSFLPredefinedLibraryScopeEnlarger"/>
+        <internalFileTemplate name="JSFL Command"/>
+        <internalFileTemplate name="JSFL Tool"/>
+        <documentationProvider implementation="org.jsflsupport.JSFLDocumentationProvider"/>
+    </extensions>
+
+    <extensions defaultExtensionNs="JavaScript">
+        <predefinedLibraryProvider implementation="org.jsflsupport.JSFLPredefinedLibraryProvider"/>
+        <indexedFileTypeProvider implementation="org.jsflsupport.JSFLIndexedFileTypeProvider"/>
+    </extensions>
+</idea-plugin>

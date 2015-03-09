@@ -1,0 +1,40 @@
+/**
+* Created with ${PRODUCT_NAME}.
+* User: ${USER}
+* Date: ${DATE}
+* Time: ${TIME}
+* To change this template use File | Settings | File Templates.
+*/
+
+function configureTool () {
+}
+
+function activate () {
+}
+
+function deactivate () {
+}
+
+function setCursor () {
+}
+
+function notifySettingsChanged () {
+}
+
+function mouseMove() {
+}
+
+function mouseDown(pt) {
+}
+
+function mouseUp() {
+}
+
+function mouseDoubleClick () {
+}
+
+function keyDown () {
+}
+
+function keyUp () {
+}
