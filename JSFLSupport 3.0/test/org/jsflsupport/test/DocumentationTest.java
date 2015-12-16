@@ -62,7 +62,7 @@ public class DocumentationTest {
     @Test
     public void testMethod() {
         try {
-            URL url = new URL("http://community.adobe.com/chcservices/services/redirect?u=http://help.adobe.com&p=Flash_13&l=en_US&id=" + _docIdentifier);
+            URL url = new URL("http://community.adobe.com/chcservices/services/redirect?u=http://help.adobe.com&p=Flash_15&l=en_US&id=" + _docIdentifier);
             InputStream stream = url.openStream();
             BufferedReader reader = new BufferedReader(new InputStreamReader(stream, "UTF-8"));
             StringBuilder builder = new StringBuilder();

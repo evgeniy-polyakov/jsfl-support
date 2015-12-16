@@ -32,7 +32,7 @@ import java.util.ResourceBundle;
 public class JSFLDocumentationProvider extends AbstractDocumentationProvider
         implements ExternalDocumentationProvider, ExternalDocumentationHandler {
 
-    private static String base = "http://community.adobe.com/chcservices/services/redirect?u=http://help.adobe.com&p=Flash_13&l=en_US&id=";
+    private static String base = "http://community.adobe.com/chcservices/services/redirect?u=http://help.adobe.com&p=Flash_15&l=en_US&id=";
     private static ResourceBundle docs = ResourceBundle.getBundle("org.jsflsupport.docs.docs");
 
     //region Implement ExternalDocumentationProvider to enable/disable actions
