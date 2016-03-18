@@ -16,7 +16,7 @@ limitations under the License.
 <idea-plugin version="2">
 
     <name>JSFL Support</name>
-    <version>3.1.4</version>
+    <version>3.2.0</version>
     <vendor>Evgeniy Polyakov</vendor>
     <description>Support of JSFL, the scripting language for automating Adobe Flash.</description>
     <change-notes>
