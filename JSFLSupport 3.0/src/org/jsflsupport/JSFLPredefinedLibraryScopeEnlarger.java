@@ -33,7 +33,7 @@ public class JSFLPredefinedLibraryScopeEnlarger extends ResolveScopeEnlarger {
     public SearchScope getAdditionalResolveScope(@NotNull VirtualFile virtualFile, Project project) {
         if (virtualFile.getFileType() instanceof JSFLFileType) {
             JSFLPredefinedLibraryProvider provider = new JSFLPredefinedLibraryProvider();
-            Iterator<VirtualFile> iterator = provider.getPredefinedLibraryFiles().iterator();
+            Iterator<VirtualFile> iterator = provider.getRequiredLibraryFiles().iterator();
             Set<PsiFile> psiFiles = new HashSet<PsiFile>();
             while (iterator.hasNext()) {
                 PsiFile psiFile = PsiManager.getInstance(project).findFile(iterator.next());

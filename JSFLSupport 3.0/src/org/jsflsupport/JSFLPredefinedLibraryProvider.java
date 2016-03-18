@@ -1,11 +1,12 @@
 package org.jsflsupport;
 
 import com.intellij.lang.javascript.library.JSPredefinedLibraryProvider;
+import com.intellij.openapi.project.Project;
 import com.intellij.openapi.vfs.VfsUtil;
 import com.intellij.openapi.vfs.VirtualFile;
-import com.intellij.util.ArrayUtil;
 import com.intellij.util.containers.HashSet;
 import com.intellij.webcore.libraries.ScriptingLibraryModel;
+import org.jetbrains.annotations.NotNull;
 
 import java.net.URL;
 import java.util.Set;
@@ -39,7 +40,9 @@ public class JSFLPredefinedLibraryProvider extends JSPredefinedLibraryProvider {
             "/org/jsflsupport/libraries/JSFLTopLevel.js"
     };
 
-    public ScriptingLibraryModel[] getPredefinedLibraries() {
+    @NotNull
+    @Override
+    public ScriptingLibraryModel[] getPredefinedLibraries(@NotNull Project project) {
         Set<VirtualFile> libFiles = getFiles();
         return new ScriptingLibraryModel[]{
                 ScriptingLibraryModel.createPredefinedLibrary(NAME,
@@ -47,7 +50,9 @@ public class JSFLPredefinedLibraryProvider extends JSPredefinedLibraryProvider {
                                                               true)};
     }
 
-    public Set<VirtualFile> getPredefinedLibraryFiles() {
+    @NotNull
+    @Override
+    public Set<VirtualFile> getRequiredLibraryFiles() {
         return getFiles();
     }
 
