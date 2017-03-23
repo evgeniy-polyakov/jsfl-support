@@ -13,14 +13,16 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 -->
-<idea-plugin version="2">
+<idea-plugin>
 
     <name>JSFL Support</name>
-    <version>3.3.0</version>
+    <version>3.3.1</version>
     <vendor>Evgeniy Polyakov</vendor>
     <description>Support of JSFL, the scripting language for automating Adobe Flash.</description>
     <change-notes>
         <![CDATA[
+        <p>3.3.1</p>
+        Compatible with IntelliJ IDEA 2017.1.
         <p>3.3.0</p>
         Compatible with IntelliJ IDEA 2016.3. New icons for jsfl file type.
         <p>3.2.1</p>
@@ -95,7 +97,7 @@ limitations under the License.
     <depends>com.intellij.modules.lang</depends>
 
     <!-- please see http://confluence.jetbrains.net/display/IDEADEV/Build+Number+Ranges for description -->
-    <idea-version since-build="163.0000" until-build="163.*"/>
+    <idea-version since-build="171.0000" until-build="171.*"/>
 
     <application-components>
     </application-components>
