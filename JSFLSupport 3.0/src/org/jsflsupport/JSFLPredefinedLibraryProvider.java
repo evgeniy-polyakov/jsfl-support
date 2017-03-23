@@ -52,7 +52,7 @@ public class JSFLPredefinedLibraryProvider extends JSPredefinedLibraryProvider {
 
     @NotNull
     @Override
-    public Set<VirtualFile> getRequiredLibraryFiles() {
+    public Set<VirtualFile> getRequiredLibraryFilesForResolve(@NotNull Project project) {
         return getFiles();
     }
 
