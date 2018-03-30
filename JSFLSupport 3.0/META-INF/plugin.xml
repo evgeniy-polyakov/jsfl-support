@@ -21,6 +21,8 @@ limitations under the License.
     <description>Support of JSFL, the scripting language for automating Adobe Flash.</description>
     <change-notes>
         <![CDATA[
+        <p>3.4.0</p>
+        Compatible with IntelliJ IDEA 2018.1. Support of new style of external documentation.
         <p>3.3.3</p>
         Compatible with IntelliJ IDEA 2017.3.
         <p>3.3.2</p>
@@ -101,7 +103,7 @@ limitations under the License.
     <depends>com.intellij.modules.lang</depends>
 
     <!-- please see http://confluence.jetbrains.net/display/IDEADEV/Build+Number+Ranges for description -->
-    <idea-version since-build="173.0000" until-build="173.*"/>
+    <idea-version since-build="181.0000" until-build="181.*"/>
 
     <application-components>
     </application-components>
