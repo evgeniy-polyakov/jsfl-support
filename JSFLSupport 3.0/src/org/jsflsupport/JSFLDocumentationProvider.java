@@ -11,6 +11,7 @@ import com.intellij.psi.PsiManager;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
+import java.util.Collections;
 import java.util.List;
 import java.util.ResourceBundle;
 
@@ -42,12 +43,7 @@ public class JSFLDocumentationProvider extends AbstractDocumentationProvider
     }
 
     public boolean hasDocumentationFor(PsiElement element, PsiElement originalElement) {
-        try {
-            return originalElement.getContainingFile().getFileType() instanceof JSFLFileType
-                    && hasExternalUrl(element);
-        } catch (Exception error) {
-            return false;
-        }
+        return false;
     }
 
     public boolean canPromptToConfigureDocumentation(PsiElement element) {
@@ -63,8 +59,9 @@ public class JSFLDocumentationProvider extends AbstractDocumentationProvider
         String documentName = getDocumentName(element);
         if (documentName != null && docs.containsKey(documentName)) {
             BrowserUtil.browse(base + docs.getString(documentName));
+            return true;
         }
-        return true;
+        return false;
     }
 
     public boolean handleExternalLink(PsiManager psiManager, String link, PsiElement context) {
@@ -81,12 +78,15 @@ public class JSFLDocumentationProvider extends AbstractDocumentationProvider
     }
     //endregion
 
-    private boolean hasExternalUrl(PsiElement element) {
+    @Override
+    public List<String> getUrlFor(PsiElement element, PsiElement originalElement) {
         String documentName = getDocumentName(element);
-        return documentName != null && docs.containsKey(documentName);
+        if (documentName != null && docs.containsKey(documentName)) {
+            return Collections.singletonList(base + docs.getString(documentName));
+        }
+        return null;
     }
 
-    @NotNull
     private String getDocumentName(PsiElement element) {
         if (element instanceof JSQualifiedNamedElement) {
             return ((JSQualifiedNamedElement) element).getQualifiedName();
