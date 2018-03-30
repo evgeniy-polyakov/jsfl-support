@@ -7,9 +7,9 @@ import org.junit.runners.Parameterized;
 import org.junit.runners.Parameterized.Parameters;
 
 import java.io.BufferedReader;
-import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.URL;
+import java.net.URLConnection;
 import java.util.*;
 
 /*
@@ -63,8 +63,12 @@ public class DocumentationTest {
     public void testMethod() {
         try {
             URL url = new URL("http://community.adobe.com/chcservices/services/redirect?u=http://help.adobe.com&p=Flash_15&l=en_US&id=" + _docIdentifier);
-            InputStream stream = url.openStream();
-            BufferedReader reader = new BufferedReader(new InputStreamReader(stream, "UTF-8"));
+            URLConnection connection = url.openConnection();
+            String redirect = connection.getHeaderField("Location");
+            if (redirect != null) {
+                connection = new URL(redirect).openConnection();
+            }
+            BufferedReader reader = new BufferedReader(new InputStreamReader(connection.getInputStream()));
             StringBuilder builder = new StringBuilder();
             String line;
             try {
@@ -90,7 +94,6 @@ public class DocumentationTest {
                 }
             } finally {
                 reader.close();
-                stream.close();
             }
 
             Assert.fail(builder.toString());
