@@ -4,11 +4,11 @@ import com.intellij.lang.javascript.library.JSPredefinedLibraryProvider;
 import com.intellij.openapi.project.Project;
 import com.intellij.openapi.vfs.VfsUtil;
 import com.intellij.openapi.vfs.VirtualFile;
-import com.intellij.util.containers.HashSet;
 import com.intellij.webcore.libraries.ScriptingLibraryModel;
 import org.jetbrains.annotations.NotNull;
 
 import java.net.URL;
+import java.util.HashSet;
 import java.util.Set;
 
 /*
