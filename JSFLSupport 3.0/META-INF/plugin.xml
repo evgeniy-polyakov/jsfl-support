@@ -16,11 +16,13 @@ limitations under the License.
 <idea-plugin>
 
     <name>JSFL Support</name>
-    <version>3.4.1</version>
+    <version>3.4.2</version>
     <vendor>Evgeniy Polyakov</vendor>
     <description>Support of JSFL, the scripting language for automating Adobe Flash.</description>
     <change-notes>
         <![CDATA[
+        <p>3.4.2</p>
+        Compatible with IntelliJ IDEA 2018.3. Removing links to online help since it's no longer supported by Adobe.
         <p>3.4.1</p>
         Compatible with IntelliJ IDEA 2018.2.
         <p>3.4.0</p>
@@ -105,7 +107,7 @@ limitations under the License.
     <depends>com.intellij.modules.lang</depends>
 
     <!-- please see http://confluence.jetbrains.net/display/IDEADEV/Build+Number+Ranges for description -->
-    <idea-version since-build="182.0000" until-build="182.*"/>
+    <idea-version since-build="183.0000" until-build="183.*"/>
 
     <application-components>
     </application-components>
@@ -134,7 +136,7 @@ limitations under the License.
         <resolveScopeEnlarger implementation="org.jsflsupport.JSFLPredefinedLibraryScopeEnlarger"/>
         <internalFileTemplate name="JSFL Command"/>
         <internalFileTemplate name="JSFL Tool"/>
-        <documentationProvider implementation="org.jsflsupport.JSFLDocumentationProvider"/>
+        <!--<documentationProvider implementation="org.jsflsupport.JSFLDocumentationProvider"/>-->
     </extensions>
 
     <extensions defaultExtensionNs="JavaScript">
