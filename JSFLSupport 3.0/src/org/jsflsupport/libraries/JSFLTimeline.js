@@ -348,7 +348,7 @@ Layer = function () {
 };
 /**
  * @since Flash CS6
- * @type {string}
+ * @type {"none"|"motion object"|"IK pose"}
  * @const
  */
 Layer.prototype.animationType = null;
@@ -376,7 +376,7 @@ Layer.prototype.frames = null;
 Layer.prototype.height = 0;
 /**
  * @since Flash MX 2004
- * @type {string}
+ * @type {"normal"|"guide"|"guided"|"mask"|"masked"|"folder"}
  */
 Layer.prototype.layerType = null;
 /**
@@ -434,7 +434,7 @@ Frame.prototype.elements = null;
 Frame.prototype.hasCustomEase = false;
 /**
  * @since Flash MX 2004
- * @type {string}
+ * @type {"none"|"name"|"comment"|"anchor"}
  */
 Frame.prototype.labelType = null;
 /**
@@ -525,7 +525,7 @@ Frame.prototype.tweenEasing = 0;
 Frame.prototype.tweenInstanceName = null;
 /**
  * @since Flash MX 2004
- * @type {string}
+ * @type {"motion"|"shape"|"none"}
  */
 Frame.prototype.tweenType = null;
 /**
@@ -657,7 +657,7 @@ Tween.prototype.duration = 0;
 Tween.prototype.startFrame = 0;
 /**
  * @since Flash CC
- * @type {string}
+ * @type {"motion"|"shape"|"none"}
  * @const
  */
 Tween.prototype.tweenType = null;

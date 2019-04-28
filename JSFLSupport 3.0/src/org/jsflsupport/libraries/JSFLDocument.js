@@ -1288,7 +1288,7 @@ Library.prototype.getItemProperty = function (property) {
 /**
  * @since Flash MX 2004
  * @param {string} [namePath]
- * @return {string}
+ * @return {"undefined"|"component"|"movie clip"|"graphic"|"button"|"folder"|"font"|"sound"|"bitmap"|"compiled clip"|"screen"|"video"}
  */
 Library.prototype.getItemType = function (namePath) {
 };

@@ -10,7 +10,7 @@ Item = function () {
 };
 /**
  * @since Flash MX 2004
- * @type {string}
+ * @type {"undefined"|"component"|"movie clip"|"graphic"|"button"|"folder"|"font"|"sound"|"bitmap"|"compiled clip"|"screen"|"video"}
  * @const
  */
 Item.prototype.itemType = null;
@@ -118,7 +118,7 @@ BitmapItem.prototype = new Item();
 BitmapItem.prototype.allowSmoothing = false;
 /**
  * @since Flash MX 2004
- * @type {string}
+ * @type {"photo"|"lossless"}
  */
 BitmapItem.prototype.compressionType = null;
 /**
@@ -141,7 +141,7 @@ BitmapItem.prototype.hasValidAlphaLayer = false;
 BitmapItem.prototype.lastModifiedDate = 0;
 /**
  * @since Flash CS4
- * @type {string}
+ * @type {"photo"|"lossless"}
  * @const
  */
 BitmapItem.prototype.originalCompressionType = null;
@@ -262,7 +262,7 @@ SoundItem.prototype.bitRate = null;
 SoundItem.prototype.bits = null;
 /**
  * @since Flash MX 2004
- * @type {string}
+ * @type {"Default"|"ADPCM"|"MP3"|"Raw"|"Speech"}
  */
 SoundItem.prototype.compressionType = null;
 /**
@@ -284,7 +284,7 @@ SoundItem.prototype.fileLastModifiedDate = null;
 SoundItem.prototype.lastModifiedDate = 0;
 /**
  * @since Flash CS4
- * @type {string}
+ * @type {"RAW"|"MP3"}
  * @const
  */
 SoundItem.prototype.originalCompressionType = null;
@@ -369,7 +369,7 @@ SymbolItem.prototype.sourceFilePath = null;
 SymbolItem.prototype.sourceLibraryName = null;
 /**
  * @since Flash MX 2004
- * @type {string}
+ * @type {"button"|"movie clip"|"graphic"}
  */
 SymbolItem.prototype.symbolType = null;
 /**
@@ -451,7 +451,7 @@ VideoItem.prototype.sourceFileIsCurrent = false;
 VideoItem.prototype.sourceFilePath = null;
 /**
  * @since Flash MX 2004
- * @type {string}
+ * @type {"embedded video"|"video"}
  * @const
  */
 VideoItem.prototype.videoType = null;

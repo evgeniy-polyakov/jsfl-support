@@ -16,7 +16,7 @@ Element = function () {
 Element.prototype.depth = 0;
 /**
  * @since Flash MX 2004
- * @type {string}
+ * @type {"shape"|"text"|"tlfText"|"instance"|"shapeObj"}
  * @const
  */
 Element.prototype.elementType = null;
@@ -179,7 +179,7 @@ Instance = function () {
 Instance.prototype = new Element();
 /**
  * @since Flash MX 2004
- * @type {string}
+ * @type {"symbol"|"bitmap"|"embedded video"|"linked video"|"video"|"compiled clip"}
  * @const
  */
 Instance.prototype.instanceType = null;
@@ -495,7 +495,7 @@ SymbolInstance.prototype.shortcut = null;
 SymbolInstance.prototype.silent = false;
 /**
  * @since Flash MX 2004
- * @type {string}
+ * @type {"button"|"movie clip"|"graphic"}
  */
 SymbolInstance.prototype.symbolType = null;
 /**
@@ -568,7 +568,7 @@ Parameter.prototype.name = null;
 Parameter.prototype.value = null;
 /**
  * @since Flash MX 2004
- * @type {string}
+ * @type {"Default"|"Array"|"Object"|"List"|"String"|"Number"|"Boolean"|"Font Name"|"Color"|"Collection"|"Web Service URL"|"Web Service Operation"}
  * @const
  */
 Parameter.prototype.valueType = null;
@@ -926,7 +926,7 @@ Text.prototype.fontRenderingMode = null;
 Text.prototype.length = 0;
 /**
  * @since Flash MX 2004
- * @type {string}
+ * @type {"single line"|"multiline"|"multiline no wrap"|"password"}
  */
 Text.prototype.lineType = null;
 /**
@@ -987,7 +987,7 @@ Text.prototype.tabIndex = 0;
 Text.prototype.textRuns = null;
 /**
  * @since Flash MX 2004
- * @type {string}
+ * @type {"static"|"dynamic"|"input"}
  */
 Text.prototype.textType = null;
 /**

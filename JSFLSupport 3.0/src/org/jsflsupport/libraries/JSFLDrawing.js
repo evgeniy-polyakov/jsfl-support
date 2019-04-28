@@ -138,7 +138,7 @@ Stroke = function () {
 Stroke.prototype.breakAtCorners = false;
 /**
  * @since Flash 8
- * @type {string}
+ * @type {"none"|"round"|"square"}
  */
 Stroke.prototype.capType = null;
 /**
@@ -190,7 +190,7 @@ Stroke.prototype.hatchThickness = null;
 Stroke.prototype.jiggle = null;
 /**
  * @since Flash 8
- * @type {string}
+ * @type {"miter"|"round"|"bevel"}
  */
 Stroke.prototype.joinType = null;
 /**
@@ -215,7 +215,7 @@ Stroke.prototype.pattern = null;
 Stroke.prototype.rotate = null;
 /**
  * @since Flash 8
- * @type {string}
+ * @type {"normal"|"horizontal"|"vertical"|"none"}
  */
 Stroke.prototype.scaleType = null;
 /**
