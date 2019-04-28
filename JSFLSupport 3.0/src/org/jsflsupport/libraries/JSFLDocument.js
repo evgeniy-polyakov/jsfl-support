@@ -12,7 +12,7 @@ Document = function () {
  * @since Flash MX 2004
  * @type {string}
  */
-Document.prototype.accName = null;
+Document.prototype.accName = undefined;
 /**
  * @since Flash CS3
  * @type {boolean}
@@ -22,7 +22,7 @@ Document.prototype.as3AutoDeclare = false;
  * @since Flash CS3
  * @type {"AS3"|"ES"}
  */
-Document.prototype.as3Dialect = null;
+Document.prototype.as3Dialect = undefined;
 /**
  * @since Flash CS3
  * @type {number}
@@ -52,12 +52,12 @@ Document.prototype.autoLabel = false;
  * @since Flash MX 2004
  * @type {string|number}
  */
-Document.prototype.backgroundColor = null;
+Document.prototype.backgroundColor = undefined;
 /**
  * @since Flash MX 2004
  * @type {string}
  */
-Document.prototype.currentPublishProfile = null;
+Document.prototype.currentPublishProfile = undefined;
 /**
  * @since Flash MX 2004
  * @type {number}
@@ -67,17 +67,17 @@ Document.prototype.currentTimeline = 0;
  * @since Flash MX 2004
  * @type {string}
  */
-Document.prototype.description = null;
+Document.prototype.description = undefined;
 /**
  * @since Flash CS3
  * @type {string}
  */
-Document.prototype.docClass = null;
+Document.prototype.docClass = undefined;
 /**
  * @since Flash CS4
  * @type {string}
  */
-Document.prototype.externalLibraryPath = null;
+Document.prototype.externalLibraryPath = undefined;
 /**
  * @since Flash MX 2004
  * @type {boolean}
@@ -104,12 +104,12 @@ Document.prototype.id = 0;
  * @type {Library}
  * @const
  */
-Document.prototype.library = null;
+Document.prototype.library = undefined;
 /**
  * @since Flash CS4
  * @type {string}
  */
-Document.prototype.libraryPath = null;
+Document.prototype.libraryPath = undefined;
 /**
  * @since Flash MX 2004
  * @type {boolean}
@@ -120,37 +120,37 @@ Document.prototype.livePreview = false;
  * @type {string}
  * @const
  */
-Document.prototype.name = null;
+Document.prototype.name = undefined;
 /**
  * @since Flash MX 2004
  * @type {string}
  * @const
  */
-Document.prototype.path = null;
+Document.prototype.path = undefined;
 /**
  * @since Flash CS4
  * @type {string}
  * @const
  */
-Document.prototype.pathURI = null;
+Document.prototype.pathURI = undefined;
 /**
  * @since Flash MX 2004
  * @type {Array.<string>}
  * @const
  */
-Document.prototype.publishProfiles = null;
+Document.prototype.publishProfiles = undefined;
 /**
  * @since Flash MX 2004
  * @deprecated
- * @type {ScreenOutline}
+ * @type {*}
  * @const
  */
-Document.prototype.screenOutline = null;
+Document.prototype.screenOutline = undefined;
 /**
  * @since Flash MX 2004
  * @type {Array.<Element>}
  */
-Document.prototype.selection = null;
+Document.prototype.selection = undefined;
 /**
  * @since Flash MX 2004
  * @type {boolean}
@@ -160,24 +160,24 @@ Document.prototype.silent = false;
  * @since Flash CS4
  * @type {string}
  */
-Document.prototype.sourcePath = null;
+Document.prototype.sourcePath = undefined;
 /**
  * @since Flash CS6
  * @type {number}
  */
-Document.prototype.swfJPEGQuality = null;
+Document.prototype.swfJPEGQuality = undefined;
 /**
  * @since Flash MX 2004
  * @type {Array.<Timeline>}
  * @const
  */
-Document.prototype.timelines = null;
+Document.prototype.timelines = undefined;
 /**
  * @since Flash MX 2004
  * @type {Matrix}
  * @const
  */
-Document.prototype.viewMatrix = null;
+Document.prototype.viewMatrix = undefined;
 /**
  * @since Flash MX 2004
  * @type {number}
@@ -1219,12 +1219,12 @@ Library = function () {
  * @since Flash MX 2004
  * @type {Array.<Item>}
  */
-Library.prototype.items = null;
+Library.prototype.items = undefined;
 /**
  * @since Flash CC
  * @type {Array.<Item>}
  */
-Library.prototype.unusedItems = null;
+Library.prototype.unusedItems = undefined;
 /**
  * @since Flash MX 2004
  * @param {{x:number,y:number}} position

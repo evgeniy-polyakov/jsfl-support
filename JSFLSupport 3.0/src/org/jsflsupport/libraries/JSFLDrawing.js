@@ -82,17 +82,17 @@ Fill.prototype.bitmapIsClipped = false;
  * @since Flash CS4
  * @type {string}
  */
-Fill.prototype.bitmapPath = null;
+Fill.prototype.bitmapPath = undefined;
 /**
  * @since Flash MX 2004
  * @type {string|number}
  */
-Fill.prototype.color = null;
+Fill.prototype.color = undefined;
 /**
  * @since Flash MX 2004
  * @type {Array.<string|number>}
  */
-Fill.prototype.colorArray = null;
+Fill.prototype.colorArray = undefined;
 /**
  * @since Flash 8
  * @type {number}
@@ -107,22 +107,22 @@ Fill.prototype.linearRGB = false;
  * @since Flash MX 2004
  * @type {Matrix}
  */
-Fill.prototype.matrix = null;
+Fill.prototype.matrix = undefined;
 /**
  * @since Flash 8
  * @type {"extend"|"repeat"|"reflect"}
  */
-Fill.prototype.overflow = null;
+Fill.prototype.overflow = undefined;
 /**
  * @since Flash MX 2004
  * @type {Array.<number>}
  */
-Fill.prototype.posArray = null;
+Fill.prototype.posArray = undefined;
 /**
  * @since Flash MX 2004
  * @type {"bitmap"|"solid"|"linearGradient"|"radialGradient"|"noFill"}
  */
-Fill.prototype.style = null;
+Fill.prototype.style = undefined;
 /**
  * @since Flash MX 2004
  * @class {Stroke}
@@ -140,19 +140,19 @@ Stroke.prototype.breakAtCorners = false;
  * @since Flash 8
  * @type {"none"|"round"|"square"}
  */
-Stroke.prototype.capType = null;
+Stroke.prototype.capType = undefined;
 /**
  * @since Flash MX 2004
  * @deprecated
  * @see Stroke#shapeFill
  * @type {string|number}
  */
-Stroke.prototype.color = null;
+Stroke.prototype.color = undefined;
 /**
  * @since Flash MX 2004
  * @type {"straight"|"slight curve"|"medium curve"|"very curved"}
  */
-Stroke.prototype.curve = null;
+Stroke.prototype.curve = undefined;
 /**
  * @since Flash MX 2004
  * @type {number}
@@ -167,12 +167,12 @@ Stroke.prototype.dash2 = 0;
  * @since Flash MX 2004
  * @type {"very dense"|"dense"|"sparse"|"very sparse"}
  */
-Stroke.prototype.density = null;
+Stroke.prototype.density = undefined;
 /**
  * @since Flash MX 2004
  * @type {"tiny"|"small"|"medium"|"large"}
  */
-Stroke.prototype.dotSize = null;
+Stroke.prototype.dotSize = undefined;
 /**
  * @since Flash MX 2004
  * @type {number}
@@ -182,22 +182,22 @@ Stroke.prototype.dotSpace = 0;
  * @since Flash MX 2004
  * @type {"hairline"|"thin"|"medium"|"thick"}
  */
-Stroke.prototype.hatchThickness = null;
+Stroke.prototype.hatchThickness = undefined;
 /**
  * @since Flash MX 2004
  * @type {"none"|"bounce"|"loose"|"wild"}
  */
-Stroke.prototype.jiggle = null;
+Stroke.prototype.jiggle = undefined;
 /**
  * @since Flash 8
  * @type {"miter"|"round"|"bevel"}
  */
-Stroke.prototype.joinType = null;
+Stroke.prototype.joinType = undefined;
 /**
  * @since Flash MX 2004
  * @type {"equal"|"slight variation"|"medium variation"|"random"}
  */
-Stroke.prototype.length = null;
+Stroke.prototype.length = undefined;
 /**
  * @since Flash 8
  * @type {number}
@@ -207,27 +207,27 @@ Stroke.prototype.miterLimit = 0;
  * @since Flash MX 2004
  * @type {"solid"|"simple"|"random"|"dotted"|"random dotted"|"triple dotted"|"random triple dotted"}
  */
-Stroke.prototype.pattern = null;
+Stroke.prototype.pattern = undefined;
 /**
  * @since Flash MX 2004
  * @type {"none"|"slight"|"medium"|"free"}
  */
-Stroke.prototype.rotate = null;
+Stroke.prototype.rotate = undefined;
 /**
  * @since Flash 8
  * @type {"normal"|"horizontal"|"vertical"|"none"}
  */
-Stroke.prototype.scaleType = null;
+Stroke.prototype.scaleType = undefined;
 /**
  * @since Flash 8
  * @type {Fill}
  */
-Stroke.prototype.shapeFill = null;
+Stroke.prototype.shapeFill = undefined;
 /**
  * @since Flash MX 2004
  * @type {"very close"|"close"|"distant"|"very distant"}
  */
-Stroke.prototype.space = null;
+Stroke.prototype.space = undefined;
 /**
  * @since Flash 8
  * @type {boolean}
@@ -237,7 +237,7 @@ Stroke.prototype.strokeHinting = false;
  * @since Flash MX 2004
  * @type {"noStroke"|"solid"|"dashed"|"dotted"|"ragged"|"stipple"|"hatched"}
  */
-Stroke.prototype.style = null;
+Stroke.prototype.style = undefined;
 /**
  * @since Flash MX 2004
  * @type {number}
@@ -247,17 +247,17 @@ Stroke.prototype.thickness = 0;
  * @since Flash MX 2004
  * @type {"one size"|"small variation"|"varied sizes"|"random sizes"}
  */
-Stroke.prototype.variation = null;
+Stroke.prototype.variation = undefined;
 /**
  * @since Flash MX 2004
  * @type {"flat"|"wavy"|"very wavy"|"wild"}
  */
-Stroke.prototype.waveHeight = null;
+Stroke.prototype.waveHeight = undefined;
 /**
  * @since Flash MX 2004
  * @type {"very short"|"short"|"medium"|"long"}
  */
-Stroke.prototype.waveLength = null;
+Stroke.prototype.waveLength = undefined;
 /**
  * @since Flash MX 2004
  * @class {Contour}
@@ -268,7 +268,7 @@ Contour = function () {
  * @since Flash CS4
  * @type {Fill}
  */
-Contour.prototype.fill = null;
+Contour.prototype.fill = undefined;
 /**
  * @since Flash MX 2004
  * @type {boolean}
@@ -315,7 +315,7 @@ Edge.prototype.isLine = 0;
  * @since Flash CS4
  * @type {Stroke}
  */
-Edge.prototype.stroke = null;
+Edge.prototype.stroke = undefined;
 /**
  * @since Flash MX 2004
  * @param {number} i

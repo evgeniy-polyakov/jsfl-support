@@ -35,18 +35,18 @@ Timeline.prototype.layerCount = 0;
  * @type {Array.<Layer>}
  * @const
  */
-Timeline.prototype.layers = null;
+Timeline.prototype.layers = undefined;
 /**
  * @since Flash CS5
  * @type {SymbolItem}
  * @const
  */
-Timeline.prototype.libraryItem = null;
+Timeline.prototype.libraryItem = undefined;
 /**
  * @since Flash MX 2004
  * @type {string}
  */
-Timeline.prototype.name = null;
+Timeline.prototype.name = undefined;
 /**
  * @since Flash MX 2004
  * @return {number}
@@ -351,12 +351,12 @@ Layer = function () {
  * @type {"none"|"motion object"|"IK pose"}
  * @const
  */
-Layer.prototype.animationType = null;
+Layer.prototype.animationType = undefined;
 /**
  * @since Flash MX 2004
  * @type {string|number}
  */
-Layer.prototype.color = null;
+Layer.prototype.color = undefined;
 /**
  * @since Flash MX 2004
  * @type {number}
@@ -368,7 +368,7 @@ Layer.prototype.frameCount = 0;
  * @type {Array.<Frame>}
  * @const
  */
-Layer.prototype.frames = null;
+Layer.prototype.frames = undefined;
 /**
  * @since Flash MX 2004
  * @type {number}
@@ -378,7 +378,7 @@ Layer.prototype.height = 0;
  * @since Flash MX 2004
  * @type {"normal"|"guide"|"guided"|"mask"|"masked"|"folder"}
  */
-Layer.prototype.layerType = null;
+Layer.prototype.layerType = undefined;
 /**
  * @since Flash MX 2004
  * @type {boolean}
@@ -388,7 +388,7 @@ Layer.prototype.locked = false;
  * @since Flash MX 2004
  * @type {string}
  */
-Layer.prototype.name = null;
+Layer.prototype.name = undefined;
 /**
  * @since Flash MX 2004
  * @type {boolean}
@@ -398,7 +398,7 @@ Layer.prototype.outline = false;
  * @since Flash MX 2004
  * @type {Layer}
  */
-Layer.prototype.parentLayer = null;
+Layer.prototype.parentLayer = undefined;
 /**
  * @since Flash MX 2004
  * @type {boolean}
@@ -414,7 +414,7 @@ Frame = function () {
  * @since Flash MX 2004
  * @type {string}
  */
-Frame.prototype.actionScript = null;
+Frame.prototype.actionScript = undefined;
 /**
  * @since Flash MX 2004
  * @type {number}
@@ -426,7 +426,7 @@ Frame.prototype.duration = 0;
  * @type {Array.<Element>}
  * @const
  */
-Frame.prototype.elements = null;
+Frame.prototype.elements = undefined;
 /**
  * @since Flash 8
  * @type {boolean}
@@ -436,7 +436,7 @@ Frame.prototype.hasCustomEase = false;
  * @since Flash MX 2004
  * @type {"none"|"name"|"comment"|"anchor"}
  */
-Frame.prototype.labelType = null;
+Frame.prototype.labelType = undefined;
 /**
  * @since Flash MX 2004
  * @type {boolean}
@@ -446,7 +446,7 @@ Frame.prototype.motionTweenOrientToPath = false;
  * @since Flash MX 2004
  * @type {"none"|"auto"|"clockwise"|"counter-clockwise"}
  */
-Frame.prototype.motionTweenRotate = null;
+Frame.prototype.motionTweenRotate = undefined;
 /**
  * @since Flash MX 2004
  * @type {number}
@@ -471,22 +471,22 @@ Frame.prototype.motionTweenSync = false;
  * @since Flash MX 2004
  * @type {string}
  */
-Frame.prototype.name = null;
+Frame.prototype.name = undefined;
 /**
  * @since Flash MX 2004
  * @type {"distributive"|"angular"}
  */
-Frame.prototype.shapeTweenBlend = null;
+Frame.prototype.shapeTweenBlend = undefined;
 /**
  * @since Flash MX 2004
  * @type {"none"|"left channel"|"right channel"|"fade left to right"|"fade right to left"|"fade in"|"fade out"|"custom"}
  */
-Frame.prototype.soundEffect = null;
+Frame.prototype.soundEffect = undefined;
 /**
  * @since Flash MX 2004
  * @type {SoundItem}
  */
-Frame.prototype.soundLibraryItem = null;
+Frame.prototype.soundLibraryItem = undefined;
 /**
  * @since Flash MX 2004
  * @type {number}
@@ -496,17 +496,17 @@ Frame.prototype.soundLoop = 0;
  * @since Flash MX 2004
  * @type {"repeat"|"loop"}
  */
-Frame.prototype.soundLoopMode = null;
+Frame.prototype.soundLoopMode = undefined;
 /**
  * @since Flash MX 2004
  * @type {string}
  */
-Frame.prototype.soundName = null;
+Frame.prototype.soundName = undefined;
 /**
  * @since Flash MX 2004
  * @type {"event"|"stop"|"start"|"stream"}
  */
-Frame.prototype.soundSync = null;
+Frame.prototype.soundSync = undefined;
 /**
  * @since Flash MX 2004
  * @type {number}
@@ -522,12 +522,12 @@ Frame.prototype.tweenEasing = 0;
  * @since Flash CS5
  * @type {string}
  */
-Frame.prototype.tweenInstanceName = null;
+Frame.prototype.tweenInstanceName = undefined;
 /**
  * @since Flash MX 2004
  * @type {"motion"|"shape"|"none"}
  */
-Frame.prototype.tweenType = null;
+Frame.prototype.tweenType = undefined;
 /**
  * @since Flash 8
  * @type {boolean}
@@ -660,7 +660,7 @@ Tween.prototype.startFrame = 0;
  * @type {"motion"|"shape"|"none"}
  * @const
  */
-Tween.prototype.tweenType = null;
+Tween.prototype.tweenType = undefined;
 /**
  * @since Flash CC
  * @param {number} frameIndex

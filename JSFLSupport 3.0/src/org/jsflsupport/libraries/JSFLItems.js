@@ -13,17 +13,17 @@ Item = function () {
  * @type {"undefined"|"component"|"movie clip"|"graphic"|"button"|"folder"|"font"|"sound"|"bitmap"|"compiled clip"|"screen"|"video"}
  * @const
  */
-Item.prototype.itemType = null;
+Item.prototype.itemType = undefined;
 /**
  * @since Flash CS3
  * @type {string}
  */
-Item.prototype.linkageBaseClass = null;
+Item.prototype.linkageBaseClass = undefined;
 /**
  * @since Flash MX 2004
  * @type {string}
  */
-Item.prototype.linkageClassName = null;
+Item.prototype.linkageClassName = undefined;
 /**
  * @since Flash MX 2004
  * @type {boolean}
@@ -43,7 +43,7 @@ Item.prototype.linkageExportInFirstFrame = false;
  * @since Flash MX 2004
  * @type {string}
  */
-Item.prototype.linkageIdentifier = null;
+Item.prototype.linkageIdentifier = undefined;
 /**
  * @since Flash MX 2004
  * @type {boolean}
@@ -53,12 +53,12 @@ Item.prototype.linkageImportForRS = false;
  * @since Flash MX 2004
  * @type {string}
  */
-Item.prototype.linkageURL = null;
+Item.prototype.linkageURL = undefined;
 /**
  * @since Flash MX 2004
  * @type {string}
  */
-Item.prototype.name = null;
+Item.prototype.name = undefined;
 /**
  * @since Flash MX 2004
  * @param {string} name
@@ -120,13 +120,13 @@ BitmapItem.prototype.allowSmoothing = false;
  * @since Flash MX 2004
  * @type {"photo"|"lossless"}
  */
-BitmapItem.prototype.compressionType = null;
+BitmapItem.prototype.compressionType = undefined;
 /**
  * @since Flash CS4
  * @type {string}
  * @const
  */
-BitmapItem.prototype.fileLastModifiedDate = null;
+BitmapItem.prototype.fileLastModifiedDate = undefined;
 /**
  * @since Flash CS6
  * @type {boolean}
@@ -144,7 +144,7 @@ BitmapItem.prototype.lastModifiedDate = 0;
  * @type {"photo"|"lossless"}
  * @const
  */
-BitmapItem.prototype.originalCompressionType = null;
+BitmapItem.prototype.originalCompressionType = undefined;
 /**
  * @since Flash CS4
  * @type {boolean}
@@ -162,7 +162,7 @@ BitmapItem.prototype.sourceFileIsCurrent = false;
  * @type {string}
  * @const
  */
-BitmapItem.prototype.sourceFilePath = null;
+BitmapItem.prototype.sourceFilePath = undefined;
 /**
  * @since Flash CS4
  * @type {boolean}
@@ -211,12 +211,12 @@ FontItem.prototype.bold = false;
  * @since Flash CS5
  * @type {string}
  */
-FontItem.prototype.embeddedCharacters = null;
+FontItem.prototype.embeddedCharacters = undefined;
 /**
  * @since Flash CS5
  * @type {string}
  */
-FontItem.prototype.embedRanges = null;
+FontItem.prototype.embedRanges = undefined;
 /**
  * @since Flash CS4
  * @type {boolean}
@@ -226,7 +226,7 @@ FontItem.prototype.embedVariantGlyphs = false;
  * @since Flash CS4
  * @type {string}
  */
-FontItem.prototype.font = null;
+FontItem.prototype.font = undefined;
 /**
  * @since Flash CS4
  * @type {boolean}
@@ -254,17 +254,17 @@ SoundItem.prototype = new Item();
  * @since Flash MX 2004
  * @type {"8 kbps"|"16 kbps"|"20 kbps"|"24 kbps"|"32 kbps"|"48 kbps"|"56 kbps"|"64 kbps"|"80 kbps"|"112 kbps"|"128 kbps"|"160 kbps"}
  */
-SoundItem.prototype.bitRate = null;
+SoundItem.prototype.bitRate = undefined;
 /**
  * @since Flash MX 2004
  * @type {"2 bit"|"3 bit"|"4 bit"|"5 bit"}
  */
-SoundItem.prototype.bits = null;
+SoundItem.prototype.bits = undefined;
 /**
  * @since Flash MX 2004
  * @type {"Default"|"ADPCM"|"MP3"|"Raw"|"Speech"}
  */
-SoundItem.prototype.compressionType = null;
+SoundItem.prototype.compressionType = undefined;
 /**
  * @since Flash MX 2004
  * @type {boolean}
@@ -275,7 +275,7 @@ SoundItem.prototype.convertStereoToMono = false;
  * @type {string}
  * @const
  */
-SoundItem.prototype.fileLastModifiedDate = null;
+SoundItem.prototype.fileLastModifiedDate = undefined;
 /**
  * @since Flash CS6
  * @type {number}
@@ -287,17 +287,17 @@ SoundItem.prototype.lastModifiedDate = 0;
  * @type {"RAW"|"MP3"}
  * @const
  */
-SoundItem.prototype.originalCompressionType = null;
+SoundItem.prototype.originalCompressionType = undefined;
 /**
  * @since Flash MX 2004
  * @type {"Fast"|"Medium"|"Best"}
  */
-SoundItem.prototype.quality = null;
+SoundItem.prototype.quality = undefined;
 /**
  * @since Flash MX 2004
  * @type {"5 kHz"|"11 kHz"|"22 kHz"|"44 kHz"}
  */
-SoundItem.prototype.sampleRate = null;
+SoundItem.prototype.sampleRate = undefined;
 /**
  * @since Flash CS4
  * @type {boolean}
@@ -315,7 +315,7 @@ SoundItem.prototype.sourceFileIsCurrent = false;
  * @type {string}
  * @const
  */
-SoundItem.prototype.sourceFilePath = null;
+SoundItem.prototype.sourceFilePath = undefined;
 /**
  * @since Flash MX 2004
  * @type {boolean}
@@ -351,7 +351,7 @@ SymbolItem.prototype.scalingGrid = false;
  * @since Flash 8
  * @type {{left:number,top:number,right:number,bottom:number}}
  */
-SymbolItem.prototype.scalingGridRect = null;
+SymbolItem.prototype.scalingGridRect = undefined;
 /**
  * @since Flash MX 2004
  * @type {boolean}
@@ -361,23 +361,23 @@ SymbolItem.prototype.sourceAutoUpdate = false;
  * @since Flash MX 2004
  * @type {string}
  */
-SymbolItem.prototype.sourceFilePath = null;
+SymbolItem.prototype.sourceFilePath = undefined;
 /**
  * @since Flash MX 2004
  * @type {string}
  */
-SymbolItem.prototype.sourceLibraryName = null;
+SymbolItem.prototype.sourceLibraryName = undefined;
 /**
  * @since Flash MX 2004
  * @type {"button"|"movie clip"|"graphic"}
  */
-SymbolItem.prototype.symbolType = null;
+SymbolItem.prototype.symbolType = undefined;
 /**
  * @since Flash MX 2004
  * @type {Timeline}
  * @const
  */
-SymbolItem.prototype.timeline = null;
+SymbolItem.prototype.timeline = undefined;
 /**
  * @since Flash MX 2004
  */
@@ -424,7 +424,7 @@ VideoItem.prototype = new Item();
  * @type {string}
  * @const
  */
-VideoItem.prototype.fileLastModifiedDate = null;
+VideoItem.prototype.fileLastModifiedDate = undefined;
 /**
  * @since Flash CS6
  * @type {number}
@@ -448,13 +448,13 @@ VideoItem.prototype.sourceFileIsCurrent = false;
  * @type {string}
  * @const
  */
-VideoItem.prototype.sourceFilePath = null;
+VideoItem.prototype.sourceFilePath = undefined;
 /**
  * @since Flash MX 2004
  * @type {"embedded video"|"video"}
  * @const
  */
-VideoItem.prototype.videoType = null;
+VideoItem.prototype.videoType = undefined;
 /**
  * @since Flash CS4
  * @param {string} fileURI

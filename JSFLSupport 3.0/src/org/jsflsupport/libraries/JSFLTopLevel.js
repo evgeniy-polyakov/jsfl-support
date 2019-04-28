@@ -39,36 +39,36 @@ fl = new Flash();
  * @type {ActionsPanel}
  * @const
  */
-Flash.prototype.actionsPanel = null;
+Flash.prototype.actionsPanel = undefined;
 /**
  * @since Flash CS3
  * @type {string}
  */
-Flash.prototype.as3PackagePaths = null;
+Flash.prototype.as3PackagePaths = undefined;
 /**
  * @since Flash CS3
  * @type {CompilerErrors}
  * @const
  */
-Flash.prototype.compilerErrors = null;
+Flash.prototype.compilerErrors = undefined;
 /**
  * @since Flash MX 2004
  * @type {ComponentPanel}
  * @const
  */
-Flash.prototype.componentsPanel = null;
+Flash.prototype.componentsPanel = undefined;
 /**
  * @since Flash MX 2004
  * @type {string}
  * @const
  */
-Flash.prototype.configDirectory = null;
+Flash.prototype.configDirectory = undefined;
 /**
  * @since Flash MX 2004
  * @type {string}
  * @const
  */
-Flash.prototype.configURI = null;
+Flash.prototype.configURI = undefined;
 /**
  * @since Flash 8
  * @type {boolean}
@@ -79,101 +79,101 @@ Flash.prototype.contactSensitiveSelection = false;
  * @type {Array.<string>}
  * @const
  */
-Flash.prototype.createNewDocList = null;
+Flash.prototype.createNewDocList = undefined;
 /**
  * @since Flash MX 2004
  * @type {Array.<string>}
  * @const
  */
-Flash.prototype.createNewDocListType = null;
+Flash.prototype.createNewDocListType = undefined;
 /**
  * @since Flash MX 2004
  * @type {Array.<string>}
  * @const
  */
-Flash.prototype.createNewTemplateList = null;
+Flash.prototype.createNewTemplateList = undefined;
 /**
  * @since Flash MX 2004
  * @type {Array.<Document>}
  * @const
  */
-Flash.prototype.documents = null;
+Flash.prototype.documents = undefined;
 /**
  * @since Flash MX 2004
  * @type {drawingLayer}
  * @const
  */
-Flash.prototype.drawingLayer = null;
+Flash.prototype.drawingLayer = undefined;
 /**
  * @since Flash CS4
  * @type {string}
  */
-Flash.prototype.externalLibraryPath = null;
+Flash.prototype.externalLibraryPath = undefined;
 /**
  * @since Flash CS4
  * @type {string}
  */
-Flash.prototype.flexSDKPath = null;
+Flash.prototype.flexSDKPath = undefined;
 /**
  * @since Flash CS5.5
  * @type {string}
  * @const
  */
-Flash.prototype.installedPlayers = null;
+Flash.prototype.installedPlayers = undefined;
 /**
  * @since Flash CS5
  * @type {string}
  */
-Flash.prototype.languageCode = null;
+Flash.prototype.languageCode = undefined;
 /**
  * @since Flash CS4
  * @type {string}
  */
-Flash.prototype.libraryPath = null;
+Flash.prototype.libraryPath = undefined;
 /**
  * @since Flash MX 2004
  * @type {FlashMath}
  * @const
  */
-Flash.prototype.Math = null;
+Flash.prototype.Math = undefined;
 /**
  * @since Flash MX 2004
  * @type {Array.<string>}
  * @const
  */
-Flash.prototype.mruRecentFileList = null;
+Flash.prototype.mruRecentFileList = undefined;
 /**
  * @since Flash MX 2004
  * @type {Array.<string>}
  * @const
  */
-Flash.prototype.mruRecentFileListType = null;
+Flash.prototype.mruRecentFileListType = undefined;
 /**
  * @since Flash CS3
  * @deprecated
  * @type {string}
  */
-Flash.prototype.packagePaths = null;
+Flash.prototype.packagePaths = undefined;
 /**
  * @since Flash CS5.5
  * @type {number}
  */
-Flash.prototype.publishCacheDiskSizeMax = null;
+Flash.prototype.publishCacheDiskSizeMax = undefined;
 /**
  * @since Flash CS5.5
  * @type {boolean}
  */
-Flash.prototype.publishCacheEnabled = null;
+Flash.prototype.publishCacheEnabled = undefined;
 /**
  * @since Flash CS5.5
  * @type {number}
  */
-Flash.prototype.publishCacheMemoryEntrySizeLimit = null;
+Flash.prototype.publishCacheMemoryEntrySizeLimit = undefined;
 /**
  * @since Flash CS5.5
  * @type {number}
  */
-Flash.prototype.publishCacheMemorySizeMax = null;
+Flash.prototype.publishCacheMemorySizeMax = undefined;
 /**
  * @since Flash 8
  * @type {boolean}
@@ -184,53 +184,53 @@ Flash.prototype.objectDrawingMode = 0;
  * @type {OutputPanel}
  * @const
  */
-Flash.prototype.outputPanel = null;
+Flash.prototype.outputPanel = undefined;
 /**
  * @since Flash CS4
  * @type {PresetPanel}
  * @const
  */
-Flash.prototype.presetPanel = null;
+Flash.prototype.presetPanel = undefined;
 /**
  * @since Flash CS3
  * @type {string}
  * @const
  */
-Flash.prototype.scriptURI = null;
+Flash.prototype.scriptURI = undefined;
 /**
  * @since Flash CS4
  * @type {string}
  */
-Flash.prototype.sourcePath = null;
+Flash.prototype.sourcePath = undefined;
 /**
  * @since Flash CS6
  * @type {SpriteSheetExporter}
  */
-Flash.prototype.spriteSheetExporter = null;
+Flash.prototype.spriteSheetExporter = undefined;
 /**
  * @since Flash CS4
  * @type {Array.<SwfPanel>}
  * @const
  */
-Flash.prototype.swfPanels = null;
+Flash.prototype.swfPanels = undefined;
 /**
  * @since Flash MX 2004
  * @type {Tools}
  * @const
  */
-Flash.prototype.tools = null;
+Flash.prototype.tools = undefined;
 /**
  * @since Flash MX 2004
  * @type {string}
  * @const
  */
-Flash.prototype.version = null;
+Flash.prototype.version = undefined;
 /**
  * @since Flash MX 2004
  * @type {XMLUI}
  * @const
  */
-Flash.prototype.xmlui = null;
+Flash.prototype.xmlui = undefined;
 /**
  * @since Flash CS3
  * @param {"documentNew"|"documentOpened"|"documentClosed"|"mouseMove"|"documentChanged"|"layerChanged"|"timelineChanged"|"frameChanged"|"prePublish"|"postPublish"|"selectionChanged"|"dpiChanged"} eventType
@@ -797,7 +797,7 @@ PresetPanel = function () {
  * @since Flash CS4
  * @type {Array.<PresetItem>}
  */
-PresetPanel.prototype.items = null;
+PresetPanel.prototype.items = undefined;
 /**
  * @since Flash CS4
  * @param {string} [namePath]
@@ -905,32 +905,32 @@ Tools = function () {
  * @since Flash MX 2004
  * @type {ToolObj}
  */
-Tools.prototype.activeTool = null;
+Tools.prototype.activeTool = undefined;
 /**
  * @since Flash MX 2004
  * @type {boolean}
  */
-Tools.prototype.altIsDown = null;
+Tools.prototype.altIsDown = undefined;
 /**
  * @since Flash MX 2004
  * @type {boolean}
  */
-Tools.prototype.ctlIsDown = null;
+Tools.prototype.ctlIsDown = undefined;
 /**
  * @since Flash MX 2004
  * @type {boolean}
  */
-Tools.prototype.mouseIsDown = null;
+Tools.prototype.mouseIsDown = undefined;
 /**
  * @since Flash MX 2004
  * @type {{x:number,y:number}}
  */
-Tools.prototype.penDownLoc = null;
+Tools.prototype.penDownLoc = undefined;
 /**
  * @since Flash MX 2004
  * @type {{x:number,y:number}}
  */
-Tools.prototype.penLoc = null;
+Tools.prototype.penLoc = undefined;
 /**
  * @since Flash MX 2004
  * @type {boolean}
@@ -940,7 +940,7 @@ Tools.prototype.shiftIsDown = false;
  * @since Flash MX 2004
  * @type {Array.<ToolObj>}
  */
-Tools.prototype.toolObjs = null;
+Tools.prototype.toolObjs = undefined;
 /**
  * @since Flash MX 2004
  * @param {{x:number,y:number}} pt1
@@ -1058,37 +1058,37 @@ PresetItem = function () {
  * @type {boolean}
  * @const
  */
-PresetItem.prototype.isDefault = null;
+PresetItem.prototype.isDefault = undefined;
 /**
  * @since Flash CS4
  * @type {boolean}
  * @const
  */
-PresetItem.prototype.isFolder = null;
+PresetItem.prototype.isFolder = undefined;
 /**
  * @since Flash CS4
  * @type {number}
  * @const
  */
-PresetItem.prototype.level = null;
+PresetItem.prototype.level = undefined;
 /**
  * @since Flash CS4
  * @type {string}
  * @const
  */
-PresetItem.prototype.name = null;
+PresetItem.prototype.name = undefined;
 /**
  * @since Flash CS4
  * @type {boolean}
  * @const
  */
-PresetItem.prototype.open = null;
+PresetItem.prototype.open = undefined;
 /**
  * @since Flash CS4
  * @type {string}
  * @const
  */
-PresetItem.prototype.path = null;
+PresetItem.prototype.path = undefined;
 /**
  * @since Flash CS4
  * @class {SwfPanel}
@@ -1100,25 +1100,25 @@ SwfPanel = function () {
  * @type {string}
  * @const
  */
-SwfPanel.prototype.dpiScaleFactorX = null;
+SwfPanel.prototype.dpiScaleFactorX = undefined;
 /**
  * @since Flash СС
  * @type {string}
  * @const
  */
-SwfPanel.prototype.dpiScaleFactorY = null;
+SwfPanel.prototype.dpiScaleFactorY = undefined;
 /**
  * @since Flash CS4
  * @type {string}
  * @const
  */
-SwfPanel.prototype.name = null;
+SwfPanel.prototype.name = undefined;
 /**
  * @since Flash CS4
  * @type {string}
  * @const
  */
-SwfPanel.prototype.path = null;
+SwfPanel.prototype.path = undefined;
 /**
  * @since Flash CS4
  * @param {string} request
@@ -1226,27 +1226,27 @@ ElementFindAndSelect = function () {
  * @since Flash CS3
  * @type {Element}
  */
-ElementFindAndSelect.prototype.obj = null;
+ElementFindAndSelect.prototype.obj = undefined;
 /**
  * @since Flash CS3
  * @type {Frame}
  */
-ElementFindAndSelect.prototype.keyframe = null;
+ElementFindAndSelect.prototype.keyframe = undefined;
 /**
  * @since Flash CS3
  * @type {Layer}
  */
-ElementFindAndSelect.prototype.layer = null;
+ElementFindAndSelect.prototype.layer = undefined;
 /**
  * @since Flash CS3
  * @type {Timeline}
  */
-ElementFindAndSelect.prototype.timeline = null;
+ElementFindAndSelect.prototype.timeline = undefined;
 /**
  * @since Flash CS3
  * @type {SymbolInstance}
  */
-ElementFindAndSelect.prototype.parent = null;
+ElementFindAndSelect.prototype.parent = undefined;
 /**
  * @since Flash CS6
  * @class {SpriteSheetExporter}
@@ -1257,7 +1257,7 @@ SpriteSheetExporter = function () {
  * @since Flash CS6
  * @type {"basic"|"maxRects"}
  */
-SpriteSheetExporter.prototype.algorithm = null;
+SpriteSheetExporter.prototype.algorithm = undefined;
 /**
  * @since Flash CS6
  * @type {boolean}
@@ -1273,7 +1273,7 @@ SpriteSheetExporter.prototype.allowTrimming = false;
  * @type {string}
  * @const
  */
-SpriteSheetExporter.prototype.app = null;
+SpriteSheetExporter.prototype.app = undefined;
 /**
  * @since Flash CS6
  * @type {boolean}
@@ -1319,18 +1319,18 @@ SpriteSheetExporter.prototype.canTrim = false;
  * @type {"RGBA8888"|"RGB888x"|"RGB8"}
  * @const
  */
-SpriteSheetExporter.prototype.format = null;
+SpriteSheetExporter.prototype.format = undefined;
 /**
  * @since Flash CS6
  * @type {string}
  * @const
  */
-SpriteSheetExporter.prototype.image = null;
+SpriteSheetExporter.prototype.image = undefined;
 /**
  * @since Flash CS6
  * @type {string}
  */
-SpriteSheetExporter.prototype.layoutFormat = null;
+SpriteSheetExporter.prototype.layoutFormat = undefined;
 /**
  * @since Flash CS6
  * @type {boolean}
@@ -1362,7 +1362,7 @@ SpriteSheetExporter.prototype.stackDuplicateFrames = false;
  * @type {string}
  * @const
  */
-SpriteSheetExporter.prototype.version = null;
+SpriteSheetExporter.prototype.version = undefined;
 /**
  * @since Flash CS6
  * @param {BitmapItem|BitmapInstance} bitmap

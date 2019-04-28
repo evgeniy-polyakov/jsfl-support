@@ -19,7 +19,7 @@ Element.prototype.depth = 0;
  * @type {"shape"|"text"|"tlfText"|"instance"|"shapeObj"}
  * @const
  */
-Element.prototype.elementType = null;
+Element.prototype.elementType = undefined;
 /**
  * @since Flash MX 2004
  * @type {number}
@@ -30,7 +30,7 @@ Element.prototype.height = 0;
  * @type {Layer}
  * @const
  */
-Element.prototype.layer = null;
+Element.prototype.layer = undefined;
 /**
  * @since Flash MX 2004
  * @type {number}
@@ -46,12 +46,12 @@ Element.prototype.locked = false;
  * @since Flash MX 2004
  * @type {Matrix}
  */
-Element.prototype.matrix = null;
+Element.prototype.matrix = undefined;
 /**
  * @since Flash MX 2004
  * @type {string}
  */
-Element.prototype.name = null;
+Element.prototype.name = undefined;
 /**
  * @since Flash CS3
  * @type {number}
@@ -182,12 +182,12 @@ Instance.prototype = new Element();
  * @type {"symbol"|"bitmap"|"embedded video"|"linked video"|"video"|"compiled clip"}
  * @const
  */
-Instance.prototype.instanceType = null;
+Instance.prototype.instanceType = undefined;
 /**
  * @since Flash MX 2004
  * @type {Item}
  */
-Instance.prototype.libraryItem = null;
+Instance.prototype.libraryItem = undefined;
 /**
  * @since Flash MX 2004
  * @class {BitmapInstance}
@@ -232,23 +232,23 @@ CompiledClipInstance.prototype = new Instance();
  * @since Flash MX 2004
  * @type {string}
  */
-CompiledClipInstance.prototype.accName = null;
+CompiledClipInstance.prototype.accName = undefined;
 /**
  * @since Flash MX 2004
  * @deprecated
  * @type {string}
  */
-CompiledClipInstance.prototype.actionScript = null;
+CompiledClipInstance.prototype.actionScript = undefined;
 /**
  * @since Flash CC
  * @type {string|number}
  */
-CompiledClipInstance.prototype.backgroundColor = null;
+CompiledClipInstance.prototype.backgroundColor = undefined;
 /**
  * @since Flash CC
  * @type {"normal"|"layer"|"multiply"|"screen"|"overlay"|"hardlight"|"lighten"|"darken"|"difference"|"add"|"subtract"|"invert"|"alpha"|"erase"}
  */
-CompiledClipInstance.prototype.blendMode = null;
+CompiledClipInstance.prototype.blendMode = undefined;
 /**
  * @since Flash CC
  * @type {number}
@@ -294,7 +294,7 @@ CompiledClipInstance.prototype.colorGreenPercent = 0;
  * @since Flash CC
  * @type {"none"|"brightness"|"tint"|"alpha"|"advanced"}
  */
-CompiledClipInstance.prototype.colorMode = null;
+CompiledClipInstance.prototype.colorMode = undefined;
 /**
  * @since Flash CC
  * @type {number}
@@ -309,12 +309,12 @@ CompiledClipInstance.prototype.colorRedPercent = 0;
  * @since Flash MX 2004
  * @type {string}
  */
-CompiledClipInstance.prototype.description = null;
+CompiledClipInstance.prototype.description = undefined;
 /**
  * @since Flash CC
  * @type {Array.<Filter>}
  */
-CompiledClipInstance.prototype.filters = null;
+CompiledClipInstance.prototype.filters = undefined;
 /**
  * @since Flash MX 2004
  * @type {boolean}
@@ -324,7 +324,7 @@ CompiledClipInstance.prototype.forceSimple = false;
  * @since Flash MX 2004
  * @type {string}
  */
-CompiledClipInstance.prototype.shortcut = null;
+CompiledClipInstance.prototype.shortcut = undefined;
 /**
  * @since Flash MX 2004
  * @type {boolean}
@@ -340,7 +340,7 @@ CompiledClipInstance.prototype.tabIndex = 0;
  * @type {string}
  * @const
  */
-CompiledClipInstance.prototype.tintColor = null;
+CompiledClipInstance.prototype.tintColor = undefined;
 /**
  * @since Flash CC
  * @type {number}
@@ -369,28 +369,28 @@ SymbolInstance.prototype = new Instance();
  * @since Flash MX 2004
  * @type {string}
  */
-SymbolInstance.prototype.accName = null;
+SymbolInstance.prototype.accName = undefined;
 /**
  * @since Flash MX 2004
  * @deprecated
  * @type {string}
  */
-SymbolInstance.prototype.actionScript = null;
+SymbolInstance.prototype.actionScript = undefined;
 /**
  * @since Flash CS5.5
  * @type {string|number}
  */
-SymbolInstance.prototype.backgroundColor = null;
+SymbolInstance.prototype.backgroundColor = undefined;
 /**
  * @since Flash CS5.5
  * @type {"none"|"cache"|"export"}
  */
-SymbolInstance.prototype.bitmapRenderMode = null;
+SymbolInstance.prototype.bitmapRenderMode = undefined;
 /**
  * @since Flash 8
  * @type {"normal"|"layer"|"multiply"|"screen"|"overlay"|"hardlight"|"lighten"|"darken"|"difference"|"add"|"subtract"|"invert"|"alpha"|"erase"}
  */
-SymbolInstance.prototype.blendMode = null;
+SymbolInstance.prototype.blendMode = undefined;
 /**
  * @since Flash CC
  * @type {number}
@@ -401,7 +401,7 @@ SymbolInstance.prototype.brightness = 0;
  * @since Flash MX 2004
  * @type {"button"|"menu"}
  */
-SymbolInstance.prototype.buttonTracking = null;
+SymbolInstance.prototype.buttonTracking = undefined;
 /**
  * @since Flash 8
  * @type {boolean}
@@ -441,7 +441,7 @@ SymbolInstance.prototype.colorGreenPercent = 0;
  * @since Flash MX 2004
  * @type {"none"|"brightness"|"tint"|"alpha"|"advanced"}
  */
-SymbolInstance.prototype.colorMode = null;
+SymbolInstance.prototype.colorMode = undefined;
 /**
  * @since Flash MX 2004
  * @type {number}
@@ -456,12 +456,12 @@ SymbolInstance.prototype.colorRedPercent = 0;
  * @since Flash MX 2004
  * @type {string}
  */
-SymbolInstance.prototype.description = null;
+SymbolInstance.prototype.description = undefined;
 /**
  * @since Flash 8
  * @type {Array.<Filter>}
  */
-SymbolInstance.prototype.filters = null;
+SymbolInstance.prototype.filters = undefined;
 /**
  * @since Flash MX 2004
  * @type {number}
@@ -482,12 +482,12 @@ SymbolInstance.prototype.is3D = false;
  * @since Flash MX 2004
  * @type {"loop"|"play once"|"single frame"}
  */
-SymbolInstance.prototype.loop = null;
+SymbolInstance.prototype.loop = undefined;
 /**
  * @since Flash MX 2004
  * @type {string}
  */
-SymbolInstance.prototype.shortcut = null;
+SymbolInstance.prototype.shortcut = undefined;
 /**
  * @since Flash MX 2004
  * @type {boolean}
@@ -497,7 +497,7 @@ SymbolInstance.prototype.silent = false;
  * @since Flash MX 2004
  * @type {"button"|"movie clip"|"graphic"}
  */
-SymbolInstance.prototype.symbolType = null;
+SymbolInstance.prototype.symbolType = undefined;
 /**
  * @since Flash MX 2004
  * @type {number}
@@ -508,7 +508,7 @@ SymbolInstance.prototype.tabIndex = 0;
  * @type {string}
  * @const
  */
-SymbolInstance.prototype.tintColor = null;
+SymbolInstance.prototype.tintColor = undefined;
 /**
  * @since Flash CC
  * @type {number}
@@ -538,7 +538,7 @@ ComponentInstance.prototype = new SymbolInstance();
  * @type {Array.<Parameter>}
  * @const
  */
-ComponentInstance.prototype.parameters = null;
+ComponentInstance.prototype.parameters = undefined;
 /**
  * @since Flash MX 2004
  * @class {Parameter}
@@ -549,7 +549,7 @@ Parameter = function () {
  * @since Flash MX 2004
  * @type {string}
  */
-Parameter.prototype.category = null;
+Parameter.prototype.category = undefined;
 /**
  * @since Flash MX 2004
  * @type {number}
@@ -560,18 +560,18 @@ Parameter.prototype.listIndex = 0;
  * @type {string}
  * @const
  */
-Parameter.prototype.name = null;
+Parameter.prototype.name = undefined;
 /**
  * @since Flash MX 2004
  * @type {Object}
  */
-Parameter.prototype.value = null;
+Parameter.prototype.value = undefined;
 /**
  * @since Flash MX 2004
  * @type {"Default"|"Array"|"Object"|"List"|"String"|"Number"|"Boolean"|"Font Name"|"Color"|"Collection"|"Web Service URL"|"Web Service Operation"}
  * @const
  */
-Parameter.prototype.valueType = null;
+Parameter.prototype.valueType = undefined;
 /**
  * @since Flash MX 2004
  * @type {number}
@@ -622,7 +622,7 @@ Filter.prototype.brightness = 0;
  * @since Flash 8
  * @type {string|number}
  */
-Filter.prototype.color = null;
+Filter.prototype.color = undefined;
 /**
  * @since Flash 8
  * @type {number}
@@ -647,7 +647,7 @@ Filter.prototype.hideObject = false;
  * @since Flash 8
  * @type {string|number}
  */
-Filter.prototype.highlightColor = null;
+Filter.prototype.highlightColor = undefined;
 /**
  * @since Flash 8
  * @type {number}
@@ -668,12 +668,12 @@ Filter.prototype.knockout = false;
  * @type {"adjustColorFilter"|"bevelFilter"|"blurFilter"|"dropShadowFilter"|"glowFilter"|"gradientBevelFilter"|"gradientGlowFilter"}
  * @const
  */
-Filter.prototype.name = null;
+Filter.prototype.name = undefined;
 /**
  * @since Flash 8
  * @type {"low"|"medium"|"high"}
  */
-Filter.prototype.quality = null;
+Filter.prototype.quality = undefined;
 /**
  * @since Flash 8
  * @type {number}
@@ -683,7 +683,7 @@ Filter.prototype.saturation = 0;
  * @since Flash 8
  * @type {string|number}
  */
-Filter.prototype.shadowColor = null;
+Filter.prototype.shadowColor = undefined;
 /**
  * @since Flash 8
  * @type {number}
@@ -693,7 +693,7 @@ Filter.prototype.strength = 0;
  * @since Flash 8
  * @type {"inner"|"outer"|"full"}
  */
-Filter.prototype.type = null;
+Filter.prototype.type = undefined;
 /**
  * @since Flash MX 2004
  * @class {Shape}
@@ -707,13 +707,13 @@ Shape.prototype = new Element();
  * @type {Array.<Contour>}
  * @const
  */
-Shape.prototype.contours = null;
+Shape.prototype.contours = undefined;
 /**
  * @since Flash MX 2004
  * @type {Array.<Edge>}
  * @const
  */
-Shape.prototype.edges = null;
+Shape.prototype.edges = undefined;
 /**
  * @since Flash 8
  * @type {boolean}
@@ -749,7 +749,7 @@ Shape.prototype.isRectangleObject = false;
  * @type {Array.<Element>}
  * @const
  */
-Shape.prototype.members = null;
+Shape.prototype.members = undefined;
 /**
  * @since Flash CS4
  * @type {number}
@@ -761,7 +761,7 @@ Shape.prototype.numCubicSegments = 0;
  * @type {Array.<Vertex>}
  * @const
  */
-Shape.prototype.vertices = null;
+Shape.prototype.vertices = undefined;
 /**
  * @since Flash MX 2004
  */
@@ -867,7 +867,7 @@ Text.prototype = new Element();
  * @since Flash MX 2004
  * @type {string}
  */
-Text.prototype.accName = null;
+Text.prototype.accName = undefined;
 /**
  * @since Flash 8
  * @type {number}
@@ -892,17 +892,17 @@ Text.prototype.border = false;
  * @since Flash MX 2004
  * @type {string}
  */
-Text.prototype.description = null;
+Text.prototype.description = undefined;
 /**
  * @since Flash MX 2004
  * @type {string}
  */
-Text.prototype.embeddedCharacters = null;
+Text.prototype.embeddedCharacters = undefined;
 /**
  * @since Flash MX 2004
  * @type {string}
  */
-Text.prototype.embedRanges = null;
+Text.prototype.embedRanges = undefined;
 /**
  * @since Flash CS4
  * @type {boolean}
@@ -912,12 +912,12 @@ Text.prototype.embedVariantGlyphs = false;
  * @since Flash CS6
  * @type {Array.<Filter>}
  */
-Text.prototype.filters = null;
+Text.prototype.filters = undefined;
 /**
  * @since Flash 8
  * @type {"device"|"bitmap"|"standard"|"advanced"|"customThicknessSharpness"}
  */
-Text.prototype.fontRenderingMode = null;
+Text.prototype.fontRenderingMode = undefined;
 /**
  * @since Flash MX 2004
  * @type {number}
@@ -928,7 +928,7 @@ Text.prototype.length = 0;
  * @since Flash MX 2004
  * @type {"single line"|"multiline"|"multiline no wrap"|"password"}
  */
-Text.prototype.lineType = null;
+Text.prototype.lineType = undefined;
 /**
  * @since Flash MX 2004
  * @type {number}
@@ -938,7 +938,7 @@ Text.prototype.maxCharacters = 0;
  * @since Flash MX 2004
  * @type {"horizontal"|"vertical left to right"|"vertical right to left"}
  */
-Text.prototype.orientation = null;
+Text.prototype.orientation = undefined;
 /**
  * @since Flash MX 2004
  * @type {boolean}
@@ -968,7 +968,7 @@ Text.prototype.selectionStart = 0;
  * @since Flash MX 2004
  * @type {string}
  */
-Text.prototype.shortcut = null;
+Text.prototype.shortcut = undefined;
 /**
  * @since Flash MX 2004
  * @type {boolean}
@@ -984,12 +984,12 @@ Text.prototype.tabIndex = 0;
  * @type {Array.<TextRun>}
  * @const
  */
-Text.prototype.textRuns = null;
+Text.prototype.textRuns = undefined;
 /**
  * @since Flash MX 2004
  * @type {"static"|"dynamic"|"input"}
  */
-Text.prototype.textType = null;
+Text.prototype.textType = undefined;
 /**
  * @since Flash MX 2004
  * @type {boolean}
@@ -999,7 +999,7 @@ Text.prototype.useDeviceFonts = false;
  * @since Flash MX 2004
  * @type {string}
  */
-Text.prototype.variableName = null;
+Text.prototype.variableName = undefined;
 /**
  * @since Flash MX 2004
  * @param {string} attrName
@@ -1049,7 +1049,7 @@ TextAttrs.prototype.aliasText = false;
  * @since Flash MX 2004
  * @type {"left"|"center"|"right"|"justify"}
  */
-TextAttrs.prototype.alignment = null;
+TextAttrs.prototype.alignment = undefined;
 /**
  * @since Flash MX 2004
  * @type {boolean}
@@ -1064,7 +1064,7 @@ TextAttrs.prototype.bold = false;
  * @since Flash MX 2004
  * @type {"normal"|"subscript"|"superscript"}
  */
-TextAttrs.prototype.characterPosition = null;
+TextAttrs.prototype.characterPosition = undefined;
 /**
  * @since Flash MX 2004
  * @deprecated
@@ -1076,12 +1076,12 @@ TextAttrs.prototype.characterSpacing = 0;
  * @since Flash MX 2004
  * @type {string}
  */
-TextAttrs.prototype.face = null;
+TextAttrs.prototype.face = undefined;
 /**
  * @since Flash MX 2004
  * @type {string|number}
  */
-TextAttrs.prototype.fillColor = null;
+TextAttrs.prototype.fillColor = undefined;
 /**
  * @since Flash MX 2004
  * @type {number}
@@ -1126,12 +1126,12 @@ TextAttrs.prototype.size = 0;
  * @since Flash MX 2004
  * @type {string}
  */
-TextAttrs.prototype.target = null;
+TextAttrs.prototype.target = undefined;
 /**
  * @since Flash MX 2004
  * @type {string}
  */
-TextAttrs.prototype.url = null;
+TextAttrs.prototype.url = undefined;
 /**
  * @since Flash MX 2004
  * @class {TextRun}
@@ -1142,10 +1142,10 @@ TextRun = function () {
  * @since Flash MX 2004
  * @type {string}
  */
-TextRun.prototype.characters = null;
+TextRun.prototype.characters = undefined;
 /**
  * @since Flash MX 2004
  * @type {TextAttrs}
  */
-TextRun.prototype.textAttrs = null;
+TextRun.prototype.textAttrs = undefined;
 
