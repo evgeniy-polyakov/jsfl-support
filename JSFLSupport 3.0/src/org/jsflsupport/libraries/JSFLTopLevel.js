@@ -233,7 +233,7 @@ Flash.prototype.version = null;
 Flash.prototype.xmlui = null;
 /**
  * @since Flash CS3
- * @param {string} eventType
+ * @param {"documentNew"|"documentOpened"|"documentClosed"|"mouseMove"|"documentChanged"|"layerChanged"|"timelineChanged"|"frameChanged"|"prePublish"|"postPublish"|"selectionChanged"|"dpiChanged"} eventType
  * @param {Function} callbackFunction
  * @return {number}
  */
@@ -241,7 +241,7 @@ Flash.prototype.addEventListener = function (eventType, callbackFunction) {
 };
 /**
  * @since Flash MX 2004
- * @param {string} browseType
+ * @param {"open"|"select"|"save"} browseType
  * @param {string} [title]
  * @param {string} [fileDescription]
  * @param {string} [fileFilter]
@@ -289,7 +289,7 @@ Flash.prototype.closeDocument = function (documentObject, bPromptToSaveChanges) 
 };
 /**
  * @since Flash MX 2004
- * @param {string} [docType]
+ * @param {"timeline"} [docType]
  * @return {Document}
  */
 Flash.prototype.createDocument = function (docType) {
@@ -333,7 +333,7 @@ Flash.prototype.findObjectInDocByName = function (instanceName, document) {
 };
 /**
  * @since Flash CS3
- * @param {string} elementType
+ * @param {"shape"|"text"|"tlfText"|"instance"|"shapeObj"} elementType
  * @param {Document} document
  * @return {Array.<ElementFindAndSelect>}
  */
@@ -367,7 +367,7 @@ Flash.prototype.getThemeColorParameters = function () {
 };
 /**
  * @since Flash CC
- * @param {string} infoType
+ * @param {"fontStyle"|"fontSize"} infoType
  * @param {string} size
  * @return {string}
  */
@@ -430,7 +430,7 @@ Flash.prototype.reloadTools = function () {
 };
 /**
  * @since Flash CS3
- * @param {string} eventType
+ * @param {"documentNew"|"documentOpened"|"documentClosed"|"mouseMove"|"documentChanged"|"layerChanged"|"timelineChanged"|"frameChanged"|"prePublish"|"postPublish"|"selectionChanged"|"dpiChanged"} eventType
  * @param {number} id
  * @return {boolean}
  */

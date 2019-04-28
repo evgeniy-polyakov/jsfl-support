@@ -1056,7 +1056,7 @@ Document.prototype.setStageViewAngle = function (angle) {
  * @since Flash MX 2004
  * @param {string|number} color
  * @param {number} size
- * @param {string} strokeType
+ * @param {"hairline"|"solid"|"dashed"|"dotted"|"ragged"|"stipple"|"hatched"} strokeType
  */
 Document.prototype.setStroke = function (color, size, strokeType) {
 };
@@ -1074,7 +1074,7 @@ Document.prototype.setStrokeSize = function (size) {
 };
 /**
  * @since Flash MX 2004
- * @param {string} strokeType
+ * @param {"hairline"|"solid"|"dashed"|"dotted"|"ragged"|"stipple"|"hatched"} strokeType
  */
 Document.prototype.setStrokeStyle = function (strokeType) {
 };

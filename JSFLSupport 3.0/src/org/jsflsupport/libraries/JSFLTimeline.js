@@ -56,7 +56,7 @@ Timeline.prototype.addMotionGuide = function () {
 /**
  * @since Flash MX 2004
  * @param {string} [name]
- * @param {string} [layerType]
+ * @param {"normal"|"guide"|"guided"|"mask"|"masked"|"folder"} [layerType]
  * @param {boolean} [bAddAbove]
  * @return {number}
  */
