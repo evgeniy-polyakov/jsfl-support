@@ -10,18 +10,18 @@ Item = function () {
 };
 /**
  * @since Flash MX 2004
- * @type {String}
+ * @type {string}
  * @const
  */
 Item.prototype.itemType = null;
 /**
  * @since Flash CS3
- * @type {String}
+ * @type {string}
  */
 Item.prototype.linkageBaseClass = null;
 /**
  * @since Flash MX 2004
- * @type {String}
+ * @type {string}
  */
 Item.prototype.linkageClassName = null;
 /**
@@ -41,7 +41,7 @@ Item.prototype.linkageExportForRS = false;
 Item.prototype.linkageExportInFirstFrame = false;
 /**
  * @since Flash MX 2004
- * @type {String}
+ * @type {string}
  */
 Item.prototype.linkageIdentifier = null;
 /**
@@ -51,54 +51,54 @@ Item.prototype.linkageIdentifier = null;
 Item.prototype.linkageImportForRS = false;
 /**
  * @since Flash MX 2004
- * @type {String}
+ * @type {string}
  */
 Item.prototype.linkageURL = null;
 /**
  * @since Flash MX 2004
- * @type {String}
+ * @type {string}
  */
 Item.prototype.name = null;
 /**
  * @since Flash MX 2004
- * @param {String} name
- * @param {String} type
+ * @param {string} name
+ * @param {string} type
  * @param {Object} data
  */
 Item.prototype.addData = function (name, type, data) {
 };
 /**
  * @since Flash MX 2004
- * @param {String} name
+ * @param {string} name
  * @return {Object}
  */
 Item.prototype.getData = function (name) {
 };
 /**
  * @since Flash CC
- * @param {String} name
- * @param {String} format
+ * @param {string} name
+ * @param {string} format
  * @return {Boolean}
  */
 Item.prototype.getPublishData = function (name, format) {
 };
 /**
  * @since Flash MX 2004
- * @param {String} name
+ * @param {string} name
  * @return {Boolean}
  */
 Item.prototype.hasData = function (name) {
 };
 /**
  * @since Flash MX 2004
- * @param {String} name
+ * @param {string} name
  */
 Item.prototype.removeData = function (name) {
 };
 /**
  * @since Flash CC
- * @param {String} name
- * @param {String} format
+ * @param {string} name
+ * @param {string} format
  * @param {Boolean} publish
  */
 Item.prototype.setPublishData = function (name, format, publish) {
@@ -118,12 +118,12 @@ BitmapItem.prototype = new Item();
 BitmapItem.prototype.allowSmoothing = false;
 /**
  * @since Flash MX 2004
- * @type {String}
+ * @type {string}
  */
 BitmapItem.prototype.compressionType = null;
 /**
  * @since Flash CS4
- * @type {String}
+ * @type {string}
  * @const
  */
 BitmapItem.prototype.fileLastModifiedDate = null;
@@ -141,7 +141,7 @@ BitmapItem.prototype.hasValidAlphaLayer = false;
 BitmapItem.prototype.lastModifiedDate = 0;
 /**
  * @since Flash CS4
- * @type {String}
+ * @type {string}
  * @const
  */
 BitmapItem.prototype.originalCompressionType = null;
@@ -159,7 +159,7 @@ BitmapItem.prototype.sourceFileExists = false;
 BitmapItem.prototype.sourceFileIsCurrent = false;
 /**
  * @since Flash CS4
- * @type {String}
+ * @type {string}
  * @const
  */
 BitmapItem.prototype.sourceFilePath = null;
@@ -175,7 +175,7 @@ BitmapItem.prototype.useDeblocking = false;
 BitmapItem.prototype.useImportedJPEGQuality = false;
 /**
  * @since Flash CS4
- * @param {String} fileURI
+ * @param {string} fileURI
  * @param {Number} quality
  * @return {Boolean}
  */
@@ -209,12 +209,12 @@ FontItem.prototype.bitmap = false;
 FontItem.prototype.bold = false;
 /**
  * @since Flash CS5
- * @type {String}
+ * @type {string}
  */
 FontItem.prototype.embeddedCharacters = null;
 /**
  * @since Flash CS5
- * @type {String}
+ * @type {string}
  */
 FontItem.prototype.embedRanges = null;
 /**
@@ -224,7 +224,7 @@ FontItem.prototype.embedRanges = null;
 FontItem.prototype.embedVariantGlyphs = false;
 /**
  * @since Flash CS4
- * @type {String}
+ * @type {string}
  */
 FontItem.prototype.font = null;
 /**
@@ -252,17 +252,17 @@ SoundItem = function () {
 SoundItem.prototype = new Item();
 /**
  * @since Flash MX 2004
- * @type {String}
+ * @type {string}
  */
 SoundItem.prototype.bitRate = null;
 /**
  * @since Flash MX 2004
- * @type {String}
+ * @type {string}
  */
 SoundItem.prototype.bits = null;
 /**
  * @since Flash MX 2004
- * @type {String}
+ * @type {string}
  */
 SoundItem.prototype.compressionType = null;
 /**
@@ -272,7 +272,7 @@ SoundItem.prototype.compressionType = null;
 SoundItem.prototype.convertStereoToMono = false;
 /**
  * @since Flash CS4
- * @type {String}
+ * @type {string}
  * @const
  */
 SoundItem.prototype.fileLastModifiedDate = null;
@@ -284,18 +284,18 @@ SoundItem.prototype.fileLastModifiedDate = null;
 SoundItem.prototype.lastModifiedDate = 0;
 /**
  * @since Flash CS4
- * @type {String}
+ * @type {string}
  * @const
  */
 SoundItem.prototype.originalCompressionType = null;
 /**
  * @since Flash MX 2004
- * @type {String}
+ * @type {string}
  */
 SoundItem.prototype.quality = null;
 /**
  * @since Flash MX 2004
- * @type {String}
+ * @type {string}
  */
 SoundItem.prototype.sampleRate = null;
 /**
@@ -312,7 +312,7 @@ SoundItem.prototype.sourceFileExists = false;
 SoundItem.prototype.sourceFileIsCurrent = false;
 /**
  * @since Flash CS4
- * @type {String}
+ * @type {string}
  * @const
  */
 SoundItem.prototype.sourceFilePath = null;
@@ -323,7 +323,7 @@ SoundItem.prototype.sourceFilePath = null;
 SoundItem.prototype.useImportedMP3Quality = false;
 /**
  * @since Flash CS4
- * @param {String} fileURI
+ * @param {string} fileURI
  * @return {Boolean}
  */
 SoundItem.prototype.exportToFile = function (fileURI) {
@@ -359,17 +359,17 @@ SymbolItem.prototype.scalingGridRect = null;
 SymbolItem.prototype.sourceAutoUpdate = false;
 /**
  * @since Flash MX 2004
- * @type {String}
+ * @type {string}
  */
 SymbolItem.prototype.sourceFilePath = null;
 /**
  * @since Flash MX 2004
- * @type {String}
+ * @type {string}
  */
 SymbolItem.prototype.sourceLibraryName = null;
 /**
  * @since Flash MX 2004
- * @type {String}
+ * @type {string}
  */
 SymbolItem.prototype.symbolType = null;
 /**
@@ -385,26 +385,26 @@ SymbolItem.prototype.convertToCompiledClip = function () {
 };
 /**
  * @since Flash MX 2004
- * @param {String} outputURI
+ * @param {string} outputURI
  */
 SymbolItem.prototype.exportSWC = function (outputURI) {
 };
 /**
  * @since Flash MX 2004
- * @param {String} outputURI
+ * @param {string} outputURI
  */
 SymbolItem.prototype.exportSWF = function (outputURI) {
 };
 /**
  * @since Flash CS6
  * @param {Number} frameNumber
- * @param {String} bitmapName
+ * @param {string} bitmapName
  */
 SymbolItem.prototype.exportToLibrary = function (frameNumber, bitmapName) {
 };
 /**
  * @since Flash CS6
- * @param {String} outputURI
+ * @param {string} outputURI
  * @param {Number} [startFrameNum]
  * @param {Number} [endFrameNum]
  * @param {Matrix} [matrix]
@@ -421,7 +421,7 @@ VideoItem = function () {
 VideoItem.prototype = new Item();
 /**
  * @since Flash CS4
- * @type {String}
+ * @type {string}
  * @const
  */
 VideoItem.prototype.fileLastModifiedDate = null;
@@ -445,19 +445,19 @@ VideoItem.prototype.sourceFileExists = false;
 VideoItem.prototype.sourceFileIsCurrent = false;
 /**
  * @since Flash 8
- * @type {String}
+ * @type {string}
  * @const
  */
 VideoItem.prototype.sourceFilePath = null;
 /**
  * @since Flash MX 2004
- * @type {String}
+ * @type {string}
  * @const
  */
 VideoItem.prototype.videoType = null;
 /**
  * @since Flash CS4
- * @param {String} fileURI
+ * @param {string} fileURI
  * @return {Boolean}
  */
 VideoItem.prototype.exportToFLV = function (fileURI) {

@@ -80,17 +80,17 @@ Fill = function () {
 Fill.prototype.bitmapIsClipped = false;
 /**
  * @since Flash CS4
- * @type {String}
+ * @type {string}
  */
 Fill.prototype.bitmapPath = null;
 /**
  * @since Flash MX 2004
- * @type {String|Number}
+ * @type {string|Number}
  */
 Fill.prototype.color = null;
 /**
  * @since Flash MX 2004
- * @type {Array.<String|Number>}
+ * @type {Array.<string|Number>}
  */
 Fill.prototype.colorArray = null;
 /**
@@ -110,7 +110,7 @@ Fill.prototype.linearRGB = false;
 Fill.prototype.matrix = null;
 /**
  * @since Flash 8
- * @type {String}
+ * @type {string}
  */
 Fill.prototype.overflow = null;
 /**
@@ -120,7 +120,7 @@ Fill.prototype.overflow = null;
 Fill.prototype.posArray = null;
 /**
  * @since Flash MX 2004
- * @type {String}
+ * @type {string}
  */
 Fill.prototype.style = null;
 /**
@@ -138,19 +138,19 @@ Stroke = function () {
 Stroke.prototype.breakAtCorners = false;
 /**
  * @since Flash 8
- * @type {String}
+ * @type {string}
  */
 Stroke.prototype.capType = null;
 /**
  * @since Flash MX 2004
  * @deprecated
  * @see Stroke#shapeFill
- * @type {String|Number}
+ * @type {string|Number}
  */
 Stroke.prototype.color = null;
 /**
  * @since Flash MX 2004
- * @type {String}
+ * @type {string}
  */
 Stroke.prototype.curve = null;
 /**
@@ -165,12 +165,12 @@ Stroke.prototype.dash1 = 0;
 Stroke.prototype.dash2 = 0;
 /**
  * @since Flash MX 2004
- * @type {String}
+ * @type {string}
  */
 Stroke.prototype.density = null;
 /**
  * @since Flash MX 2004
- * @type {String}
+ * @type {string}
  */
 Stroke.prototype.dotSize = null;
 /**
@@ -180,22 +180,22 @@ Stroke.prototype.dotSize = null;
 Stroke.prototype.dotSpace = 0;
 /**
  * @since Flash MX 2004
- * @type {String}
+ * @type {string}
  */
 Stroke.prototype.hatchThickness = null;
 /**
  * @since Flash MX 2004
- * @type {String}
+ * @type {string}
  */
 Stroke.prototype.jiggle = null;
 /**
  * @since Flash 8
- * @type {String}
+ * @type {string}
  */
 Stroke.prototype.joinType = null;
 /**
  * @since Flash MX 2004
- * @type {String}
+ * @type {string}
  */
 Stroke.prototype.length = null;
 /**
@@ -205,17 +205,17 @@ Stroke.prototype.length = null;
 Stroke.prototype.miterLimit = 0;
 /**
  * @since Flash MX 2004
- * @type {String}
+ * @type {string}
  */
 Stroke.prototype.pattern = null;
 /**
  * @since Flash MX 2004
- * @type {String}
+ * @type {string}
  */
 Stroke.prototype.rotate = null;
 /**
  * @since Flash 8
- * @type {String}
+ * @type {string}
  */
 Stroke.prototype.scaleType = null;
 /**
@@ -225,7 +225,7 @@ Stroke.prototype.scaleType = null;
 Stroke.prototype.shapeFill = null;
 /**
  * @since Flash MX 2004
- * @type {String}
+ * @type {string}
  */
 Stroke.prototype.space = null;
 /**
@@ -235,7 +235,7 @@ Stroke.prototype.space = null;
 Stroke.prototype.strokeHinting = false;
 /**
  * @since Flash MX 2004
- * @type {String}
+ * @type {string}
  */
 Stroke.prototype.style = null;
 /**
@@ -245,17 +245,17 @@ Stroke.prototype.style = null;
 Stroke.prototype.thickness = 0;
 /**
  * @since Flash MX 2004
- * @type {String}
+ * @type {string}
  */
 Stroke.prototype.variation = null;
 /**
  * @since Flash MX 2004
- * @type {String}
+ * @type {string}
  */
 Stroke.prototype.waveHeight = null;
 /**
  * @since Flash MX 2004
- * @type {String}
+ * @type {string}
  */
 Stroke.prototype.waveLength = null;
 /**

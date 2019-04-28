@@ -4,22 +4,22 @@
  **************************************************************************/
 /**
  * @since Flash MX 2004
- * @param {String} alertText
+ * @param {string} alertText
  */
 alert = function (alertText) {
 };
 /**
  * @since Flash 8
- * @param {String} strAlert
+ * @param {string} strAlert
  * @return {Boolean}
  */
 confirm = function (strAlert) {
 };
 /**
  * @since Flash MX 2004
- * @param {String} promptMsg
- * @param {String} [text]
- * @return {String}
+ * @param {string} promptMsg
+ * @param {string} [text]
+ * @return {string}
  */
 prompt = function (promptMsg, text) {
 };
@@ -42,7 +42,7 @@ fl = new Flash();
 Flash.prototype.actionsPanel = null;
 /**
  * @since Flash CS3
- * @type {String}
+ * @type {string}
  */
 Flash.prototype.as3PackagePaths = null;
 /**
@@ -59,13 +59,13 @@ Flash.prototype.compilerErrors = null;
 Flash.prototype.componentsPanel = null;
 /**
  * @since Flash MX 2004
- * @type {String}
+ * @type {string}
  * @const
  */
 Flash.prototype.configDirectory = null;
 /**
  * @since Flash MX 2004
- * @type {String}
+ * @type {string}
  * @const
  */
 Flash.prototype.configURI = null;
@@ -76,19 +76,19 @@ Flash.prototype.configURI = null;
 Flash.prototype.contactSensitiveSelection = false;
 /**
  * @since Flash MX 2004
- * @type {Array.<String>}
+ * @type {Array.<string>}
  * @const
  */
 Flash.prototype.createNewDocList = null;
 /**
  * @since Flash MX 2004
- * @type {Array.<String>}
+ * @type {Array.<string>}
  * @const
  */
 Flash.prototype.createNewDocListType = null;
 /**
  * @since Flash MX 2004
- * @type {Array.<String>}
+ * @type {Array.<string>}
  * @const
  */
 Flash.prototype.createNewTemplateList = null;
@@ -106,28 +106,28 @@ Flash.prototype.documents = null;
 Flash.prototype.drawingLayer = null;
 /**
  * @since Flash CS4
- * @type {String}
+ * @type {string}
  */
 Flash.prototype.externalLibraryPath = null;
 /**
  * @since Flash CS4
- * @type {String}
+ * @type {string}
  */
 Flash.prototype.flexSDKPath = null;
 /**
  * @since Flash CS5.5
- * @type {String}
+ * @type {string}
  * @const
  */
 Flash.prototype.installedPlayers = null;
 /**
  * @since Flash CS5
- * @type {String}
+ * @type {string}
  */
 Flash.prototype.languageCode = null;
 /**
  * @since Flash CS4
- * @type {String}
+ * @type {string}
  */
 Flash.prototype.libraryPath = null;
 /**
@@ -138,20 +138,20 @@ Flash.prototype.libraryPath = null;
 Flash.prototype.Math = null;
 /**
  * @since Flash MX 2004
- * @type {Array.<String>}
+ * @type {Array.<string>}
  * @const
  */
 Flash.prototype.mruRecentFileList = null;
 /**
  * @since Flash MX 2004
- * @type {Array.<String>}
+ * @type {Array.<string>}
  * @const
  */
 Flash.prototype.mruRecentFileListType = null;
 /**
  * @since Flash CS3
  * @deprecated
- * @type {String}
+ * @type {string}
  */
 Flash.prototype.packagePaths = null;
 /**
@@ -193,13 +193,13 @@ Flash.prototype.outputPanel = null;
 Flash.prototype.presetPanel = null;
 /**
  * @since Flash CS3
- * @type {String}
+ * @type {string}
  * @const
  */
 Flash.prototype.scriptURI = null;
 /**
  * @since Flash CS4
- * @type {String}
+ * @type {string}
  */
 Flash.prototype.sourcePath = null;
 /**
@@ -221,7 +221,7 @@ Flash.prototype.swfPanels = null;
 Flash.prototype.tools = null;
 /**
  * @since Flash MX 2004
- * @type {String}
+ * @type {string}
  * @const
  */
 Flash.prototype.version = null;
@@ -233,7 +233,7 @@ Flash.prototype.version = null;
 Flash.prototype.xmlui = null;
 /**
  * @since Flash CS3
- * @param {String} eventType
+ * @param {string} eventType
  * @param {Function} callbackFunction
  * @return {Number}
  */
@@ -241,30 +241,30 @@ Flash.prototype.addEventListener = function (eventType, callbackFunction) {
 };
 /**
  * @since Flash MX 2004
- * @param {String} browseType
- * @param {String} [title]
- * @param {String} [fileDescription]
- * @param {String} [fileFilter]
- * @return {String}
+ * @param {string} browseType
+ * @param {string} [title]
+ * @param {string} [fileDescription]
+ * @param {string} [fileFilter]
+ * @return {string}
  */
 Flash.prototype.browseForFileURL = function (browseType, title, fileDescription, fileFilter) {
 };
 /**
  * @since Flash 8
- * @param {String} [description]
- * @return {String}
+ * @param {string} [description]
+ * @return {string}
  */
 Flash.prototype.browseForFolderURL = function (description) {
 };
 /**
  * @since Flash CS5.5
- * @return {String}
+ * @return {string}
  */
 Flash.prototype.clearPublishCache = function () {
 };
 /**
  * @since Flash CS3
- * @param {String} string
+ * @param {string} string
  */
 Flash.prototype.clipCopyString = function (string) {
 };
@@ -289,22 +289,22 @@ Flash.prototype.closeDocument = function (documentObject, bPromptToSaveChanges) 
 };
 /**
  * @since Flash MX 2004
- * @param {String} [docType]
+ * @param {string} [docType]
  * @return {Document}
  */
 Flash.prototype.createDocument = function (docType) {
 };
 /**
  * @since Flash CS5
- * @param {String} ucfURI
- * @param {String} [profileName]
- * @return {String}
+ * @param {string} ucfURI
+ * @param {string} [profileName]
+ * @return {string}
  */
 Flash.prototype.exportPublishProfileString = function (ucfURI, profileName) {
 };
 /**
  * @since Flash MX 2004
- * @param {String} fileURI
+ * @param {string} fileURI
  * @return {Boolean}
  */
 Flash.prototype.fileExists = function (fileURI) {
@@ -318,14 +318,14 @@ Flash.prototype.findDocumentDOM = function (id) {
 };
 /**
  * @since Flash MX 2004
- * @param {String} name
+ * @param {string} name
  * @return {Array.<Number>}
  */
 Flash.prototype.findDocumentIndex = function (name) {
 };
 /**
  * @since Flash CS3
- * @param {String} instanceName
+ * @param {string} instanceName
  * @param {Document} document
  * @return {Array.<ElementFindAndSelect>}
  */
@@ -333,7 +333,7 @@ Flash.prototype.findObjectInDocByName = function (instanceName, document) {
 };
 /**
  * @since Flash CS3
- * @param {String} elementType
+ * @param {string} elementType
  * @param {Document} document
  * @return {Array.<ElementFindAndSelect>}
  */
@@ -354,28 +354,28 @@ Flash.prototype.getDocumentDOM = function () {
 };
 /**
  * @since Flash CC
- * @param {String} themeParamName
- * @return {String}
+ * @param {string} themeParamName
+ * @return {string}
  */
 Flash.prototype.getThemeColor = function (themeParamName) {
 };
 /**
  * @since Flash CC
- * @return {Array.<String>}
+ * @return {Array.<string>}
  */
 Flash.prototype.getThemeColorParameters = function () {
 };
 /**
  * @since Flash CC
- * @param {String} infoType
- * @param {String} size
- * @return {String}
+ * @param {string} infoType
+ * @param {string} size
+ * @return {string}
  */
 Flash.prototype.getThemeFontInfo = function (infoType, size) {
 };
 /**
  * @since Flash CS5.5
- * @param {String} panelName
+ * @param {string} panelName
  * @param {Boolean} [useLocalizedPanelName]
  * @return {SwfPanel}
  */
@@ -383,31 +383,31 @@ Flash.prototype.getSwfPanel = function (panelName, useLocalizedPanelName) {
 };
 /**
  * @since Flash CS4
- * @param {String} fontName
+ * @param {string} fontName
  * @return {Boolean}
  */
 Flash.prototype.isFontInstalled = function (fontName) {
 };
 /**
  * @since Flash MX 2004
- * @param {String} URI
+ * @param {string} URI
  * @param {Boolean} [returnMBCS]
- * @return {String}
+ * @return {string}
  */
 Flash.prototype.mapPlayerURL = function (URI, returnMBCS) {
 };
 /**
  * @since Flash MX 2004
- * @param {String} fileURI
+ * @param {string} fileURI
  * @return {Document}
  */
 Flash.prototype.openDocument = function (fileURI) {
 };
 /**
  * @since Flash MX 2004
- * @param {String} fileURI
- * @param {String} [createExtension]
- * @param {String} [className]
+ * @param {string} fileURI
+ * @param {string} [createExtension]
+ * @param {string} [className]
  */
 Flash.prototype.openScript = function (fileURI, createExtension, className) {
 };
@@ -430,7 +430,7 @@ Flash.prototype.reloadTools = function () {
 };
 /**
  * @since Flash CS3
- * @param {String} eventType
+ * @param {string} eventType
  * @param {Number} id
  * @return {Boolean}
  */
@@ -449,10 +449,10 @@ Flash.prototype.resetPackagePaths = function () {
 };
 /**
  * @since Flash MX 2004
- * @param {String} fileURI
- * @param {String} [funcName]
+ * @param {string} fileURI
+ * @param {string} [funcName]
  * @param {...*} args
- * @return {String}
+ * @return {string}
  */
 Flash.prototype.runScript = function (fileURI, funcName, args) {
 };
@@ -464,7 +464,7 @@ Flash.prototype.saveAll = function () {
 /**
  * @since Flash MX 2004
  * @param {Document} document
- * @param {String} [fileURI]
+ * @param {string} [fileURI]
  * @return {Boolean}
  */
 Flash.prototype.saveDocument = function (document, fileURI) {
@@ -486,7 +486,7 @@ Flash.prototype.selectElement = function (elementObject, editMode) {
 };
 /**
  * @since Flash CS3
- * @param {String} toolName
+ * @param {string} toolName
  */
 Flash.prototype.selectTool = function (toolName) {
 };
@@ -499,8 +499,8 @@ Flash.prototype.setActiveWindow = function (document, bActivateFrame) {
 };
 /**
  * @since Flash CC
- * @param {String} keySection
- * @param {String} keyName
+ * @param {string} keySection
+ * @param {string} keyName
  * @param {Boolean} keyValue
  */
 Flash.prototype.setPrefBoolean = function (keySection, keyName, keyValue) {
@@ -513,7 +513,7 @@ Flash.prototype.showIdleMessage = function (show) {
 };
 /**
  * @since Flash CS5
- * @param {String} fileURI
+ * @param {string} fileURI
  * @param {Number} line
  * @param {Boolean} enable
  */
@@ -527,14 +527,14 @@ Flash.prototype.trace = function (message) {
 };
 /**
  * @since Flash CC
- * @param {String} xmlURI
+ * @param {string} xmlURI
  * @return {XMLUI}
  */
 Flash.prototype.xmlPanel = function (xmlURI) {
 };
 /**
  * @since Flash CC
- * @param {String} xmlString
+ * @param {string} xmlString
  * @return {XMLUI}
  */
 Flash.prototype.xmlPanelFromString = function (xmlString) {
@@ -548,8 +548,8 @@ ActionsPanel = function () {
 /**
  * @since Flash CS3
  * @deprecated
- * @param {String} ASVariableName
- * @return {String}
+ * @param {string} ASVariableName
+ * @return {string}
  */
 ActionsPanel.prototype.getClassForObject = function (ASVariableName) {
 };
@@ -562,13 +562,13 @@ ActionsPanel.prototype.getScriptAssistMode = function () {
 };
 /**
  * @since Flash CS3
- * @return {String}
+ * @return {string}
  */
 ActionsPanel.prototype.getSelectedText = function () {
 };
 /**
  * @since Flash CS3
- * @return {String}
+ * @return {string}
  */
 ActionsPanel.prototype.getText = function () {
 };
@@ -580,7 +580,7 @@ ActionsPanel.prototype.hasSelection = function () {
 };
 /**
  * @since Flash CS3
- * @param {String} replacementText
+ * @param {string} replacementText
  * @return {Boolean}
  */
 ActionsPanel.prototype.replaceSelectedText = function (replacementText) {
@@ -603,7 +603,7 @@ ActionsPanel.prototype.setSelection = function (startIndex, numberOfChars) {
 };
 /**
  * @since Flash CS3
- * @param {String} replacementText
+ * @param {string} replacementText
  * @return {Boolean}
  */
 ActionsPanel.prototype.setText = function (replacementText) {
@@ -621,7 +621,7 @@ CompilerErrors.prototype.clear = function () {
 };
 /**
  * @since Flash CS3
- * @param {String} fileURI
+ * @param {string} fileURI
  * @param {Boolean} [bAppendToFile]
  * @param {Boolean} [bUseSystemEncoding]
  */
@@ -636,8 +636,8 @@ ComponentPanel = function () {
 /**
  * @since Flash MX 2004
  * @param {{x:Number,y:Number}} position
- * @param {String} categoryName
- * @param {String} componentName
+ * @param {string} categoryName
+ * @param {string} componentName
  */
 ComponentPanel.prototype.addItemToDocument = function (position, categoryName, componentName) {
 };
@@ -722,7 +722,7 @@ drawingLayer.prototype.newPath = function () {
 };
 /**
  * @since Flash MX 2004
- * @param {String|Number} color
+ * @param {string|Number} color
  */
 drawingLayer.prototype.setColor = function (color) {
 };
@@ -776,7 +776,7 @@ OutputPanel.prototype.clear = function () {
 };
 /**
  * @since Flash MX 2004
- * @param {String} fileURI
+ * @param {string} fileURI
  * @param {Boolean} [bAppendToFile]
  * @param {Boolean} [bUseSystemEncoding]
  */
@@ -801,28 +801,28 @@ PresetPanel = function () {
 PresetPanel.prototype.items = null;
 /**
  * @since Flash CS4
- * @param {String} [namePath]
+ * @param {string} [namePath]
  * @return {Boolean}
  */
 PresetPanel.prototype.addNewItem = function (namePath) {
 };
 /**
  * @since Flash CS4
- * @param {String} [presetPath]
+ * @param {string} [presetPath]
  * @return {Boolean}
  */
 PresetPanel.prototype.applyPreset = function (presetPath) {
 };
 /**
  * @since Flash CS4
- * @param {String} [folderPath]
+ * @param {string} [folderPath]
  * @return {Boolean}
  */
 PresetPanel.prototype.deleteFolder = function (folderPath) {
 };
 /**
  * @since Flash CS4
- * @param {String} [namePath]
+ * @param {string} [namePath]
  * @return {Boolean}
  */
 PresetPanel.prototype.deleteItem = function (namePath) {
@@ -831,22 +831,22 @@ PresetPanel.prototype.deleteItem = function (namePath) {
  * @since Flash CS4
  * @param {Boolean} [bExpand]
  * @param {Boolean} [bRecurse]
- * @param {String} [folderPath]
+ * @param {string} [folderPath]
  * @return {Boolean}
  */
 PresetPanel.prototype.expandFolder = function (bExpand, bRecurse, folderPath) {
 };
 /**
  * @since Flash CS4
- * @param {String} fileURI
- * @param {String} [namePath]
+ * @param {string} fileURI
+ * @param {string} [namePath]
  * @return {Boolean}
  */
 PresetPanel.prototype.exportItem = function (fileURI, namePath) {
 };
 /**
  * @since Flash CS4
- * @param {String} [presetName]
+ * @param {string} [presetName]
  * @return {Number}
  */
 PresetPanel.prototype.findItemIndex = function (presetName) {
@@ -859,37 +859,37 @@ PresetPanel.prototype.getSelectedItems = function () {
 };
 /**
  * @since Flash CS4
- * @param {String} fileURI
- * @param {String} [namePath]
+ * @param {string} fileURI
+ * @param {string} [namePath]
  * @return {Boolean}
  */
 PresetPanel.prototype.importItem = function (fileURI, namePath) {
 };
 /**
  * @since Flash CS4
- * @param {String} folderPath
- * @param {String} [namePath]
+ * @param {string} folderPath
+ * @param {string} [namePath]
  * @return {Boolean}
  */
 PresetPanel.prototype.moveToFolder = function (folderPath, namePath) {
 };
 /**
  * @since Flash CS4
- * @param {String} [folderPath]
+ * @param {string} [folderPath]
  * @return {Boolean}
  */
 PresetPanel.prototype.newFolder = function (folderPath) {
 };
 /**
  * @since Flash CS4
- * @param {String} newName
+ * @param {string} newName
  * @return {Boolean}
  */
 PresetPanel.prototype.renameItem = function (newName) {
 };
 /**
  * @since Flash CS4
- * @param {String} namePath
+ * @param {string} namePath
  * @param {Boolean} [bReplaceCurrentSelection]
  * @param {Boolean} [bSelect]
  * @return {Boolean}
@@ -987,63 +987,63 @@ XMLUI.prototype.cancel = function () {
 };
 /**
  * @since Flash MX 2004
- * @param {String} controlPropertyName
- * @return {String}
+ * @param {string} controlPropertyName
+ * @return {string}
  */
 XMLUI.prototype.get = function (controlPropertyName) {
 };
 /**
  * @since Flash 8
- * @param {String} controlPropertyName
- * @return {{label:String,value:String}}
+ * @param {string} controlPropertyName
+ * @return {{label:string,value:string}}
  */
 XMLUI.prototype.getControlItemElement = function (controlPropertyName) {
 };
 /**
  * @since Flash 8
- * @param {String} controlID
+ * @param {string} controlID
  * @return {Boolean}
  */
 XMLUI.prototype.getEnabled = function (controlID) {
 };
 /**
  * @since Flash 8
- * @param {String} controlID
+ * @param {string} controlID
  * @return {Boolean}
  */
 XMLUI.prototype.getVisible = function (controlID) {
 };
 /**
  * @since Flash MX 2004
- * @param {String} controlPropertyName
- * @param {String} value
+ * @param {string} controlPropertyName
+ * @param {string} value
  */
 XMLUI.prototype.set = function (controlPropertyName, value) {
 };
 /**
  * @since Flash 8
- * @param {String} controlPropertyName
- * @param {{label:String,value?:String}} elementItem
+ * @param {string} controlPropertyName
+ * @param {{label:string,value?:string}} elementItem
  */
 XMLUI.prototype.setControlItemElement = function (controlPropertyName, elementItem) {
 };
 /**
  * @since Flash 8
- * @param {String} controlID
- * @param {Array.<{label:String,value?:String}>} elementItemArray
+ * @param {string} controlID
+ * @param {Array.<{label:string,value?:string}>} elementItemArray
  */
 XMLUI.prototype.setControlItemElements = function (controlID, elementItemArray) {
 };
 /**
  * @since Flash 8
- * @param {String} controlID
+ * @param {string} controlID
  * @param {Boolean} enable
  */
 XMLUI.prototype.setEnabled = function (controlID, enable) {
 };
 /**
  * @since Flash 8
- * @param {String} controlID
+ * @param {string} controlID
  * @param {Boolean} visible
  */
 XMLUI.prototype.setVisible = function (controlID, visible) {
@@ -1074,7 +1074,7 @@ PresetItem.prototype.isFolder = null;
 PresetItem.prototype.level = null;
 /**
  * @since Flash CS4
- * @type {String}
+ * @type {string}
  * @const
  */
 PresetItem.prototype.name = null;
@@ -1086,7 +1086,7 @@ PresetItem.prototype.name = null;
 PresetItem.prototype.open = null;
 /**
  * @since Flash CS4
- * @type {String}
+ * @type {string}
  * @const
  */
 PresetItem.prototype.path = null;
@@ -1098,32 +1098,32 @@ SwfPanel = function () {
 };
 /**
  * @since Flash СС
- * @type {String}
+ * @type {string}
  * @const
  */
 SwfPanel.prototype.dpiScaleFactorX = null;
 /**
  * @since Flash СС
- * @type {String}
+ * @type {string}
  * @const
  */
 SwfPanel.prototype.dpiScaleFactorY = null;
 /**
  * @since Flash CS4
- * @type {String}
+ * @type {string}
  * @const
  */
 SwfPanel.prototype.name = null;
 /**
  * @since Flash CS4
- * @type {String}
+ * @type {string}
  * @const
  */
 SwfPanel.prototype.path = null;
 /**
  * @since Flash CS4
- * @param {String} request
- * @return {String}
+ * @param {string} request
+ * @return {string}
  */
 SwfPanel.prototype.call = function (request) {
 };
@@ -1163,50 +1163,50 @@ ToolObj.prototype.iconID = 0;
 ToolObj.prototype.position = 0;
 /**
  * @since Flash MX 2004
- * @param {String} control
+ * @param {string} control
  * @param {Boolean} bEnable
  */
 ToolObj.prototype.enablePIControl = function (control, bEnable) {
 };
 /**
  * @since Flash MX 2004
- * @param {String} file
+ * @param {string} file
  */
 ToolObj.prototype.setIcon = function (file) {
 };
 /**
  * @since Flash MX 2004
- * @param {String} menuStr
+ * @param {string} menuStr
  */
 ToolObj.prototype.setMenuString = function (menuStr) {
 };
 /**
  * @since Flash MX 2004
- * @param {String} xmlFile
+ * @param {string} xmlFile
  */
 ToolObj.prototype.setOptionsFile = function (xmlFile) {
 };
 /**
  * @since Flash MX 2004
- * @param {String} pi
+ * @param {string} pi
  */
 ToolObj.prototype.setPI = function (pi) {
 };
 /**
  * @since Flash MX 2004
- * @param {String} name
+ * @param {string} name
  */
 ToolObj.prototype.setToolName = function (name) {
 };
 /**
  * @since Flash MX 2004
- * @param {String} toolTip
+ * @param {string} toolTip
  */
 ToolObj.prototype.setToolTip = function (toolTip) {
 };
 /**
  * @since Flash MX 2004
- * @param {String} control
+ * @param {string} control
  * @param {Boolean} bShow
  */
 ToolObj.prototype.showPIControl = function (control, bShow) {
@@ -1256,7 +1256,7 @@ SpriteSheetExporter = function () {
 };
 /**
  * @since Flash CS6
- * @type {String}
+ * @type {string}
  */
 SpriteSheetExporter.prototype.algorithm = null;
 /**
@@ -1271,7 +1271,7 @@ SpriteSheetExporter.prototype.allowRotate = false;
 SpriteSheetExporter.prototype.allowTrimming = false;
 /**
  * @since Flash CS6
- * @type {String}
+ * @type {string}
  * @const
  */
 SpriteSheetExporter.prototype.app = null;
@@ -1317,19 +1317,19 @@ SpriteSheetExporter.prototype.canStackDuplicateFrames = false;
 SpriteSheetExporter.prototype.canTrim = false;
 /**
  * @since Flash CS6
- * @type {String}
+ * @type {string}
  * @const
  */
 SpriteSheetExporter.prototype.format = null;
 /**
  * @since Flash CS6
- * @type {String}
+ * @type {string}
  * @const
  */
 SpriteSheetExporter.prototype.image = null;
 /**
  * @since Flash CS6
- * @type {String}
+ * @type {string}
  */
 SpriteSheetExporter.prototype.layoutFormat = null;
 /**
@@ -1360,7 +1360,7 @@ SpriteSheetExporter.prototype.sheetWidth = 0;
 SpriteSheetExporter.prototype.stackDuplicateFrames = false;
 /**
  * @since Flash CS6
- * @type {String}
+ * @type {string}
  * @const
  */
 SpriteSheetExporter.prototype.version = null;
@@ -1373,7 +1373,7 @@ SpriteSheetExporter.prototype.addBitmap = function (bitmap) {
 /**
  * @since Flash CS6
  * @param {SymbolItem|SymbolInstance} symbol
- * @param {String} [name]
+ * @param {string} [name]
  * @param {Number} [beginFrame]
  * @param {Number} [endFrame]
  * @return {Boolean}
@@ -1396,10 +1396,10 @@ SpriteSheetExporter.prototype.changeSymbol = function (symbol, beginFrame, endFr
 };
 /**
  * @since Flash CS6
- * @param {String} path
- * @param {String|{format:String,backgroundColor?:(String|Number),quality?:Number,bitDepth?:Number}} imageFormat
+ * @param {string} path
+ * @param {string|{format:string,backgroundColor?:(string|Number),quality?:Number,bitDepth?:Number}} imageFormat
  * @param {Boolean} [writeMetaData]
- * @return {String}
+ * @return {string}
  */
 SpriteSheetExporter.prototype.exportSpriteSheet = function (path, imageFormat, writeMetaData) {
 };
@@ -1429,117 +1429,117 @@ FlashFile = function () {
 FLfile = new FlashFile();
 /**
  * @since Flash MX 2004
- * @param {String} fileURI
- * @param {String} copyURI
+ * @param {string} fileURI
+ * @param {string} copyURI
  * @return {Boolean}
  */
 FlashFile.prototype.copy = function (fileURI, copyURI) {
 };
 /**
  * @since Flash MX 2004
- * @param {String} folderURI
+ * @param {string} folderURI
  * @return {Boolean}
  */
 FlashFile.prototype.createFolder = function (folderURI) {
 };
 /**
  * @since Flash MX 2004
- * @param {String} fileURI
+ * @param {string} fileURI
  * @return {Boolean}
  */
 FlashFile.prototype.exists = function (fileURI) {
 };
 /**
  * @since Flash MX 2004
- * @param {String} fileOrFolderURI
- * @return {String}
+ * @param {string} fileOrFolderURI
+ * @return {string}
  */
 FlashFile.prototype.getAttributes = function (fileOrFolderURI) {
 };
 /**
  * @since Flash MX 2004
- * @param {String} fileOrFolderURI
- * @return {String}
+ * @param {string} fileOrFolderURI
+ * @return {string}
  */
 FlashFile.prototype.getCreationDate = function (fileOrFolderURI) {
 };
 /**
  * @since Flash MX 2004
- * @param {String} fileOrFolderURI
+ * @param {string} fileOrFolderURI
  * @return {Date}
  */
 FlashFile.prototype.getCreationDateObj = function (fileOrFolderURI) {
 };
 /**
  * @since Flash MX 2004
- * @param {String} fileOrFolderURI
- * @return {String}
+ * @param {string} fileOrFolderURI
+ * @return {string}
  */
 FlashFile.prototype.getModificationDate = function (fileOrFolderURI) {
 };
 /**
  * @since Flash MX 2004
- * @param {String} fileOrFolderURI
+ * @param {string} fileOrFolderURI
  * @return {Date}
  */
 FlashFile.prototype.getModificationDateObj = function (fileOrFolderURI) {
 };
 /**
  * @since Flash MX 2004
- * @param {String} fileURI
+ * @param {string} fileURI
  * @return {Number}
  */
 FlashFile.prototype.getSize = function (fileURI) {
 };
 /**
  * @since Flash MX 2004
- * @param {String} folderURI
- * @param {String} [filesOrDirectories]
- * @return {Array.<String>}
+ * @param {string} folderURI
+ * @param {string} [filesOrDirectories]
+ * @return {Array.<string>}
  */
 FlashFile.prototype.listFolder = function (folderURI, filesOrDirectories) {
 };
 /**
  * @since Flash CS4
- * @param {String} fileName
- * @return {String}
+ * @param {string} fileName
+ * @return {string}
  */
 FlashFile.prototype.platformPathToURI = function (fileName) {
 };
 /**
  * @since Flash MX 2004
- * @param {String} fileURI
- * @return {String}
+ * @param {string} fileURI
+ * @return {string}
  */
 FlashFile.prototype.read = function (fileURI) {
 };
 /**
  * @since Flash MX 2004
- * @param {String} fileOrFolderURI
+ * @param {string} fileOrFolderURI
  * @return {Boolean}
  */
 FlashFile.prototype.remove = function (fileOrFolderURI) {
 };
 /**
  * @since Flash MX 2004
- * @param {String} fileURI
- * @param {String} strAttrs
+ * @param {string} fileURI
+ * @param {string} strAttrs
  * @return {Boolean}
  */
 FlashFile.prototype.setAttributes = function (fileURI, strAttrs) {
 };
 /**
  * @since Flash CS4
- * @param {String} fileURI
- * @return {String}
+ * @param {string} fileURI
+ * @return {string}
  */
 FlashFile.prototype.uriToPlatformPath = function (fileURI) {
 };
 /**
  * @since Flash MX 2004
- * @param {String} fileURI
- * @param {String} textToWrite
- * @param {String} [strAppendMode]
+ * @param {string} fileURI
+ * @param {string} textToWrite
+ * @param {string} [strAppendMode]
  * @return {Boolean}
  */
 FlashFile.prototype.write = function (fileURI, textToWrite, strAppendMode) {

@@ -10,7 +10,7 @@ Document = function () {
 };
 /**
  * @since Flash MX 2004
- * @type {String}
+ * @type {string}
  */
 Document.prototype.accName = null;
 /**
@@ -20,7 +20,7 @@ Document.prototype.accName = null;
 Document.prototype.as3AutoDeclare = false;
 /**
  * @since Flash CS3
- * @type {String}
+ * @type {string}
  */
 Document.prototype.as3Dialect = null;
 /**
@@ -50,12 +50,12 @@ Document.prototype.asVersion = 0;
 Document.prototype.autoLabel = false;
 /**
  * @since Flash MX 2004
- * @type {String|Number}
+ * @type {string|Number}
  */
 Document.prototype.backgroundColor = null;
 /**
  * @since Flash MX 2004
- * @type {String}
+ * @type {string}
  */
 Document.prototype.currentPublishProfile = null;
 /**
@@ -65,17 +65,17 @@ Document.prototype.currentPublishProfile = null;
 Document.prototype.currentTimeline = 0;
 /**
  * @since Flash MX 2004
- * @type {String}
+ * @type {string}
  */
 Document.prototype.description = null;
 /**
  * @since Flash CS3
- * @type {String}
+ * @type {string}
  */
 Document.prototype.docClass = null;
 /**
  * @since Flash CS4
- * @type {String}
+ * @type {string}
  */
 Document.prototype.externalLibraryPath = null;
 /**
@@ -107,7 +107,7 @@ Document.prototype.id = 0;
 Document.prototype.library = null;
 /**
  * @since Flash CS4
- * @type {String}
+ * @type {string}
  */
 Document.prototype.libraryPath = null;
 /**
@@ -117,25 +117,25 @@ Document.prototype.libraryPath = null;
 Document.prototype.livePreview = false;
 /**
  * @since Flash MX 2004
- * @type {String}
+ * @type {string}
  * @const
  */
 Document.prototype.name = null;
 /**
  * @since Flash MX 2004
- * @type {String}
+ * @type {string}
  * @const
  */
 Document.prototype.path = null;
 /**
  * @since Flash CS4
- * @type {String}
+ * @type {string}
  * @const
  */
 Document.prototype.pathURI = null;
 /**
  * @since Flash MX 2004
- * @type {Array.<String>}
+ * @type {Array.<string>}
  * @const
  */
 Document.prototype.publishProfiles = null;
@@ -158,7 +158,7 @@ Document.prototype.selection = null;
 Document.prototype.silent = false;
 /**
  * @since Flash CS4
- * @type {String}
+ * @type {string}
  */
 Document.prototype.sourcePath = null;
 /**
@@ -190,23 +190,23 @@ Document.prototype.width = 0;
 Document.prototype.zoomFactor = 0;
 /**
  * @since Flash MX 2004
- * @param {String} name
- * @param {String} type
+ * @param {string} name
+ * @param {string} type
  * @param {Object} data
  */
 Document.prototype.addDataToDocument = function (name, type, data) {
 };
 /**
  * @since Flash MX 2004
- * @param {String} name
- * @param {String} type
+ * @param {string} name
+ * @param {string} type
  * @param {Object} data
  */
 Document.prototype.addDataToSelection = function (name, type, data) {
 };
 /**
  * @since Flash 8
- * @param {String} filterName
+ * @param {string} filterName
  */
 Document.prototype.addFilter = function (filterName) {
 };
@@ -252,7 +252,7 @@ Document.prototype.addNewPrimitiveRectangle = function (boundingRectangle, round
 };
 /**
  * @since Flash MX 2004
- * @param {String} profileName
+ * @param {string} profileName
  * @return {Number}
  */
 Document.prototype.addNewPublishProfile = function (profileName) {
@@ -268,7 +268,7 @@ Document.prototype.addNewRectangle = function (boundingRectangle, roundness, bSu
 };
 /**
  * @since Flash MX 2004
- * @param {String} [name]
+ * @param {string} [name]
  * @return {Boolean}
  */
 Document.prototype.addNewScene = function (name) {
@@ -276,13 +276,13 @@ Document.prototype.addNewScene = function (name) {
 /**
  * @since Flash MX 2004
  * @param {{left:Number,top:Number,right:Number,bottom:Number}} boundingRectangle
- * @param {String} [text]
+ * @param {string} [text]
  */
 Document.prototype.addNewText = function (boundingRectangle, text) {
 };
 /**
  * @since Flash MX 2004
- * @param {String} alignMode
+ * @param {string} alignMode
  * @param {Boolean} [bUseDocumentBounds]
  */
 Document.prototype.align = function (alignMode, bUseDocumentBounds) {
@@ -296,7 +296,7 @@ Document.prototype.allowScreens = function () {
 };
 /**
  * @since Flash MX 2004
- * @param {String} arrangeMode
+ * @param {string} arrangeMode
  */
 Document.prototype.arrange = function (arrangeMode) {
 };
@@ -377,9 +377,9 @@ Document.prototype.convertSelectionToBitmap = function () {
 };
 /**
  * @since Flash MX 2004
- * @param {String} type
- * @param {String} name
- * @param {String} registrationPoint
+ * @param {string} type
+ * @param {string} name
+ * @param {string} registrationPoint
  * @return {SymbolItem}
  */
 Document.prototype.convertToSymbol = function (type, name, registrationPoint) {
@@ -438,7 +438,7 @@ Document.prototype.disableOtherFilters = function (enabledFilterIndex) {
 };
 /**
  * @since Flash MX 2004
- * @param {String} distributeMode
+ * @param {string} distributeMode
  * @param {Boolean} [bUseDocumentBounds]
  */
 Document.prototype.distribute = function (distributeMode, bUseDocumentBounds) {
@@ -455,14 +455,14 @@ Document.prototype.distributeToLayers = function () {
 };
 /**
  * @since Flash MX 2004
- * @param {String} name
+ * @param {string} name
  * @return {Boolean}
  */
 Document.prototype.documentHasData = function (name) {
 };
 /**
  * @since Flash MX 2004
- * @param {String} [profileName]
+ * @param {string} [profileName]
  * @return {Number}
  */
 Document.prototype.duplicatePublishProfile = function (profileName) {
@@ -497,7 +497,7 @@ Document.prototype.enableFilter = function (filterIndex) {
 };
 /**
  * @since Flash MX 2004
- * @param {String} [editMode]
+ * @param {string} [editMode]
  */
 Document.prototype.enterEditMode = function (editMode) {
 };
@@ -509,13 +509,13 @@ Document.prototype.exitEditMode = function () {
 /**
  * @since Flash CS6
  * @param {Number} frameNumber
- * @param {String} bitmapName
+ * @param {string} bitmapName
  */
 Document.prototype.exportInstanceToLibrary = function (frameNumber, bitmapName) {
 };
 /**
  * @since Flash CS6
- * @param {String} outputURI
+ * @param {string} outputURI
  * @param {Number} [startFrameNum]
  * @param {Number} [endFrameNum]
  * @param {Matrix} [matrix]
@@ -524,7 +524,7 @@ Document.prototype.exportInstanceToPNGSequence = function (outputURI, startFrame
 };
 /**
  * @since Flash 8
- * @param {String} fileURI
+ * @param {string} fileURI
  * @param {Boolean} [bCurrentPNGSettings]
  * @param {Boolean} [bCurrentFrame]
  * @return {Boolean}
@@ -533,27 +533,27 @@ Document.prototype.exportPNG = function (fileURI, bCurrentPNGSettings, bCurrentF
 };
 /**
  * @since Flash MX 2004
- * @param {String} fileURI
+ * @param {string} fileURI
  */
 Document.prototype.exportPublishProfile = function (fileURI) {
 };
 /**
  * @since Flash CS4
- * @param {String} [profileName]
- * @return {String}
+ * @param {string} [profileName]
+ * @return {string}
  */
 Document.prototype.exportPublishProfileString = function (profileName) {
 };
 /**
  * @since Flash MX 2004
- * @param {String} [fileURI]
+ * @param {string} [fileURI]
  * @param {Boolean} [bCurrentSettings]
  */
 Document.prototype.exportSWF = function (fileURI, bCurrentSettings) {
 };
 /**
  * @since Flash CC
- * @param {String} fileURI
+ * @param {string} fileURI
  * @param {Boolean} [convertInAdobeMediaEncoder]
  * @param {Boolean} [transparent]
  * @param {Boolean} [stopAtFrame]
@@ -570,41 +570,41 @@ Document.prototype.getAlignToDocument = function () {
 };
 /**
  * @since Flash 8
- * @return {String}
+ * @return {string}
  */
 Document.prototype.getBlendMode = function () {
 };
 /**
  * @since Flash MX 2004
- * @param {String} [objectToFill]
+ * @param {string} [objectToFill]
  * @return {Fill}
  */
 Document.prototype.getCustomFill = function (objectToFill) {
 };
 /**
  * @since Flash MX 2004
- * @param {String} [locationOfStroke]
+ * @param {string} [locationOfStroke]
  * @return {Stroke}
  */
 Document.prototype.getCustomStroke = function (locationOfStroke) {
 };
 /**
  * @since Flash MX 2004
- * @param {String} name
+ * @param {string} name
  * @return {Object}
  */
 Document.prototype.getDataFromDocument = function (name) {
 };
 /**
  * @since Flash MX 2004
- * @param {String} propertyName
+ * @param {string} propertyName
  * @return {Object}
  */
 Document.prototype.getElementProperty = function (propertyName) {
 };
 /**
  * @since Flash MX 2004
- * @param {String} attrName
+ * @param {string} attrName
  * @param {Number} [startIndex]
  * @param {Number} [endIndex]
  * @return {Object}
@@ -619,25 +619,25 @@ Document.prototype.getFilters = function () {
 };
 /**
  * @since Flash 8
- * @return {String}
+ * @return {string}
  */
 Document.prototype.getMetadata = function () {
 };
 /**
  * @since Flash CS3
- * @return {String}
+ * @return {string}
  */
 Document.prototype.getMobileSettings = function () {
 };
 /**
  * @since Flash CS3
- * @return {String}
+ * @return {string}
  */
 Document.prototype.getPlayerVersion = function () {
 };
 /**
  * @since Flash CC
- * @param {String} format
+ * @param {string} format
  * @return {Boolean}
  */
 Document.prototype.getPublishDocumentData = function (format) {
@@ -650,7 +650,7 @@ Document.prototype.getSelectionRect = function () {
 };
 /**
  * @since Flash CS6
- * @return {String}
+ * @return {string}
  */
 Document.prototype.getSWFPathFromProfile = function () {
 };
@@ -664,7 +664,7 @@ Document.prototype.getTelemetryForSwf = function () {
  * @since Flash MX 2004
  * @param {Number} [startIndex]
  * @param {Number} [endIndex]
- * @return {String}
+ * @return {string}
  */
 Document.prototype.getTextString = function (startIndex, endIndex) {
 };
@@ -687,7 +687,7 @@ Document.prototype.group = function () {
 };
 /**
  * @since Flash 8
- * @param {String} fileURI
+ * @param {string} fileURI
  * @param {Boolean} [importToLibrary]
  * @param {Boolean} [showDialog]
  * @param {Boolean} [showImporterUI]
@@ -697,14 +697,14 @@ Document.prototype.importFile = function (fileURI, importToLibrary, showDialog, 
 };
 /**
  * @since Flash MX 2004
- * @param {String} fileURI
+ * @param {string} fileURI
  * @return {Number}
  */
 Document.prototype.importPublishProfile = function (fileURI) {
 };
 /**
  * @since Flash CS4
- * @param {String} xmlString
+ * @param {string} xmlString
  * @return {Boolean}
  */
 Document.prototype.importPublishProfileString = function (xmlString) {
@@ -712,7 +712,7 @@ Document.prototype.importPublishProfileString = function (xmlString) {
 /**
  * @since Flash MX 2004
  * @deprecated
- * @param {String} fileURI
+ * @param {string} fileURI
  */
 Document.prototype.importSWF = function (fileURI) {
 };
@@ -725,7 +725,7 @@ Document.prototype.intersect = function () {
 /**
  * @since Flash CS5
  * @deprecated
- * @param {String} URI
+ * @param {string} URI
  */
 Document.prototype.loadCuepointXML = function (URI) {
 };
@@ -791,13 +791,13 @@ Document.prototype.removeAllFilters = function () {
 };
 /**
  * @since Flash MX 2004
- * @param {String} name
+ * @param {string} name
  */
 Document.prototype.removeDataFromDocument = function (name) {
 };
 /**
  * @since Flash MX 2004
- * @param {String} name
+ * @param {string} name
  */
 Document.prototype.removeDataFromSelection = function (name) {
 };
@@ -809,14 +809,14 @@ Document.prototype.removeFilter = function (filterIndex) {
 };
 /**
  * @since Flash MX 2004
- * @param {String} [profileNewName]
+ * @param {string} [profileNewName]
  * @return {Boolean}
  */
 Document.prototype.renamePublishProfile = function (profileNewName) {
 };
 /**
  * @since Flash MX 2004
- * @param {String} name
+ * @param {string} name
  * @return {Boolean}
  */
 Document.prototype.renameScene = function (name) {
@@ -858,7 +858,7 @@ Document.prototype.rotate3DSelection = function (xyzCoordinate, bGlobalTransform
 /**
  * @since Flash MX 2004
  * @param {Number} angle
- * @param {String} [rotationPoint]
+ * @param {string} [rotationPoint]
  */
 Document.prototype.rotateSelection = function (angle, rotationPoint) {
 };
@@ -871,7 +871,7 @@ Document.prototype.save = function (bOkToSaveAs) {
 };
 /**
  * @since Flash CS6
- * @param {String} URI
+ * @param {string} URI
  * @param {Boolean} [selectionOnly]
  * @return {Boolean}
  */
@@ -889,7 +889,7 @@ Document.prototype.saveAndCompact = function (bOkToSaveAs) {
  * @since Flash MX 2004
  * @param {Number} xScale
  * @param {Number} yScale
- * @param {String} whichCorner
+ * @param {string} whichCorner
  */
 Document.prototype.scaleSelection = function (xScale, yScale, whichCorner) {
 };
@@ -911,7 +911,7 @@ Document.prototype.setAlignToDocument = function (bToStage) {
 };
 /**
  * @since Flash 8
- * @param {String} mode
+ * @param {string} mode
  */
 Document.prototype.setBlendMode = function (mode) {
 };
@@ -929,14 +929,14 @@ Document.prototype.setCustomStroke = function (stroke) {
 };
 /**
  * @since Flash MX 2004
- * @param {String} property
+ * @param {string} property
  * @param {Object} value
  */
 Document.prototype.setElementProperty = function (property, value) {
 };
 /**
  * @since Flash MX 2004
- * @param {String} attrName
+ * @param {string} attrName
  * @param {Object} attrValue
  * @param {Number} [startIndex]
  * @param {Number} [endIndex]
@@ -946,13 +946,13 @@ Document.prototype.setElementTextAttr = function (attrName, attrValue, startInde
 };
 /**
  * @since Flash MX 2004
- * @param {String|Number} color
+ * @param {string|Number} color
  */
 Document.prototype.setFillColor = function (color) {
 };
 /**
  * @since Flash 8
- * @param {String} property
+ * @param {string} property
  * @param {Number} filterIndex
  * @param {Object} value
  */
@@ -978,49 +978,49 @@ Document.prototype.setInstanceBrightness = function (brightness) {
 };
 /**
  * @since Flash MX 2004
- * @param {String|Number} color
+ * @param {string|Number} color
  * @param {Number} strength
  */
 Document.prototype.setInstanceTint = function (color, strength) {
 };
 /**
  * @since Flash 8
- * @param {String} strMetadata
+ * @param {string} strMetadata
  * @return {Boolean}
  */
 Document.prototype.setMetadata = function (strMetadata) {
 };
 /**
  * @since Flash CS3
- * @param {String} xmlString
+ * @param {string} xmlString
  * @return {Boolean}
  */
 Document.prototype.setMobileSettings = function (xmlString) {
 };
 /**
  * @since Flash CS3
- * @param {String} propertyName
+ * @param {string} propertyName
  * @param {Object} value
  */
 Document.prototype.setOvalObjectProperty = function (propertyName, value) {
 };
 /**
  * @since Flash CS3
- * @param {String} version
+ * @param {string} version
  * @return {Boolean}
  */
 Document.prototype.setPlayerVersion = function (version) {
 };
 /**
  * @since Flash CC
- * @param {String} format
+ * @param {string} format
  * @param {Boolean} publish
  */
 Document.prototype.setPublishDocumentData = function (format, publish) {
 };
 /**
  * @since Flash CS3
- * @param {String} propertyName
+ * @param {string} propertyName
  * @param {Object} value
  */
 Document.prototype.setRectangleObjectProperty = function (propertyName, value) {
@@ -1054,15 +1054,15 @@ Document.prototype.setStageViewAngle = function (angle) {
 };
 /**
  * @since Flash MX 2004
- * @param {String|Number} color
+ * @param {string|Number} color
  * @param {Number} size
- * @param {String} strokeType
+ * @param {string} strokeType
  */
 Document.prototype.setStroke = function (color, size, strokeType) {
 };
 /**
  * @since Flash MX 2004
- * @param {String|Number} color
+ * @param {string|Number} color
  */
 Document.prototype.setStrokeColor = function (color) {
 };
@@ -1074,7 +1074,7 @@ Document.prototype.setStrokeSize = function (size) {
 };
 /**
  * @since Flash MX 2004
- * @param {String} strokeType
+ * @param {string} strokeType
  */
 Document.prototype.setStrokeStyle = function (strokeType) {
 };
@@ -1095,7 +1095,7 @@ Document.prototype.setTextSelection = function (startIndex, endIndex) {
 };
 /**
  * @since Flash MX 2004
- * @param {String} text
+ * @param {string} text
  * @param {Number} [startIndex]
  * @param {Number} [endIndex]
  * @return {Boolean}
@@ -1112,7 +1112,7 @@ Document.prototype.setTransformationPoint = function (transformationPoint) {
  * @since Flash MX 2004
  * @param {Number} xSkew
  * @param {Number} ySkew
- * @param {String} whichEdge
+ * @param {string} whichEdge
  */
 Document.prototype.skewSelection = function (xSkew, ySkew, whichEdge) {
 };
@@ -1123,7 +1123,7 @@ Document.prototype.smoothSelection = function () {
 };
 /**
  * @since Flash MX 2004
- * @param {String} direction
+ * @param {string} direction
  * @param {Boolean} [bUseDocumentBounds]
  */
 Document.prototype.space = function (direction, bUseDocumentBounds) {
@@ -1135,7 +1135,7 @@ Document.prototype.straightenSelection = function () {
 };
 /**
  * @since Flash MX 2004
- * @param {String} name
+ * @param {string} name
  */
 Document.prototype.swapElement = function (name) {
 };
@@ -1159,8 +1159,8 @@ Document.prototype.testScene = function () {
  * @since Flash MX 2004
  * @param {Number} threshold
  * @param {Number} minimumArea
- * @param {String} curveFit
- * @param {String} cornerThreshold
+ * @param {string} curveFit
+ * @param {string} cornerThreshold
  */
 Document.prototype.traceBitmap = function (threshold, minimumArea, curveFit, cornerThreshold) {
 };
@@ -1204,7 +1204,7 @@ Document.prototype.unlockAllElements = function () {
 };
 /**
  * @since Flash MX 2004
- * @param {String} fileURI
+ * @param {string} fileURI
  * @return {Object}
  */
 Document.prototype.xmlPanel = function (fileURI) {
@@ -1228,36 +1228,36 @@ Library.prototype.unusedItems = null;
 /**
  * @since Flash MX 2004
  * @param {{x:Number,y:Number}} position
- * @param {String} [namePath]
+ * @param {string} [namePath]
  * @return {Boolean}
  */
 Library.prototype.addItemToDocument = function (position, namePath) {
 };
 /**
  * @since Flash MX 2004
- * @param {String} type
- * @param {String} [namePath]
+ * @param {string} type
+ * @param {string} [namePath]
  * @return {Boolean}
  */
 Library.prototype.addNewItem = function (type, namePath) {
 };
 /**
  * @since Flash MX 2004
- * @param {String} [namePath]
+ * @param {string} [namePath]
  * @return {Boolean}
  */
 Library.prototype.deleteItem = function (namePath) {
 };
 /**
  * @since Flash MX 2004
- * @param {String} [namePath]
+ * @param {string} [namePath]
  * @return {Boolean}
  */
 Library.prototype.duplicateItem = function (namePath) {
 };
 /**
  * @since Flash MX 2004
- * @param {String} [namePath]
+ * @param {string} [namePath]
  * @return {Boolean}
  */
 Library.prototype.editItem = function (namePath) {
@@ -1266,29 +1266,29 @@ Library.prototype.editItem = function (namePath) {
  * @since Flash MX 2004
  * @param {Boolean} bExpand
  * @param {Boolean} [bRecurseNestedParents]
- * @param {String} [namePath]
+ * @param {string} [namePath]
  * @return {Boolean}
  */
 Library.prototype.expandFolder = function (bExpand, bRecurseNestedParents, namePath) {
 };
 /**
  * @since Flash MX 2004
- * @param {String} namePath
+ * @param {string} namePath
  * @return {Number}
  */
 Library.prototype.findItemIndex = function (namePath) {
 };
 /**
  * @since Flash MX 2004
- * @param {String} property
+ * @param {string} property
  * @return {Object}
  */
 Library.prototype.getItemProperty = function (property) {
 };
 /**
  * @since Flash MX 2004
- * @param {String} [namePath]
- * @return {String}
+ * @param {string} [namePath]
+ * @return {string}
  */
 Library.prototype.getItemType = function (namePath) {
 };
@@ -1301,23 +1301,23 @@ Library.prototype.getSelectedItems = function () {
 /**
  * @since Flash MX 2004
  * @deprecated
- * @param {String} linkageName
+ * @param {string} linkageName
  * @param {Array} swfData
- * @param {String} [libName]
+ * @param {string} [libName]
  */
 Library.prototype.importEmbeddedSWF = function (linkageName, swfData, libName) {
 };
 /**
  * @since Flash MX 2004
- * @param {String} namePath
+ * @param {string} namePath
  * @return {Boolean}
  */
 Library.prototype.itemExists = function (namePath) {
 };
 /**
  * @since Flash MX 2004
- * @param {String} folderPath
- * @param {String} [itemToMove]
+ * @param {string} folderPath
+ * @param {string} [itemToMove]
  * @param {Boolean} [bReplace]
  * @return {Boolean}
  */
@@ -1325,14 +1325,14 @@ Library.prototype.moveToFolder = function (folderPath, itemToMove, bReplace) {
 };
 /**
  * @since Flash MX 2004
- * @param {String} [folderPath]
+ * @param {string} [folderPath]
  * @return {Boolean}
  */
 Library.prototype.newFolder = function (folderPath) {
 };
 /**
  * @since Flash MX 2004
- * @param {String} name
+ * @param {string} name
  * @return {Boolean}
  */
 Library.prototype.renameItem = function (name) {
@@ -1345,7 +1345,7 @@ Library.prototype.selectAll = function (bSelectAll) {
 };
 /**
  * @since Flash MX 2004
- * @param {String} namePath
+ * @param {string} namePath
  * @param {Boolean} [bReplaceCurrentSelection]
  * @param {Boolean} [bSelect]
  * @return {Boolean}
@@ -1359,14 +1359,14 @@ Library.prototype.selectNone = function () {
 };
 /**
  * @since Flash MX 2004
- * @param {String} property
+ * @param {string} property
  * @param {Object} value
  */
 Library.prototype.setItemProperty = function (property, value) {
 };
 /**
  * @since Flash MX 2004
- * @param {String} [namePath]
+ * @param {string} [namePath]
  * @return {Boolean}
  */
 Library.prototype.updateItem = function (namePath) {
