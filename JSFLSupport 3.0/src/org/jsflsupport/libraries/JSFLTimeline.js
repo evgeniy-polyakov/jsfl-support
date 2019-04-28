@@ -57,7 +57,7 @@ Timeline.prototype.addMotionGuide = function () {
  * @since Flash MX 2004
  * @param {string} [name]
  * @param {string} [layerType]
- * @param {Boolean} [bAddAbove]
+ * @param {boolean} [bAddAbove]
  * @return {number}
  */
 Timeline.prototype.addNewLayer = function (name, layerType, bAddAbove) {
@@ -157,8 +157,8 @@ Timeline.prototype.duplicateLayers = function (startLayerIndex, endLayerIndex) {
 };
 /**
  * @since Flash MX 2004
- * @param {Boolean} bExpand
- * @param {Boolean} [bRecurseNestedParents]
+ * @param {boolean} bExpand
+ * @param {boolean} [bRecurseNestedParents]
  * @param {number} [index]
  */
 Timeline.prototype.expandFolder = function (bExpand, bRecurseNestedParents, index) {
@@ -173,7 +173,7 @@ Timeline.prototype.findLayerIndex = function (name) {
 /**
  * @since Flash CC
  * @param {number} [frame]
- * @param {Boolean} [includeHiddenLayers]
+ * @param {boolean} [includeHiddenLayers]
  * @return {{left:number,top:number,right:number,bottom:number}}
  */
 Timeline.prototype.getBounds = function (frame, includeHiddenLayers) {
@@ -221,7 +221,7 @@ Timeline.prototype.insertBlankKeyframe = function (frameNumIndex) {
 /**
  * @since Flash MX 2004
  * @param {number} [numFrames]
- * @param {Boolean} [bAllLayers]
+ * @param {boolean} [bAllLayers]
  * @param {number} [frameNumIndex]
  */
 Timeline.prototype.insertFrames = function (numFrames, bAllLayers, frameNumIndex) {
@@ -269,7 +269,7 @@ Timeline.prototype.removeMotionObject = function (startFrame, endFrame) {
  * @since Flash MX 2004
  * @param {number} layerToMove
  * @param {number} layerToPutItBy
- * @param {Boolean} [bAddBefore]
+ * @param {boolean} [bAddBefore]
  */
 Timeline.prototype.reorderLayer = function (layerToMove, layerToPutItBy, bAddBefore) {
 };
@@ -297,7 +297,7 @@ Timeline.prototype.setFrameProperty = function (property, value, startFrameIndex
 /**
  * @since Flash CS4
  * @param xmlString
- * @return {Boolean}
+ * @return {boolean}
  */
 Timeline.prototype.setGuidelines = function (xmlString) {
 };
@@ -312,15 +312,15 @@ Timeline.prototype.setLayerProperty = function (property, value, layersToChange)
 /**
  * @since Flash MX 2004
  * @param {number|Array.<number>} startFrameIndex
- * @param {number|Boolean=} endFrameIndex
- * @param {Boolean} [bReplaceCurrentSelection]
+ * @param {number|boolean=} endFrameIndex
+ * @param {boolean} [bReplaceCurrentSelection]
  */
 Timeline.prototype.setSelectedFrames = function (startFrameIndex, endFrameIndex, bReplaceCurrentSelection) {
 };
 /**
  * @since Flash MX 2004
  * @param {number} index
- * @param {Boolean} [bReplaceCurrentSelection]
+ * @param {boolean} [bReplaceCurrentSelection]
  */
 Timeline.prototype.setSelectedLayers = function (index, bReplaceCurrentSelection) {
 };
@@ -381,7 +381,7 @@ Layer.prototype.height = 0;
 Layer.prototype.layerType = null;
 /**
  * @since Flash MX 2004
- * @type {Boolean}
+ * @type {boolean}
  */
 Layer.prototype.locked = false;
 /**
@@ -391,7 +391,7 @@ Layer.prototype.locked = false;
 Layer.prototype.name = null;
 /**
  * @since Flash MX 2004
- * @type {Boolean}
+ * @type {boolean}
  */
 Layer.prototype.outline = false;
 /**
@@ -401,7 +401,7 @@ Layer.prototype.outline = false;
 Layer.prototype.parentLayer = null;
 /**
  * @since Flash MX 2004
- * @type {Boolean}
+ * @type {boolean}
  */
 Layer.prototype.visible = false;
 /**
@@ -429,7 +429,7 @@ Frame.prototype.duration = 0;
 Frame.prototype.elements = null;
 /**
  * @since Flash 8
- * @type {Boolean}
+ * @type {boolean}
  */
 Frame.prototype.hasCustomEase = false;
 /**
@@ -439,7 +439,7 @@ Frame.prototype.hasCustomEase = false;
 Frame.prototype.labelType = null;
 /**
  * @since Flash MX 2004
- * @type {Boolean}
+ * @type {boolean}
  */
 Frame.prototype.motionTweenOrientToPath = false;
 /**
@@ -454,17 +454,17 @@ Frame.prototype.motionTweenRotate = null;
 Frame.prototype.motionTweenRotateTimes = 0;
 /**
  * @since Flash MX 2004
- * @type {Boolean}
+ * @type {boolean}
  */
 Frame.prototype.motionTweenScale = false;
 /**
  * @since Flash MX 2004
- * @type {Boolean}
+ * @type {boolean}
  */
 Frame.prototype.motionTweenSnap = false;
 /**
  * @since Flash MX 2004
- * @type {Boolean}
+ * @type {boolean}
  */
 Frame.prototype.motionTweenSync = false;
 /**
@@ -530,7 +530,7 @@ Frame.prototype.tweenInstanceName = null;
 Frame.prototype.tweenType = null;
 /**
  * @since Flash 8
- * @type {Boolean}
+ * @type {boolean}
  */
 Frame.prototype.useSingleEaseCurve = false;
 /**
@@ -545,7 +545,7 @@ Frame.prototype.convertMotionObjectTo3D = function () {
 };
 /**
  * @since Flash CC
- * @return {Boolean}
+ * @return {boolean}
  */
 Frame.prototype.convertToFrameByFrameAnimation = function () {
 };
@@ -576,31 +576,31 @@ Frame.prototype.getSoundEnvelopeLimits = function () {
 };
 /**
  * @since Flash CS5
- * @return {Boolean}
+ * @return {boolean}
  */
 Frame.prototype.hasMotionPath = function () {
 };
 /**
  * @since Flash CS5
- * @return {Boolean}
+ * @return {boolean}
  */
 Frame.prototype.is3DMotionObject = function () {
 };
 /**
  * @since Flash CC
- * @return {Boolean}
+ * @return {boolean}
  */
 Frame.prototype.isEmpty = function () {
 };
 /**
  * @since Flash CS5
- * @return {Boolean}
+ * @return {boolean}
  */
 Frame.prototype.isMotionObject = function () {
 };
 /**
  * @since Flash CS5
- * @param {Boolean} select
+ * @param {boolean} select
  */
 Frame.prototype.selectMotionPath = function (select) {
 };
@@ -614,14 +614,14 @@ Frame.prototype.setCustomEase = function (property, easeCurve) {
 /**
  * @since Flash CS5
  * @param {number} duration
- * @param {Boolean} [stretchExistingKeyframes]
+ * @param {boolean} [stretchExistingKeyframes]
  */
 Frame.prototype.setMotionObjectDuration = function (duration, stretchExistingKeyframes) {
 };
 /**
  * @since Flash CS5
  * @param {string} xmlstr
- * @param {Boolean} [endAtCurrentLocation]
+ * @param {boolean} [endAtCurrentLocation]
  */
 Frame.prototype.setMotionObjectXML = function (xmlstr, endAtCurrentLocation) {
 };

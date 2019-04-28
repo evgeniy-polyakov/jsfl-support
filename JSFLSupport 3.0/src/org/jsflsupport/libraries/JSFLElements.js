@@ -39,7 +39,7 @@ Element.prototype.layer = null;
 Element.prototype.left = 0;
 /**
  * @since Flash MX 2004
- * @type {Boolean}
+ * @type {boolean}
  */
 Element.prototype.locked = false;
 /**
@@ -69,7 +69,7 @@ Element.prototype.scaleX = 0;
 Element.prototype.scaleY = 0;
 /**
  * @since Flash 8
- * @type {Boolean}
+ * @type {boolean}
  */
 Element.prototype.selected = false;
 /**
@@ -124,7 +124,7 @@ Element.prototype.getPersistentData = function (name) {
  * @since Flash CC
  * @param {string} name
  * @param {string} format
- * @return {Boolean}
+ * @return {boolean}
  */
 Element.prototype.getPublishPersistentData = function (name, format) {
 };
@@ -137,7 +137,7 @@ Element.prototype.getTransformationPoint = function () {
 /**
  * @since Flash MX 2004
  * @param {string} name
- * @return {Boolean}
+ * @return {boolean}
  */
 Element.prototype.hasPersistentData = function (name) {
 };
@@ -159,7 +159,7 @@ Element.prototype.setPersistentData = function (name, type, value) {
  * @since Flash CC
  * @param {string} name
  * @param {string} format
- * @param {Boolean} publish
+ * @param {boolean} publish
  */
 Element.prototype.setPublishPersistentData = function (name, format, publish) {
 };
@@ -257,7 +257,7 @@ CompiledClipInstance.prototype.blendMode = null;
 CompiledClipInstance.prototype.brightness = 0;
 /**
  * @since Flash CC
- * @type {Boolean}
+ * @type {boolean}
  */
 CompiledClipInstance.prototype.cacheAsBitmap = false;
 /**
@@ -317,7 +317,7 @@ CompiledClipInstance.prototype.description = null;
 CompiledClipInstance.prototype.filters = null;
 /**
  * @since Flash MX 2004
- * @type {Boolean}
+ * @type {boolean}
  */
 CompiledClipInstance.prototype.forceSimple = false;
 /**
@@ -327,7 +327,7 @@ CompiledClipInstance.prototype.forceSimple = false;
 CompiledClipInstance.prototype.shortcut = null;
 /**
  * @since Flash MX 2004
- * @type {Boolean}
+ * @type {boolean}
  */
 CompiledClipInstance.prototype.silent = false;
 /**
@@ -349,12 +349,12 @@ CompiledClipInstance.prototype.tintColor = null;
 CompiledClipInstance.prototype.tintPercent = 0;
 /**
  * @since Flash CC
- * @type {Boolean}
+ * @type {boolean}
  */
 CompiledClipInstance.prototype.useBackgroundColor = false;
 /**
  * @since Flash CC
- * @type {Boolean}
+ * @type {boolean}
  */
 CompiledClipInstance.prototype.visible = false;
 /**
@@ -404,7 +404,7 @@ SymbolInstance.prototype.brightness = 0;
 SymbolInstance.prototype.buttonTracking = null;
 /**
  * @since Flash 8
- * @type {Boolean}
+ * @type {boolean}
  */
 SymbolInstance.prototype.cacheAsBitmap = false;
 /**
@@ -469,12 +469,12 @@ SymbolInstance.prototype.filters = null;
 SymbolInstance.prototype.firstFrame = 0;
 /**
  * @since Flash MX 2004
- * @type {Boolean}
+ * @type {boolean}
  */
 SymbolInstance.prototype.forceSimple = false;
 /**
  * @since Flash CS6
- * @type {Boolean}
+ * @type {boolean}
  * @const
  */
 SymbolInstance.prototype.is3D = false;
@@ -490,7 +490,7 @@ SymbolInstance.prototype.loop = null;
 SymbolInstance.prototype.shortcut = null;
 /**
  * @since Flash MX 2004
- * @type {Boolean}
+ * @type {boolean}
  */
 SymbolInstance.prototype.silent = false;
 /**
@@ -517,12 +517,12 @@ SymbolInstance.prototype.tintColor = null;
 SymbolInstance.prototype.tintPercent = 0;
 /**
  * @since Flash CS5.5
- * @type {Boolean}
+ * @type {boolean}
  */
 SymbolInstance.prototype.useBackgroundColor = false;
 /**
  * @since Flash CS5.5
- * @type {Boolean}
+ * @type {boolean}
  */
 SymbolInstance.prototype.visible = false;
 /**
@@ -635,12 +635,12 @@ Filter.prototype.contrast = 0;
 Filter.prototype.distance = 0;
 /**
  * @since Flash CS3
- * @type {Boolean}
+ * @type {boolean}
  */
 Filter.prototype.enabled = false;
 /**
  * @since Flash 8
- * @type {Boolean}
+ * @type {boolean}
  */
 Filter.prototype.hideObject = false;
 /**
@@ -655,12 +655,12 @@ Filter.prototype.highlightColor = null;
 Filter.prototype.hue = 0;
 /**
  * @since Flash 8
- * @type {Boolean}
+ * @type {boolean}
  */
 Filter.prototype.inner = false;
 /**
  * @since Flash 8
- * @type {Boolean}
+ * @type {boolean}
  */
 Filter.prototype.knockout = false;
 /**
@@ -716,31 +716,31 @@ Shape.prototype.contours = null;
 Shape.prototype.edges = null;
 /**
  * @since Flash 8
- * @type {Boolean}
+ * @type {boolean}
  * @const
  */
 Shape.prototype.isDrawingObject = false;
 /**
  * @since Flash CS6
- * @type {Boolean}
+ * @type {boolean}
  * @const
  */
 Shape.prototype.isFloating = false;
 /**
  * @since Flash MX 2004
- * @type {Boolean}
+ * @type {boolean}
  * @const
  */
 Shape.prototype.isGroup = false;
 /**
  * @since Flash CS3
- * @type {Boolean}
+ * @type {boolean}
  * @const
  */
 Shape.prototype.isOvalObject = false;
 /**
  * @since Flash CS3
- * @type {Boolean}
+ * @type {boolean}
  * @const
  */
 Shape.prototype.isRectangleObject = false;
@@ -795,7 +795,7 @@ Oval = function () {
 Oval.prototype = new Shape();
 /**
  * @since Flash CS3
- * @type {Boolean}
+ * @type {boolean}
  * @const
  */
 Oval.prototype.closePath = false;
@@ -839,7 +839,7 @@ Rectangle.prototype.bottomLeftRadius = 0;
 Rectangle.prototype.bottomRightRadius = 0;
 /**
  * @since Flash CS3
- * @type {Boolean}
+ * @type {boolean}
  * @const
  */
 Rectangle.prototype.lockFlag = false;
@@ -880,12 +880,12 @@ Text.prototype.antiAliasSharpness = 0;
 Text.prototype.antiAliasThickness = 0;
 /**
  * @since Flash MX 2004
- * @type {Boolean}
+ * @type {boolean}
  */
 Text.prototype.autoExpand = false;
 /**
  * @since Flash MX 2004
- * @type {Boolean}
+ * @type {boolean}
  */
 Text.prototype.border = false;
 /**
@@ -905,7 +905,7 @@ Text.prototype.embeddedCharacters = null;
 Text.prototype.embedRanges = null;
 /**
  * @since Flash CS4
- * @type {Boolean}
+ * @type {boolean}
  */
 Text.prototype.embedVariantGlyphs = false;
 /**
@@ -941,17 +941,17 @@ Text.prototype.maxCharacters = 0;
 Text.prototype.orientation = null;
 /**
  * @since Flash MX 2004
- * @type {Boolean}
+ * @type {boolean}
  */
 Text.prototype.renderAsHTML = false;
 /**
  * @since Flash MX 2004
- * @type {Boolean}
+ * @type {boolean}
  */
 Text.prototype.scrollable = false;
 /**
  * @since Flash MX 2004
- * @type {Boolean}
+ * @type {boolean}
  */
 Text.prototype.selectable = false;
 /**
@@ -971,7 +971,7 @@ Text.prototype.selectionStart = 0;
 Text.prototype.shortcut = null;
 /**
  * @since Flash MX 2004
- * @type {Boolean}
+ * @type {boolean}
  */
 Text.prototype.silent = false;
 /**
@@ -992,7 +992,7 @@ Text.prototype.textRuns = null;
 Text.prototype.textType = null;
 /**
  * @since Flash MX 2004
- * @type {Boolean}
+ * @type {boolean}
  */
 Text.prototype.useDeviceFonts = false;
 /**
@@ -1042,7 +1042,7 @@ TextAttrs = function () {
 };
 /**
  * @since Flash MX 2004
- * @type {Boolean}
+ * @type {boolean}
  */
 TextAttrs.prototype.aliasText = false;
 /**
@@ -1052,12 +1052,12 @@ TextAttrs.prototype.aliasText = false;
 TextAttrs.prototype.alignment = null;
 /**
  * @since Flash MX 2004
- * @type {Boolean}
+ * @type {boolean}
  */
 TextAttrs.prototype.autoKern = false;
 /**
  * @since Flash MX 2004
- * @type {Boolean}
+ * @type {boolean}
  */
 TextAttrs.prototype.bold = false;
 /**
@@ -1089,7 +1089,7 @@ TextAttrs.prototype.fillColor = null;
 TextAttrs.prototype.indent = 0;
 /**
  * @since Flash MX 2004
- * @type {Boolean}
+ * @type {boolean}
  */
 TextAttrs.prototype.italic = false;
 /**
@@ -1114,7 +1114,7 @@ TextAttrs.prototype.lineSpacing = 0;
 TextAttrs.prototype.rightMargin = 0;
 /**
  * @since Flash MX 2004
- * @type {Boolean}
+ * @type {boolean}
  */
 TextAttrs.prototype.rotation = false;
 /**

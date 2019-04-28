@@ -57,8 +57,8 @@ Path.prototype.close = function () {
 };
 /**
  * @since Flash MX 2004
- * @param {Boolean} [bSupressFill]
- * @param {Boolean} [bSupressStroke]
+ * @param {boolean} [bSupressFill]
+ * @param {boolean} [bSupressStroke]
  */
 Path.prototype.makeShape = function (bSupressFill, bSupressStroke) {
 };
@@ -75,7 +75,7 @@ Fill = function () {
 };
 /**
  * @since Flash CS4
- * @type {Boolean}
+ * @type {boolean}
  */
 Fill.prototype.bitmapIsClipped = false;
 /**
@@ -100,7 +100,7 @@ Fill.prototype.colorArray = null;
 Fill.prototype.focalPoint = 0;
 /**
  * @since Flash 8
- * @type {Boolean}
+ * @type {boolean}
  */
 Fill.prototype.linearRGB = false;
 /**
@@ -133,7 +133,7 @@ Stroke = function () {
  * @since Flash MX 2004
  * @deprecated
  * @see Stroke#joinType
- * @type {Boolean}
+ * @type {boolean}
  */
 Stroke.prototype.breakAtCorners = false;
 /**
@@ -230,7 +230,7 @@ Stroke.prototype.shapeFill = null;
 Stroke.prototype.space = null;
 /**
  * @since Flash 8
- * @type {Boolean}
+ * @type {boolean}
  */
 Stroke.prototype.strokeHinting = false;
 /**
@@ -271,7 +271,7 @@ Contour = function () {
 Contour.prototype.fill = null;
 /**
  * @since Flash MX 2004
- * @type {Boolean}
+ * @type {boolean}
  * @const
  */
 Contour.prototype.interior = false;

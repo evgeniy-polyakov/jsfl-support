@@ -26,17 +26,17 @@ Item.prototype.linkageBaseClass = null;
 Item.prototype.linkageClassName = null;
 /**
  * @since Flash MX 2004
- * @type {Boolean}
+ * @type {boolean}
  */
 Item.prototype.linkageExportForAS = false;
 /**
  * @since Flash MX 2004
- * @type {Boolean}
+ * @type {boolean}
  */
 Item.prototype.linkageExportForRS = false;
 /**
  * @since Flash MX 2004
- * @type {Boolean}
+ * @type {boolean}
  */
 Item.prototype.linkageExportInFirstFrame = false;
 /**
@@ -46,7 +46,7 @@ Item.prototype.linkageExportInFirstFrame = false;
 Item.prototype.linkageIdentifier = null;
 /**
  * @since Flash MX 2004
- * @type {Boolean}
+ * @type {boolean}
  */
 Item.prototype.linkageImportForRS = false;
 /**
@@ -78,14 +78,14 @@ Item.prototype.getData = function (name) {
  * @since Flash CC
  * @param {string} name
  * @param {string} format
- * @return {Boolean}
+ * @return {boolean}
  */
 Item.prototype.getPublishData = function (name, format) {
 };
 /**
  * @since Flash MX 2004
  * @param {string} name
- * @return {Boolean}
+ * @return {boolean}
  */
 Item.prototype.hasData = function (name) {
 };
@@ -99,7 +99,7 @@ Item.prototype.removeData = function (name) {
  * @since Flash CC
  * @param {string} name
  * @param {string} format
- * @param {Boolean} publish
+ * @param {boolean} publish
  */
 Item.prototype.setPublishData = function (name, format, publish) {
 };
@@ -113,7 +113,7 @@ BitmapItem = function () {
 BitmapItem.prototype = new Item();
 /**
  * @since Flash MX 2004
- * @type {Boolean}
+ * @type {boolean}
  */
 BitmapItem.prototype.allowSmoothing = false;
 /**
@@ -129,7 +129,7 @@ BitmapItem.prototype.compressionType = null;
 BitmapItem.prototype.fileLastModifiedDate = null;
 /**
  * @since Flash CS6
- * @type {Boolean}
+ * @type {boolean}
  * @const
  */
 BitmapItem.prototype.hasValidAlphaLayer = false;
@@ -147,13 +147,13 @@ BitmapItem.prototype.lastModifiedDate = 0;
 BitmapItem.prototype.originalCompressionType = null;
 /**
  * @since Flash CS4
- * @type {Boolean}
+ * @type {boolean}
  * @const
  */
 BitmapItem.prototype.sourceFileExists = false;
 /**
  * @since Flash CS4
- * @type {Boolean}
+ * @type {boolean}
  * @const
  */
 BitmapItem.prototype.sourceFileIsCurrent = false;
@@ -165,19 +165,19 @@ BitmapItem.prototype.sourceFileIsCurrent = false;
 BitmapItem.prototype.sourceFilePath = null;
 /**
  * @since Flash CS4
- * @type {Boolean}
+ * @type {boolean}
  */
 BitmapItem.prototype.useDeblocking = false;
 /**
  * @since Flash MX 2004
- * @type {Boolean}
+ * @type {boolean}
  */
 BitmapItem.prototype.useImportedJPEGQuality = false;
 /**
  * @since Flash CS4
  * @param {string} fileURI
  * @param {number} quality
- * @return {Boolean}
+ * @return {boolean}
  */
 BitmapItem.prototype.exportToFile = function (fileURI, quality) {
 };
@@ -199,12 +199,12 @@ FontItem = function () {
 FontItem.prototype = new Item();
 /**
  * @since Flash CS4
- * @type {Boolean}
+ * @type {boolean}
  */
 FontItem.prototype.bitmap = false;
 /**
  * @since Flash CS4
- * @type {Boolean}
+ * @type {boolean}
  */
 FontItem.prototype.bold = false;
 /**
@@ -219,7 +219,7 @@ FontItem.prototype.embeddedCharacters = null;
 FontItem.prototype.embedRanges = null;
 /**
  * @since Flash CS4
- * @type {Boolean}
+ * @type {boolean}
  */
 FontItem.prototype.embedVariantGlyphs = false;
 /**
@@ -229,12 +229,12 @@ FontItem.prototype.embedVariantGlyphs = false;
 FontItem.prototype.font = null;
 /**
  * @since Flash CS4
- * @type {Boolean}
+ * @type {boolean}
  */
 FontItem.prototype.isDefineFont4Symbol = false;
 /**
  * @since Flash CS4
- * @type {Boolean}
+ * @type {boolean}
  */
 FontItem.prototype.italic = false;
 /**
@@ -267,7 +267,7 @@ SoundItem.prototype.bits = null;
 SoundItem.prototype.compressionType = null;
 /**
  * @since Flash MX 2004
- * @type {Boolean}
+ * @type {boolean}
  */
 SoundItem.prototype.convertStereoToMono = false;
 /**
@@ -300,13 +300,13 @@ SoundItem.prototype.quality = null;
 SoundItem.prototype.sampleRate = null;
 /**
  * @since Flash CS4
- * @type {Boolean}
+ * @type {boolean}
  * @const
  */
 SoundItem.prototype.sourceFileExists = false;
 /**
  * @since Flash CS4
- * @type {Boolean}
+ * @type {boolean}
  * @const
  */
 SoundItem.prototype.sourceFileIsCurrent = false;
@@ -318,13 +318,13 @@ SoundItem.prototype.sourceFileIsCurrent = false;
 SoundItem.prototype.sourceFilePath = null;
 /**
  * @since Flash MX 2004
- * @type {Boolean}
+ * @type {boolean}
  */
 SoundItem.prototype.useImportedMP3Quality = false;
 /**
  * @since Flash CS4
  * @param {string} fileURI
- * @return {Boolean}
+ * @return {boolean}
  */
 SoundItem.prototype.exportToFile = function (fileURI) {
 };
@@ -344,7 +344,7 @@ SymbolItem.prototype = new Item();
 SymbolItem.prototype.lastModifiedDate = 0;
 /**
  * @since Flash 8
- * @type {Boolean}
+ * @type {boolean}
  */
 SymbolItem.prototype.scalingGrid = false;
 /**
@@ -354,7 +354,7 @@ SymbolItem.prototype.scalingGrid = false;
 SymbolItem.prototype.scalingGridRect = null;
 /**
  * @since Flash MX 2004
- * @type {Boolean}
+ * @type {boolean}
  */
 SymbolItem.prototype.sourceAutoUpdate = false;
 /**
@@ -433,13 +433,13 @@ VideoItem.prototype.fileLastModifiedDate = null;
 VideoItem.prototype.lastModifiedDate = 0;
 /**
  * @since Flash CS4
- * @type {Boolean}
+ * @type {boolean}
  * @const
  */
 VideoItem.prototype.sourceFileExists = false;
 /**
  * @since Flash CS4
- * @type {Boolean}
+ * @type {boolean}
  * @const
  */
 VideoItem.prototype.sourceFileIsCurrent = false;
@@ -458,7 +458,7 @@ VideoItem.prototype.videoType = null;
 /**
  * @since Flash CS4
  * @param {string} fileURI
- * @return {Boolean}
+ * @return {boolean}
  */
 VideoItem.prototype.exportToFLV = function (fileURI) {
 };

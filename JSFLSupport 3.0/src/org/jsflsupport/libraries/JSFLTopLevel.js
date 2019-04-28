@@ -11,7 +11,7 @@ alert = function (alertText) {
 /**
  * @since Flash 8
  * @param {string} strAlert
- * @return {Boolean}
+ * @return {boolean}
  */
 confirm = function (strAlert) {
 };
@@ -71,7 +71,7 @@ Flash.prototype.configDirectory = null;
 Flash.prototype.configURI = null;
 /**
  * @since Flash 8
- * @type {Boolean}
+ * @type {boolean}
  */
 Flash.prototype.contactSensitiveSelection = false;
 /**
@@ -161,7 +161,7 @@ Flash.prototype.packagePaths = null;
 Flash.prototype.publishCacheDiskSizeMax = null;
 /**
  * @since Flash CS5.5
- * @type {Boolean}
+ * @type {boolean}
  */
 Flash.prototype.publishCacheEnabled = null;
 /**
@@ -176,7 +176,7 @@ Flash.prototype.publishCacheMemoryEntrySizeLimit = null;
 Flash.prototype.publishCacheMemorySizeMax = null;
 /**
  * @since Flash 8
- * @type {Boolean}
+ * @type {boolean}
  */
 Flash.prototype.objectDrawingMode = 0;
 /**
@@ -270,20 +270,20 @@ Flash.prototype.clipCopyString = function (string) {
 };
 /**
  * @since Flash MX 2004
- * @param {Boolean} [bPromptToSave]
+ * @param {boolean} [bPromptToSave]
  */
 Flash.prototype.closeAll = function (bPromptToSave) {
 };
 /**
  * @since Flash CS3
- * @return {Boolean}
+ * @return {boolean}
  */
 Flash.prototype.closeAllPlayerDocuments = function () {
 };
 /**
  * @since Flash MX 2004
  * @param {Document} documentObject
- * @param {Boolean} [bPromptToSaveChanges]
+ * @param {boolean} [bPromptToSaveChanges]
  */
 Flash.prototype.closeDocument = function (documentObject, bPromptToSaveChanges) {
 };
@@ -305,7 +305,7 @@ Flash.prototype.exportPublishProfileString = function (ucfURI, profileName) {
 /**
  * @since Flash MX 2004
  * @param {string} fileURI
- * @return {Boolean}
+ * @return {boolean}
  */
 Flash.prototype.fileExists = function (fileURI) {
 };
@@ -376,7 +376,7 @@ Flash.prototype.getThemeFontInfo = function (infoType, size) {
 /**
  * @since Flash CS5.5
  * @param {string} panelName
- * @param {Boolean} [useLocalizedPanelName]
+ * @param {boolean} [useLocalizedPanelName]
  * @return {SwfPanel}
  */
 Flash.prototype.getSwfPanel = function (panelName, useLocalizedPanelName) {
@@ -384,14 +384,14 @@ Flash.prototype.getSwfPanel = function (panelName, useLocalizedPanelName) {
 /**
  * @since Flash CS4
  * @param {string} fontName
- * @return {Boolean}
+ * @return {boolean}
  */
 Flash.prototype.isFontInstalled = function (fontName) {
 };
 /**
  * @since Flash MX 2004
  * @param {string} URI
- * @param {Boolean} [returnMBCS]
+ * @param {boolean} [returnMBCS]
  * @return {string}
  */
 Flash.prototype.mapPlayerURL = function (URI, returnMBCS) {
@@ -413,7 +413,7 @@ Flash.prototype.openScript = function (fileURI, createExtension, className) {
 };
 /**
  * @since Flash MX 2004
- * @param {Boolean} [bPromptIfNeeded]
+ * @param {boolean} [bPromptIfNeeded]
  */
 Flash.prototype.quit = function (bPromptIfNeeded) {
 };
@@ -432,7 +432,7 @@ Flash.prototype.reloadTools = function () {
  * @since Flash CS3
  * @param {string} eventType
  * @param {number} id
- * @return {Boolean}
+ * @return {boolean}
  */
 Flash.prototype.removeEventListener = function (eventType, id) {
 };
@@ -465,22 +465,22 @@ Flash.prototype.saveAll = function () {
  * @since Flash MX 2004
  * @param {Document} document
  * @param {string} [fileURI]
- * @return {Boolean}
+ * @return {boolean}
  */
 Flash.prototype.saveDocument = function (document, fileURI) {
 };
 /**
  * @since Flash MX 2004
  * @param {Document} document
- * @return {Boolean}
+ * @return {boolean}
  */
 Flash.prototype.saveDocumentAs = function (document) {
 };
 /**
  * @since Flash CS3
  * @param {Element} elementObject
- * @param {Boolean} editMode
- * @return {Boolean}
+ * @param {boolean} editMode
+ * @return {boolean}
  */
 Flash.prototype.selectElement = function (elementObject, editMode) {
 };
@@ -501,13 +501,13 @@ Flash.prototype.setActiveWindow = function (document, bActivateFrame) {
  * @since Flash CC
  * @param {string} keySection
  * @param {string} keyName
- * @param {Boolean} keyValue
+ * @param {boolean} keyValue
  */
 Flash.prototype.setPrefBoolean = function (keySection, keyName, keyValue) {
 };
 /**
  * @since Flash 8
- * @param {Boolean} show
+ * @param {boolean} show
  */
 Flash.prototype.showIdleMessage = function (show) {
 };
@@ -515,7 +515,7 @@ Flash.prototype.showIdleMessage = function (show) {
  * @since Flash CS5
  * @param {string} fileURI
  * @param {number} line
- * @param {Boolean} enable
+ * @param {boolean} enable
  */
 Flash.prototype.toggleBreakpoint = function (fileURI, line, enable) {
 };
@@ -556,7 +556,7 @@ ActionsPanel.prototype.getClassForObject = function (ASVariableName) {
 /**
  * @since Flash CS3
  * @deprecated
- * @return {Boolean}
+ * @return {boolean}
  */
 ActionsPanel.prototype.getScriptAssistMode = function () {
 };
@@ -574,22 +574,22 @@ ActionsPanel.prototype.getText = function () {
 };
 /**
  * @since Flash CS3
- * @return {Boolean}
+ * @return {boolean}
  */
 ActionsPanel.prototype.hasSelection = function () {
 };
 /**
  * @since Flash CS3
  * @param {string} replacementText
- * @return {Boolean}
+ * @return {boolean}
  */
 ActionsPanel.prototype.replaceSelectedText = function (replacementText) {
 };
 /**
  * @since Flash CS3
  * @deprecated
- * @param {Boolean} bScriptAssist
- * @return {Boolean}
+ * @param {boolean} bScriptAssist
+ * @return {boolean}
  */
 ActionsPanel.prototype.setScriptAssistMode = function (bScriptAssist) {
 };
@@ -597,14 +597,14 @@ ActionsPanel.prototype.setScriptAssistMode = function (bScriptAssist) {
  * @since Flash CS3
  * @param {number} startIndex
  * @param {number} numberOfChars
- * @return {Boolean}
+ * @return {boolean}
  */
 ActionsPanel.prototype.setSelection = function (startIndex, numberOfChars) {
 };
 /**
  * @since Flash CS3
  * @param {string} replacementText
- * @return {Boolean}
+ * @return {boolean}
  */
 ActionsPanel.prototype.setText = function (replacementText) {
 };
@@ -622,8 +622,8 @@ CompilerErrors.prototype.clear = function () {
 /**
  * @since Flash CS3
  * @param {string} fileURI
- * @param {Boolean} [bAppendToFile]
- * @param {Boolean} [bUseSystemEncoding]
+ * @param {boolean} [bAppendToFile]
+ * @param {boolean} [bUseSystemEncoding]
  */
 CompilerErrors.prototype.save = function (fileURI, bAppendToFile, bUseSystemEncoding) {
 };
@@ -643,7 +643,7 @@ ComponentPanel.prototype.addItemToDocument = function (position, categoryName, c
 };
 /**
  * @since Flash 8
- * @return {Boolean}
+ * @return {boolean}
  */
 ComponentPanel.prototype.reload = function () {
 };
@@ -655,7 +655,7 @@ drawingLayer = function () {
 };
 /**
  * @since Flash MX 2004
- * @param {Boolean} [persistentDraw]
+ * @param {boolean} [persistentDraw]
  */
 drawingLayer.prototype.beginDraw = function (persistentDraw) {
 };
@@ -777,8 +777,8 @@ OutputPanel.prototype.clear = function () {
 /**
  * @since Flash MX 2004
  * @param {string} fileURI
- * @param {Boolean} [bAppendToFile]
- * @param {Boolean} [bUseSystemEncoding]
+ * @param {boolean} [bAppendToFile]
+ * @param {boolean} [bUseSystemEncoding]
  */
 OutputPanel.prototype.save = function (fileURI, bAppendToFile, bUseSystemEncoding) {
 };
@@ -802,37 +802,37 @@ PresetPanel.prototype.items = null;
 /**
  * @since Flash CS4
  * @param {string} [namePath]
- * @return {Boolean}
+ * @return {boolean}
  */
 PresetPanel.prototype.addNewItem = function (namePath) {
 };
 /**
  * @since Flash CS4
  * @param {string} [presetPath]
- * @return {Boolean}
+ * @return {boolean}
  */
 PresetPanel.prototype.applyPreset = function (presetPath) {
 };
 /**
  * @since Flash CS4
  * @param {string} [folderPath]
- * @return {Boolean}
+ * @return {boolean}
  */
 PresetPanel.prototype.deleteFolder = function (folderPath) {
 };
 /**
  * @since Flash CS4
  * @param {string} [namePath]
- * @return {Boolean}
+ * @return {boolean}
  */
 PresetPanel.prototype.deleteItem = function (namePath) {
 };
 /**
  * @since Flash CS4
- * @param {Boolean} [bExpand]
- * @param {Boolean} [bRecurse]
+ * @param {boolean} [bExpand]
+ * @param {boolean} [bRecurse]
  * @param {string} [folderPath]
- * @return {Boolean}
+ * @return {boolean}
  */
 PresetPanel.prototype.expandFolder = function (bExpand, bRecurse, folderPath) {
 };
@@ -840,7 +840,7 @@ PresetPanel.prototype.expandFolder = function (bExpand, bRecurse, folderPath) {
  * @since Flash CS4
  * @param {string} fileURI
  * @param {string} [namePath]
- * @return {Boolean}
+ * @return {boolean}
  */
 PresetPanel.prototype.exportItem = function (fileURI, namePath) {
 };
@@ -861,7 +861,7 @@ PresetPanel.prototype.getSelectedItems = function () {
  * @since Flash CS4
  * @param {string} fileURI
  * @param {string} [namePath]
- * @return {Boolean}
+ * @return {boolean}
  */
 PresetPanel.prototype.importItem = function (fileURI, namePath) {
 };
@@ -869,30 +869,30 @@ PresetPanel.prototype.importItem = function (fileURI, namePath) {
  * @since Flash CS4
  * @param {string} folderPath
  * @param {string} [namePath]
- * @return {Boolean}
+ * @return {boolean}
  */
 PresetPanel.prototype.moveToFolder = function (folderPath, namePath) {
 };
 /**
  * @since Flash CS4
  * @param {string} [folderPath]
- * @return {Boolean}
+ * @return {boolean}
  */
 PresetPanel.prototype.newFolder = function (folderPath) {
 };
 /**
  * @since Flash CS4
  * @param {string} newName
- * @return {Boolean}
+ * @return {boolean}
  */
 PresetPanel.prototype.renameItem = function (newName) {
 };
 /**
  * @since Flash CS4
  * @param {string} namePath
- * @param {Boolean} [bReplaceCurrentSelection]
- * @param {Boolean} [bSelect]
- * @return {Boolean}
+ * @param {boolean} [bReplaceCurrentSelection]
+ * @param {boolean} [bSelect]
+ * @return {boolean}
  */
 PresetPanel.prototype.selectItem = function (namePath, bReplaceCurrentSelection, bSelect) {
 };
@@ -909,17 +909,17 @@ Tools = function () {
 Tools.prototype.activeTool = null;
 /**
  * @since Flash MX 2004
- * @type {Boolean}
+ * @type {boolean}
  */
 Tools.prototype.altIsDown = null;
 /**
  * @since Flash MX 2004
- * @type {Boolean}
+ * @type {boolean}
  */
 Tools.prototype.ctlIsDown = null;
 /**
  * @since Flash MX 2004
- * @type {Boolean}
+ * @type {boolean}
  */
 Tools.prototype.mouseIsDown = null;
 /**
@@ -934,7 +934,7 @@ Tools.prototype.penDownLoc = null;
 Tools.prototype.penLoc = null;
 /**
  * @since Flash MX 2004
- * @type {Boolean}
+ * @type {boolean}
  */
 Tools.prototype.shiftIsDown = false;
 /**
@@ -1002,14 +1002,14 @@ XMLUI.prototype.getControlItemElement = function (controlPropertyName) {
 /**
  * @since Flash 8
  * @param {string} controlID
- * @return {Boolean}
+ * @return {boolean}
  */
 XMLUI.prototype.getEnabled = function (controlID) {
 };
 /**
  * @since Flash 8
  * @param {string} controlID
- * @return {Boolean}
+ * @return {boolean}
  */
 XMLUI.prototype.getVisible = function (controlID) {
 };
@@ -1037,14 +1037,14 @@ XMLUI.prototype.setControlItemElements = function (controlID, elementItemArray) 
 /**
  * @since Flash 8
  * @param {string} controlID
- * @param {Boolean} enable
+ * @param {boolean} enable
  */
 XMLUI.prototype.setEnabled = function (controlID, enable) {
 };
 /**
  * @since Flash 8
  * @param {string} controlID
- * @param {Boolean} visible
+ * @param {boolean} visible
  */
 XMLUI.prototype.setVisible = function (controlID, visible) {
 };
@@ -1056,13 +1056,13 @@ PresetItem = function () {
 };
 /**
  * @since Flash CS4
- * @type {Boolean}
+ * @type {boolean}
  * @const
  */
 PresetItem.prototype.isDefault = null;
 /**
  * @since Flash CS4
- * @type {Boolean}
+ * @type {boolean}
  * @const
  */
 PresetItem.prototype.isFolder = null;
@@ -1080,7 +1080,7 @@ PresetItem.prototype.level = null;
 PresetItem.prototype.name = null;
 /**
  * @since Flash CS4
- * @type {Boolean}
+ * @type {boolean}
  * @const
  */
 PresetItem.prototype.open = null;
@@ -1164,7 +1164,7 @@ ToolObj.prototype.position = 0;
 /**
  * @since Flash MX 2004
  * @param {string} control
- * @param {Boolean} bEnable
+ * @param {boolean} bEnable
  */
 ToolObj.prototype.enablePIControl = function (control, bEnable) {
 };
@@ -1207,13 +1207,13 @@ ToolObj.prototype.setToolTip = function (toolTip) {
 /**
  * @since Flash MX 2004
  * @param {string} control
- * @param {Boolean} bShow
+ * @param {boolean} bShow
  */
 ToolObj.prototype.showPIControl = function (control, bShow) {
 };
 /**
  * @since Flash MX 2004
- * @param {Boolean} bShow
+ * @param {boolean} bShow
  */
 ToolObj.prototype.showTransformHandles = function (bShow) {
 };
@@ -1261,12 +1261,12 @@ SpriteSheetExporter = function () {
 SpriteSheetExporter.prototype.algorithm = null;
 /**
  * @since Flash CS6
- * @type {Boolean}
+ * @type {boolean}
  */
 SpriteSheetExporter.prototype.allowRotate = false;
 /**
  * @since Flash CS6
- * @type {Boolean}
+ * @type {boolean}
  */
 SpriteSheetExporter.prototype.allowTrimming = false;
 /**
@@ -1277,7 +1277,7 @@ SpriteSheetExporter.prototype.allowTrimming = false;
 SpriteSheetExporter.prototype.app = null;
 /**
  * @since Flash CS6
- * @type {Boolean}
+ * @type {boolean}
  */
 SpriteSheetExporter.prototype.autoSize = false;
 /**
@@ -1287,31 +1287,31 @@ SpriteSheetExporter.prototype.autoSize = false;
 SpriteSheetExporter.prototype.borderPadding = 0;
 /**
  * @since Flash CS6
- * @type {Boolean}
+ * @type {boolean}
  * @const
  */
 SpriteSheetExporter.prototype.canBorderPad = false;
 /**
  * @since Flash CS6
- * @type {Boolean}
+ * @type {boolean}
  * @const
  */
 SpriteSheetExporter.prototype.canRotate = false;
 /**
  * @since Flash CS6
- * @type {Boolean}
+ * @type {boolean}
  * @const
  */
 SpriteSheetExporter.prototype.canShapePad = false;
 /**
  * @since Flash CS6
- * @type {Boolean}
+ * @type {boolean}
  * @const
  */
 SpriteSheetExporter.prototype.canStackDuplicateFrames = false;
 /**
  * @since Flash CS6
- * @type {Boolean}
+ * @type {boolean}
  * @const
  */
 SpriteSheetExporter.prototype.canTrim = false;
@@ -1334,7 +1334,7 @@ SpriteSheetExporter.prototype.image = null;
 SpriteSheetExporter.prototype.layoutFormat = null;
 /**
  * @since Flash CS6
- * @type {Boolean}
+ * @type {boolean}
  * @const
  */
 SpriteSheetExporter.prototype.overflowed = false;
@@ -1355,7 +1355,7 @@ SpriteSheetExporter.prototype.sheetHeight = 0;
 SpriteSheetExporter.prototype.sheetWidth = 0;
 /**
  * @since Flash CS6
- * @type {Boolean}
+ * @type {boolean}
  */
 SpriteSheetExporter.prototype.stackDuplicateFrames = false;
 /**
@@ -1376,7 +1376,7 @@ SpriteSheetExporter.prototype.addBitmap = function (bitmap) {
  * @param {string} [name]
  * @param {number} [beginFrame]
  * @param {number} [endFrame]
- * @return {Boolean}
+ * @return {boolean}
  */
 SpriteSheetExporter.prototype.addSymbol = function (symbol, name, beginFrame, endFrame) {
 };
@@ -1390,7 +1390,7 @@ SpriteSheetExporter.prototype.beginExport = function () {
  * @param {SymbolItem|SymbolInstance} symbol
  * @param {number} [beginFrame]
  * @param {number} [endFrame]
- * @return {Boolean}
+ * @return {boolean}
  */
 SpriteSheetExporter.prototype.changeSymbol = function (symbol, beginFrame, endFrame) {
 };
@@ -1398,7 +1398,7 @@ SpriteSheetExporter.prototype.changeSymbol = function (symbol, beginFrame, endFr
  * @since Flash CS6
  * @param {string} path
  * @param {string|{format:string,backgroundColor?:(string|number),quality?:number,bitDepth?:number}} imageFormat
- * @param {Boolean} [writeMetaData]
+ * @param {boolean} [writeMetaData]
  * @return {string}
  */
 SpriteSheetExporter.prototype.exportSpriteSheet = function (path, imageFormat, writeMetaData) {
@@ -1412,7 +1412,7 @@ SpriteSheetExporter.prototype.removeBitmap = function (bitmap) {
 /**
  * @since Flash CS6
  * @param {SymbolItem|SymbolInstance} symbol
- * @return {Boolean}
+ * @return {boolean}
  */
 SpriteSheetExporter.prototype.removeSymbol = function (symbol) {
 };
@@ -1431,21 +1431,21 @@ FLfile = new FlashFile();
  * @since Flash MX 2004
  * @param {string} fileURI
  * @param {string} copyURI
- * @return {Boolean}
+ * @return {boolean}
  */
 FlashFile.prototype.copy = function (fileURI, copyURI) {
 };
 /**
  * @since Flash MX 2004
  * @param {string} folderURI
- * @return {Boolean}
+ * @return {boolean}
  */
 FlashFile.prototype.createFolder = function (folderURI) {
 };
 /**
  * @since Flash MX 2004
  * @param {string} fileURI
- * @return {Boolean}
+ * @return {boolean}
  */
 FlashFile.prototype.exists = function (fileURI) {
 };
@@ -1516,7 +1516,7 @@ FlashFile.prototype.read = function (fileURI) {
 /**
  * @since Flash MX 2004
  * @param {string} fileOrFolderURI
- * @return {Boolean}
+ * @return {boolean}
  */
 FlashFile.prototype.remove = function (fileOrFolderURI) {
 };
@@ -1524,7 +1524,7 @@ FlashFile.prototype.remove = function (fileOrFolderURI) {
  * @since Flash MX 2004
  * @param {string} fileURI
  * @param {string} strAttrs
- * @return {Boolean}
+ * @return {boolean}
  */
 FlashFile.prototype.setAttributes = function (fileURI, strAttrs) {
 };
@@ -1540,7 +1540,7 @@ FlashFile.prototype.uriToPlatformPath = function (fileURI) {
  * @param {string} fileURI
  * @param {string} textToWrite
  * @param {string} [strAppendMode]
- * @return {Boolean}
+ * @return {boolean}
  */
 FlashFile.prototype.write = function (fileURI, textToWrite, strAppendMode) {
 };

@@ -15,7 +15,7 @@ Document = function () {
 Document.prototype.accName = null;
 /**
  * @since Flash CS3
- * @type {Boolean}
+ * @type {boolean}
  */
 Document.prototype.as3AutoDeclare = false;
 /**
@@ -30,12 +30,12 @@ Document.prototype.as3Dialect = null;
 Document.prototype.as3ExportFrame = 0;
 /**
  * @since Flash CS3
- * @type {Boolean}
+ * @type {boolean}
  */
 Document.prototype.as3StrictMode = false;
 /**
  * @since Flash CS3
- * @type {Boolean}
+ * @type {boolean}
  */
 Document.prototype.as3WarningsMode = false;
 /**
@@ -45,7 +45,7 @@ Document.prototype.as3WarningsMode = false;
 Document.prototype.asVersion = 0;
 /**
  * @since Flash MX 2004
- * @type {Boolean}
+ * @type {boolean}
  */
 Document.prototype.autoLabel = false;
 /**
@@ -80,7 +80,7 @@ Document.prototype.docClass = null;
 Document.prototype.externalLibraryPath = null;
 /**
  * @since Flash MX 2004
- * @type {Boolean}
+ * @type {boolean}
  */
 Document.prototype.forceSimple = false;
 /**
@@ -112,7 +112,7 @@ Document.prototype.library = null;
 Document.prototype.libraryPath = null;
 /**
  * @since Flash MX 2004
- * @type {Boolean}
+ * @type {boolean}
  */
 Document.prototype.livePreview = false;
 /**
@@ -153,7 +153,7 @@ Document.prototype.screenOutline = null;
 Document.prototype.selection = null;
 /**
  * @since Flash MX 2004
- * @type {Boolean}
+ * @type {boolean}
  */
 Document.prototype.silent = false;
 /**
@@ -214,7 +214,7 @@ Document.prototype.addFilter = function (filterName) {
  * @since Flash MX 2004
  * @param {{x:number,y:number}} position
  * @param {Item} item
- * @return {Boolean}
+ * @return {boolean}
  */
 Document.prototype.addItem = function (position, item) {
 };
@@ -228,16 +228,16 @@ Document.prototype.addNewLine = function (startPoint, endpoint) {
 /**
  * @since Flash MX 2004
  * @param {{left:number,top:number,right:number,bottom:number}} boundingRectangle
- * @param {Boolean} [bSuppressFill]
- * @param {Boolean} [bSuppressStroke]
+ * @param {boolean} [bSuppressFill]
+ * @param {boolean} [bSuppressStroke]
  */
 Document.prototype.addNewOval = function (boundingRectangle, bSuppressFill, bSuppressStroke) {
 };
 /**
  * @since Flash CS4
  * @param {{left:number,top:number,right:number,bottom:number}} boundingRectangle
- * @param {Boolean} [bSuppressFill]
- * @param {Boolean} [bSuppressStroke]
+ * @param {boolean} [bSuppressFill]
+ * @param {boolean} [bSuppressStroke]
  */
 Document.prototype.addNewPrimitiveOval = function (boundingRectangle, bSuppressFill, bSuppressStroke) {
 };
@@ -245,8 +245,8 @@ Document.prototype.addNewPrimitiveOval = function (boundingRectangle, bSuppressF
  * @since Flash CS4
  * @param {{left:number,top:number,right:number,bottom:number}} boundingRectangle
  * @param {number} roundness
- * @param {Boolean} [bSuppressFill]
- * @param {Boolean} [bSuppressStroke]
+ * @param {boolean} [bSuppressFill]
+ * @param {boolean} [bSuppressStroke]
  */
 Document.prototype.addNewPrimitiveRectangle = function (boundingRectangle, roundness, bSuppressFill, bSuppressStroke) {
 };
@@ -261,15 +261,15 @@ Document.prototype.addNewPublishProfile = function (profileName) {
  * @since Flash MX 2004
  * @param {{left:number,top:number,right:number,bottom:number}} boundingRectangle
  * @param {number} roundness
- * @param {Boolean} [bSuppressFill]
- * @param {Boolean} [bSuppressStroke]
+ * @param {boolean} [bSuppressFill]
+ * @param {boolean} [bSuppressStroke]
  */
 Document.prototype.addNewRectangle = function (boundingRectangle, roundness, bSuppressFill, bSuppressStroke) {
 };
 /**
  * @since Flash MX 2004
  * @param {string} [name]
- * @return {Boolean}
+ * @return {boolean}
  */
 Document.prototype.addNewScene = function (name) {
 };
@@ -283,14 +283,14 @@ Document.prototype.addNewText = function (boundingRectangle, text) {
 /**
  * @since Flash MX 2004
  * @param {string} alignMode
- * @param {Boolean} [bUseDocumentBounds]
+ * @param {boolean} [bUseDocumentBounds]
  */
 Document.prototype.align = function (alignMode, bUseDocumentBounds) {
 };
 /**
  * @since Flash MX 2004
  * @deprecated
- * @return {Boolean}
+ * @return {boolean}
  */
 Document.prototype.allowScreens = function () {
 };
@@ -307,31 +307,31 @@ Document.prototype.breakApart = function () {
 };
 /**
  * @since Flash MX 2004
- * @return {Boolean}
+ * @return {boolean}
  */
 Document.prototype.canEditSymbol = function () {
 };
 /**
  * @since Flash CC
- * @return {Boolean}
+ * @return {boolean}
  */
 Document.prototype.canDistributeToKeyframes = function () {
 };
 /**
  * @since Flash MX 2004
- * @return {Boolean}
+ * @return {boolean}
  */
 Document.prototype.canRevert = function () {
 };
 /**
  * @since Flash MX 2004
- * @return {Boolean}
+ * @return {boolean}
  */
 Document.prototype.canTestMovie = function () {
 };
 /**
  * @since Flash MX 2004
- * @return {Boolean}
+ * @return {boolean}
  */
 Document.prototype.canTestScene = function () {
 };
@@ -354,13 +354,13 @@ Document.prototype.clipCut = function () {
 };
 /**
  * @since Flash MX 2004
- * @param {Boolean} [bInPlace]
+ * @param {boolean} [bInPlace]
  */
 Document.prototype.clipPaste = function (bInPlace) {
 };
 /**
  * @since Flash MX 2004
- * @param {Boolean} [bPromptToSaveChanges]
+ * @param {boolean} [bPromptToSaveChanges]
  */
 Document.prototype.close = function (bPromptToSaveChanges) {
 };
@@ -371,7 +371,7 @@ Document.prototype.convertLinesToFills = function () {
 };
 /**
  * @since Flash CC
- * @return {Boolean}
+ * @return {boolean}
  */
 Document.prototype.convertSelectionToBitmap = function () {
 };
@@ -386,19 +386,19 @@ Document.prototype.convertToSymbol = function (type, name, registrationPoint) {
 };
 /**
  * @since Flash 8
- * @return {Boolean}
+ * @return {boolean}
  */
 Document.prototype.crop = function () {
 };
 /**
  * @since Flash CS5
- * @param {Boolean} [abortIfErrorsExist]
+ * @param {boolean} [abortIfErrorsExist]
  */
 Document.prototype.debugMovie = function (abortIfErrorsExist) {
 };
 /**
  * @since Flash 8
- * @return {Boolean}
+ * @return {boolean}
  */
 Document.prototype.deleteEnvelope = function () {
 };
@@ -410,7 +410,7 @@ Document.prototype.deletePublishProfile = function () {
 };
 /**
  * @since Flash MX 2004
- * @return {Boolean}
+ * @return {boolean}
  */
 Document.prototype.deleteScene = function () {
 };
@@ -439,7 +439,7 @@ Document.prototype.disableOtherFilters = function (enabledFilterIndex) {
 /**
  * @since Flash MX 2004
  * @param {string} distributeMode
- * @param {Boolean} [bUseDocumentBounds]
+ * @param {boolean} [bUseDocumentBounds]
  */
 Document.prototype.distribute = function (distributeMode, bUseDocumentBounds) {
 };
@@ -456,7 +456,7 @@ Document.prototype.distributeToLayers = function () {
 /**
  * @since Flash MX 2004
  * @param {string} name
- * @return {Boolean}
+ * @return {boolean}
  */
 Document.prototype.documentHasData = function (name) {
 };
@@ -469,7 +469,7 @@ Document.prototype.duplicatePublishProfile = function (profileName) {
 };
 /**
  * @since Flash MX 2004
- * @return {Boolean}
+ * @return {boolean}
  */
 Document.prototype.duplicateScene = function () {
 };
@@ -525,9 +525,9 @@ Document.prototype.exportInstanceToPNGSequence = function (outputURI, startFrame
 /**
  * @since Flash 8
  * @param {string} fileURI
- * @param {Boolean} [bCurrentPNGSettings]
- * @param {Boolean} [bCurrentFrame]
- * @return {Boolean}
+ * @param {boolean} [bCurrentPNGSettings]
+ * @param {boolean} [bCurrentFrame]
+ * @return {boolean}
  */
 Document.prototype.exportPNG = function (fileURI, bCurrentPNGSettings, bCurrentFrame) {
 };
@@ -547,16 +547,16 @@ Document.prototype.exportPublishProfileString = function (profileName) {
 /**
  * @since Flash MX 2004
  * @param {string} [fileURI]
- * @param {Boolean} [bCurrentSettings]
+ * @param {boolean} [bCurrentSettings]
  */
 Document.prototype.exportSWF = function (fileURI, bCurrentSettings) {
 };
 /**
  * @since Flash CC
  * @param {string} fileURI
- * @param {Boolean} [convertInAdobeMediaEncoder]
- * @param {Boolean} [transparent]
- * @param {Boolean} [stopAtFrame]
+ * @param {boolean} [convertInAdobeMediaEncoder]
+ * @param {boolean} [transparent]
+ * @param {boolean} [stopAtFrame]
  * @param {number} [stopAtFrameOrTime]
  */
 Document.prototype.exportVideo = function (fileURI, convertInAdobeMediaEncoder, transparent, stopAtFrame,
@@ -564,7 +564,7 @@ Document.prototype.exportVideo = function (fileURI, convertInAdobeMediaEncoder, 
 };
 /**
  * @since Flash MX 2004
- * @return {Boolean}
+ * @return {boolean}
  */
 Document.prototype.getAlignToDocument = function () {
 };
@@ -638,7 +638,7 @@ Document.prototype.getPlayerVersion = function () {
 /**
  * @since Flash CC
  * @param {string} format
- * @return {Boolean}
+ * @return {boolean}
  */
 Document.prototype.getPublishDocumentData = function (format) {
 };
@@ -656,7 +656,7 @@ Document.prototype.getSWFPathFromProfile = function () {
 };
 /**
  * @since Flash CC
- * @return {Boolean}
+ * @return {boolean}
  */
 Document.prototype.getTelemetryForSwf = function () {
 };
@@ -688,10 +688,10 @@ Document.prototype.group = function () {
 /**
  * @since Flash 8
  * @param {string} fileURI
- * @param {Boolean} [importToLibrary]
- * @param {Boolean} [showDialog]
- * @param {Boolean} [showImporterUI]
- * @return {Boolean}
+ * @param {boolean} [importToLibrary]
+ * @param {boolean} [showDialog]
+ * @param {boolean} [showImporterUI]
+ * @return {boolean}
  */
 Document.prototype.importFile = function (fileURI, importToLibrary, showDialog, showImporterUI) {
 };
@@ -705,7 +705,7 @@ Document.prototype.importPublishProfile = function (fileURI) {
 /**
  * @since Flash CS4
  * @param {string} xmlString
- * @return {Boolean}
+ * @return {boolean}
  */
 Document.prototype.importPublishProfileString = function (xmlString) {
 };
@@ -718,7 +718,7 @@ Document.prototype.importSWF = function (fileURI) {
 };
 /**
  * @since Flash 8
- * @return {Boolean}
+ * @return {boolean}
  */
 Document.prototype.intersect = function () {
 };
@@ -731,26 +731,26 @@ Document.prototype.loadCuepointXML = function (URI) {
 };
 /**
  * @since Flash MX 2004
- * @param {Boolean} bWidth
- * @param {Boolean} bHeight
- * @param {Boolean} [bUseDocumentBounds]
+ * @param {boolean} bWidth
+ * @param {boolean} bHeight
+ * @param {boolean} [bUseDocumentBounds]
  */
 Document.prototype.match = function (bWidth, bHeight, bUseDocumentBounds) {
 };
 /**
  * @since Flash MX 2004
  * @param {{x:number,y:number}} position
- * @param {Boolean} bToggleSel
- * @param {Boolean} bShiftSel
+ * @param {boolean} bToggleSel
+ * @param {boolean} bShiftSel
  */
 Document.prototype.mouseClick = function (position, bToggleSel, bShiftSel) {
 };
 /**
  * @since Flash MX 2004
  * @param {{x:number,y:number}} position
- * @param {Boolean} bAltDown
- * @param {Boolean} bShiftDown
- * @param {Boolean} bShiftSelect
+ * @param {boolean} bAltDown
+ * @param {boolean} bShiftDown
+ * @param {boolean} bShiftSelect
  */
 Document.prototype.mouseDblClk = function (position, bAltDown, bShiftDown, bShiftSelect) {
 };
@@ -769,7 +769,7 @@ Document.prototype.moveSelectionBy = function (distanceToMove) {
 /**
  * @since Flash MX 2004
  * @param {number} smoothing
- * @param {Boolean} bUseMultiplePasses
+ * @param {boolean} bUseMultiplePasses
  */
 Document.prototype.optimizeCurves = function (smoothing, bUseMultiplePasses) {
 };
@@ -780,7 +780,7 @@ Document.prototype.publish = function () {
 };
 /**
  * @since Flash 8
- * @return {Boolean}
+ * @return {boolean}
  */
 Document.prototype.punch = function () {
 };
@@ -810,14 +810,14 @@ Document.prototype.removeFilter = function (filterIndex) {
 /**
  * @since Flash MX 2004
  * @param {string} [profileNewName]
- * @return {Boolean}
+ * @return {boolean}
  */
 Document.prototype.renamePublishProfile = function (profileNewName) {
 };
 /**
  * @since Flash MX 2004
  * @param {string} name
- * @return {Boolean}
+ * @return {boolean}
  */
 Document.prototype.renameScene = function (name) {
 };
@@ -851,7 +851,7 @@ Document.prototype.revert = function () {
 /**
  * @since Flash CS4
  * @param {{x:number,y:number,z:number}} xyzCoordinate
- * @param {Boolean} bGlobalTransform
+ * @param {boolean} bGlobalTransform
  */
 Document.prototype.rotate3DSelection = function (xyzCoordinate, bGlobalTransform) {
 };
@@ -864,24 +864,24 @@ Document.prototype.rotateSelection = function (angle, rotationPoint) {
 };
 /**
  * @since Flash MX 2004
- * @param {Boolean} [bOkToSaveAs]
- * @return {Boolean}
+ * @param {boolean} [bOkToSaveAs]
+ * @return {boolean}
  */
 Document.prototype.save = function (bOkToSaveAs) {
 };
 /**
  * @since Flash CS6
  * @param {string} URI
- * @param {Boolean} [selectionOnly]
- * @return {Boolean}
+ * @param {boolean} [selectionOnly]
+ * @return {boolean}
  */
 Document.prototype.saveAsCopy = function (URI, selectionOnly) {
 };
 /**
  * @since Flash MX 2004
  * @deprecated
- * @param {Boolean} [bOkToSaveAs]
- * @return {Boolean}
+ * @param {boolean} [bOkToSaveAs]
+ * @return {boolean}
  */
 Document.prototype.saveAndCompact = function (bOkToSaveAs) {
 };
@@ -905,7 +905,7 @@ Document.prototype.selectNone = function () {
 };
 /**
  * @since Flash MX 2004
- * @param {Boolean} bToStage
+ * @param {boolean} bToStage
  */
 Document.prototype.setAlignToDocument = function (bToStage) {
 };
@@ -940,7 +940,7 @@ Document.prototype.setElementProperty = function (property, value) {
  * @param {Object} attrValue
  * @param {number} [startIndex]
  * @param {number} [endIndex]
- * @return {Boolean}
+ * @return {boolean}
  */
 Document.prototype.setElementTextAttr = function (attrName, attrValue, startIndex, endIndex) {
 };
@@ -986,14 +986,14 @@ Document.prototype.setInstanceTint = function (color, strength) {
 /**
  * @since Flash 8
  * @param {string} strMetadata
- * @return {Boolean}
+ * @return {boolean}
  */
 Document.prototype.setMetadata = function (strMetadata) {
 };
 /**
  * @since Flash CS3
  * @param {string} xmlString
- * @return {Boolean}
+ * @return {boolean}
  */
 Document.prototype.setMobileSettings = function (xmlString) {
 };
@@ -1007,14 +1007,14 @@ Document.prototype.setOvalObjectProperty = function (propertyName, value) {
 /**
  * @since Flash CS3
  * @param {string} version
- * @return {Boolean}
+ * @return {boolean}
  */
 Document.prototype.setPlayerVersion = function (version) {
 };
 /**
  * @since Flash CC
  * @param {string} format
- * @param {Boolean} publish
+ * @param {boolean} publish
  */
 Document.prototype.setPublishDocumentData = function (format, publish) {
 };
@@ -1028,15 +1028,15 @@ Document.prototype.setRectangleObjectProperty = function (propertyName, value) {
 /**
  * @since Flash MX 2004
  * @param {{left:number,top:number,right:number,bottom:number}} boundingRectangle
- * @param {Boolean} [bContactSensitiveSelection]
+ * @param {boolean} [bContactSensitiveSelection]
  */
 Document.prototype.setSelectionBounds = function (boundingRectangle, bContactSensitiveSelection) {
 };
 /**
  * @since Flash MX 2004
  * @param {{left:number,top:number,right:number,bottom:number}} rect
- * @param {Boolean} [bReplaceCurrentSelection]
- * @param {Boolean} [bContactSensitiveSelection]
+ * @param {boolean} [bReplaceCurrentSelection]
+ * @param {boolean} [bContactSensitiveSelection]
  */
 Document.prototype.setSelectionRect = function (rect, bReplaceCurrentSelection, bContactSensitiveSelection) {
 };
@@ -1081,7 +1081,7 @@ Document.prototype.setStrokeStyle = function (strokeType) {
 /**
  * @since Flash MX 2004
  * @param {{left:number,top:number,right:number,bottom:number}} boundingRectangle
- * @return {Boolean}
+ * @return {boolean}
  */
 Document.prototype.setTextRectangle = function (boundingRectangle) {
 };
@@ -1089,7 +1089,7 @@ Document.prototype.setTextRectangle = function (boundingRectangle) {
  * @since Flash MX 2004
  * @param {number} startIndex
  * @param {number} endIndex
- * @return {Boolean}
+ * @return {boolean}
  */
 Document.prototype.setTextSelection = function (startIndex, endIndex) {
 };
@@ -1098,7 +1098,7 @@ Document.prototype.setTextSelection = function (startIndex, endIndex) {
  * @param {string} text
  * @param {number} [startIndex]
  * @param {number} [endIndex]
- * @return {Boolean}
+ * @return {boolean}
  */
 Document.prototype.setTextString = function (text, startIndex, endIndex) {
 };
@@ -1124,7 +1124,7 @@ Document.prototype.smoothSelection = function () {
 /**
  * @since Flash MX 2004
  * @param {string} direction
- * @param {Boolean} [bUseDocumentBounds]
+ * @param {boolean} [bUseDocumentBounds]
  */
 Document.prototype.space = function (direction, bUseDocumentBounds) {
 };
@@ -1146,7 +1146,7 @@ Document.prototype.swapStrokeAndFill = function () {
 };
 /**
  * @since Flash MX 2004
- * @param {Boolean} [abortIfErrorsExist]
+ * @param {boolean} [abortIfErrorsExist]
  */
 Document.prototype.testMovie = function (abortIfErrorsExist) {
 };
@@ -1182,7 +1182,7 @@ Document.prototype.translate3DCenter = function (xyzCoordinate) {
 /**
  * @since Flash CS4
  * @param {{x:number,y:number,z:number}} xyzCoordinate
- * @param {Boolean} bGlobalTransform
+ * @param {boolean} bGlobalTransform
  */
 Document.prototype.translate3DSelection = function (xyzCoordinate, bGlobalTransform) {
 };
@@ -1193,7 +1193,7 @@ Document.prototype.unGroup = function () {
 };
 /**
  * @since Flash 8
- * @return {Boolean}
+ * @return {boolean}
  */
 Document.prototype.union = function () {
 };
@@ -1229,7 +1229,7 @@ Library.prototype.unusedItems = null;
  * @since Flash MX 2004
  * @param {{x:number,y:number}} position
  * @param {string} [namePath]
- * @return {Boolean}
+ * @return {boolean}
  */
 Library.prototype.addItemToDocument = function (position, namePath) {
 };
@@ -1237,37 +1237,37 @@ Library.prototype.addItemToDocument = function (position, namePath) {
  * @since Flash MX 2004
  * @param {string} type
  * @param {string} [namePath]
- * @return {Boolean}
+ * @return {boolean}
  */
 Library.prototype.addNewItem = function (type, namePath) {
 };
 /**
  * @since Flash MX 2004
  * @param {string} [namePath]
- * @return {Boolean}
+ * @return {boolean}
  */
 Library.prototype.deleteItem = function (namePath) {
 };
 /**
  * @since Flash MX 2004
  * @param {string} [namePath]
- * @return {Boolean}
+ * @return {boolean}
  */
 Library.prototype.duplicateItem = function (namePath) {
 };
 /**
  * @since Flash MX 2004
  * @param {string} [namePath]
- * @return {Boolean}
+ * @return {boolean}
  */
 Library.prototype.editItem = function (namePath) {
 };
 /**
  * @since Flash MX 2004
- * @param {Boolean} bExpand
- * @param {Boolean} [bRecurseNestedParents]
+ * @param {boolean} bExpand
+ * @param {boolean} [bRecurseNestedParents]
  * @param {string} [namePath]
- * @return {Boolean}
+ * @return {boolean}
  */
 Library.prototype.expandFolder = function (bExpand, bRecurseNestedParents, namePath) {
 };
@@ -1310,7 +1310,7 @@ Library.prototype.importEmbeddedSWF = function (linkageName, swfData, libName) {
 /**
  * @since Flash MX 2004
  * @param {string} namePath
- * @return {Boolean}
+ * @return {boolean}
  */
 Library.prototype.itemExists = function (namePath) {
 };
@@ -1318,37 +1318,37 @@ Library.prototype.itemExists = function (namePath) {
  * @since Flash MX 2004
  * @param {string} folderPath
  * @param {string} [itemToMove]
- * @param {Boolean} [bReplace]
- * @return {Boolean}
+ * @param {boolean} [bReplace]
+ * @return {boolean}
  */
 Library.prototype.moveToFolder = function (folderPath, itemToMove, bReplace) {
 };
 /**
  * @since Flash MX 2004
  * @param {string} [folderPath]
- * @return {Boolean}
+ * @return {boolean}
  */
 Library.prototype.newFolder = function (folderPath) {
 };
 /**
  * @since Flash MX 2004
  * @param {string} name
- * @return {Boolean}
+ * @return {boolean}
  */
 Library.prototype.renameItem = function (name) {
 };
 /**
  * @since Flash MX 2004
- * @param {Boolean} [bSelectAll]
+ * @param {boolean} [bSelectAll]
  */
 Library.prototype.selectAll = function (bSelectAll) {
 };
 /**
  * @since Flash MX 2004
  * @param {string} namePath
- * @param {Boolean} [bReplaceCurrentSelection]
- * @param {Boolean} [bSelect]
- * @return {Boolean}
+ * @param {boolean} [bReplaceCurrentSelection]
+ * @param {boolean} [bSelect]
+ * @return {boolean}
  */
 Library.prototype.selectItem = function (namePath, bReplaceCurrentSelection, bSelect) {
 };
@@ -1367,7 +1367,7 @@ Library.prototype.setItemProperty = function (property, value) {
 /**
  * @since Flash MX 2004
  * @param {string} [namePath]
- * @return {Boolean}
+ * @return {boolean}
  */
 Library.prototype.updateItem = function (namePath) {
 };
