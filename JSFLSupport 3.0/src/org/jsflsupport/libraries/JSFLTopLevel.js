@@ -156,7 +156,7 @@ Flash.prototype.mruRecentFileListType = null;
 Flash.prototype.packagePaths = null;
 /**
  * @since Flash CS5.5
- * @type {Number}
+ * @type {number}
  */
 Flash.prototype.publishCacheDiskSizeMax = null;
 /**
@@ -166,12 +166,12 @@ Flash.prototype.publishCacheDiskSizeMax = null;
 Flash.prototype.publishCacheEnabled = null;
 /**
  * @since Flash CS5.5
- * @type {Number}
+ * @type {number}
  */
 Flash.prototype.publishCacheMemoryEntrySizeLimit = null;
 /**
  * @since Flash CS5.5
- * @type {Number}
+ * @type {number}
  */
 Flash.prototype.publishCacheMemorySizeMax = null;
 /**
@@ -235,7 +235,7 @@ Flash.prototype.xmlui = null;
  * @since Flash CS3
  * @param {string} eventType
  * @param {Function} callbackFunction
- * @return {Number}
+ * @return {number}
  */
 Flash.prototype.addEventListener = function (eventType, callbackFunction) {
 };
@@ -311,7 +311,7 @@ Flash.prototype.fileExists = function (fileURI) {
 };
 /**
  * @since Flash CS3
- * @param {Number} id
+ * @param {number} id
  * @return {Document}
  */
 Flash.prototype.findDocumentDOM = function (id) {
@@ -319,7 +319,7 @@ Flash.prototype.findDocumentDOM = function (id) {
 /**
  * @since Flash MX 2004
  * @param {string} name
- * @return {Array.<Number>}
+ * @return {Array.<number>}
  */
 Flash.prototype.findDocumentIndex = function (name) {
 };
@@ -341,8 +341,8 @@ Flash.prototype.findObjectInDocByType = function (elementType, document) {
 };
 /**
  * @since Flash 8
- * @param {Number} memType
- * @return {Number}
+ * @param {number} memType
+ * @return {number}
  */
 Flash.prototype.getAppMemoryInfo = function (memType) {
 };
@@ -431,7 +431,7 @@ Flash.prototype.reloadTools = function () {
 /**
  * @since Flash CS3
  * @param {string} eventType
- * @param {Number} id
+ * @param {number} id
  * @return {Boolean}
  */
 Flash.prototype.removeEventListener = function (eventType, id) {
@@ -514,7 +514,7 @@ Flash.prototype.showIdleMessage = function (show) {
 /**
  * @since Flash CS5
  * @param {string} fileURI
- * @param {Number} line
+ * @param {number} line
  * @param {Boolean} enable
  */
 Flash.prototype.toggleBreakpoint = function (fileURI, line, enable) {
@@ -595,8 +595,8 @@ ActionsPanel.prototype.setScriptAssistMode = function (bScriptAssist) {
 };
 /**
  * @since Flash CS3
- * @param {Number} startIndex
- * @param {Number} numberOfChars
+ * @param {number} startIndex
+ * @param {number} numberOfChars
  * @return {Boolean}
  */
 ActionsPanel.prototype.setSelection = function (startIndex, numberOfChars) {
@@ -635,7 +635,7 @@ ComponentPanel = function () {
 };
 /**
  * @since Flash MX 2004
- * @param {{x:Number,y:Number}} position
+ * @param {{x:number,y:number}} position
  * @param {string} categoryName
  * @param {string} componentName
  */
@@ -666,21 +666,21 @@ drawingLayer.prototype.beginFrame = function () {
 };
 /**
  * @since Flash MX 2004
- * @param {Number} x1Ctrl
- * @param {Number} y1Ctrl
- * @param {Number} x2Ctl
- * @param {Number} y2Ctl
- * @param {Number} xEnd
- * @param {Number} yEnd
+ * @param {number} x1Ctrl
+ * @param {number} y1Ctrl
+ * @param {number} x2Ctl
+ * @param {number} y2Ctl
+ * @param {number} xEnd
+ * @param {number} yEnd
  */
 drawingLayer.prototype.cubicCurveTo = function (x1Ctrl, y1Ctrl, x2Ctl, y2Ctl, xEnd, yEnd) {
 };
 /**
  * @since Flash MX 2004
- * @param {Number} xCtl
- * @param {Number} yCtl
- * @param {Number} xEnd
- * @param {Number} yEnd
+ * @param {number} xCtl
+ * @param {number} yCtl
+ * @param {number} xEnd
+ * @param {number} yEnd
  */
 drawingLayer.prototype.curveTo = function (xCtl, yCtl, xEnd, yEnd) {
 };
@@ -702,15 +702,15 @@ drawingLayer.prototype.endFrame = function () {
 };
 /**
  * @since Flash MX 2004
- * @param {Number} x
- * @param {Number} y
+ * @param {number} x
+ * @param {number} y
  */
 drawingLayer.prototype.lineTo = function (x, y) {
 };
 /**
  * @since Flash MX 2004
- * @param {Number} x
- * @param {Number} y
+ * @param {number} x
+ * @param {number} y
  */
 drawingLayer.prototype.moveTo = function (x, y) {
 };
@@ -722,7 +722,7 @@ drawingLayer.prototype.newPath = function () {
 };
 /**
  * @since Flash MX 2004
- * @param {string|Number} color
+ * @param {string|number} color
  */
 drawingLayer.prototype.setColor = function (color) {
 };
@@ -749,17 +749,17 @@ FlashMath.prototype.invertMatrix = function (mat) {
 };
 /**
  * @since Flash MX 2004
- * @param {{x:Number,y:Number}} pt1
- * @param {{x:Number,y:Number}} pt2
- * @return {Number}
+ * @param {{x:number,y:number}} pt1
+ * @param {{x:number,y:number}} pt2
+ * @return {number}
  */
 FlashMath.prototype.pointDistance = function (pt1, pt2) {
 };
 /**
  * @since Flash CS6
  * @param {Matrix} matrix
- * @param {{x:Number,y:Number}} point
- * @return {{x:Number,y:Number}}
+ * @param {{x:number,y:number}} point
+ * @return {{x:number,y:number}}
  */
 FlashMath.prototype.transformPoint = function (matrix, point) {
 };
@@ -847,7 +847,7 @@ PresetPanel.prototype.exportItem = function (fileURI, namePath) {
 /**
  * @since Flash CS4
  * @param {string} [presetName]
- * @return {Number}
+ * @return {number}
  */
 PresetPanel.prototype.findItemIndex = function (presetName) {
 };
@@ -924,12 +924,12 @@ Tools.prototype.ctlIsDown = null;
 Tools.prototype.mouseIsDown = null;
 /**
  * @since Flash MX 2004
- * @type {{x:Number,y:Number}}
+ * @type {{x:number,y:number}}
  */
 Tools.prototype.penDownLoc = null;
 /**
  * @since Flash MX 2004
- * @type {{x:Number,y:Number}}
+ * @type {{x:number,y:number}}
  */
 Tools.prototype.penLoc = null;
 /**
@@ -944,28 +944,28 @@ Tools.prototype.shiftIsDown = false;
 Tools.prototype.toolObjs = null;
 /**
  * @since Flash MX 2004
- * @param {{x:Number,y:Number}} pt1
- * @param {{x:Number,y:Number}} pt2
- * @return {{x:Number,y:Number}}
+ * @param {{x:number,y:number}} pt1
+ * @param {{x:number,y:number}} pt2
+ * @return {{x:number,y:number}}
  */
 Tools.prototype.constrainPoint = function (pt1, pt2) {
 };
 /**
  * @since Flash MX 2004
- * @return {Number}
+ * @return {number}
  */
 Tools.prototype.getKeyDown = function () {
 };
 /**
  * @since Flash MX 2004
- * @param {Number} cursor
+ * @param {number} cursor
  */
 Tools.prototype.setCursor = function (cursor) {
 };
 /**
  * @since Flash MX 2004
- * @param {{x:Number,y:Number}} pt
- * @return {{x:Number,y:Number}}
+ * @param {{x:number,y:number}} pt
+ * @return {{x:number,y:number}}
  */
 Tools.prototype.snapPoint = function (pt) {
 };
@@ -1068,7 +1068,7 @@ PresetItem.prototype.isDefault = null;
 PresetItem.prototype.isFolder = null;
 /**
  * @since Flash CS4
- * @type {Number}
+ * @type {number}
  * @const
  */
 PresetItem.prototype.level = null;
@@ -1145,19 +1145,19 @@ ToolObj = function () {
 };
 /**
  * @since Flash MX 2004
- * @type {Number}
+ * @type {number}
  * @const
  */
 ToolObj.prototype.depth = 0;
 /**
  * @since Flash MX 2004
- * @type {Number}
+ * @type {number}
  * @const
  */
 ToolObj.prototype.iconID = 0;
 /**
  * @since Flash MX 2004
- * @type {Number}
+ * @type {number}
  * @const
  */
 ToolObj.prototype.position = 0;
@@ -1282,7 +1282,7 @@ SpriteSheetExporter.prototype.app = null;
 SpriteSheetExporter.prototype.autoSize = false;
 /**
  * @since Flash CS6
- * @type {Number}
+ * @type {number}
  */
 SpriteSheetExporter.prototype.borderPadding = 0;
 /**
@@ -1340,17 +1340,17 @@ SpriteSheetExporter.prototype.layoutFormat = null;
 SpriteSheetExporter.prototype.overflowed = false;
 /**
  * @since Flash CS6
- * @type {Number}
+ * @type {number}
  */
 SpriteSheetExporter.prototype.shapePadding = 0;
 /**
  * @since Flash CS6
- * @type {Number}
+ * @type {number}
  */
 SpriteSheetExporter.prototype.sheetHeight = 0;
 /**
  * @since Flash CS6
- * @type {Number}
+ * @type {number}
  */
 SpriteSheetExporter.prototype.sheetWidth = 0;
 /**
@@ -1374,8 +1374,8 @@ SpriteSheetExporter.prototype.addBitmap = function (bitmap) {
  * @since Flash CS6
  * @param {SymbolItem|SymbolInstance} symbol
  * @param {string} [name]
- * @param {Number} [beginFrame]
- * @param {Number} [endFrame]
+ * @param {number} [beginFrame]
+ * @param {number} [endFrame]
  * @return {Boolean}
  */
 SpriteSheetExporter.prototype.addSymbol = function (symbol, name, beginFrame, endFrame) {
@@ -1388,8 +1388,8 @@ SpriteSheetExporter.prototype.beginExport = function () {
 /**
  * @since Flash CS6
  * @param {SymbolItem|SymbolInstance} symbol
- * @param {Number} [beginFrame]
- * @param {Number} [endFrame]
+ * @param {number} [beginFrame]
+ * @param {number} [endFrame]
  * @return {Boolean}
  */
 SpriteSheetExporter.prototype.changeSymbol = function (symbol, beginFrame, endFrame) {
@@ -1397,7 +1397,7 @@ SpriteSheetExporter.prototype.changeSymbol = function (symbol, beginFrame, endFr
 /**
  * @since Flash CS6
  * @param {string} path
- * @param {string|{format:string,backgroundColor?:(string|Number),quality?:Number,bitDepth?:Number}} imageFormat
+ * @param {string|{format:string,backgroundColor?:(string|number),quality?:number,bitDepth?:number}} imageFormat
  * @param {Boolean} [writeMetaData]
  * @return {string}
  */
@@ -1487,7 +1487,7 @@ FlashFile.prototype.getModificationDateObj = function (fileOrFolderURI) {
 /**
  * @since Flash MX 2004
  * @param {string} fileURI
- * @return {Number}
+ * @return {number}
  */
 FlashFile.prototype.getSize = function (fileURI) {
 };

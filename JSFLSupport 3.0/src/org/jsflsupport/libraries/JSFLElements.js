@@ -10,7 +10,7 @@ Element = function () {
 };
 /**
  * @since Flash MX 2004
- * @type {Number}
+ * @type {number}
  * @const
  */
 Element.prototype.depth = 0;
@@ -22,7 +22,7 @@ Element.prototype.depth = 0;
 Element.prototype.elementType = null;
 /**
  * @since Flash MX 2004
- * @type {Number}
+ * @type {number}
  */
 Element.prototype.height = 0;
 /**
@@ -33,7 +33,7 @@ Element.prototype.height = 0;
 Element.prototype.layer = null;
 /**
  * @since Flash MX 2004
- * @type {Number}
+ * @type {number}
  * @const
  */
 Element.prototype.left = 0;
@@ -54,17 +54,17 @@ Element.prototype.matrix = null;
 Element.prototype.name = null;
 /**
  * @since Flash CS3
- * @type {Number}
+ * @type {number}
  */
 Element.prototype.rotation = 0;
 /**
  * @since Flash CS3
- * @type {Number}
+ * @type {number}
  */
 Element.prototype.scaleX = 0;
 /**
  * @since Flash CS3
- * @type {Number}
+ * @type {number}
  */
 Element.prototype.scaleY = 0;
 /**
@@ -74,43 +74,43 @@ Element.prototype.scaleY = 0;
 Element.prototype.selected = false;
 /**
  * @since Flash CS3
- * @type {Number}
+ * @type {number}
  */
 Element.prototype.skewX = 0;
 /**
  * @since Flash CS3
- * @type {Number}
+ * @type {number}
  */
 Element.prototype.skewY = 0;
 /**
  * @since Flash MX 2004
- * @type {Number}
+ * @type {number}
  * @const
  */
 Element.prototype.top = 0;
 /**
  * @since Flash CS3
- * @type {Number}
+ * @type {number}
  */
 Element.prototype.transformX = 0;
 /**
  * @since Flash CS3
- * @type {Number}
+ * @type {number}
  */
 Element.prototype.transformY = 0;
 /**
  * @since Flash MX 2004
- * @type {Number}
+ * @type {number}
  */
 Element.prototype.width = 0;
 /**
  * @since Flash CS3
- * @type {Number}
+ * @type {number}
  */
 Element.prototype.x = 0;
 /**
  * @since Flash CS3
- * @type {Number}
+ * @type {number}
  */
 Element.prototype.y = 0;
 /**
@@ -130,7 +130,7 @@ Element.prototype.getPublishPersistentData = function (name, format) {
 };
 /**
  * @since Flash CS3
- * @return {{x:Number,y:Number}}
+ * @return {{x:number,y:number}}
  */
 Element.prototype.getTransformationPoint = function () {
 };
@@ -165,7 +165,7 @@ Element.prototype.setPublishPersistentData = function (name, format, publish) {
 };
 /**
  * @since Flash CS3
- * @param {{x:Number,y:Number}} transformationPoint
+ * @param {{x:number,y:number}} transformationPoint
  */
 Element.prototype.setTransformationPoint = function (transformationPoint) {
 };
@@ -198,25 +198,25 @@ BitmapInstance = function () {
 BitmapInstance.prototype = new Instance();
 /**
  * @since Flash MX 2004
- * @type {Number}
+ * @type {number}
  * @const
  */
 BitmapInstance.prototype.hPixels = 0;
 /**
  * @since Flash MX 2004
- * @type {Number}
+ * @type {number}
  * @const
  */
 BitmapInstance.prototype.vPixels = 0;
 /**
  * @since Flash MX 2004
- * @return {{width:Number,height:Number,depth:Number,bits:Object,cTab:Object}}
+ * @return {{width:number,height:number,depth:number,bits:Object,cTab:Object}}
  */
 BitmapInstance.prototype.getBits = function () {
 };
 /**
  * @since Flash MX 2004
- * @param {{width:Number,height:Number,depth:Number,bits:Object,cTab?:Object}} bitmap
+ * @param {{width:number,height:number,depth:number,bits:Object,cTab?:Object}} bitmap
  */
 BitmapInstance.prototype.setBits = function (bitmap) {
 };
@@ -241,7 +241,7 @@ CompiledClipInstance.prototype.accName = null;
 CompiledClipInstance.prototype.actionScript = null;
 /**
  * @since Flash CC
- * @type {string|Number}
+ * @type {string|number}
  */
 CompiledClipInstance.prototype.backgroundColor = null;
 /**
@@ -251,7 +251,7 @@ CompiledClipInstance.prototype.backgroundColor = null;
 CompiledClipInstance.prototype.blendMode = null;
 /**
  * @since Flash CC
- * @type {Number}
+ * @type {number}
  * @const
  */
 CompiledClipInstance.prototype.brightness = 0;
@@ -262,32 +262,32 @@ CompiledClipInstance.prototype.brightness = 0;
 CompiledClipInstance.prototype.cacheAsBitmap = false;
 /**
  * @since Flash CC
- * @type {Number}
+ * @type {number}
  */
 CompiledClipInstance.prototype.colorAlphaAmount = 0;
 /**
  * @since Flash CC
- * @type {Number}
+ * @type {number}
  */
 CompiledClipInstance.prototype.colorAlphaPercent = 0;
 /**
  * @since Flash CC
- * @type {Number}
+ * @type {number}
  */
 CompiledClipInstance.prototype.colorBlueAmount = 0;
 /**
  * @since Flash CC
- * @type {Number}
+ * @type {number}
  */
 CompiledClipInstance.prototype.colorBluePercent = 0;
 /**
  * @since Flash CC
- * @type {Number}
+ * @type {number}
  */
 CompiledClipInstance.prototype.colorGreenAmount = 0;
 /**
  * @since Flash CC
- * @type {Number}
+ * @type {number}
  */
 CompiledClipInstance.prototype.colorGreenPercent = 0;
 /**
@@ -297,12 +297,12 @@ CompiledClipInstance.prototype.colorGreenPercent = 0;
 CompiledClipInstance.prototype.colorMode = null;
 /**
  * @since Flash CC
- * @type {Number}
+ * @type {number}
  */
 CompiledClipInstance.prototype.colorRedAmount = 0;
 /**
  * @since Flash CC
- * @type {Number}
+ * @type {number}
  */
 CompiledClipInstance.prototype.colorRedPercent = 0;
 /**
@@ -332,7 +332,7 @@ CompiledClipInstance.prototype.shortcut = null;
 CompiledClipInstance.prototype.silent = false;
 /**
  * @since Flash MX 2004
- * @type {Number}
+ * @type {number}
  */
 CompiledClipInstance.prototype.tabIndex = 0;
 /**
@@ -343,7 +343,7 @@ CompiledClipInstance.prototype.tabIndex = 0;
 CompiledClipInstance.prototype.tintColor = null;
 /**
  * @since Flash CC
- * @type {Number}
+ * @type {number}
  * @const
  */
 CompiledClipInstance.prototype.tintPercent = 0;
@@ -378,7 +378,7 @@ SymbolInstance.prototype.accName = null;
 SymbolInstance.prototype.actionScript = null;
 /**
  * @since Flash CS5.5
- * @type {string|Number}
+ * @type {string|number}
  */
 SymbolInstance.prototype.backgroundColor = null;
 /**
@@ -393,7 +393,7 @@ SymbolInstance.prototype.bitmapRenderMode = null;
 SymbolInstance.prototype.blendMode = null;
 /**
  * @since Flash CC
- * @type {Number}
+ * @type {number}
  * @const
  */
 SymbolInstance.prototype.brightness = 0;
@@ -409,32 +409,32 @@ SymbolInstance.prototype.buttonTracking = null;
 SymbolInstance.prototype.cacheAsBitmap = false;
 /**
  * @since Flash MX 2004
- * @type {Number}
+ * @type {number}
  */
 SymbolInstance.prototype.colorAlphaAmount = 0;
 /**
  * @since Flash MX 2004
- * @type {Number}
+ * @type {number}
  */
 SymbolInstance.prototype.colorAlphaPercent = 0;
 /**
  * @since Flash MX 2004
- * @type {Number}
+ * @type {number}
  */
 SymbolInstance.prototype.colorBlueAmount = 0;
 /**
  * @since Flash MX 2004
- * @type {Number}
+ * @type {number}
  */
 SymbolInstance.prototype.colorBluePercent = 0;
 /**
  * @since Flash MX 2004
- * @type {Number}
+ * @type {number}
  */
 SymbolInstance.prototype.colorGreenAmount = 0;
 /**
  * @since Flash MX 2004
- * @type {Number}
+ * @type {number}
  */
 SymbolInstance.prototype.colorGreenPercent = 0;
 /**
@@ -444,12 +444,12 @@ SymbolInstance.prototype.colorGreenPercent = 0;
 SymbolInstance.prototype.colorMode = null;
 /**
  * @since Flash MX 2004
- * @type {Number}
+ * @type {number}
  */
 SymbolInstance.prototype.colorRedAmount = 0;
 /**
  * @since Flash MX 2004
- * @type {Number}
+ * @type {number}
  */
 SymbolInstance.prototype.colorRedPercent = 0;
 /**
@@ -464,7 +464,7 @@ SymbolInstance.prototype.description = null;
 SymbolInstance.prototype.filters = null;
 /**
  * @since Flash MX 2004
- * @type {Number}
+ * @type {number}
  */
 SymbolInstance.prototype.firstFrame = 0;
 /**
@@ -500,7 +500,7 @@ SymbolInstance.prototype.silent = false;
 SymbolInstance.prototype.symbolType = null;
 /**
  * @since Flash MX 2004
- * @type {Number}
+ * @type {number}
  */
 SymbolInstance.prototype.tabIndex = 0;
 /**
@@ -511,7 +511,7 @@ SymbolInstance.prototype.tabIndex = 0;
 SymbolInstance.prototype.tintColor = null;
 /**
  * @since Flash CC
- * @type {Number}
+ * @type {number}
  * @const
  */
 SymbolInstance.prototype.tintPercent = 0;
@@ -552,7 +552,7 @@ Parameter = function () {
 Parameter.prototype.category = null;
 /**
  * @since Flash MX 2004
- * @type {Number}
+ * @type {number}
  */
 Parameter.prototype.listIndex = 0;
 /**
@@ -574,12 +574,12 @@ Parameter.prototype.value = null;
 Parameter.prototype.valueType = null;
 /**
  * @since Flash MX 2004
- * @type {Number}
+ * @type {number}
  */
 Parameter.prototype.verbose = 0;
 /**
  * @since Flash MX 2004
- * @param {Number} index
+ * @param {number} index
  * @param {string} name
  * @param {string} value
  * @param {string} type
@@ -588,7 +588,7 @@ Parameter.prototype.insertItem = function (index, name, value, type) {
 };
 /**
  * @since Flash MX 2004
- * @param {Number} index
+ * @param {number} index
  */
 Parameter.prototype.removeItem = function (index) {
 };
@@ -600,37 +600,37 @@ Filter = function () {
 };
 /**
  * @since Flash 8
- * @type {Number}
+ * @type {number}
  */
 Filter.prototype.angle = 0;
 /**
  * @since Flash 8
- * @type {Number}
+ * @type {number}
  */
 Filter.prototype.blurX = 0;
 /**
  * @since Flash 8
- * @type {Number}
+ * @type {number}
  */
 Filter.prototype.blurY = 0;
 /**
  * @since Flash 8
- * @type {Number}
+ * @type {number}
  */
 Filter.prototype.brightness = 0;
 /**
  * @since Flash 8
- * @type {string|Number}
+ * @type {string|number}
  */
 Filter.prototype.color = null;
 /**
  * @since Flash 8
- * @type {Number}
+ * @type {number}
  */
 Filter.prototype.contrast = 0;
 /**
  * @since Flash 8
- * @type {Number}
+ * @type {number}
  */
 Filter.prototype.distance = 0;
 /**
@@ -645,12 +645,12 @@ Filter.prototype.enabled = false;
 Filter.prototype.hideObject = false;
 /**
  * @since Flash 8
- * @type {string|Number}
+ * @type {string|number}
  */
 Filter.prototype.highlightColor = null;
 /**
  * @since Flash 8
- * @type {Number}
+ * @type {number}
  */
 Filter.prototype.hue = 0;
 /**
@@ -676,17 +676,17 @@ Filter.prototype.name = null;
 Filter.prototype.quality = null;
 /**
  * @since Flash 8
- * @type {Number}
+ * @type {number}
  */
 Filter.prototype.saturation = 0;
 /**
  * @since Flash 8
- * @type {string|Number}
+ * @type {string|number}
  */
 Filter.prototype.shadowColor = null;
 /**
  * @since Flash 8
- * @type {Number}
+ * @type {number}
  */
 Filter.prototype.strength = 0;
 /**
@@ -752,7 +752,7 @@ Shape.prototype.isRectangleObject = false;
 Shape.prototype.members = null;
 /**
  * @since Flash CS4
- * @type {Number}
+ * @type {number}
  * @const
  */
 Shape.prototype.numCubicSegments = 0;
@@ -769,7 +769,7 @@ Shape.prototype.beginEdit = function () {
 };
 /**
  * @since Flash MX 2004
- * @param {Number} index
+ * @param {number} index
  */
 Shape.prototype.deleteEdge = function (index) {
 };
@@ -780,8 +780,8 @@ Shape.prototype.endEdit = function () {
 };
 /**
  * @since Flash CS4
- * @param {Number} cubicSegmentIndex
- * @return {Array.<{x:Number,y:Number}>}
+ * @param {number} cubicSegmentIndex
+ * @return {Array.<{x:number,y:number}>}
  */
 Shape.prototype.getCubicSegmentPoints = function (cubicSegmentIndex) {
 };
@@ -801,19 +801,19 @@ Oval.prototype = new Shape();
 Oval.prototype.closePath = false;
 /**
  * @since Flash CS3
- * @type {Number}
+ * @type {number}
  * @const
  */
 Oval.prototype.endAngle = 0;
 /**
  * @since Flash CS3
- * @type {Number}
+ * @type {number}
  * @const
  */
 Oval.prototype.innerRadius = 0;
 /**
  * @since Flash CS3
- * @type {Number}
+ * @type {number}
  * @const
  */
 Oval.prototype.startAngle = 0;
@@ -827,13 +827,13 @@ Rectangle = function () {
 Rectangle.prototype = new Shape();
 /**
  * @since Flash CS3
- * @type {Number}
+ * @type {number}
  * @const
  */
 Rectangle.prototype.bottomLeftRadius = 0;
 /**
  * @since Flash CS3
- * @type {Number}
+ * @type {number}
  * @const
  */
 Rectangle.prototype.bottomRightRadius = 0;
@@ -845,13 +845,13 @@ Rectangle.prototype.bottomRightRadius = 0;
 Rectangle.prototype.lockFlag = false;
 /**
  * @since Flash CS3
- * @type {Number}
+ * @type {number}
  * @const
  */
 Rectangle.prototype.topLeftRadius = 0;
 /**
  * @since Flash CS3
- * @type {Number}
+ * @type {number}
  * @const
  */
 Rectangle.prototype.topRightRadius = 0;
@@ -870,12 +870,12 @@ Text.prototype = new Element();
 Text.prototype.accName = null;
 /**
  * @since Flash 8
- * @type {Number}
+ * @type {number}
  */
 Text.prototype.antiAliasSharpness = 0;
 /**
  * @since Flash 8
- * @type {Number}
+ * @type {number}
  */
 Text.prototype.antiAliasThickness = 0;
 /**
@@ -920,7 +920,7 @@ Text.prototype.filters = null;
 Text.prototype.fontRenderingMode = null;
 /**
  * @since Flash MX 2004
- * @type {Number}
+ * @type {number}
  * @const
  */
 Text.prototype.length = 0;
@@ -931,7 +931,7 @@ Text.prototype.length = 0;
 Text.prototype.lineType = null;
 /**
  * @since Flash MX 2004
- * @type {Number}
+ * @type {number}
  */
 Text.prototype.maxCharacters = 0;
 /**
@@ -956,12 +956,12 @@ Text.prototype.scrollable = false;
 Text.prototype.selectable = false;
 /**
  * @since Flash MX 2004
- * @type {Number}
+ * @type {number}
  */
 Text.prototype.selectionEnd = 0;
 /**
  * @since Flash MX 2004
- * @type {Number}
+ * @type {number}
  */
 Text.prototype.selectionStart = 0;
 /**
@@ -976,7 +976,7 @@ Text.prototype.shortcut = null;
 Text.prototype.silent = false;
 /**
  * @since Flash MX 2004
- * @type {Number}
+ * @type {number}
  */
 Text.prototype.tabIndex = 0;
 /**
@@ -1003,16 +1003,16 @@ Text.prototype.variableName = null;
 /**
  * @since Flash MX 2004
  * @param {string} attrName
- * @param {Number} [startIndex]
- * @param {Number} [endIndex]
+ * @param {number} [startIndex]
+ * @param {number} [endIndex]
  * @return {Object}
  */
 Text.prototype.getTextAttr = function (attrName, startIndex, endIndex) {
 };
 /**
  * @since Flash MX 2004
- * @param {Number} [startIndex]
- * @param {Number} [endIndex]
+ * @param {number} [startIndex]
+ * @param {number} [endIndex]
  * @return {string}
  */
 Text.prototype.getTextString = function (startIndex, endIndex) {
@@ -1021,16 +1021,16 @@ Text.prototype.getTextString = function (startIndex, endIndex) {
  * @since Flash MX 2004
  * @param {string} attrName
  * @param {Object} attrValue
- * @param {Number} [startIndex]
- * @param {Number} [endIndex]
+ * @param {number} [startIndex]
+ * @param {number} [endIndex]
  */
 Text.prototype.setTextAttr = function (attrName, attrValue, startIndex, endIndex) {
 };
 /**
  * @since Flash MX 2004
  * @param {string} text
- * @param {Number} [startIndex]
- * @param {Number} [endIndex]
+ * @param {number} [startIndex]
+ * @param {number} [endIndex]
  */
 Text.prototype.setTextString = function (text, startIndex, endIndex) {
 };
@@ -1069,7 +1069,7 @@ TextAttrs.prototype.characterPosition = null;
  * @since Flash MX 2004
  * @deprecated
  * @see TextAttrs#letterSpacing
- * @type {Number}
+ * @type {number}
  */
 TextAttrs.prototype.characterSpacing = 0;
 /**
@@ -1079,12 +1079,12 @@ TextAttrs.prototype.characterSpacing = 0;
 TextAttrs.prototype.face = null;
 /**
  * @since Flash MX 2004
- * @type {string|Number}
+ * @type {string|number}
  */
 TextAttrs.prototype.fillColor = null;
 /**
  * @since Flash MX 2004
- * @type {Number}
+ * @type {number}
  */
 TextAttrs.prototype.indent = 0;
 /**
@@ -1094,22 +1094,22 @@ TextAttrs.prototype.indent = 0;
 TextAttrs.prototype.italic = false;
 /**
  * @since Flash MX 2004
- * @type {Number}
+ * @type {number}
  */
 TextAttrs.prototype.leftMargin = 0;
 /**
  * @since Flash 8
- * @type {Number}
+ * @type {number}
  */
 TextAttrs.prototype.letterSpacing = 0;
 /**
  * @since Flash MX 2004
- * @type {Number}
+ * @type {number}
  */
 TextAttrs.prototype.lineSpacing = 0;
 /**
  * @since Flash MX 2004
- * @type {Number}
+ * @type {number}
  */
 TextAttrs.prototype.rightMargin = 0;
 /**
@@ -1119,7 +1119,7 @@ TextAttrs.prototype.rightMargin = 0;
 TextAttrs.prototype.rotation = false;
 /**
  * @since Flash MX 2004
- * @type {Number}
+ * @type {number}
  */
 TextAttrs.prototype.size = 0;
 /**

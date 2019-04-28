@@ -10,23 +10,23 @@ Timeline = function () {
 };
 /**
  * @since Flash MX 2004
- * @type {Number}
+ * @type {number}
  */
 Timeline.prototype.currentFrame = 0;
 /**
  * @since Flash MX 2004
- * @type {Number}
+ * @type {number}
  */
 Timeline.prototype.currentLayer = 0;
 /**
  * @since Flash MX 2004
- * @type {Number}
+ * @type {number}
  * @const
  */
 Timeline.prototype.frameCount = 0;
 /**
  * @since Flash MX 2004
- * @type {Number}
+ * @type {number}
  * @const
  */
 Timeline.prototype.layerCount = 0;
@@ -49,7 +49,7 @@ Timeline.prototype.libraryItem = null;
 Timeline.prototype.name = null;
 /**
  * @since Flash MX 2004
- * @return {Number}
+ * @return {number}
  */
 Timeline.prototype.addMotionGuide = function () {
 };
@@ -58,49 +58,49 @@ Timeline.prototype.addMotionGuide = function () {
  * @param {string} [name]
  * @param {string} [layerType]
  * @param {Boolean} [bAddAbove]
- * @return {Number}
+ * @return {number}
  */
 Timeline.prototype.addNewLayer = function (name, layerType, bAddAbove) {
 };
 /**
  * @since Flash MX 2004
- * @param {Number} [startFrameIndex]
- * @param {Number} [endFrameIndex]
+ * @param {number} [startFrameIndex]
+ * @param {number} [endFrameIndex]
  */
 Timeline.prototype.clearFrames = function (startFrameIndex, endFrameIndex) {
 };
 /**
  * @since Flash MX 2004
- * @param {Number} [startFrameIndex]
- * @param {Number} [endFrameIndex]
+ * @param {number} [startFrameIndex]
+ * @param {number} [endFrameIndex]
  */
 Timeline.prototype.clearKeyframes = function (startFrameIndex, endFrameIndex) {
 };
 /**
  * @since Flash MX 2004
- * @param {Number} [startFrameIndex]
- * @param {Number} [endFrameIndex]
+ * @param {number} [startFrameIndex]
+ * @param {number} [endFrameIndex]
  */
 Timeline.prototype.convertToBlankKeyframes = function (startFrameIndex, endFrameIndex) {
 };
 /**
  * @since Flash MX 2004
- * @param {Number} [startFrameIndex]
- * @param {Number} [endFrameIndex]
+ * @param {number} [startFrameIndex]
+ * @param {number} [endFrameIndex]
  */
 Timeline.prototype.convertToKeyframes = function (startFrameIndex, endFrameIndex) {
 };
 /**
  * @since Flash MX 2004
- * @param {Number} [startFrameIndex]
- * @param {Number} [endFrameIndex]
+ * @param {number} [startFrameIndex]
+ * @param {number} [endFrameIndex]
  */
 Timeline.prototype.copyFrames = function (startFrameIndex, endFrameIndex) {
 };
 /**
  * @since Flash CS5.5
- * @param {Number} [startLayerIndex]
- * @param {Number} [endLayerIndex]
+ * @param {number} [startLayerIndex]
+ * @param {number} [endLayerIndex]
  */
 Timeline.prototype.copyLayers = function (startLayerIndex, endLayerIndex) {
 };
@@ -116,42 +116,42 @@ Timeline.prototype.copyMotionAsAS3 = function () {
 };
 /**
  * @since Flash CS5
- * @param {Number} [startFrame]
- * @param {Number} [endFrame]
+ * @param {number} [startFrame]
+ * @param {number} [endFrame]
  */
 Timeline.prototype.createMotionObject = function (startFrame, endFrame) {
 };
 /**
  * @since Flash MX 2004
- * @param {Number} [startFrameIndex]
- * @param {Number} [endFrameIndex]
+ * @param {number} [startFrameIndex]
+ * @param {number} [endFrameIndex]
  */
 Timeline.prototype.createMotionTween = function (startFrameIndex, endFrameIndex) {
 };
 /**
  * @since Flash MX 2004
- * @param {Number} [startFrameIndex]
- * @param {Number} [endFrameIndex]
+ * @param {number} [startFrameIndex]
+ * @param {number} [endFrameIndex]
  */
 Timeline.prototype.cutFrames = function (startFrameIndex, endFrameIndex) {
 };
 /**
  * @since Flash CS5.5
- * @param {Number} [startLayerIndex]
- * @param {Number} [endLayerIndex]
+ * @param {number} [startLayerIndex]
+ * @param {number} [endLayerIndex]
  */
 Timeline.prototype.cutLayers = function (startLayerIndex, endLayerIndex) {
 };
 /**
  * @since Flash MX 2004
- * @param {Number} [index]
+ * @param {number} [index]
  */
 Timeline.prototype.deleteLayer = function (index) {
 };
 /**
  * @since Flash CS5.5
- * @param {Number} [startLayerIndex]
- * @param {Number} [endLayerIndex]
+ * @param {number} [startLayerIndex]
+ * @param {number} [endLayerIndex]
  */
 Timeline.prototype.duplicateLayers = function (startLayerIndex, endLayerIndex) {
 };
@@ -159,30 +159,30 @@ Timeline.prototype.duplicateLayers = function (startLayerIndex, endLayerIndex) {
  * @since Flash MX 2004
  * @param {Boolean} bExpand
  * @param {Boolean} [bRecurseNestedParents]
- * @param {Number} [index]
+ * @param {number} [index]
  */
 Timeline.prototype.expandFolder = function (bExpand, bRecurseNestedParents, index) {
 };
 /**
  * @since Flash MX 2004
  * @param {string} name
- * @return {Array.<Number>}
+ * @return {Array.<number>}
  */
 Timeline.prototype.findLayerIndex = function (name) {
 };
 /**
  * @since Flash CC
- * @param {Number} [frame]
+ * @param {number} [frame]
  * @param {Boolean} [includeHiddenLayers]
- * @return {{left:Number,top:Number,right:Number,bottom:Number}}
+ * @return {{left:number,top:number,right:number,bottom:number}}
  */
 Timeline.prototype.getBounds = function (frame, includeHiddenLayers) {
 };
 /**
  * @since Flash MX 2004
  * @param {string} property
- * @param {Number} [startFrameIndex]
- * @param {Number} [endFrameIndex]
+ * @param {number} [startFrameIndex]
+ * @param {number} [endFrameIndex]
  * @return {Object}
  */
 Timeline.prototype.getFrameProperty = function (property, startFrameIndex, endFrameIndex) {
@@ -202,47 +202,47 @@ Timeline.prototype.getLayerProperty = function (property) {
 };
 /**
  * @since Flash MX 2004
- * @return {Array.<Number>}
+ * @return {Array.<number>}
  */
 Timeline.prototype.getSelectedFrames = function () {
 };
 /**
  * @since Flash MX 2004
- * @return {Array.<Number>}
+ * @return {Array.<number>}
  */
 Timeline.prototype.getSelectedLayers = function () {
 };
 /**
  * @since Flash MX 2004
- * @param {Number} [frameNumIndex]
+ * @param {number} [frameNumIndex]
  */
 Timeline.prototype.insertBlankKeyframe = function (frameNumIndex) {
 };
 /**
  * @since Flash MX 2004
- * @param {Number} [numFrames]
+ * @param {number} [numFrames]
  * @param {Boolean} [bAllLayers]
- * @param {Number} [frameNumIndex]
+ * @param {number} [frameNumIndex]
  */
 Timeline.prototype.insertFrames = function (numFrames, bAllLayers, frameNumIndex) {
 };
 /**
  * @since Flash MX 2004
- * @param {Number} [frameNumIndex]
+ * @param {number} [frameNumIndex]
  */
 Timeline.prototype.insertKeyframe = function (frameNumIndex) {
 };
 /**
  * @since Flash MX 2004
- * @param {Number} [startFrameIndex]
- * @param {Number} [endFrameIndex]
+ * @param {number} [startFrameIndex]
+ * @param {number} [endFrameIndex]
  */
 Timeline.prototype.pasteFrames = function (startFrameIndex, endFrameIndex) {
 };
 /**
  * @since Flash CS5.5
- * @param {Number} [layerIndex]
- * @return {Number}
+ * @param {number} [layerIndex]
+ * @return {number}
  */
 Timeline.prototype.pasteLayers = function (layerIndex) {
 };
@@ -253,30 +253,30 @@ Timeline.prototype.pasteMotion = function () {
 };
 /**
  * @since Flash MX 2004
- * @param {Number} [startFrameIndex]
- * @param {Number} [endFrameIndex]
+ * @param {number} [startFrameIndex]
+ * @param {number} [endFrameIndex]
  */
 Timeline.prototype.removeFrames = function (startFrameIndex, endFrameIndex) {
 };
 /**
  * @since Flash CS5
- * @param {Number} [startFrame]
- * @param {Number} [endFrame]
+ * @param {number} [startFrame]
+ * @param {number} [endFrame]
  */
 Timeline.prototype.removeMotionObject = function (startFrame, endFrame) {
 };
 /**
  * @since Flash MX 2004
- * @param {Number} layerToMove
- * @param {Number} layerToPutItBy
+ * @param {number} layerToMove
+ * @param {number} layerToPutItBy
  * @param {Boolean} [bAddBefore]
  */
 Timeline.prototype.reorderLayer = function (layerToMove, layerToPutItBy, bAddBefore) {
 };
 /**
  * @since Flash MX 2004
- * @param {Number} [startFrameIndex]
- * @param {Number} [endFrameIndex]
+ * @param {number} [startFrameIndex]
+ * @param {number} [endFrameIndex]
  */
 Timeline.prototype.reverseFrames = function (startFrameIndex, endFrameIndex) {
 };
@@ -289,8 +289,8 @@ Timeline.prototype.selectAllFrames = function () {
  * @since Flash MX 2004
  * @param {string} property
  * @param {Object} value
- * @param {Number} [startFrameIndex]
- * @param {Number} [endFrameIndex]
+ * @param {number} [startFrameIndex]
+ * @param {number} [endFrameIndex]
  */
 Timeline.prototype.setFrameProperty = function (property, value, startFrameIndex, endFrameIndex) {
 };
@@ -311,22 +311,22 @@ Timeline.prototype.setLayerProperty = function (property, value, layersToChange)
 };
 /**
  * @since Flash MX 2004
- * @param {Number|Array.<Number>} startFrameIndex
- * @param {Number|Boolean=} endFrameIndex
+ * @param {number|Array.<number>} startFrameIndex
+ * @param {number|Boolean=} endFrameIndex
  * @param {Boolean} [bReplaceCurrentSelection]
  */
 Timeline.prototype.setSelectedFrames = function (startFrameIndex, endFrameIndex, bReplaceCurrentSelection) {
 };
 /**
  * @since Flash MX 2004
- * @param {Number} index
+ * @param {number} index
  * @param {Boolean} [bReplaceCurrentSelection]
  */
 Timeline.prototype.setSelectedLayers = function (index, bReplaceCurrentSelection) {
 };
 /**
  * @since Flash MX 2004
- * @param {Number} [layer]
+ * @param {number} [layer]
  */
 Timeline.prototype.showLayerMasking = function (layer) {
 };
@@ -354,12 +354,12 @@ Layer = function () {
 Layer.prototype.animationType = null;
 /**
  * @since Flash MX 2004
- * @type {string|Number}
+ * @type {string|number}
  */
 Layer.prototype.color = null;
 /**
  * @since Flash MX 2004
- * @type {Number}
+ * @type {number}
  * @const
  */
 Layer.prototype.frameCount = 0;
@@ -371,7 +371,7 @@ Layer.prototype.frameCount = 0;
 Layer.prototype.frames = null;
 /**
  * @since Flash MX 2004
- * @type {Number}
+ * @type {number}
  */
 Layer.prototype.height = 0;
 /**
@@ -417,7 +417,7 @@ Frame = function () {
 Frame.prototype.actionScript = null;
 /**
  * @since Flash MX 2004
- * @type {Number}
+ * @type {number}
  * @const
  */
 Frame.prototype.duration = 0;
@@ -449,7 +449,7 @@ Frame.prototype.motionTweenOrientToPath = false;
 Frame.prototype.motionTweenRotate = null;
 /**
  * @since Flash MX 2004
- * @type {Number}
+ * @type {number}
  */
 Frame.prototype.motionTweenRotateTimes = 0;
 /**
@@ -489,7 +489,7 @@ Frame.prototype.soundEffect = null;
 Frame.prototype.soundLibraryItem = null;
 /**
  * @since Flash MX 2004
- * @type {Number}
+ * @type {number}
  */
 Frame.prototype.soundLoop = 0;
 /**
@@ -509,13 +509,13 @@ Frame.prototype.soundName = null;
 Frame.prototype.soundSync = null;
 /**
  * @since Flash MX 2004
- * @type {Number}
+ * @type {number}
  * @const
  */
 Frame.prototype.startFrame = 0;
 /**
  * @since Flash MX 2004
- * @type {Number}
+ * @type {number}
  */
 Frame.prototype.tweenEasing = 0;
 /**
@@ -552,7 +552,7 @@ Frame.prototype.convertToFrameByFrameAnimation = function () {
 /**
  * @since Flash MX 2004
  * @param {string} [property]
- * @return {Array.<{x:Number,y:Number}>}
+ * @return {Array.<{x:number,y:number}>}
  */
 Frame.prototype.getCustomEase = function (property) {
 };
@@ -564,13 +564,13 @@ Frame.prototype.getMotionObjectXML = function () {
 };
 /**
  * @since Flash CC
- * @return {Array.<{mark:Number,leftChannel:Number,rightChannel:Number}>}
+ * @return {Array.<{mark:number,leftChannel:number,rightChannel:number}>}
  */
 Frame.prototype.getSoundEnvelope = function () {
 };
 /**
  * @since Flash CC
- * @return {{start:Number,end:Number}}
+ * @return {{start:number,end:number}}
  */
 Frame.prototype.getSoundEnvelopeLimits = function () {
 };
@@ -607,13 +607,13 @@ Frame.prototype.selectMotionPath = function (select) {
 /**
  * @since Flash 8
  * @param {string} property
- * @param {Array.<{x:Number,y:Number}>} easeCurve
+ * @param {Array.<{x:number,y:number}>} easeCurve
  */
 Frame.prototype.setCustomEase = function (property, easeCurve) {
 };
 /**
  * @since Flash CS5
- * @param {Number} duration
+ * @param {number} duration
  * @param {Boolean} [stretchExistingKeyframes]
  */
 Frame.prototype.setMotionObjectDuration = function (duration, stretchExistingKeyframes) {
@@ -627,13 +627,13 @@ Frame.prototype.setMotionObjectXML = function (xmlstr, endAtCurrentLocation) {
 };
 /**
  * @since Flash CC
- * @param {Array.<{mark:Number,leftChannel:Number,rightChannel:Number}>} soundEnv
+ * @param {Array.<{mark:number,leftChannel:number,rightChannel:number}>} soundEnv
  */
 Frame.prototype.setSoundEnvelope = function (soundEnv) {
 };
 /**
  * @since Flash CC
- * @param {{start:Number,end:Number}} limits
+ * @param {{start:number,end:number}} limits
  */
 Frame.prototype.setSoundEnvelopeLimits = function (limits) {
 };
@@ -645,13 +645,13 @@ Tween = function () {
 };
 /**
  * @since Flash CC
- * @type {Number}
+ * @type {number}
  * @const
  */
 Tween.prototype.duration = 0;
 /**
  * @since Flash CC
- * @type {Number}
+ * @type {number}
  * @const
  */
 Tween.prototype.startFrame = 0;
@@ -663,28 +663,28 @@ Tween.prototype.startFrame = 0;
 Tween.prototype.tweenType = null;
 /**
  * @since Flash CC
- * @param {Number} frameIndex
- * @return {{colorAlphaAmount:Number,colorAlphaPercent:Number,colorRedAmount:Number,colorRedPercent:Number,colorGreenAmount:Number,colorGreenPercent:Number,colorBlueAmount:Number,colorBluePercent:Number}}
+ * @param {number} frameIndex
+ * @return {{colorAlphaAmount:number,colorAlphaPercent:number,colorRedAmount:number,colorRedPercent:number,colorGreenAmount:number,colorGreenPercent:number,colorBlueAmount:number,colorBluePercent:number}}
  */
 Tween.prototype.getColorTransform = function (frameIndex) {
 };
 /**
  * @since Flash CC
- * @param {Number} frameIndex
+ * @param {number} frameIndex
  * @return {Array.<Filter>}
  */
 Tween.prototype.getFilters = function (frameIndex) {
 };
 /**
  * @since Flash CC
- * @param {Number} frameIndex
+ * @param {number} frameIndex
  * @return {Matrix}
  */
 Tween.prototype.getGeometricTransform = function (frameIndex) {
 };
 /**
  * @since Flash CC
- * @param {Number} frameIndex
+ * @param {number} frameIndex
  * @return {Shape}
  */
 Tween.prototype.getShape = function (frameIndex) {

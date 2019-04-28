@@ -135,7 +135,7 @@ BitmapItem.prototype.fileLastModifiedDate = null;
 BitmapItem.prototype.hasValidAlphaLayer = false;
 /**
  * @since Flash CS6
- * @type {Number}
+ * @type {number}
  * @const
  */
 BitmapItem.prototype.lastModifiedDate = 0;
@@ -176,7 +176,7 @@ BitmapItem.prototype.useImportedJPEGQuality = false;
 /**
  * @since Flash CS4
  * @param {string} fileURI
- * @param {Number} quality
+ * @param {number} quality
  * @return {Boolean}
  */
 BitmapItem.prototype.exportToFile = function (fileURI, quality) {
@@ -239,7 +239,7 @@ FontItem.prototype.isDefineFont4Symbol = false;
 FontItem.prototype.italic = false;
 /**
  * @since Flash CS4
- * @type {Number}
+ * @type {number}
  */
 FontItem.prototype.size = 0;
 /**
@@ -278,7 +278,7 @@ SoundItem.prototype.convertStereoToMono = false;
 SoundItem.prototype.fileLastModifiedDate = null;
 /**
  * @since Flash CS6
- * @type {Number}
+ * @type {number}
  * @const
  */
 SoundItem.prototype.lastModifiedDate = 0;
@@ -338,7 +338,7 @@ SymbolItem = function () {
 SymbolItem.prototype = new Item();
 /**
  * @since Flash CS6
- * @type {Number}
+ * @type {number}
  * @const
  */
 SymbolItem.prototype.lastModifiedDate = 0;
@@ -349,7 +349,7 @@ SymbolItem.prototype.lastModifiedDate = 0;
 SymbolItem.prototype.scalingGrid = false;
 /**
  * @since Flash 8
- * @type {{left:Number,top:Number,right:Number,bottom:Number}}
+ * @type {{left:number,top:number,right:number,bottom:number}}
  */
 SymbolItem.prototype.scalingGridRect = null;
 /**
@@ -397,7 +397,7 @@ SymbolItem.prototype.exportSWF = function (outputURI) {
 };
 /**
  * @since Flash CS6
- * @param {Number} frameNumber
+ * @param {number} frameNumber
  * @param {string} bitmapName
  */
 SymbolItem.prototype.exportToLibrary = function (frameNumber, bitmapName) {
@@ -405,8 +405,8 @@ SymbolItem.prototype.exportToLibrary = function (frameNumber, bitmapName) {
 /**
  * @since Flash CS6
  * @param {string} outputURI
- * @param {Number} [startFrameNum]
- * @param {Number} [endFrameNum]
+ * @param {number} [startFrameNum]
+ * @param {number} [endFrameNum]
  * @param {Matrix} [matrix]
  */
 SymbolItem.prototype.exportToPNGSequence = function (outputURI, startFrameNum, endFrameNum, matrix) {
@@ -427,7 +427,7 @@ VideoItem.prototype = new Item();
 VideoItem.prototype.fileLastModifiedDate = null;
 /**
  * @since Flash CS6
- * @type {Number}
+ * @type {number}
  * @const
  */
 VideoItem.prototype.lastModifiedDate = 0;

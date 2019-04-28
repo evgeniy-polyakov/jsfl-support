@@ -25,7 +25,7 @@ Document.prototype.as3AutoDeclare = false;
 Document.prototype.as3Dialect = null;
 /**
  * @since Flash CS3
- * @type {Number}
+ * @type {number}
  */
 Document.prototype.as3ExportFrame = 0;
 /**
@@ -40,7 +40,7 @@ Document.prototype.as3StrictMode = false;
 Document.prototype.as3WarningsMode = false;
 /**
  * @since Flash CS3
- * @type {Number}
+ * @type {number}
  */
 Document.prototype.asVersion = 0;
 /**
@@ -50,7 +50,7 @@ Document.prototype.asVersion = 0;
 Document.prototype.autoLabel = false;
 /**
  * @since Flash MX 2004
- * @type {string|Number}
+ * @type {string|number}
  */
 Document.prototype.backgroundColor = null;
 /**
@@ -60,7 +60,7 @@ Document.prototype.backgroundColor = null;
 Document.prototype.currentPublishProfile = null;
 /**
  * @since Flash MX 2004
- * @type {Number}
+ * @type {number}
  */
 Document.prototype.currentTimeline = 0;
 /**
@@ -85,17 +85,17 @@ Document.prototype.externalLibraryPath = null;
 Document.prototype.forceSimple = false;
 /**
  * @since Flash MX 2004
- * @type {Number}
+ * @type {number}
  */
 Document.prototype.frameRate = 0;
 /**
  * @since Flash MX 2004
- * @type {Number}
+ * @type {number}
  */
 Document.prototype.height = 0;
 /**
  * @since Flash CS3
- * @type {Number}
+ * @type {number}
  * @const
  */
 Document.prototype.id = 0;
@@ -163,7 +163,7 @@ Document.prototype.silent = false;
 Document.prototype.sourcePath = null;
 /**
  * @since Flash CS6
- * @type {Number}
+ * @type {number}
  */
 Document.prototype.swfJPEGQuality = null;
 /**
@@ -180,12 +180,12 @@ Document.prototype.timelines = null;
 Document.prototype.viewMatrix = null;
 /**
  * @since Flash MX 2004
- * @type {Number}
+ * @type {number}
  */
 Document.prototype.width = 0;
 /**
  * @since Flash 8
- * @type {Number}
+ * @type {number}
  */
 Document.prototype.zoomFactor = 0;
 /**
@@ -212,7 +212,7 @@ Document.prototype.addFilter = function (filterName) {
 };
 /**
  * @since Flash MX 2004
- * @param {{x:Number,y:Number}} position
+ * @param {{x:number,y:number}} position
  * @param {Item} item
  * @return {Boolean}
  */
@@ -220,14 +220,14 @@ Document.prototype.addItem = function (position, item) {
 };
 /**
  * @since Flash MX 2004
- * @param {{x:Number,y:Number}} startPoint
- * @param {{x:Number,y:Number}} endpoint
+ * @param {{x:number,y:number}} startPoint
+ * @param {{x:number,y:number}} endpoint
  */
 Document.prototype.addNewLine = function (startPoint, endpoint) {
 };
 /**
  * @since Flash MX 2004
- * @param {{left:Number,top:Number,right:Number,bottom:Number}} boundingRectangle
+ * @param {{left:number,top:number,right:number,bottom:number}} boundingRectangle
  * @param {Boolean} [bSuppressFill]
  * @param {Boolean} [bSuppressStroke]
  */
@@ -235,7 +235,7 @@ Document.prototype.addNewOval = function (boundingRectangle, bSuppressFill, bSup
 };
 /**
  * @since Flash CS4
- * @param {{left:Number,top:Number,right:Number,bottom:Number}} boundingRectangle
+ * @param {{left:number,top:number,right:number,bottom:number}} boundingRectangle
  * @param {Boolean} [bSuppressFill]
  * @param {Boolean} [bSuppressStroke]
  */
@@ -243,8 +243,8 @@ Document.prototype.addNewPrimitiveOval = function (boundingRectangle, bSuppressF
 };
 /**
  * @since Flash CS4
- * @param {{left:Number,top:Number,right:Number,bottom:Number}} boundingRectangle
- * @param {Number} roundness
+ * @param {{left:number,top:number,right:number,bottom:number}} boundingRectangle
+ * @param {number} roundness
  * @param {Boolean} [bSuppressFill]
  * @param {Boolean} [bSuppressStroke]
  */
@@ -253,14 +253,14 @@ Document.prototype.addNewPrimitiveRectangle = function (boundingRectangle, round
 /**
  * @since Flash MX 2004
  * @param {string} profileName
- * @return {Number}
+ * @return {number}
  */
 Document.prototype.addNewPublishProfile = function (profileName) {
 };
 /**
  * @since Flash MX 2004
- * @param {{left:Number,top:Number,right:Number,bottom:Number}} boundingRectangle
- * @param {Number} roundness
+ * @param {{left:number,top:number,right:number,bottom:number}} boundingRectangle
+ * @param {number} roundness
  * @param {Boolean} [bSuppressFill]
  * @param {Boolean} [bSuppressStroke]
  */
@@ -275,7 +275,7 @@ Document.prototype.addNewScene = function (name) {
 };
 /**
  * @since Flash MX 2004
- * @param {{left:Number,top:Number,right:Number,bottom:Number}} boundingRectangle
+ * @param {{left:number,top:number,right:number,bottom:number}} boundingRectangle
  * @param {string} [text]
  */
 Document.prototype.addNewText = function (boundingRectangle, text) {
@@ -337,8 +337,8 @@ Document.prototype.canTestScene = function () {
 };
 /**
  * @since Flash 8
- * @param {Number} oldIndex
- * @param {Number} newIndex
+ * @param {number} oldIndex
+ * @param {number} newIndex
  */
 Document.prototype.changeFilterOrder = function (oldIndex, newIndex) {
 };
@@ -404,7 +404,7 @@ Document.prototype.deleteEnvelope = function () {
 };
 /**
  * @since Flash MX 2004
- * @return {Number}
+ * @return {number}
  */
 Document.prototype.deletePublishProfile = function () {
 };
@@ -426,13 +426,13 @@ Document.prototype.disableAllFilters = function () {
 };
 /**
  * @since Flash 8
- * @param {Number} filterIndex
+ * @param {number} filterIndex
  */
 Document.prototype.disableFilter = function (filterIndex) {
 };
 /**
  * @since Flash 8
- * @param {Number} enabledFilterIndex
+ * @param {number} enabledFilterIndex
  */
 Document.prototype.disableOtherFilters = function (enabledFilterIndex) {
 };
@@ -463,7 +463,7 @@ Document.prototype.documentHasData = function (name) {
 /**
  * @since Flash MX 2004
  * @param {string} [profileName]
- * @return {Number}
+ * @return {number}
  */
 Document.prototype.duplicatePublishProfile = function (profileName) {
 };
@@ -480,7 +480,7 @@ Document.prototype.duplicateSelection = function () {
 };
 /**
  * @since Flash MX 2004
- * @param {Number} index
+ * @param {number} index
  */
 Document.prototype.editScene = function (index) {
 };
@@ -491,7 +491,7 @@ Document.prototype.enableAllFilters = function () {
 };
 /**
  * @since Flash 8
- * @param {Number} filterIndex
+ * @param {number} filterIndex
  */
 Document.prototype.enableFilter = function (filterIndex) {
 };
@@ -508,7 +508,7 @@ Document.prototype.exitEditMode = function () {
 };
 /**
  * @since Flash CS6
- * @param {Number} frameNumber
+ * @param {number} frameNumber
  * @param {string} bitmapName
  */
 Document.prototype.exportInstanceToLibrary = function (frameNumber, bitmapName) {
@@ -516,8 +516,8 @@ Document.prototype.exportInstanceToLibrary = function (frameNumber, bitmapName) 
 /**
  * @since Flash CS6
  * @param {string} outputURI
- * @param {Number} [startFrameNum]
- * @param {Number} [endFrameNum]
+ * @param {number} [startFrameNum]
+ * @param {number} [endFrameNum]
  * @param {Matrix} [matrix]
  */
 Document.prototype.exportInstanceToPNGSequence = function (outputURI, startFrameNum, endFrameNum, matrix) {
@@ -557,7 +557,7 @@ Document.prototype.exportSWF = function (fileURI, bCurrentSettings) {
  * @param {Boolean} [convertInAdobeMediaEncoder]
  * @param {Boolean} [transparent]
  * @param {Boolean} [stopAtFrame]
- * @param {Number} [stopAtFrameOrTime]
+ * @param {number} [stopAtFrameOrTime]
  */
 Document.prototype.exportVideo = function (fileURI, convertInAdobeMediaEncoder, transparent, stopAtFrame,
                                            stopAtFrameOrTime) {
@@ -605,8 +605,8 @@ Document.prototype.getElementProperty = function (propertyName) {
 /**
  * @since Flash MX 2004
  * @param {string} attrName
- * @param {Number} [startIndex]
- * @param {Number} [endIndex]
+ * @param {number} [startIndex]
+ * @param {number} [endIndex]
  * @return {Object}
  */
 Document.prototype.getElementTextAttr = function (attrName, startIndex, endIndex) {
@@ -644,7 +644,7 @@ Document.prototype.getPublishDocumentData = function (format) {
 };
 /**
  * @since Flash MX 2004
- * @return {{left:Number,top:Number,right:Number,bottom:Number}}
+ * @return {{left:number,top:number,right:number,bottom:number}}
  */
 Document.prototype.getSelectionRect = function () {
 };
@@ -662,8 +662,8 @@ Document.prototype.getTelemetryForSwf = function () {
 };
 /**
  * @since Flash MX 2004
- * @param {Number} [startIndex]
- * @param {Number} [endIndex]
+ * @param {number} [startIndex]
+ * @param {number} [endIndex]
  * @return {string}
  */
 Document.prototype.getTextString = function (startIndex, endIndex) {
@@ -676,7 +676,7 @@ Document.prototype.getTimeline = function () {
 };
 /**
  * @since Flash MX 2004
- * @return {{x:Number,y:Number}}
+ * @return {{x:number,y:number}}
  */
 Document.prototype.getTransformationPoint = function () {
 };
@@ -698,7 +698,7 @@ Document.prototype.importFile = function (fileURI, importToLibrary, showDialog, 
 /**
  * @since Flash MX 2004
  * @param {string} fileURI
- * @return {Number}
+ * @return {number}
  */
 Document.prototype.importPublishProfile = function (fileURI) {
 };
@@ -739,7 +739,7 @@ Document.prototype.match = function (bWidth, bHeight, bUseDocumentBounds) {
 };
 /**
  * @since Flash MX 2004
- * @param {{x:Number,y:Number}} position
+ * @param {{x:number,y:number}} position
  * @param {Boolean} bToggleSel
  * @param {Boolean} bShiftSel
  */
@@ -747,7 +747,7 @@ Document.prototype.mouseClick = function (position, bToggleSel, bShiftSel) {
 };
 /**
  * @since Flash MX 2004
- * @param {{x:Number,y:Number}} position
+ * @param {{x:number,y:number}} position
  * @param {Boolean} bAltDown
  * @param {Boolean} bShiftDown
  * @param {Boolean} bShiftSelect
@@ -756,19 +756,19 @@ Document.prototype.mouseDblClk = function (position, bAltDown, bShiftDown, bShif
 };
 /**
  * @since Flash MX 2004
- * @param {{x:Number,y:Number}} delta
+ * @param {{x:number,y:number}} delta
  */
 Document.prototype.moveSelectedBezierPointsBy = function (delta) {
 };
 /**
  * @since Flash MX 2004
- * @param {{x:Number,y:Number}} distanceToMove
+ * @param {{x:number,y:number}} distanceToMove
  */
 Document.prototype.moveSelectionBy = function (distanceToMove) {
 };
 /**
  * @since Flash MX 2004
- * @param {Number} smoothing
+ * @param {number} smoothing
  * @param {Boolean} bUseMultiplePasses
  */
 Document.prototype.optimizeCurves = function (smoothing, bUseMultiplePasses) {
@@ -803,7 +803,7 @@ Document.prototype.removeDataFromSelection = function (name) {
 };
 /**
  * @since Flash 8
- * @param {Number} filterIndex
+ * @param {number} filterIndex
  */
 Document.prototype.removeFilter = function (filterIndex) {
 };
@@ -823,8 +823,8 @@ Document.prototype.renameScene = function (name) {
 };
 /**
  * @since Flash MX 2004
- * @param {Number} sceneToMove
- * @param {Number} sceneToPutItBefore
+ * @param {number} sceneToMove
+ * @param {number} sceneToPutItBefore
  */
 Document.prototype.reorderScene = function (sceneToMove, sceneToPutItBefore) {
 };
@@ -850,14 +850,14 @@ Document.prototype.revert = function () {
 };
 /**
  * @since Flash CS4
- * @param {{x:Number,y:Number,z:Number}} xyzCoordinate
+ * @param {{x:number,y:number,z:number}} xyzCoordinate
  * @param {Boolean} bGlobalTransform
  */
 Document.prototype.rotate3DSelection = function (xyzCoordinate, bGlobalTransform) {
 };
 /**
  * @since Flash MX 2004
- * @param {Number} angle
+ * @param {number} angle
  * @param {string} [rotationPoint]
  */
 Document.prototype.rotateSelection = function (angle, rotationPoint) {
@@ -887,8 +887,8 @@ Document.prototype.saveAndCompact = function (bOkToSaveAs) {
 };
 /**
  * @since Flash MX 2004
- * @param {Number} xScale
- * @param {Number} yScale
+ * @param {number} xScale
+ * @param {number} yScale
  * @param {string} whichCorner
  */
 Document.prototype.scaleSelection = function (xScale, yScale, whichCorner) {
@@ -938,22 +938,22 @@ Document.prototype.setElementProperty = function (property, value) {
  * @since Flash MX 2004
  * @param {string} attrName
  * @param {Object} attrValue
- * @param {Number} [startIndex]
- * @param {Number} [endIndex]
+ * @param {number} [startIndex]
+ * @param {number} [endIndex]
  * @return {Boolean}
  */
 Document.prototype.setElementTextAttr = function (attrName, attrValue, startIndex, endIndex) {
 };
 /**
  * @since Flash MX 2004
- * @param {string|Number} color
+ * @param {string|number} color
  */
 Document.prototype.setFillColor = function (color) {
 };
 /**
  * @since Flash 8
  * @param {string} property
- * @param {Number} filterIndex
+ * @param {number} filterIndex
  * @param {Object} value
  */
 Document.prototype.setFilterProperty = function (property, filterIndex, value) {
@@ -966,20 +966,20 @@ Document.prototype.setFilters = function (filterArray) {
 };
 /**
  * @since Flash MX 2004
- * @param {Number} opacity
+ * @param {number} opacity
  */
 Document.prototype.setInstanceAlpha = function (opacity) {
 };
 /**
  * @since Flash MX 2004
- * @param {Number} brightness
+ * @param {number} brightness
  */
 Document.prototype.setInstanceBrightness = function (brightness) {
 };
 /**
  * @since Flash MX 2004
- * @param {string|Number} color
- * @param {Number} strength
+ * @param {string|number} color
+ * @param {number} strength
  */
 Document.prototype.setInstanceTint = function (color, strength) {
 };
@@ -1027,14 +1027,14 @@ Document.prototype.setRectangleObjectProperty = function (propertyName, value) {
 };
 /**
  * @since Flash MX 2004
- * @param {{left:Number,top:Number,right:Number,bottom:Number}} boundingRectangle
+ * @param {{left:number,top:number,right:number,bottom:number}} boundingRectangle
  * @param {Boolean} [bContactSensitiveSelection]
  */
 Document.prototype.setSelectionBounds = function (boundingRectangle, bContactSensitiveSelection) {
 };
 /**
  * @since Flash MX 2004
- * @param {{left:Number,top:Number,right:Number,bottom:Number}} rect
+ * @param {{left:number,top:number,right:number,bottom:number}} rect
  * @param {Boolean} [bReplaceCurrentSelection]
  * @param {Boolean} [bContactSensitiveSelection]
  */
@@ -1042,33 +1042,33 @@ Document.prototype.setSelectionRect = function (rect, bReplaceCurrentSelection, 
 };
 /**
  * @since Flash CS4
- * @param {{x:Number,y:Number}} point
+ * @param {{x:number,y:number}} point
  */
 Document.prototype.setStageVanishingPoint = function (point) {
 };
 /**
  * @since Flash CS4
- * @param {Number} angle
+ * @param {number} angle
  */
 Document.prototype.setStageViewAngle = function (angle) {
 };
 /**
  * @since Flash MX 2004
- * @param {string|Number} color
- * @param {Number} size
+ * @param {string|number} color
+ * @param {number} size
  * @param {string} strokeType
  */
 Document.prototype.setStroke = function (color, size, strokeType) {
 };
 /**
  * @since Flash MX 2004
- * @param {string|Number} color
+ * @param {string|number} color
  */
 Document.prototype.setStrokeColor = function (color) {
 };
 /**
  * @since Flash MX 2004
- * @param {Number} size
+ * @param {number} size
  */
 Document.prototype.setStrokeSize = function (size) {
 };
@@ -1080,15 +1080,15 @@ Document.prototype.setStrokeStyle = function (strokeType) {
 };
 /**
  * @since Flash MX 2004
- * @param {{left:Number,top:Number,right:Number,bottom:Number}} boundingRectangle
+ * @param {{left:number,top:number,right:number,bottom:number}} boundingRectangle
  * @return {Boolean}
  */
 Document.prototype.setTextRectangle = function (boundingRectangle) {
 };
 /**
  * @since Flash MX 2004
- * @param {Number} startIndex
- * @param {Number} endIndex
+ * @param {number} startIndex
+ * @param {number} endIndex
  * @return {Boolean}
  */
 Document.prototype.setTextSelection = function (startIndex, endIndex) {
@@ -1096,22 +1096,22 @@ Document.prototype.setTextSelection = function (startIndex, endIndex) {
 /**
  * @since Flash MX 2004
  * @param {string} text
- * @param {Number} [startIndex]
- * @param {Number} [endIndex]
+ * @param {number} [startIndex]
+ * @param {number} [endIndex]
  * @return {Boolean}
  */
 Document.prototype.setTextString = function (text, startIndex, endIndex) {
 };
 /**
  * @since Flash MX 2004
- * @param {{x:Number,y:Number}} transformationPoint
+ * @param {{x:number,y:number}} transformationPoint
  */
 Document.prototype.setTransformationPoint = function (transformationPoint) {
 };
 /**
  * @since Flash MX 2004
- * @param {Number} xSkew
- * @param {Number} ySkew
+ * @param {number} xSkew
+ * @param {number} ySkew
  * @param {string} whichEdge
  */
 Document.prototype.skewSelection = function (xSkew, ySkew, whichEdge) {
@@ -1157,8 +1157,8 @@ Document.prototype.testScene = function () {
 };
 /**
  * @since Flash MX 2004
- * @param {Number} threshold
- * @param {Number} minimumArea
+ * @param {number} threshold
+ * @param {number} minimumArea
  * @param {string} curveFit
  * @param {string} cornerThreshold
  */
@@ -1166,22 +1166,22 @@ Document.prototype.traceBitmap = function (threshold, minimumArea, curveFit, cor
 };
 /**
  * @since Flash MX 2004
- * @param {Number} a
- * @param {Number} b
- * @param {Number} c
- * @param {Number} d
+ * @param {number} a
+ * @param {number} b
+ * @param {number} c
+ * @param {number} d
  */
 Document.prototype.transformSelection = function (a, b, c, d) {
 };
 /**
  * @since Flash CS4
- * @param {{x:Number,y:Number,z:Number}} xyzCoordinate
+ * @param {{x:number,y:number,z:number}} xyzCoordinate
  */
 Document.prototype.translate3DCenter = function (xyzCoordinate) {
 };
 /**
  * @since Flash CS4
- * @param {{x:Number,y:Number,z:Number}} xyzCoordinate
+ * @param {{x:number,y:number,z:number}} xyzCoordinate
  * @param {Boolean} bGlobalTransform
  */
 Document.prototype.translate3DSelection = function (xyzCoordinate, bGlobalTransform) {
@@ -1227,7 +1227,7 @@ Library.prototype.items = null;
 Library.prototype.unusedItems = null;
 /**
  * @since Flash MX 2004
- * @param {{x:Number,y:Number}} position
+ * @param {{x:number,y:number}} position
  * @param {string} [namePath]
  * @return {Boolean}
  */
@@ -1274,7 +1274,7 @@ Library.prototype.expandFolder = function (bExpand, bRecurseNestedParents, nameP
 /**
  * @since Flash MX 2004
  * @param {string} namePath
- * @return {Number}
+ * @return {number}
  */
 Library.prototype.findItemIndex = function (namePath) {
 };

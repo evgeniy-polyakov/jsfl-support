@@ -10,38 +10,38 @@ Path = function () {
 };
 /**
  * @since Flash MX 2004
- * @type {Number}
+ * @type {number}
  * @const
  */
 Path.prototype.nPts = 0;
 /**
  * @since Flash MX 2004
- * @param {Number} xAnchor
- * @param {Number} yAnchor
- * @param {Number} x2
- * @param {Number} y2
- * @param {Number} x3
- * @param {Number} y3
- * @param {Number} x4
- * @param {Number} y4
+ * @param {number} xAnchor
+ * @param {number} yAnchor
+ * @param {number} x2
+ * @param {number} y2
+ * @param {number} x3
+ * @param {number} y3
+ * @param {number} x4
+ * @param {number} y4
  */
 Path.prototype.addCubicCurve = function (xAnchor, yAnchor, x2, y2, x3, y3, x4, y4) {
 };
 /**
  * @since Flash MX 2004
- * @param {Number} xAnchor
- * @param {Number} yAnchor
- * @param {Number} x2
- * @param {Number} y2
- * @param {Number} x3
- * @param {Number} y3
+ * @param {number} xAnchor
+ * @param {number} yAnchor
+ * @param {number} x2
+ * @param {number} y2
+ * @param {number} x3
+ * @param {number} y3
  */
 Path.prototype.addCurve = function (xAnchor, yAnchor, x2, y2, x3, y3) {
 };
 /**
  * @since Flash MX 2004
- * @param {Number} x
- * @param {Number} y
+ * @param {number} x
+ * @param {number} y
  */
 Path.prototype.addPoint = function (x, y) {
 };
@@ -85,17 +85,17 @@ Fill.prototype.bitmapIsClipped = false;
 Fill.prototype.bitmapPath = null;
 /**
  * @since Flash MX 2004
- * @type {string|Number}
+ * @type {string|number}
  */
 Fill.prototype.color = null;
 /**
  * @since Flash MX 2004
- * @type {Array.<string|Number>}
+ * @type {Array.<string|number>}
  */
 Fill.prototype.colorArray = null;
 /**
  * @since Flash 8
- * @type {Number}
+ * @type {number}
  */
 Fill.prototype.focalPoint = 0;
 /**
@@ -115,7 +115,7 @@ Fill.prototype.matrix = null;
 Fill.prototype.overflow = null;
 /**
  * @since Flash MX 2004
- * @type {Array.<Number>}
+ * @type {Array.<number>}
  */
 Fill.prototype.posArray = null;
 /**
@@ -145,7 +145,7 @@ Stroke.prototype.capType = null;
  * @since Flash MX 2004
  * @deprecated
  * @see Stroke#shapeFill
- * @type {string|Number}
+ * @type {string|number}
  */
 Stroke.prototype.color = null;
 /**
@@ -155,12 +155,12 @@ Stroke.prototype.color = null;
 Stroke.prototype.curve = null;
 /**
  * @since Flash MX 2004
- * @type {Number}
+ * @type {number}
  */
 Stroke.prototype.dash1 = 0;
 /**
  * @since Flash MX 2004
- * @type {Number}
+ * @type {number}
  */
 Stroke.prototype.dash2 = 0;
 /**
@@ -175,7 +175,7 @@ Stroke.prototype.density = null;
 Stroke.prototype.dotSize = null;
 /**
  * @since Flash MX 2004
- * @type {Number}
+ * @type {number}
  */
 Stroke.prototype.dotSpace = 0;
 /**
@@ -200,7 +200,7 @@ Stroke.prototype.joinType = null;
 Stroke.prototype.length = null;
 /**
  * @since Flash 8
- * @type {Number}
+ * @type {number}
  */
 Stroke.prototype.miterLimit = 0;
 /**
@@ -240,7 +240,7 @@ Stroke.prototype.strokeHinting = false;
 Stroke.prototype.style = null;
 /**
  * @since Flash MX 2004
- * @type {Number}
+ * @type {number}
  */
 Stroke.prototype.thickness = 0;
 /**
@@ -277,7 +277,7 @@ Contour.prototype.fill = null;
 Contour.prototype.interior = false;
 /**
  * @since Flash MX 2004
- * @type {Number}
+ * @type {number}
  * @const
  */
 Contour.prototype.orientation = 0;
@@ -295,19 +295,19 @@ Edge = function () {
 };
 /**
  * @since Flash CS4
- * @type {Number}
+ * @type {number}
  * @const
  */
 Edge.prototype.cubicSegmentIndex = 0;
 /**
  * @since Flash MX 2004
- * @type {Number}
+ * @type {number}
  * @const
  */
 Edge.prototype.id = 0;
 /**
  * @since Flash MX 2004
- * @type {Number}
+ * @type {number}
  * @const
  */
 Edge.prototype.isLine = 0;
@@ -318,29 +318,29 @@ Edge.prototype.isLine = 0;
 Edge.prototype.stroke = null;
 /**
  * @since Flash MX 2004
- * @param {Number} i
- * @return {{x:Number,y:Number}}
+ * @param {number} i
+ * @return {{x:number,y:number}}
  */
 Edge.prototype.getControl = function (i) {
 };
 /**
  * @since Flash MX 2004
- * @param {Number} index
+ * @param {number} index
  * @return {HalfEdge}
  */
 Edge.prototype.getHalfEdge = function (index) {
 };
 /**
  * @since Flash MX 2004
- * @param {Number} index
- * @param {Number} x
- * @param {Number} y
+ * @param {number} index
+ * @param {number} x
+ * @param {number} y
  */
 Edge.prototype.setControl = function (index, x, y) {
 };
 /**
  * @since Flash MX 2004
- * @param {Number} t
+ * @param {number} t
  */
 Edge.prototype.splitEdge = function (t) {
 };
@@ -352,13 +352,13 @@ HalfEdge = function () {
 };
 /**
  * @since Flash MX 2004
- * @type {Number}
+ * @type {number}
  * @const
  */
 HalfEdge.prototype.id = 0;
 /**
  * @since Flash MX 2004
- * @type {Number}
+ * @type {number}
  * @const
  */
 HalfEdge.prototype.index = 0;
@@ -400,13 +400,13 @@ Vertex = function () {
 };
 /**
  * @since Flash MX 2004
- * @type {Number}
+ * @type {number}
  * @const
  */
 Vertex.prototype.x = 0;
 /**
  * @since Flash MX 2004
- * @type {Number}
+ * @type {number}
  * @const
  */
 Vertex.prototype.y = 0;
@@ -418,8 +418,8 @@ Vertex.prototype.getHalfEdge = function () {
 };
 /**
  * @since Flash MX 2004
- * @param {Number} x
- * @param {Number} y
+ * @param {number} x
+ * @param {number} y
  */
 Vertex.prototype.setLocation = function (x, y) {
 };
