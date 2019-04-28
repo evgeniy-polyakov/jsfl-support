@@ -305,7 +305,7 @@ Timeline.prototype.setGuidelines = function (xmlString) {
  * @since Flash MX 2004
  * @param {string} property
  * @param {Object} value
- * @param {string} [layersToChange]
+ * @param {"selected"|"all"|"others"} [layersToChange]
  */
 Timeline.prototype.setLayerProperty = function (property, value, layersToChange) {
 };
@@ -444,7 +444,7 @@ Frame.prototype.labelType = null;
 Frame.prototype.motionTweenOrientToPath = false;
 /**
  * @since Flash MX 2004
- * @type {string}
+ * @type {"none"|"auto"|"clockwise"|"counter-clockwise"}
  */
 Frame.prototype.motionTweenRotate = null;
 /**
@@ -474,12 +474,12 @@ Frame.prototype.motionTweenSync = false;
 Frame.prototype.name = null;
 /**
  * @since Flash MX 2004
- * @type {string}
+ * @type {"distributive"|"angular"}
  */
 Frame.prototype.shapeTweenBlend = null;
 /**
  * @since Flash MX 2004
- * @type {string}
+ * @type {"none"|"left channel"|"right channel"|"fade left to right"|"fade right to left"|"fade in"|"fade out"|"custom"}
  */
 Frame.prototype.soundEffect = null;
 /**
@@ -494,7 +494,7 @@ Frame.prototype.soundLibraryItem = null;
 Frame.prototype.soundLoop = 0;
 /**
  * @since Flash MX 2004
- * @type {string}
+ * @type {"repeat"|"loop"}
  */
 Frame.prototype.soundLoopMode = null;
 /**
@@ -504,7 +504,7 @@ Frame.prototype.soundLoopMode = null;
 Frame.prototype.soundName = null;
 /**
  * @since Flash MX 2004
- * @type {string}
+ * @type {"event"|"stop"|"start"|"stream"}
  */
 Frame.prototype.soundSync = null;
 /**
@@ -551,7 +551,7 @@ Frame.prototype.convertToFrameByFrameAnimation = function () {
 };
 /**
  * @since Flash MX 2004
- * @param {string} [property]
+ * @param {"all"|"position"|"rotation"|"scale"|"color"|"filters"} [property]
  * @return {Array.<{x:number,y:number}>}
  */
 Frame.prototype.getCustomEase = function (property) {
@@ -606,7 +606,7 @@ Frame.prototype.selectMotionPath = function (select) {
 };
 /**
  * @since Flash 8
- * @param {string} property
+ * @param {"all"|"position"|"rotation"|"scale"|"color"|"filters"} property
  * @param {Array.<{x:number,y:number}>} easeCurve
  */
 Frame.prototype.setCustomEase = function (property, easeCurve) {

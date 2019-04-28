@@ -368,7 +368,7 @@ Flash.prototype.getThemeColorParameters = function () {
 /**
  * @since Flash CC
  * @param {"fontStyle"|"fontSize"} infoType
- * @param {string} size
+ * @param {"large"|"small"} size
  * @return {string}
  */
 Flash.prototype.getThemeFontInfo = function (infoType, size) {
@@ -486,7 +486,7 @@ Flash.prototype.selectElement = function (elementObject, editMode) {
 };
 /**
  * @since Flash CS3
- * @param {string} toolName
+ * @param {"arrow"|"bezierSelect"|"freeXform"|"fillXform"|"lasso"|"pen"|"penplus"|"penminus"|"penmodify"|"text"|"line"|"rect"|"oval"|"rectPrimitive"|"ovalPrimitive"|"polystar"|"pencil"|"brush"|"inkBottle"|"bucket"|"eyeDropper"|"eraser"|"hand"|"magnifier"} toolName
  */
 Flash.prototype.selectTool = function (toolName) {
 };
@@ -1188,7 +1188,7 @@ ToolObj.prototype.setOptionsFile = function (xmlFile) {
 };
 /**
  * @since Flash MX 2004
- * @param {string} pi
+ * @param {"shape"|"text"|"movie"} pi
  */
 ToolObj.prototype.setPI = function (pi) {
 };
@@ -1256,7 +1256,7 @@ SpriteSheetExporter = function () {
 };
 /**
  * @since Flash CS6
- * @type {string}
+ * @type {"basic"|"maxRects"}
  */
 SpriteSheetExporter.prototype.algorithm = null;
 /**
@@ -1317,7 +1317,7 @@ SpriteSheetExporter.prototype.canStackDuplicateFrames = false;
 SpriteSheetExporter.prototype.canTrim = false;
 /**
  * @since Flash CS6
- * @type {string}
+ * @type {"RGBA8888"|"RGB888x"|"RGB8"}
  * @const
  */
 SpriteSheetExporter.prototype.format = null;
@@ -1397,7 +1397,7 @@ SpriteSheetExporter.prototype.changeSymbol = function (symbol, beginFrame, endFr
 /**
  * @since Flash CS6
  * @param {string} path
- * @param {string|{format:string,backgroundColor?:(string|number),quality?:number,bitDepth?:number}} imageFormat
+ * @param {"png"|"jpg"|{format:"png"|"jpg",backgroundColor?:(string|number),quality?:number,bitDepth?:number}} imageFormat
  * @param {boolean} [writeMetaData]
  * @return {string}
  */
@@ -1494,7 +1494,7 @@ FlashFile.prototype.getSize = function (fileURI) {
 /**
  * @since Flash MX 2004
  * @param {string} folderURI
- * @param {string} [filesOrDirectories]
+ * @param {"files"|"directories"} [filesOrDirectories]
  * @return {Array.<string>}
  */
 FlashFile.prototype.listFolder = function (folderURI, filesOrDirectories) {

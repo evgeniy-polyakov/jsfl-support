@@ -110,7 +110,7 @@ Fill.prototype.linearRGB = false;
 Fill.prototype.matrix = null;
 /**
  * @since Flash 8
- * @type {string}
+ * @type {"extend"|"repeat"|"reflect"}
  */
 Fill.prototype.overflow = null;
 /**
@@ -120,7 +120,7 @@ Fill.prototype.overflow = null;
 Fill.prototype.posArray = null;
 /**
  * @since Flash MX 2004
- * @type {string}
+ * @type {"bitmap"|"solid"|"linearGradient"|"radialGradient"|"noFill"}
  */
 Fill.prototype.style = null;
 /**
@@ -150,7 +150,7 @@ Stroke.prototype.capType = null;
 Stroke.prototype.color = null;
 /**
  * @since Flash MX 2004
- * @type {string}
+ * @type {"straight"|"slight curve"|"medium curve"|"very curved"}
  */
 Stroke.prototype.curve = null;
 /**
@@ -165,12 +165,12 @@ Stroke.prototype.dash1 = 0;
 Stroke.prototype.dash2 = 0;
 /**
  * @since Flash MX 2004
- * @type {string}
+ * @type {"very dense"|"dense"|"sparse"|"very sparse"}
  */
 Stroke.prototype.density = null;
 /**
  * @since Flash MX 2004
- * @type {string}
+ * @type {"tiny"|"small"|"medium"|"large"}
  */
 Stroke.prototype.dotSize = null;
 /**
@@ -180,12 +180,12 @@ Stroke.prototype.dotSize = null;
 Stroke.prototype.dotSpace = 0;
 /**
  * @since Flash MX 2004
- * @type {string}
+ * @type {"hairline"|"thin"|"medium"|"thick"}
  */
 Stroke.prototype.hatchThickness = null;
 /**
  * @since Flash MX 2004
- * @type {string}
+ * @type {"none"|"bounce"|"loose"|"wild"}
  */
 Stroke.prototype.jiggle = null;
 /**
@@ -195,7 +195,7 @@ Stroke.prototype.jiggle = null;
 Stroke.prototype.joinType = null;
 /**
  * @since Flash MX 2004
- * @type {string}
+ * @type {"equal"|"slight variation"|"medium variation"|"random"}
  */
 Stroke.prototype.length = null;
 /**
@@ -205,12 +205,12 @@ Stroke.prototype.length = null;
 Stroke.prototype.miterLimit = 0;
 /**
  * @since Flash MX 2004
- * @type {string}
+ * @type {"solid"|"simple"|"random"|"dotted"|"random dotted"|"triple dotted"|"random triple dotted"}
  */
 Stroke.prototype.pattern = null;
 /**
  * @since Flash MX 2004
- * @type {string}
+ * @type {"none"|"slight"|"medium"|"free"}
  */
 Stroke.prototype.rotate = null;
 /**
@@ -225,7 +225,7 @@ Stroke.prototype.scaleType = null;
 Stroke.prototype.shapeFill = null;
 /**
  * @since Flash MX 2004
- * @type {string}
+ * @type {"very close"|"close"|"distant"|"very distant"}
  */
 Stroke.prototype.space = null;
 /**
@@ -235,7 +235,7 @@ Stroke.prototype.space = null;
 Stroke.prototype.strokeHinting = false;
 /**
  * @since Flash MX 2004
- * @type {string}
+ * @type {"noStroke"|"solid"|"dashed"|"dotted"|"ragged"|"stipple"|"hatched"}
  */
 Stroke.prototype.style = null;
 /**
@@ -245,17 +245,17 @@ Stroke.prototype.style = null;
 Stroke.prototype.thickness = 0;
 /**
  * @since Flash MX 2004
- * @type {string}
+ * @type {"one size"|"small variation"|"varied sizes"|"random sizes"}
  */
 Stroke.prototype.variation = null;
 /**
  * @since Flash MX 2004
- * @type {string}
+ * @type {"flat"|"wavy"|"very wavy"|"wild"}
  */
 Stroke.prototype.waveHeight = null;
 /**
  * @since Flash MX 2004
- * @type {string}
+ * @type {"very short"|"short"|"medium"|"long"}
  */
 Stroke.prototype.waveLength = null;
 /**

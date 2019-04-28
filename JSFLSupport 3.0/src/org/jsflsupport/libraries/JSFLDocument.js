@@ -191,7 +191,7 @@ Document.prototype.zoomFactor = 0;
 /**
  * @since Flash MX 2004
  * @param {string} name
- * @param {string} type
+ * @param {"integer"|"integerArray"|"double"|"doubleArray"|"string"|"byteArray"} type
  * @param {Object} data
  */
 Document.prototype.addDataToDocument = function (name, type, data) {
@@ -199,14 +199,14 @@ Document.prototype.addDataToDocument = function (name, type, data) {
 /**
  * @since Flash MX 2004
  * @param {string} name
- * @param {string} type
+ * @param {"integer"|"integerArray"|"double"|"doubleArray"|"string"|"byteArray"} type
  * @param {Object} data
  */
 Document.prototype.addDataToSelection = function (name, type, data) {
 };
 /**
  * @since Flash 8
- * @param {string} filterName
+ * @param {"adjustColorFilter"|"bevelFilter"|"blurFilter"|"dropShadowFilter"|"glowFilter"|"gradientBevelFilter"|"gradientGlowFilter"} filterName
  */
 Document.prototype.addFilter = function (filterName) {
 };
@@ -282,7 +282,7 @@ Document.prototype.addNewText = function (boundingRectangle, text) {
 };
 /**
  * @since Flash MX 2004
- * @param {string} alignMode
+ * @param {"left"|"right"|"top"|"bottom"|"vertical center"|"horizontal center"} alignMode
  * @param {boolean} [bUseDocumentBounds]
  */
 Document.prototype.align = function (alignMode, bUseDocumentBounds) {
@@ -296,7 +296,7 @@ Document.prototype.allowScreens = function () {
 };
 /**
  * @since Flash MX 2004
- * @param {string} arrangeMode
+ * @param {"back"|"backward"|"forward"|"front"} arrangeMode
  */
 Document.prototype.arrange = function (arrangeMode) {
 };
@@ -377,9 +377,9 @@ Document.prototype.convertSelectionToBitmap = function () {
 };
 /**
  * @since Flash MX 2004
- * @param {string} type
+ * @param {"movie clip"|"button"|"graphic"} type
  * @param {string} name
- * @param {string} registrationPoint
+ * @param {"top left"|"top center"|"top right"|"center left"|"center"|"center right"|"bottom left"|"bottom center"|"bottom right"} registrationPoint
  * @return {SymbolItem}
  */
 Document.prototype.convertToSymbol = function (type, name, registrationPoint) {
@@ -438,7 +438,7 @@ Document.prototype.disableOtherFilters = function (enabledFilterIndex) {
 };
 /**
  * @since Flash MX 2004
- * @param {string} distributeMode
+ * @param {"left edge"|"horizontal center"|"right edge"|"top edge"|"vertical center"|"bottom edge"} distributeMode
  * @param {boolean} [bUseDocumentBounds]
  */
 Document.prototype.distribute = function (distributeMode, bUseDocumentBounds) {
@@ -570,7 +570,7 @@ Document.prototype.getAlignToDocument = function () {
 };
 /**
  * @since Flash 8
- * @return {string}
+ * @return {"normal"|"layer"|"multiply"|"screen"|"overlay"|"hardlight"|"lighten"|"darken"|"difference"|"add"|"subtract"|"invert"|"alpha"|"erase"}
  */
 Document.prototype.getBlendMode = function () {
 };
@@ -858,7 +858,7 @@ Document.prototype.rotate3DSelection = function (xyzCoordinate, bGlobalTransform
 /**
  * @since Flash MX 2004
  * @param {number} angle
- * @param {string} [rotationPoint]
+ * @param {"top right"|"top left"|"bottom right"|"bottom left"|"top center"|"right center"|"bottom center"|"left center"} [rotationPoint]
  */
 Document.prototype.rotateSelection = function (angle, rotationPoint) {
 };
@@ -889,7 +889,7 @@ Document.prototype.saveAndCompact = function (bOkToSaveAs) {
  * @since Flash MX 2004
  * @param {number} xScale
  * @param {number} yScale
- * @param {string} whichCorner
+ * @param {"top right"|"top left"|"bottom right"|"bottom left"|"top center"|"right center"|"bottom center"|"left center"} whichCorner
  */
 Document.prototype.scaleSelection = function (xScale, yScale, whichCorner) {
 };
@@ -911,7 +911,7 @@ Document.prototype.setAlignToDocument = function (bToStage) {
 };
 /**
  * @since Flash 8
- * @param {string} mode
+ * @param {"normal"|"layer"|"multiply"|"screen"|"overlay"|"hardlight"|"lighten"|"darken"|"difference"|"add"|"subtract"|"invert"|"alpha"|"erase"} mode
  */
 Document.prototype.setBlendMode = function (mode) {
 };
@@ -952,7 +952,7 @@ Document.prototype.setFillColor = function (color) {
 };
 /**
  * @since Flash 8
- * @param {string} property
+ * @param {"blurX"|"blurY"|"quality"|"angle"|"distance"|"strength"|"knockout"|"inner"|"bevelType"|"color"|"shadowColor"|"highlightColor"} property
  * @param {number} filterIndex
  * @param {Object} value
  */
@@ -1112,7 +1112,7 @@ Document.prototype.setTransformationPoint = function (transformationPoint) {
  * @since Flash MX 2004
  * @param {number} xSkew
  * @param {number} ySkew
- * @param {string} whichEdge
+ * @param {"top center"|"right center"|"bottom center"|"left center"} whichEdge
  */
 Document.prototype.skewSelection = function (xSkew, ySkew, whichEdge) {
 };
@@ -1123,7 +1123,7 @@ Document.prototype.smoothSelection = function () {
 };
 /**
  * @since Flash MX 2004
- * @param {string} direction
+ * @param {"horizontal"|"vertical"} direction
  * @param {boolean} [bUseDocumentBounds]
  */
 Document.prototype.space = function (direction, bUseDocumentBounds) {
@@ -1159,8 +1159,8 @@ Document.prototype.testScene = function () {
  * @since Flash MX 2004
  * @param {number} threshold
  * @param {number} minimumArea
- * @param {string} curveFit
- * @param {string} cornerThreshold
+ * @param {"pixels"|"very tight"|"tight"|"normal"|"smooth"|"very smooth"} curveFit
+ * @param {"many corners"|"normal"|"few corners"} cornerThreshold
  */
 Document.prototype.traceBitmap = function (threshold, minimumArea, curveFit, cornerThreshold) {
 };
@@ -1205,7 +1205,7 @@ Document.prototype.unlockAllElements = function () {
 /**
  * @since Flash MX 2004
  * @param {string} fileURI
- * @return {Object}
+ * @return {{dismiss:"accept"|"cancel"}}
  */
 Document.prototype.xmlPanel = function (fileURI) {
 };
@@ -1235,7 +1235,7 @@ Library.prototype.addItemToDocument = function (position, namePath) {
 };
 /**
  * @since Flash MX 2004
- * @param {string} type
+ * @param {"video"|"movie clip"|"button"|"graphic"|"bitmap"|"screen"|"folder"} type
  * @param {string} [namePath]
  * @return {boolean}
  */

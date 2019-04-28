@@ -62,7 +62,7 @@ Item.prototype.name = null;
 /**
  * @since Flash MX 2004
  * @param {string} name
- * @param {string} type
+ * @param {"integer"|"integerArray"|"double"|"doubleArray"|"string"|"byteArray"} type
  * @param {Object} data
  */
 Item.prototype.addData = function (name, type, data) {
@@ -252,12 +252,12 @@ SoundItem = function () {
 SoundItem.prototype = new Item();
 /**
  * @since Flash MX 2004
- * @type {string}
+ * @type {"8 kbps"|"16 kbps"|"20 kbps"|"24 kbps"|"32 kbps"|"48 kbps"|"56 kbps"|"64 kbps"|"80 kbps"|"112 kbps"|"128 kbps"|"160 kbps"}
  */
 SoundItem.prototype.bitRate = null;
 /**
  * @since Flash MX 2004
- * @type {string}
+ * @type {"2 bit"|"3 bit"|"4 bit"|"5 bit"}
  */
 SoundItem.prototype.bits = null;
 /**
@@ -290,12 +290,12 @@ SoundItem.prototype.lastModifiedDate = 0;
 SoundItem.prototype.originalCompressionType = null;
 /**
  * @since Flash MX 2004
- * @type {string}
+ * @type {"Fast"|"Medium"|"Best"}
  */
 SoundItem.prototype.quality = null;
 /**
  * @since Flash MX 2004
- * @type {string}
+ * @type {"5 kHz"|"11 kHz"|"22 kHz"|"44 kHz"}
  */
 SoundItem.prototype.sampleRate = null;
 /**

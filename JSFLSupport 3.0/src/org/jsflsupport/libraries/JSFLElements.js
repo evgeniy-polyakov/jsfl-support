@@ -150,7 +150,7 @@ Element.prototype.removePersistentData = function (name) {
 /**
  * @since Flash MX 2004
  * @param {string} name
- * @param {string} type
+ * @param {"integer"|"integerArray"|"double"|"doubleArray"|"string"|"byteArray"} type
  * @param {Object} value
  */
 Element.prototype.setPersistentData = function (name, type, value) {
@@ -246,7 +246,7 @@ CompiledClipInstance.prototype.actionScript = null;
 CompiledClipInstance.prototype.backgroundColor = null;
 /**
  * @since Flash CC
- * @type {string}
+ * @type {"normal"|"layer"|"multiply"|"screen"|"overlay"|"hardlight"|"lighten"|"darken"|"difference"|"add"|"subtract"|"invert"|"alpha"|"erase"}
  */
 CompiledClipInstance.prototype.blendMode = null;
 /**
@@ -292,7 +292,7 @@ CompiledClipInstance.prototype.colorGreenAmount = 0;
 CompiledClipInstance.prototype.colorGreenPercent = 0;
 /**
  * @since Flash CC
- * @type {string}
+ * @type {"none"|"brightness"|"tint"|"alpha"|"advanced"}
  */
 CompiledClipInstance.prototype.colorMode = null;
 /**
@@ -388,7 +388,7 @@ SymbolInstance.prototype.backgroundColor = null;
 SymbolInstance.prototype.bitmapRenderMode = null;
 /**
  * @since Flash 8
- * @type {string}
+ * @type {"normal"|"layer"|"multiply"|"screen"|"overlay"|"hardlight"|"lighten"|"darken"|"difference"|"add"|"subtract"|"invert"|"alpha"|"erase"}
  */
 SymbolInstance.prototype.blendMode = null;
 /**
@@ -399,7 +399,7 @@ SymbolInstance.prototype.blendMode = null;
 SymbolInstance.prototype.brightness = 0;
 /**
  * @since Flash MX 2004
- * @type {string}
+ * @type {"button"|"menu"}
  */
 SymbolInstance.prototype.buttonTracking = null;
 /**
@@ -439,7 +439,7 @@ SymbolInstance.prototype.colorGreenAmount = 0;
 SymbolInstance.prototype.colorGreenPercent = 0;
 /**
  * @since Flash MX 2004
- * @type {string}
+ * @type {"none"|"brightness"|"tint"|"alpha"|"advanced"}
  */
 SymbolInstance.prototype.colorMode = null;
 /**
@@ -480,7 +480,7 @@ SymbolInstance.prototype.forceSimple = false;
 SymbolInstance.prototype.is3D = false;
 /**
  * @since Flash MX 2004
- * @type {string}
+ * @type {"loop"|"play once"|"single frame"}
  */
 SymbolInstance.prototype.loop = null;
 /**
@@ -665,13 +665,13 @@ Filter.prototype.inner = false;
 Filter.prototype.knockout = false;
 /**
  * @since Flash 8
- * @type {string}
+ * @type {"adjustColorFilter"|"bevelFilter"|"blurFilter"|"dropShadowFilter"|"glowFilter"|"gradientBevelFilter"|"gradientGlowFilter"}
  * @const
  */
 Filter.prototype.name = null;
 /**
  * @since Flash 8
- * @type {string}
+ * @type {"low"|"medium"|"high"}
  */
 Filter.prototype.quality = null;
 /**
@@ -691,7 +691,7 @@ Filter.prototype.shadowColor = null;
 Filter.prototype.strength = 0;
 /**
  * @since Flash 8
- * @type {string}
+ * @type {"inner"|"outer"|"full"}
  */
 Filter.prototype.type = null;
 /**
@@ -936,7 +936,7 @@ Text.prototype.lineType = null;
 Text.prototype.maxCharacters = 0;
 /**
  * @since Flash MX 2004
- * @type {string}
+ * @type {"horizontal"|"vertical left to right"|"vertical right to left"}
  */
 Text.prototype.orientation = null;
 /**
@@ -1047,7 +1047,7 @@ TextAttrs = function () {
 TextAttrs.prototype.aliasText = false;
 /**
  * @since Flash MX 2004
- * @type {string}
+ * @type {"left"|"center"|"right"|"justify"}
  */
 TextAttrs.prototype.alignment = null;
 /**
@@ -1062,7 +1062,7 @@ TextAttrs.prototype.autoKern = false;
 TextAttrs.prototype.bold = false;
 /**
  * @since Flash MX 2004
- * @type {string}
+ * @type {"normal"|"subscript"|"superscript"}
  */
 TextAttrs.prototype.characterPosition = null;
 /**
