@@ -787,74 +787,74 @@ Shape.prototype.getCubicSegmentPoints = function (cubicSegmentIndex) {
 };
 /**
  * @since Flash CS3
- * @class {Oval}
+ * @class {OvalObject}
  * @extends {Shape}
  */
-Oval = function () {
+OvalObject = function () {
 };
-Oval.prototype = new Shape();
+OvalObject.prototype = new Shape();
 /**
  * @since Flash CS3
  * @type {boolean}
  * @const
  */
-Oval.prototype.closePath = false;
+OvalObject.prototype.closePath = false;
 /**
  * @since Flash CS3
  * @type {number}
  * @const
  */
-Oval.prototype.endAngle = 0;
+OvalObject.prototype.endAngle = 0;
 /**
  * @since Flash CS3
  * @type {number}
  * @const
  */
-Oval.prototype.innerRadius = 0;
+OvalObject.prototype.innerRadius = 0;
 /**
  * @since Flash CS3
  * @type {number}
  * @const
  */
-Oval.prototype.startAngle = 0;
+OvalObject.prototype.startAngle = 0;
 /**
  * @since Flash CS3
- * @class {Rectangle}
+ * @class {RectangleObject}
  * @extends {Shape}
  */
-Rectangle = function () {
+RectangleObject = function () {
 };
-Rectangle.prototype = new Shape();
+RectangleObject.prototype = new Shape();
 /**
  * @since Flash CS3
  * @type {number}
  * @const
  */
-Rectangle.prototype.bottomLeftRadius = 0;
+RectangleObject.prototype.bottomLeftRadius = 0;
 /**
  * @since Flash CS3
  * @type {number}
  * @const
  */
-Rectangle.prototype.bottomRightRadius = 0;
+RectangleObject.prototype.bottomRightRadius = 0;
 /**
  * @since Flash CS3
  * @type {boolean}
  * @const
  */
-Rectangle.prototype.lockFlag = false;
+RectangleObject.prototype.lockFlag = false;
 /**
  * @since Flash CS3
  * @type {number}
  * @const
  */
-Rectangle.prototype.topLeftRadius = 0;
+RectangleObject.prototype.topLeftRadius = 0;
 /**
  * @since Flash CS3
  * @type {number}
  * @const
  */
-Rectangle.prototype.topRightRadius = 0;
+RectangleObject.prototype.topRightRadius = 0;
 /**
  * @since Flash MX 2004
  * @class {Text}
