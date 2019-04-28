@@ -192,7 +192,7 @@ Document.prototype.zoomFactor = 0;
  * @since Flash MX 2004
  * @param {string} name
  * @param {"integer"|"integerArray"|"double"|"doubleArray"|"string"|"byteArray"} type
- * @param {Object} data
+ * @param {*} data
  */
 Document.prototype.addDataToDocument = function (name, type, data) {
 };
@@ -200,7 +200,7 @@ Document.prototype.addDataToDocument = function (name, type, data) {
  * @since Flash MX 2004
  * @param {string} name
  * @param {"integer"|"integerArray"|"double"|"doubleArray"|"string"|"byteArray"} type
- * @param {Object} data
+ * @param {*} data
  */
 Document.prototype.addDataToSelection = function (name, type, data) {
 };
@@ -591,14 +591,14 @@ Document.prototype.getCustomStroke = function (locationOfStroke) {
 /**
  * @since Flash MX 2004
  * @param {string} name
- * @return {Object}
+ * @return {*}
  */
 Document.prototype.getDataFromDocument = function (name) {
 };
 /**
  * @since Flash MX 2004
  * @param {string} propertyName
- * @return {Object}
+ * @return {*}
  */
 Document.prototype.getElementProperty = function (propertyName) {
 };
@@ -607,7 +607,7 @@ Document.prototype.getElementProperty = function (propertyName) {
  * @param {string} attrName
  * @param {number} [startIndex]
  * @param {number} [endIndex]
- * @return {Object}
+ * @return {*}
  */
 Document.prototype.getElementTextAttr = function (attrName, startIndex, endIndex) {
 };
@@ -930,14 +930,14 @@ Document.prototype.setCustomStroke = function (stroke) {
 /**
  * @since Flash MX 2004
  * @param {string} property
- * @param {Object} value
+ * @param {*} value
  */
 Document.prototype.setElementProperty = function (property, value) {
 };
 /**
  * @since Flash MX 2004
  * @param {string} attrName
- * @param {Object} attrValue
+ * @param {*} attrValue
  * @param {number} [startIndex]
  * @param {number} [endIndex]
  * @return {boolean}
@@ -954,7 +954,7 @@ Document.prototype.setFillColor = function (color) {
  * @since Flash 8
  * @param {"blurX"|"blurY"|"quality"|"angle"|"distance"|"strength"|"knockout"|"inner"|"bevelType"|"color"|"shadowColor"|"highlightColor"} property
  * @param {number} filterIndex
- * @param {Object} value
+ * @param {*} value
  */
 Document.prototype.setFilterProperty = function (property, filterIndex, value) {
 };
@@ -1000,7 +1000,7 @@ Document.prototype.setMobileSettings = function (xmlString) {
 /**
  * @since Flash CS3
  * @param {string} propertyName
- * @param {Object} value
+ * @param {*} value
  */
 Document.prototype.setOvalObjectProperty = function (propertyName, value) {
 };
@@ -1021,7 +1021,7 @@ Document.prototype.setPublishDocumentData = function (format, publish) {
 /**
  * @since Flash CS3
  * @param {string} propertyName
- * @param {Object} value
+ * @param {*} value
  */
 Document.prototype.setRectangleObjectProperty = function (propertyName, value) {
 };
@@ -1281,7 +1281,7 @@ Library.prototype.findItemIndex = function (namePath) {
 /**
  * @since Flash MX 2004
  * @param {string} property
- * @return {Object}
+ * @return {*}
  */
 Library.prototype.getItemProperty = function (property) {
 };
@@ -1360,7 +1360,7 @@ Library.prototype.selectNone = function () {
 /**
  * @since Flash MX 2004
  * @param {string} property
- * @param {Object} value
+ * @param {*} value
  */
 Library.prototype.setItemProperty = function (property, value) {
 };

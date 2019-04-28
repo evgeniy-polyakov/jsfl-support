@@ -116,7 +116,7 @@ Element.prototype.y = 0;
 /**
  * @since Flash MX 2004
  * @param {string} name
- * @return {Object}
+ * @return {*}
  */
 Element.prototype.getPersistentData = function (name) {
 };
@@ -151,7 +151,7 @@ Element.prototype.removePersistentData = function (name) {
  * @since Flash MX 2004
  * @param {string} name
  * @param {"integer"|"integerArray"|"double"|"doubleArray"|"string"|"byteArray"} type
- * @param {Object} value
+ * @param {*} value
  */
 Element.prototype.setPersistentData = function (name, type, value) {
 };
@@ -210,13 +210,13 @@ BitmapInstance.prototype.hPixels = 0;
 BitmapInstance.prototype.vPixels = 0;
 /**
  * @since Flash MX 2004
- * @return {{width:number,height:number,depth:number,bits:Object,cTab:Object}}
+ * @return {{width:number,height:number,depth:number,bits:*,cTab:*}}
  */
 BitmapInstance.prototype.getBits = function () {
 };
 /**
  * @since Flash MX 2004
- * @param {{width:number,height:number,depth:number,bits:Object,cTab?:Object}} bitmap
+ * @param {{width:number,height:number,depth:number,bits:*,cTab?:*}} bitmap
  */
 BitmapInstance.prototype.setBits = function (bitmap) {
 };
@@ -563,7 +563,7 @@ Parameter.prototype.listIndex = 0;
 Parameter.prototype.name = undefined;
 /**
  * @since Flash MX 2004
- * @type {Object}
+ * @type {*}
  */
 Parameter.prototype.value = undefined;
 /**
@@ -1005,7 +1005,7 @@ Text.prototype.variableName = undefined;
  * @param {string} attrName
  * @param {number} [startIndex]
  * @param {number} [endIndex]
- * @return {Object}
+ * @return {*}
  */
 Text.prototype.getTextAttr = function (attrName, startIndex, endIndex) {
 };
@@ -1020,7 +1020,7 @@ Text.prototype.getTextString = function (startIndex, endIndex) {
 /**
  * @since Flash MX 2004
  * @param {string} attrName
- * @param {Object} attrValue
+ * @param {*} attrValue
  * @param {number} [startIndex]
  * @param {number} [endIndex]
  */

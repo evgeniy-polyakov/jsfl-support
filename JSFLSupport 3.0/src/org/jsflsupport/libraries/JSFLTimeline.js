@@ -183,7 +183,7 @@ Timeline.prototype.getBounds = function (frame, includeHiddenLayers) {
  * @param {string} property
  * @param {number} [startFrameIndex]
  * @param {number} [endFrameIndex]
- * @return {Object}
+ * @return {*}
  */
 Timeline.prototype.getFrameProperty = function (property, startFrameIndex, endFrameIndex) {
 };
@@ -196,7 +196,7 @@ Timeline.prototype.getGuidelines = function () {
 /**
  * @since Flash MX 2004
  * @param {string} property
- * @return {Object}
+ * @return {*}
  */
 Timeline.prototype.getLayerProperty = function (property) {
 };
@@ -288,7 +288,7 @@ Timeline.prototype.selectAllFrames = function () {
 /**
  * @since Flash MX 2004
  * @param {string} property
- * @param {Object} value
+ * @param {*} value
  * @param {number} [startFrameIndex]
  * @param {number} [endFrameIndex]
  */
@@ -304,7 +304,7 @@ Timeline.prototype.setGuidelines = function (xmlString) {
 /**
  * @since Flash MX 2004
  * @param {string} property
- * @param {Object} value
+ * @param {*} value
  * @param {"selected"|"all"|"others"} [layersToChange]
  */
 Timeline.prototype.setLayerProperty = function (property, value, layersToChange) {

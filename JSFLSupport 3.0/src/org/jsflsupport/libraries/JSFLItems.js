@@ -63,14 +63,14 @@ Item.prototype.name = undefined;
  * @since Flash MX 2004
  * @param {string} name
  * @param {"integer"|"integerArray"|"double"|"doubleArray"|"string"|"byteArray"} type
- * @param {Object} data
+ * @param {*} data
  */
 Item.prototype.addData = function (name, type, data) {
 };
 /**
  * @since Flash MX 2004
  * @param {string} name
- * @return {Object}
+ * @return {*}
  */
 Item.prototype.getData = function (name) {
 };
