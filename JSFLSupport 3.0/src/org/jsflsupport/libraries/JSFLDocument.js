@@ -20,7 +20,7 @@ Document.prototype.accName = null;
 Document.prototype.as3AutoDeclare = false;
 /**
  * @since Flash CS3
- * @type {string}
+ * @type {"AS3"|"ES"}
  */
 Document.prototype.as3Dialect = null;
 /**
@@ -497,7 +497,7 @@ Document.prototype.enableFilter = function (filterIndex) {
 };
 /**
  * @since Flash MX 2004
- * @param {string} [editMode]
+ * @param {"inPlace"|"newWindow"} [editMode]
  */
 Document.prototype.enterEditMode = function (editMode) {
 };
@@ -576,14 +576,14 @@ Document.prototype.getBlendMode = function () {
 };
 /**
  * @since Flash MX 2004
- * @param {string} [objectToFill]
+ * @param {"toolbar"|"selection"} [objectToFill]
  * @return {Fill}
  */
 Document.prototype.getCustomFill = function (objectToFill) {
 };
 /**
  * @since Flash MX 2004
- * @param {string} [locationOfStroke]
+ * @param {"toolbar"|"selection"} [locationOfStroke]
  * @return {Stroke}
  */
 Document.prototype.getCustomStroke = function (locationOfStroke) {

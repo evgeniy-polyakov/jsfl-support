@@ -258,7 +258,6 @@ Flash.prototype.browseForFolderURL = function (description) {
 };
 /**
  * @since Flash CS5.5
- * @return {string}
  */
 Flash.prototype.clearPublishCache = function () {
 };
@@ -1539,7 +1538,7 @@ FlashFile.prototype.uriToPlatformPath = function (fileURI) {
  * @since Flash MX 2004
  * @param {string} fileURI
  * @param {string} textToWrite
- * @param {string} [strAppendMode]
+ * @param {"append"} [strAppendMode]
  * @return {boolean}
  */
 FlashFile.prototype.write = function (fileURI, textToWrite, strAppendMode) {

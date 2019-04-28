@@ -383,7 +383,7 @@ SymbolInstance.prototype.actionScript = null;
 SymbolInstance.prototype.backgroundColor = null;
 /**
  * @since Flash CS5.5
- * @type {string}
+ * @type {"none"|"cache"|"export"}
  */
 SymbolInstance.prototype.bitmapRenderMode = null;
 /**
@@ -582,7 +582,7 @@ Parameter.prototype.verbose = 0;
  * @param {number} index
  * @param {string} name
  * @param {string} value
- * @param {string} type
+ * @param {"Default"|"Array"|"Object"|"List"|"String"|"Number"|"Boolean"|"Font Name"|"Color"|"Collection"|"Web Service URL"|"Web Service Operation"} type
  */
 Parameter.prototype.insertItem = function (index, name, value, type) {
 };
@@ -915,7 +915,7 @@ Text.prototype.embedVariantGlyphs = false;
 Text.prototype.filters = null;
 /**
  * @since Flash 8
- * @type {string}
+ * @type {"device"|"bitmap"|"standard"|"advanced"|"customThicknessSharpness"}
  */
 Text.prototype.fontRenderingMode = null;
 /**
