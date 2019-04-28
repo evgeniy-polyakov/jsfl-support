@@ -7,10 +7,13 @@ import org.junit.runners.Parameterized;
 import org.junit.runners.Parameterized.Parameters;
 
 import java.io.BufferedReader;
-import java.io.InputStreamReader;
-import java.net.URL;
-import java.net.URLConnection;
-import java.util.*;
+import java.io.FileReader;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
+import java.util.ResourceBundle;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /*
  * Copyright 2011 Evgeniy Polyakov
@@ -31,73 +34,61 @@ import java.util.*;
 public class DocumentationTest {
 
     @Parameters(name = "{0}")
-    public static Collection<Object[]> getTestData() {
-        ResourceBundle resource = ResourceBundle.getBundle("org.jsflsupport.docs.docs");
-        List<Object[]> parameters = new ArrayList<Object[]>();
-        for (String key : Collections.list(resource.getKeys())) {
-            parameters.add(new Object[]{key, resource.getString(key)});
+    public static Collection<String> getTestData() {
+        String[] libraries = {
+                "src/org/jsflsupport/libraries/JSFLDocument.js",
+                "src/org/jsflsupport/libraries/JSFLDrawing.js",
+                "src/org/jsflsupport/libraries/JSFLElements.js",
+                "src/org/jsflsupport/libraries/JSFLGeom.js",
+                "src/org/jsflsupport/libraries/JSFLItems.js",
+                "src/org/jsflsupport/libraries/JSFLTimeline.js",
+                "src/org/jsflsupport/libraries/JSFLTopLevel.js"
+        };
+        List<String> list = new ArrayList<String>();
+        BufferedReader reader;
+        Pattern classRe = Pattern.compile("^(\\w+)\\s*=\\s*function");
+        Pattern instanceRe = Pattern.compile("^(\\w+)\\s*=\\s*new\\s+");
+        Pattern fieldRe = Pattern.compile("^(\\w+)\\.prototype\\.(\\w+)");
+        for (int i = 0; i < libraries.length; i++) {
+            try {
+                reader = new BufferedReader(new FileReader(libraries[i]));
+                String line;
+                Matcher matcher;
+                while ((line = reader.readLine()) != null) {
+                    matcher = classRe.matcher(line);
+                    if (matcher.find()) {
+                        list.add(matcher.group(1));
+                    }
+                    matcher = instanceRe.matcher(line);
+                    if (matcher.find()) {
+                        list.add(matcher.group(1));
+                    }
+                    matcher = fieldRe.matcher(line);
+                    if (matcher.find()) {
+                        list.add(matcher.group(1) + '.' + matcher.group(2));
+                    }
+                }
+                reader.close();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
         }
-        return parameters;
+        return list;
     }
 
-    private static Map<String, String> exceptions = new HashMap<String, String>();
+    private String _librarySymbol;
 
-    static {
-        exceptions.put("ComponentPanel.", "componentsPanel.");
-        exceptions.put("Rectangle.", "RectangleObject.");
-        exceptions.put("Oval.", "OvalObject.");
-        exceptions.put("Document.setStageVanishPoint", "document.setStageVanishingPoint");
-        exceptions.put("Flash.", "fl.");
-        exceptions.put("FlashFile.", "FLfile.");
-    }
-
-    private String _pluginDocKey;
-    private String _docIdentifier;
-
-    public DocumentationTest(String pluginDocKey, String docIdentifier) {
-        _pluginDocKey = pluginDocKey;
-        _docIdentifier = docIdentifier;
+    public DocumentationTest(String librarySymbol) {
+        _librarySymbol = librarySymbol;
     }
 
     @Test
     public void testMethod() {
         try {
-            URL url = new URL("http://community.adobe.com/chcservices/services/redirect?u=http://help.adobe.com&p=Flash_15&l=en_US&id=" + _docIdentifier);
-            URLConnection connection = url.openConnection();
-            String redirect = connection.getHeaderField("Location");
-            if (redirect != null) {
-                connection = new URL(redirect).openConnection();
+            ResourceBundle resource = ResourceBundle.getBundle("org.jsflsupport.docs.docs");
+            if (!resource.containsKey(this._librarySymbol)) {
+                Assert.fail();
             }
-            BufferedReader reader = new BufferedReader(new InputStreamReader(connection.getInputStream()));
-            StringBuilder builder = new StringBuilder();
-            String line;
-            try {
-                while ((line = reader.readLine()) != null) {
-
-                    String remoteDocKey = _pluginDocKey;
-                    for (String exceptionKey : exceptions.keySet()) {
-                        if (remoteDocKey.startsWith(exceptionKey)) {
-                            remoteDocKey = exceptions.get(exceptionKey) + remoteDocKey.substring(exceptionKey.length());
-                            break;
-                        }
-                    }
-
-                    String re = "(.*)" + remoteDocKey.toLowerCase().replace(".", "\\.") +
-                            "\\s*(\\(\\s*\\))?(\\s*-\\s*dropped)?\\s*<\\s*/\\s*title\\s*>(.*)";
-                    if (line.toLowerCase().matches(re)) {
-                        Assert.assertTrue(line, true);
-                        return;
-                    }
-
-                    builder.append(line);
-                    builder.append('\n');
-                }
-            } finally {
-                reader.close();
-            }
-
-            Assert.fail(builder.toString());
-
         } catch (Exception e) {
             Assert.fail(e.getMessage());
         }
