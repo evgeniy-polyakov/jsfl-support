@@ -138,7 +138,7 @@ limitations under the License.
         <resolveScopeEnlarger implementation="org.jsflsupport.JSFLPredefinedLibraryScopeEnlarger"/>
         <internalFileTemplate name="JSFL Command"/>
         <internalFileTemplate name="JSFL Tool"/>
-        <!--<documentationProvider implementation="org.jsflsupport.JSFLDocumentationProvider"/>-->
+        <documentationProvider implementation="org.jsflsupport.JSFLDocumentationProvider"/>
     </extensions>
 
     <extensions defaultExtensionNs="JavaScript">

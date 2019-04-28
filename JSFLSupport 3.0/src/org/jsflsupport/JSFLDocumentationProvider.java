@@ -33,7 +33,7 @@ import java.util.ResourceBundle;
 public class JSFLDocumentationProvider extends AbstractDocumentationProvider
         implements ExternalDocumentationProvider, ExternalDocumentationHandler {
 
-    private static String base = "http://community.adobe.com/chcservices/services/redirect?u=http://help.adobe.com&p=Flash_15&l=en_US&id=";
+    private static String helpUrl = "https://help.adobe.com/archive/en_US/flash/cs5/flash_cs5_extending.pdf#";
     private static ResourceBundle docs = ResourceBundle.getBundle("org.jsflsupport.docs.docs");
 
     //region Implement ExternalDocumentationProvider to enable/disable actions
@@ -58,7 +58,7 @@ public class JSFLDocumentationProvider extends AbstractDocumentationProvider
     public boolean handleExternal(PsiElement element, PsiElement originalElement) {
         String documentName = getDocumentName(element);
         if (documentName != null && docs.containsKey(documentName)) {
-            BrowserUtil.browse(base + docs.getString(documentName));
+            BrowserUtil.browse(helpUrl + docs.getString(documentName));
             return true;
         }
         return false;
@@ -82,7 +82,7 @@ public class JSFLDocumentationProvider extends AbstractDocumentationProvider
     public List<String> getUrlFor(PsiElement element, PsiElement originalElement) {
         String documentName = getDocumentName(element);
         if (documentName != null && docs.containsKey(documentName)) {
-            return Collections.singletonList(base + docs.getString(documentName));
+            return Collections.singletonList(helpUrl + docs.getString(documentName));
         }
         return null;
     }
