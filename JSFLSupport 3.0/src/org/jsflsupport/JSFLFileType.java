@@ -2,7 +2,7 @@ package org.jsflsupport;
 
 import com.intellij.lang.javascript.JavaScriptSupportLoader;
 import com.intellij.openapi.fileTypes.LanguageFileType;
-import com.intellij.openapi.util.IconLoader;
+import com.intellij.ui.IconManager;
 import org.jetbrains.annotations.NotNull;
 
 import javax.swing.*;
@@ -24,7 +24,7 @@ import javax.swing.*;
  */
 public class JSFLFileType extends LanguageFileType {
 
-    private static final Icon ICON = IconLoader.getIcon("/org/jsflsupport/icons/jsfl.png");
+    private static final Icon ICON = IconManager.getInstance().getIcon("/org/jsflsupport/icons/jsfl.png", JSFLFileType.class);
     public static final JSFLFileType INSTANCE = new JSFLFileType();
 
     public JSFLFileType() {
