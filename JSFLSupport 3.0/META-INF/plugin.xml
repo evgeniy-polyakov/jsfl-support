@@ -16,11 +16,13 @@ limitations under the License.
 <idea-plugin>
 
     <name>JSFL Support</name>
-    <version>3.5.2</version>
+    <version>3.5.3</version>
     <vendor>Evgeniy Polyakov</vendor>
     <description>Support of JSFL, the scripting language for automating Adobe Flash.</description>
     <change-notes>
         <![CDATA[
+        <p>3.5.3</p>
+        Compatible with IntelliJ IDEA 2020.1.
         <p>3.5.2</p>
         Compatible with IntelliJ IDEA 2019.3.
         <p>3.5.1</p>
@@ -119,7 +121,7 @@ limitations under the License.
     <depends>com.intellij.modules.lang</depends>
 
     <!-- please see http://confluence.jetbrains.net/display/IDEADEV/Build+Number+Ranges for description -->
-    <idea-version since-build="193.0000" until-build="193.*"/>
+    <idea-version since-build="201.0000" until-build="201.*"/>
 
     <application-components>
     </application-components>
