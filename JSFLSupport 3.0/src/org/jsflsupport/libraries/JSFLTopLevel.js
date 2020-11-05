@@ -287,8 +287,16 @@ Flash.prototype.closeAllPlayerDocuments = function () {
 Flash.prototype.closeDocument = function (documentObject, bPromptToSaveChanges) {
 };
 /**
+ * @since Flash CS5
+ * @param {"fileURI"} [string]
+ * @param {"libraryItemPath"} [string]
+ * @return {boolean}
+ */
+Flash.prototype.copyLibraryItem = function (fileURI, libraryItemPath) {
+};
+/**
  * @since Flash MX 2004
- * @param {"timeline"} [docType]
+ * @param {string} [docType]
  * @return {Document}
  */
 Flash.prototype.createDocument = function (docType) {
