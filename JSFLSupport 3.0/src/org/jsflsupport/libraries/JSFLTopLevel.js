@@ -288,15 +288,15 @@ Flash.prototype.closeDocument = function (documentObject, bPromptToSaveChanges) 
 };
 /**
  * @since Flash CS5
- * @param {"fileURI"} [string]
- * @param {"libraryItemPath"} [string]
+ * @param {string} fileURI
+ * @param {string} libraryItemPath
  * @return {boolean}
  */
 Flash.prototype.copyLibraryItem = function (fileURI, libraryItemPath) {
 };
 /**
  * @since Flash MX 2004
- * @param {string} [docType]
+ * @param {"timeline"|"htmlcanvas"|"vrPanoDoc"|"vr360Doc"} [docType="timeline"]
  * @return {Document}
  */
 Flash.prototype.createDocument = function (docType) {
