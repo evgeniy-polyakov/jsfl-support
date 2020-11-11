@@ -5,7 +5,6 @@ import com.intellij.lang.documentation.AbstractDocumentationProvider;
 import com.intellij.lang.documentation.ExternalDocumentationHandler;
 import com.intellij.lang.documentation.ExternalDocumentationProvider;
 import com.intellij.lang.javascript.psi.ecmal4.JSQualifiedNamedElement;
-import com.intellij.openapi.project.Project;
 import com.intellij.psi.PsiElement;
 import com.intellij.psi.PsiManager;
 import org.jetbrains.annotations.NotNull;
@@ -33,15 +32,10 @@ import java.util.ResourceBundle;
 public class JSFLDocumentationProvider extends AbstractDocumentationProvider
         implements ExternalDocumentationProvider, ExternalDocumentationHandler {
 
-    private static String helpUrl = "https://help.adobe.com/archive/en_US/flash/cs5/flash_cs5_extending.pdf#";
-    private static ResourceBundle docs = ResourceBundle.getBundle("org.jsflsupport.docs.docs");
+    private static final String helpUrl = "https://help.adobe.com/archive/en_US/flash/cs5/flash_cs5_extending.pdf#";
+    private static final ResourceBundle docs = ResourceBundle.getBundle("org.jsflsupport.docs.docs");
 
     //region Implement ExternalDocumentationProvider to enable/disable actions
-    @Nullable
-    public String fetchExternalDocumentation(Project _project, PsiElement _psiElement, List<String> _list) {
-        return null;
-    }
-
     public boolean hasDocumentationFor(PsiElement element, PsiElement originalElement) {
         return false;
     }

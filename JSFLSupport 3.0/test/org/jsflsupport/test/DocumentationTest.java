@@ -44,14 +44,14 @@ public class DocumentationTest {
                 "src/org/jsflsupport/libraries/JSFLTimeline.js",
                 "src/org/jsflsupport/libraries/JSFLTopLevel.js"
         };
-        List<String> list = new ArrayList<String>();
+        List<String> list = new ArrayList<>();
         BufferedReader reader;
         Pattern classRe = Pattern.compile("^(\\w+)\\s*=\\s*function");
         Pattern instanceRe = Pattern.compile("^(\\w+)\\s*=\\s*new\\s+");
         Pattern fieldRe = Pattern.compile("^(\\w+)\\.prototype\\.(\\w+)");
-        for (int i = 0; i < libraries.length; i++) {
+        for (String library : libraries) {
             try {
-                reader = new BufferedReader(new FileReader(libraries[i]));
+                reader = new BufferedReader(new FileReader(library));
                 String line;
                 Matcher matcher;
                 while ((line = reader.readLine()) != null) {
@@ -76,7 +76,7 @@ public class DocumentationTest {
         return list;
     }
 
-    private String _librarySymbol;
+    private final String _librarySymbol;
 
     public DocumentationTest(String librarySymbol) {
         _librarySymbol = librarySymbol;

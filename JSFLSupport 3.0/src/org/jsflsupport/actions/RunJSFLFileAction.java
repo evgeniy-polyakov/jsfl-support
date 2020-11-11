@@ -42,7 +42,7 @@ public class RunJSFLFileAction extends AnAction {
     @Override
     public void update(AnActionEvent e) {
         VirtualFile file = e.getData(PlatformDataKeys.VIRTUAL_FILE);
-        Boolean enabled = file != null && file.getFileType() instanceof JSFLFileType;
+        boolean enabled = file != null && file.getFileType() instanceof JSFLFileType;
         e.getPresentation().setEnabled(enabled);
         e.getPresentation().setVisible(enabled);
     }

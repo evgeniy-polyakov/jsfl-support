@@ -3,6 +3,7 @@ package org.jsflsupport.actions;
 import com.intellij.ide.actions.CreateFileFromTemplateAction;
 import com.intellij.openapi.project.Project;
 import com.intellij.psi.PsiDirectory;
+import org.jetbrains.annotations.NotNull;
 import org.jsflsupport.JSFLFileType;
 
 /*
@@ -27,15 +28,15 @@ public class CreateJSFLFileAction extends CreateFileFromTemplateAction {
     }
 
     @Override
-    protected void buildDialog(Project project, PsiDirectory directory,
-                               com.intellij.ide.actions.CreateFileFromTemplateDialog.Builder builder) {
+    protected void buildDialog(@NotNull Project project, @NotNull PsiDirectory directory,
+                               @NotNull com.intellij.ide.actions.CreateFileFromTemplateDialog.Builder builder) {
         builder.setTitle("New JSFL file");
         builder.addKind("JSFL Command", JSFLFileType.INSTANCE.getIcon(), "JSFL Command");
         builder.addKind("JSFL Tool", JSFLFileType.INSTANCE.getIcon(), "JSFL Tool");
     }
 
     @Override
-    protected String getActionName(PsiDirectory directory, String newName, String templateName) {
-        return new StringBuilder().append("Create JSFL file ").append(newName).toString();
+    protected String getActionName(PsiDirectory directory, @NotNull String newName, String templateName) {
+        return "Create JSFL file " + newName;
     }
 }

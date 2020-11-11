@@ -7,6 +7,7 @@ import com.intellij.openapi.fileTypes.SyntaxHighlighterFactory;
 import com.intellij.openapi.fileTypes.SyntaxHighlighterProvider;
 import com.intellij.openapi.project.Project;
 import com.intellij.openapi.vfs.VirtualFile;
+import org.jetbrains.annotations.NotNull;
 
 /*
  * Copyright 2011 Evgeniy Polyakov
@@ -25,7 +26,7 @@ import com.intellij.openapi.vfs.VirtualFile;
  */
 public class JSFLSyntaxHighlighterProvider implements SyntaxHighlighterProvider {
 
-    public SyntaxHighlighter create(FileType fileType, Project project, VirtualFile virtualFile) {
+    public SyntaxHighlighter create(@NotNull FileType fileType, Project project, VirtualFile virtualFile) {
         return SyntaxHighlighterFactory.getSyntaxHighlighter(JavaScriptSupportLoader.JAVASCRIPT_1_8, project, virtualFile);
     }
 }

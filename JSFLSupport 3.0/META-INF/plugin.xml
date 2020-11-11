@@ -150,7 +150,7 @@ limitations under the License.
     </actions>
 
     <extensions defaultExtensionNs="com.intellij">
-        <fileTypeFactory implementation="org.jsflsupport.JSFLFileTypeFactory"/>
+        <fileType name="JSFL" fieldName="INSTANCE" implementationClass="org.jsflsupport.JSFLFileType" language="JavaScript 1.8" extensions="jsfl"/>
         <syntaxHighlighter key="JSFL" factoryClass="org.jsflsupport.JSFLSyntaxHighlighterProvider"/>
         <resolveScopeEnlarger implementation="org.jsflsupport.JSFLPredefinedLibraryScopeEnlarger"/>
         <internalFileTemplate name="JSFL Command"/>
