@@ -1,7 +1,7 @@
 package org.jsflsupport;
 
 import com.intellij.ide.BrowserUtil;
-import com.intellij.lang.documentation.AbstractDocumentationProvider;
+import com.intellij.lang.documentation.DocumentationProvider;
 import com.intellij.lang.documentation.ExternalDocumentationHandler;
 import com.intellij.lang.documentation.ExternalDocumentationProvider;
 import com.intellij.lang.javascript.psi.ecmal4.JSQualifiedNamedElement;
@@ -29,8 +29,7 @@ import java.util.ResourceBundle;
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-public class JSFLDocumentationProvider extends AbstractDocumentationProvider
-        implements ExternalDocumentationProvider, ExternalDocumentationHandler {
+public class JSFLDocumentationProvider implements DocumentationProvider, ExternalDocumentationProvider, ExternalDocumentationHandler {
 
     private static final String helpUrl = "https://help.adobe.com/archive/en_US/flash/cs5/flash_cs5_extending.pdf#";
     private static final ResourceBundle docs = ResourceBundle.getBundle("org.jsflsupport.docs.docs");
