@@ -31,7 +31,7 @@ import java.util.regex.Pattern;
  * limitations under the License.
  */
 @RunWith(Parameterized.class)
-public class DocumentationTest {
+public class TestDocumentationCoverage {
 
     @Parameters(name = "{0}")
     public static Collection<String> getTestData() {
@@ -78,7 +78,7 @@ public class DocumentationTest {
 
     private final String _librarySymbol;
 
-    public DocumentationTest(String librarySymbol) {
+    public TestDocumentationCoverage(String librarySymbol) {
         _librarySymbol = librarySymbol;
     }
 
