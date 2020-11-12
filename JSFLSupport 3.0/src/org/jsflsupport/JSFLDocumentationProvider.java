@@ -31,7 +31,7 @@ import java.util.ResourceBundle;
  */
 public class JSFLDocumentationProvider implements DocumentationProvider, ExternalDocumentationProvider, ExternalDocumentationHandler {
 
-    private static final String helpUrl = "https://help.adobe.com/archive/en_US/flash/cs5/flash_cs5_extending.pdf#";
+    private static final String helpUrl = "https://www.adobe.io/apis/creativecloud/animate/docs.html#!AdobeDocs/developers-animatesdk-docs/master/";
     private static final ResourceBundle docs = ResourceBundle.getBundle("org.jsflsupport.docs.docs");
 
     //region Implement ExternalDocumentationProvider to enable/disable actions
