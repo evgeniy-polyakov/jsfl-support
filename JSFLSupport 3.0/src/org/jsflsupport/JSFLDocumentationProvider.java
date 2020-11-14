@@ -31,7 +31,7 @@ import java.util.ResourceBundle;
  */
 public class JSFLDocumentationProvider implements DocumentationProvider, ExternalDocumentationProvider, ExternalDocumentationHandler {
 
-    private static final String helpUrl = "https://www.adobe.io/apis/creativecloud/animate/docs.html#!AdobeDocs/developers-animatesdk-docs/master/";
+    private static final String helpUrl = "https://www.adobe.io/apis/creativecloud/animate/docs.html#!";
     private static final ResourceBundle docs = ResourceBundle.getBundle("org.jsflsupport.docs.docs");
 
     //region Implement ExternalDocumentationProvider to enable/disable actions
@@ -49,7 +49,7 @@ public class JSFLDocumentationProvider implements DocumentationProvider, Externa
 
     //region Implement ExternalDocumentationHandler to perform actions
     public boolean handleExternal(PsiElement element, PsiElement originalElement) {
-        String documentName = getDocumentName(element);
+        String documentName = getQualifiedName(element);
         if (documentName != null && docs.containsKey(documentName)) {
             BrowserUtil.browse(helpUrl + docs.getString(documentName));
             return true;
@@ -73,14 +73,14 @@ public class JSFLDocumentationProvider implements DocumentationProvider, Externa
 
     @Override
     public List<String> getUrlFor(PsiElement element, PsiElement originalElement) {
-        String documentName = getDocumentName(element);
+        String documentName = getQualifiedName(element);
         if (documentName != null && docs.containsKey(documentName)) {
             return Collections.singletonList(helpUrl + docs.getString(documentName));
         }
         return null;
     }
 
-    private String getDocumentName(PsiElement element) {
+    private String getQualifiedName(PsiElement element) {
         if (element instanceof JSQualifiedNamedElement) {
             return ((JSQualifiedNamedElement) element).getQualifiedName();
         }
