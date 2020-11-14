@@ -43,12 +43,14 @@ public class TestDocumentationAvailability {
     private static Map<String, String> exceptions = new HashMap<String, String>();
 
     static {
-        exceptions.put("ComponentPanel.", "componentsPanel.");
+        exceptions.put("ComponentPanel", "componentsPanel");
         exceptions.put("Rectangle.", "RectangleObject.");
         exceptions.put("Oval.", "OvalObject.");
         exceptions.put("Document.setStageVanishPoint", "document.setStageVanishingPoint");
         exceptions.put("Flash.", "fl.");
-        exceptions.put("FlashFile.", "FLfile.");
+        exceptions.put("FlashMath", "Math");
+        exceptions.put("FlashFile", "FLfile");
+        exceptions.put("Camera.", "(Camera.)?");
     }
 
     private String _pluginDocKey;
@@ -62,7 +64,7 @@ public class TestDocumentationAvailability {
     @Test
     public void testMethod() {
         try {
-            URL url = new URL("https://raw.githubusercontent.com/AdobeDocs/developers-animatesdk-docs/master/" + _docIdentifier);
+            URL url = new URL("https://raw.githubusercontent.com/" + _docIdentifier);
             URLConnection connection = url.openConnection();
             String redirect = connection.getHeaderField("Location");
             if (redirect != null) {
@@ -82,7 +84,7 @@ public class TestDocumentationAvailability {
                         }
                     }
 
-                    String re = "##\\s*" + remoteDocKey.toLowerCase().replace(".", "\\.") + ".*";
+                    String re = "##\\s*" + remoteDocKey.toLowerCase().replace(".", "\\s*\\.\\s*") + ".*";
                     if (line.toLowerCase().matches(re)) {
                         Assert.assertTrue(line, true);
                         return;

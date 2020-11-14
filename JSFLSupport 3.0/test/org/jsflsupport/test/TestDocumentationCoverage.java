@@ -87,7 +87,7 @@ public class TestDocumentationCoverage {
         try {
             ResourceBundle resource = ResourceBundle.getBundle("org.jsflsupport.docs.docs");
             if (!resource.containsKey(this._librarySymbol)) {
-                Assert.fail();
+                Assert.fail(this._librarySymbol);
             }
         } catch (Exception e) {
             Assert.fail(e.getMessage());
