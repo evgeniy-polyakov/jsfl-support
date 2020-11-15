@@ -7,6 +7,7 @@ import org.junit.runners.Parameterized;
 import org.junit.runners.Parameterized.Parameters;
 
 import java.util.Collection;
+import java.util.Collections;
 import java.util.ResourceBundle;
 
 /*
@@ -25,25 +26,26 @@ import java.util.ResourceBundle;
  * limitations under the License.
  */
 @RunWith(Parameterized.class)
-public class TestDocumentationCoverage {
+public class TestLibrariesCoverage {
 
     @Parameters(name = "{0}")
     public static Collection<String> getTestData() {
-        return new LibrariesIndex();
+        ResourceBundle resource = ResourceBundle.getBundle("org.jsflsupport.docs.docs");
+        return Collections.list(resource.getKeys());
     }
 
-    private final String _librarySymbol;
+    private final String _documentationSymbol;
 
-    public TestDocumentationCoverage(String librarySymbol) {
-        _librarySymbol = librarySymbol;
+    public TestLibrariesCoverage(String documentationSymbol) {
+        _documentationSymbol = documentationSymbol;
     }
 
     @Test
     public void testMethod() {
         try {
-            ResourceBundle resource = ResourceBundle.getBundle("org.jsflsupport.docs.docs");
-            if (!resource.containsKey(_librarySymbol)) {
-                Assert.fail(_librarySymbol);
+            LibrariesIndex libraries = new LibrariesIndex();
+            if (!libraries.contains(_documentationSymbol)) {
+                Assert.fail(_documentationSymbol);
             }
         } catch (Exception e) {
             Assert.fail(e.getMessage());
