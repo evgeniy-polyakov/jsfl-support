@@ -9,6 +9,11 @@
 Timeline = function () {
 };
 /**
+ * @since Animate 2019
+ * @type {Camera}
+ */
+Timeline.prototype.camera = null;
+/**
  * @since Flash MX 2004
  * @type {number}
  */
@@ -688,4 +693,152 @@ Tween.prototype.getGeometricTransform = function (frameIndex) {
  * @return {Shape}
  */
 Tween.prototype.getShape = function (frameIndex) {
+};
+/**
+ * @since Animate 2019
+ * @class {Camera}
+ */
+Camera = function () {
+};
+/**
+ * @since Animate 2019
+ * @type {boolean}
+ */
+Camera.prototype.cameraEnabled = false;
+/**
+ * @since Animate 2019
+ * @type {boolean}
+ */
+Camera.prototype.colorFilterEnabled = false;
+/**
+ * @since Animate 2019
+ * @type {boolean}
+ */
+Camera.prototype.tintEnabled = false;
+/**
+ * @since Animate 2019
+ * @param {number} frameIndex
+ * @return {number}
+ */
+Camera.prototype.getZDepth = function (frameIndex) {
+};
+/**
+ * @since Animate 2019
+ * @param {number} frameIndex
+ * @return {number}
+ */
+Camera.prototype.getZoom = function (frameIndex) {
+};
+/**
+ * @since Animate 2019
+ * @param {number} frameIndex
+ * @return {number}
+ */
+Camera.prototype.getRotation = function (frameIndex) {
+};
+/**
+ * @since Animate 2019
+ * @param {number} frameIndex
+ * @return {{x:number,y:number}}
+ */
+Camera.prototype.getPosition = function (frameIndex) {
+};
+/**
+ * @since Animate 2019
+ * @param {number} frameIndex
+ * @return {{percent:number,red:number,green:number,blue:number}}
+ */
+Camera.prototype.getTint = function (frameIndex) {
+};
+/**
+ * @since Animate 2019
+ * @param {number} frameIndex
+ * @return {{brightness:number,contrast:number,saturation:number,hue:number}}
+ */
+Camera.prototype.getColorFilter = function (frameIndex) {
+};
+/**
+ * @since Animate 2019
+ * @param {number} frameIndex
+ * @param {number} tz
+ */
+Camera.prototype.setZDepth = function (frameIndex, tz) {
+};
+/**
+ * @since Animate 2019
+ * @param {number} frameIndex
+ * @param {number} zoomVal
+ */
+Camera.prototype.setZoom = function (frameIndex, zoomVal) {
+};
+/**
+ * @since Animate 2019
+ * @param {number} frameIndex
+ * @param {number} angleDegree
+ */
+Camera.prototype.setRotation = function (frameIndex, angleDegree) {
+};
+/**
+ * @since Animate 2019
+ * @param {number} frameIndex
+ * @param {number} tx
+ * @param {number} ty
+ */
+Camera.prototype.setPosition = function (frameIndex, tx, ty) {
+};
+/**
+ * @since Animate 2019
+ * @param {number} frameIndex
+ * @param {number} percent
+ * @param {number} red
+ * @param {number} green
+ * @param {number} blue
+ */
+Camera.prototype.setTint = function (frameIndex, percent, red, green, blue) {
+};
+/**
+ * @since Animate 2019
+ * @param {number} frameIndex
+ * @param {number} brightness
+ * @param {number} contrast
+ * @param {number} saturation
+ * @param {number} hue
+ */
+Camera.prototype.setColorFilter = function (frameIndex, brightness, contrast, saturation, hue) {
+};
+/**
+ * @since Animate 2019
+ * @param {number} frameIndex
+ */
+Camera.prototype.resetZoom = function (frameIndex) {
+};
+/**
+ * @since Animate 2019
+ * @param {number} frameIndex
+ */
+Camera.prototype.resetRotation = function (frameIndex) {
+};
+/**
+ * @since Animate 2019
+ * @param {number} frameIndex
+ */
+Camera.prototype.resetPosition = function (frameIndex) {
+};
+/**
+ * @since Animate 2019
+ * @param {number} frameIndex
+ */
+Camera.prototype.resetTint = function (frameIndex) {
+};
+/**
+ * @since Animate 2019
+ * @param {number} frameIndex
+ */
+Camera.prototype.resetColorFilter = function (frameIndex) {
+};
+/**
+ * @since Animate 2019
+ * @param {number} frameIndex
+ */
+Camera.prototype.reset = function (frameIndex) {
 };
