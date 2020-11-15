@@ -3,6 +3,7 @@ package org.jsflsupport.test;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -21,9 +22,9 @@ import java.util.regex.Pattern;
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-public class LibrariesIndex extends ArrayList<String> {
+public class LibrariesIndex {
 
-    public LibrariesIndex() {
+    public static List<String> create() {
         String[] libraries = {
                 "src/org/jsflsupport/libraries/JSFLDocument.js",
                 "src/org/jsflsupport/libraries/JSFLDrawing.js",
@@ -34,6 +35,7 @@ public class LibrariesIndex extends ArrayList<String> {
                 "src/org/jsflsupport/libraries/JSFLTopLevel.js"
         };
         BufferedReader reader;
+        List<String> list = new ArrayList<String>();
         Pattern classRe = Pattern.compile("^(\\w+)\\s*=\\s*function");
         Pattern instanceRe = Pattern.compile("^(\\w+)\\s*=\\s*new\\s+");
         Pattern fieldRe = Pattern.compile("^(\\w+)\\.prototype\\.(\\w+)");
@@ -45,15 +47,15 @@ public class LibrariesIndex extends ArrayList<String> {
                 while ((line = reader.readLine()) != null) {
                     matcher = classRe.matcher(line);
                     if (matcher.find()) {
-                        this.add(matcher.group(1));
+                        list.add(matcher.group(1));
                     }
                     matcher = instanceRe.matcher(line);
                     if (matcher.find()) {
-                        this.add(matcher.group(1));
+                        list.add(matcher.group(1));
                     }
                     matcher = fieldRe.matcher(line);
                     if (matcher.find()) {
-                        this.add(matcher.group(1) + '.' + matcher.group(2));
+                        list.add(matcher.group(1) + '.' + matcher.group(2));
                     }
                 }
                 reader.close();
@@ -61,5 +63,6 @@ public class LibrariesIndex extends ArrayList<String> {
                 e.printStackTrace();
             }
         }
+        return list;
     }
 }

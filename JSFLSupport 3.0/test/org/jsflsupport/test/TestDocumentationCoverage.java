@@ -29,7 +29,7 @@ public class TestDocumentationCoverage {
 
     @Parameters(name = "{0}")
     public static Collection<String> getTestData() {
-        return new LibrariesIndex();
+        return LibrariesIndex.create();
     }
 
     private final String _librarySymbol;

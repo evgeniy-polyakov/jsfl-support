@@ -43,8 +43,7 @@ public class TestLibrariesCoverage {
     @Test
     public void testMethod() {
         try {
-            LibrariesIndex libraries = new LibrariesIndex();
-            if (!libraries.contains(_documentationSymbol)) {
+            if (!LibrariesIndex.create().contains(_documentationSymbol)) {
                 Assert.fail(_documentationSymbol);
             }
         } catch (Exception e) {
