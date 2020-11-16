@@ -296,7 +296,7 @@ Flash.prototype.copyLibraryItem = function (fileURI, libraryItemPath) {
 };
 /**
  * @since Flash MX 2004
- * @param {"timeline"|"htmlcanvas"|"vrPanoDoc"|"vr360Doc"} [docType="timeline"]
+ * @param {"timeline"|"htmlcanvas"|"vrPanoDoc"|"vr360Doc"} [docType = "timeline"]
  * @return {Document}
  */
 Flash.prototype.createDocument = function (docType) {

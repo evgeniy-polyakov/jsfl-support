@@ -281,6 +281,23 @@ Document.prototype.addNewScene = function (name) {
 Document.prototype.addNewText = function (boundingRectangle, text) {
 };
 /**
+ * @since Animate 2020
+ * @param {{fill:Fill, name: string}} swatch
+ * @param {number} [index]
+ * @param {number} [palette = 0]
+ */
+Document.prototype.addTaggedSwatch = function (swatch, index, palette) {
+};
+/**
+ * @since Animate 2020
+ * @param {string} color
+ * @param {string} name
+ * @param {number} [index]
+ * @param {number} [palette = 0]
+ */
+Document.prototype.addTaggedSwatchWithColor = function (color, name, index, palette) {
+};
+/**
  * @since Flash MX 2004
  * @param {"left"|"right"|"top"|"bottom"|"vertical center"|"horizontal center"} alignMode
  * @param {boolean} [bUseDocumentBounds]
@@ -376,6 +393,15 @@ Document.prototype.convertLinesToFills = function () {
 Document.prototype.convertSelectionToBitmap = function () {
 };
 /**
+ * @since Animate 2020
+ * @param {string} fileURI
+ * @param {"timeline"|"htmlcanvas"|"vrPanoDoc"|"vr360Doc"} doctype
+ * @param {boolean} [fileClose = false]
+ * @return {boolean}
+ */
+Document.prototype.convertToDoc = function (fileURI, doctype, fileClose) {
+};
+/**
  * @since Flash MX 2004
  * @param {"movie clip"|"button"|"graphic"} type
  * @param {string} name
@@ -418,6 +444,19 @@ Document.prototype.deleteScene = function () {
  * @since Flash MX 2004
  */
 Document.prototype.deleteSelection = function () {
+};
+/**
+ * @since Animate 2020
+ * @param {number} index
+ * @param {number} [palette = 0]
+ */
+Document.prototype.deleteTaggedSwatchAtIndex = function (index, palette) {
+};
+/**
+ * @since Animate 2020
+ * @param {string} name
+ */
+Document.prototype.deleteTaggedSwatchByName = function (name) {
 };
 /**
  * @since Flash 8
@@ -507,6 +546,13 @@ Document.prototype.enterEditMode = function (editMode) {
 Document.prototype.exitEditMode = function () {
 };
 /**
+ * @since Animate 2020
+ * @param {string} pathURI
+ * @return {boolean}
+ */
+Document.prototype.exportCanvasPublishTemplate = function (pathURI) {
+};
+/**
  * @since Flash CS6
  * @param {number} frameNumber
  * @param {string} bitmapName
@@ -521,6 +567,19 @@ Document.prototype.exportInstanceToLibrary = function (frameNumber, bitmapName) 
  * @param {Matrix} [matrix]
  */
 Document.prototype.exportInstanceToPNGSequence = function (outputURI, startFrameNum, endFrameNum, matrix) {
+};
+/**
+ * @since Animate 2020
+ * @param {string} fileURI
+ * @param {string} format
+ * @param {string} preset
+ * @param {boolean} [bTransparent = false]
+ * @param {boolean} [bRunBatch = true]
+ * @param {string} [sceneName]
+ * @param {number} [startFrame]
+ * @param {number} [endFrame]
+ */
+Document.prototype.exportMedia = function (fileURI, format, preset, bTransparent, bRunBatch, sceneName, startFrame, endFrame) {
 };
 /**
  * @since Flash 8
@@ -543,6 +602,14 @@ Document.prototype.exportPublishProfile = function (fileURI) {
  * @return {string}
  */
 Document.prototype.exportPublishProfileString = function (profileName) {
+};
+/**
+ * @since Animate 2020
+ * @param {string} fileURI
+ * @param {boolean} currentSettings
+ * @param {boolean} currentFrame
+ */
+Document.prototype.exportSVG = function (fileURI, currentSettings, currentFrame) {
 };
 /**
  * @since Flash MX 2004
