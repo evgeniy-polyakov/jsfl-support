@@ -44,7 +44,7 @@ public class JSFLResolveScopeProvider extends JavaScriptResolveScopeProvider {
     }
 
     private static boolean isJSFL(@NotNull VirtualFile file) {
-        return file.getFileType() == JSFLFileType.INSTANCE;
+        return file.getFileType() instanceof JSFLFileType;
     }
 
     private static final GlobalSearchScope jsflSearchScope = new GlobalSearchScope() {
@@ -61,7 +61,7 @@ public class JSFLResolveScopeProvider extends JavaScriptResolveScopeProvider {
 
         @Override
         public boolean contains(@NotNull VirtualFile virtualFile) {
-            return virtualFile.isDirectory() || virtualFile.getFileType() == JSFLFileType.INSTANCE ||
+            return virtualFile.isDirectory() || virtualFile.getFileType() instanceof JSFLFileType ||
                     virtualFile.getName().startsWith("lib.es");
         }
     };
