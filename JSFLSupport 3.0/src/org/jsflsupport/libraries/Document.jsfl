@@ -282,7 +282,7 @@ Document.prototype.addNewText = function (boundingRectangle, text) {
 };
 /**
  * @since Animate 2020
- * @param {{fill:Fill, name: string}} swatch
+ * @param {{fill:Fill,name:string}} swatch
  * @param {number} [index]
  * @param {number} [palette = 0]
  */
@@ -685,6 +685,13 @@ Document.prototype.getElementTextAttr = function (attrName, startIndex, endIndex
 Document.prototype.getFilters = function () {
 };
 /**
+ * @since Animate 2020
+ * @param {string} paletteName
+ * @return {number}
+ */
+Document.prototype.getIndexForTaggedSwatchesPalette = function (paletteName) {
+};
+/**
  * @since Flash 8
  * @return {string}
  */
@@ -722,6 +729,34 @@ Document.prototype.getSelectionRect = function () {
 Document.prototype.getSWFPathFromProfile = function () {
 };
 /**
+ * @since Animate 2020
+ * @param {number} index
+ * @param {number} [palette = 0]
+ * @return {{fill:Fill,name:string}}
+ */
+Document.prototype.getTaggedSwatchAtIndex = function (index, palette) {
+};
+/**
+ * @since Animate 2020
+ * @param {string} name
+ * @return {{fill:Fill,name:string}}
+ */
+Document.prototype.getTaggedSwatchByName = function (name) {
+};
+/**
+ * @since Animate 2020
+ * @param {number} [palette = 0]
+ * @return {Array.<{fill:Fill,name:string}>}
+ */
+Document.prototype.getTaggedSwatches = function (palette) {
+};
+/**
+ * @since Animate 2020
+ * @return {Array.<string>}
+ */
+Document.prototype.getTaggedSwatchesPaletteList = function () {
+};
+/**
  * @since Flash CC
  * @return {boolean}
  */
@@ -751,6 +786,13 @@ Document.prototype.getTransformationPoint = function () {
  * @since Flash MX 2004
  */
 Document.prototype.group = function () {
+};
+/**
+ * @since Animate 2020
+ * @param {string} pathURI
+ * @return {boolean}
+ */
+Document.prototype.importCanvasPublishTemplate = function (pathURI) {
 };
 /**
  * @since Flash 8
@@ -1144,6 +1186,21 @@ Document.prototype.setStrokeSize = function (size) {
  * @param {"hairline"|"solid"|"dashed"|"dotted"|"ragged"|"stipple"|"hatched"} strokeType
  */
 Document.prototype.setStrokeStyle = function (strokeType) {
+};
+/**
+ * @since Animate 2020
+ * @param {number} oldSwatchIndex
+ * @param {{fill:Fill,name:string}} newSwatch
+ * @param {number} [palette = 0]
+ */
+Document.prototype.setTaggedSwatchAtIndex = function (oldSwatchIndex, newSwatch, palette) {
+};
+/**
+ * @since Animate 2020
+ * @param {string} oldSwatchName
+ * @param {{fill:Fill,name:string}} newSwatch
+ */
+Document.prototype.setTaggedSwatchByName = function (oldSwatchName, newSwatch) {
 };
 /**
  * @since Flash MX 2004
