@@ -56,7 +56,7 @@ public class JSFLPredefinedLibraryProvider extends JSPredefinedLibraryProvider {
         return getFiles();
     }
 
-    private static Set<VirtualFile> getFiles() {
+    public static Set<VirtualFile> getFiles() {
         Set<VirtualFile> libFiles = new HashSet<>();
         for (String fileName : FILES) {
             VirtualFile file = getPredefinedLibFile(fileName);
