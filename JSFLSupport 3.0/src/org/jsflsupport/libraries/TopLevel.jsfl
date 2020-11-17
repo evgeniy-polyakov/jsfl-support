@@ -35,6 +35,11 @@ Flash = function () {
  */
 fl = new Flash();
 /**
+ * @since Animate 2019
+ * @type {Flash}
+ */
+an = new Flash();
+/**
  * @since Flash CS3
  * @type {ActionsPanel}
  * @const
@@ -238,6 +243,13 @@ Flash.prototype.xmlui = undefined;
  * @return {number}
  */
 Flash.prototype.addEventListener = function (eventType, callbackFunction) {
+};
+/**
+ * @since Animate 2020
+ * @param {"arrow"|"bezierSelect"|"freeXform"|"fillXform"|"lasso"|"pen"|"penplus"|"penminus"|"penmodify"|"text"|"line"|"rect"|"oval"|"rectPrimitive"|"ovalPrimitive"|"polystar"|"pencil"|"brush"|"inkBottle"|"bucket"|"eyeDropper"|"eraser"|"hand"|"magnifier"|"GPUBrush"|"ThreeDRotate"|"ThreeDXform"|"lassoPoly"|"magicWand"|"paintBrush"|"camera"|"width"|"stageRotation"|"timeScrub"|"puppet"|string} toolName
+ * @return {number}
+ */
+Flash.prototype.addToolInToolbar = function (toolName) {
 };
 /**
  * @since Flash MX 2004
@@ -493,7 +505,7 @@ Flash.prototype.selectElement = function (elementObject, editMode) {
 };
 /**
  * @since Flash CS3
- * @param {"arrow"|"bezierSelect"|"freeXform"|"fillXform"|"lasso"|"pen"|"penplus"|"penminus"|"penmodify"|"text"|"line"|"rect"|"oval"|"rectPrimitive"|"ovalPrimitive"|"polystar"|"pencil"|"brush"|"inkBottle"|"bucket"|"eyeDropper"|"eraser"|"hand"|"magnifier"} toolName
+ * @param {"arrow"|"bezierSelect"|"freeXform"|"fillXform"|"lasso"|"pen"|"penplus"|"penminus"|"penmodify"|"text"|"line"|"rect"|"oval"|"rectPrimitive"|"ovalPrimitive"|"polystar"|"pencil"|"brush"|"inkBottle"|"bucket"|"eyeDropper"|"eraser"|"hand"|"magnifier"|"GPUBrush"|"ThreeDRotate"|"ThreeDXform"|"lassoPoly"|"magicWand"|"paintBrush"|"camera"|"width"|"stageRotation"|"timeScrub"|"puppet"|string} toolName
  */
 Flash.prototype.selectTool = function (toolName) {
 };
