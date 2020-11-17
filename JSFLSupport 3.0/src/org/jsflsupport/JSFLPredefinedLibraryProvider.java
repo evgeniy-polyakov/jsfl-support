@@ -31,13 +31,13 @@ public class JSFLPredefinedLibraryProvider extends JSPredefinedLibraryProvider {
     private static final String NAME = "JSFL";
 
     private static final String[] FILES = {
-            "/org/jsflsupport/libraries/JSFLDocument.js",
-            "/org/jsflsupport/libraries/JSFLDrawing.js",
-            "/org/jsflsupport/libraries/JSFLElements.js",
-            "/org/jsflsupport/libraries/JSFLGeom.js",
-            "/org/jsflsupport/libraries/JSFLItems.js",
-            "/org/jsflsupport/libraries/JSFLTimeline.js",
-            "/org/jsflsupport/libraries/JSFLTopLevel.js"
+            "/org/jsflsupport/libraries/Document.jsfl",
+            "/org/jsflsupport/libraries/Drawing.jsfl",
+            "/org/jsflsupport/libraries/Elements.jsfl",
+            "/org/jsflsupport/libraries/Geom.jsfl",
+            "/org/jsflsupport/libraries/Items.jsfl",
+            "/org/jsflsupport/libraries/Timeline.jsfl",
+            "/org/jsflsupport/libraries/TopLevel.jsfl"
     };
 
     @NotNull
