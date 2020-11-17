@@ -100,6 +100,7 @@ public class DocumentationIndexParser {
                         fileWriter.write("FlashFile=" + page.path + '\n');
                     }
                     if (key.equals("fl")) {
+                        fileWriter.write("an=" + page.path + '\n');
                         fileWriter.write("Flash=" + page.path + '\n');
                     }
                 }
