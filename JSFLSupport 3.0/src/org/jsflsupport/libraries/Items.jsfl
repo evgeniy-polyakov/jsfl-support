@@ -462,3 +462,107 @@ VideoItem.prototype.videoType = undefined;
  */
 VideoItem.prototype.exportToFLV = function (fileURI) {
 };
+/**
+ * @since Animate 2020
+ * @class {TextureAtlasExporter}
+ * @extends {Item}
+ */
+TextureAtlasExporter = function () {
+};
+TextureAtlasExporter.prototype = new Item();
+/**
+ * @since Animate 2020
+ * @type {"basic"|"maxRects"}
+ */
+TextureAtlasExporter.prototype.algorithm = undefined;
+/**
+ * @since Animate 2020
+ * @type {boolean}
+ */
+TextureAtlasExporter.prototype.allowRotate = false;
+/**
+ * @since Animate 2020
+ * @type {string}
+ * @const
+ */
+TextureAtlasExporter.prototype.app = undefined;
+/**
+ * @since Animate 2020
+ * @type {boolean}
+ */
+TextureAtlasExporter.prototype.autoSize = false;
+/**
+ * @since Animate 2020
+ * @type {number}
+ */
+TextureAtlasExporter.prototype.borderPadding = 0;
+/**
+ * @since Animate 2020
+ * @type {boolean}
+ * @const
+ */
+TextureAtlasExporter.prototype.canRotate = false;
+/**
+ * @since Animate 2020
+ * @type {string}
+ */
+TextureAtlasExporter.prototype.filePath = undefined;
+/**
+ * @since Animate 2020
+ * @type {boolean}
+ */
+TextureAtlasExporter.prototype.flattenSkewObject = false;
+/**
+ * @since Animate 2020
+ * @type {"RGB8888"|"RGB8"}
+ */
+TextureAtlasExporter.prototype.imageFormat = undefined;
+/**
+ * @since Animate 2020
+ * @type {boolean}
+ */
+TextureAtlasExporter.prototype.optimizeBitmap = false;
+/**
+ * @since Animate 2020
+ * @type {boolean}
+ */
+TextureAtlasExporter.prototype.optimizeJson = false;
+/**
+ * @since Animate 2020
+ * @type {boolean}
+ * @const
+ */
+TextureAtlasExporter.prototype.overflowed = false;
+/**
+ * @since Animate 2020
+ * @type {number}
+ */
+TextureAtlasExporter.prototype.resolution = 1;
+/**
+ * @since Animate 2020
+ * @type {number}
+ */
+TextureAtlasExporter.prototype.shapePadding = 0;
+/**
+ * @since Animate 2020
+ * @type {number}
+ */
+TextureAtlasExporter.prototype.sheetHeight = 0;
+/**
+ * @since Animate 2020
+ * @type {number}
+ */
+TextureAtlasExporter.prototype.sheetWidth = 0;
+/**
+ * @since Animate 2020
+ * @type {string}
+ */
+TextureAtlasExporter.prototype.version = undefined;
+/**
+ * @since Animate 2020
+ * @param {SymbolItem|SymbolInstance} symbol
+ * @param {string} path
+ * @return {boolean}
+ */
+TextureAtlasExporter.prototype.exportTextureAtlas = function (symbol, path) {
+};
