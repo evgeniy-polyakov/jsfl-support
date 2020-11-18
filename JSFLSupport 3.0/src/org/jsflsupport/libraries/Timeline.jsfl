@@ -410,6 +410,83 @@ Layer.prototype.parentLayer = undefined;
  */
 Layer.prototype.visible = false;
 /**
+ * @since Animate 2020
+ * @param {number} frameIndex
+ * @return {string}
+ */
+Layer.prototype.getBlendModeAtFrame = function (frameIndex) {
+};
+/**
+ * @since Animate 2020
+ * @param {number} frameIndex
+ * @return {{mode:string,tintPercent:number,tintRed:number,tintBlue:number,tintGreen:number,brightnessPercent:number,alphaPercent:number,colorAlphaAmount:number,colorAlphaPercent:number,colorRedAmount:number,colorRedPercent:number,colorGreenAmount:number,colorGreenPercent:number,colorBlueAmount:number,colorBluePercent:number}}
+ */
+Layer.prototype.getColorTransformAtFrame = function (frameIndex) {
+};
+/**
+ * @since Animate 2020
+ * @param {number} frameIndex
+ * @return {Array.<Filter>}
+ */
+Layer.prototype.getFiltersAtFrame = function (frameIndex) {
+};
+/**
+ * @since Animate 2020
+ * @param {number} frameIndex
+ * @return {Matrix}
+ */
+Layer.prototype.getRigMatrixAtFrame = function (frameIndex) {
+};
+/**
+ * @since Animate 2020
+ * @param {number} frameIndex
+ * @return {Layer}
+ */
+Layer.prototype.getRigParentAtFrame = function (frameIndex) {
+};
+/**
+ * @since Animate 2019
+ * @param {number} frameIndex
+ * @return {number}
+ */
+Layer.prototype.getZDepthAtFrame = function (frameIndex) {
+};
+/**
+ * @since Animate 2020
+ * @param {number} frameIndex
+ * @param {string} blendModeString
+ */
+Layer.prototype.setBlendModeAtFrame = function (frameIndex, blendModeString) {
+};
+/**
+ * @since Animate 2020
+ * @param {number} frameIndex
+ * @param {{mode:string,tintPercent:number,tintRed:number,tintBlue:number,tintGreen:number,brightnessPercent:number,alphaPercent:number,colorAlphaAmount:number,colorAlphaPercent:number,colorRedAmount:number,colorRedPercent:number,colorGreenAmount:number,colorGreenPercent:number,colorBlueAmount:number,colorBluePercent:number}} cxFormObject
+ */
+Layer.prototype.setColorTransformAtFrame = function (frameIndex, cxFormObject) {
+};
+/**
+ * @since Animate 2020
+ * @param {number} frameIndex
+ * @param {Array.<Filter>} filterArray
+ */
+Layer.prototype.setFiltersAtFrame = function (frameIndex, filterArray) {
+};
+/**
+ * @since Animate 2020
+ * @param {number} frameIndex
+ * @param {Layer} layer
+ */
+Layer.prototype.setRigParentAtFrame = function (frameIndex, layer) {
+};
+/**
+ * @since Animate 2019
+ * @param {number} frameIndex
+ * @param {number} zVal
+ */
+Layer.prototype.setZDepthAtFrame = function (frameIndex, zVal) {
+};
+/**
  * @since Flash MX 2004
  * @class {Frame}
  */
