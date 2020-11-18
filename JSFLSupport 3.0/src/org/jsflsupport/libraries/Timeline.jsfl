@@ -270,6 +270,11 @@ Timeline.prototype.pasteLayers = function (layerIndex) {
 Timeline.prototype.pasteMotion = function () {
 };
 /**
+ * @since Flash CS3
+ */
+Timeline.prototype.pasteMotionSpecial = function () {
+};
+/**
  * @since Flash MX 2004
  * @param {number} [startFrameIndex]
  * @param {number} [endFrameIndex]

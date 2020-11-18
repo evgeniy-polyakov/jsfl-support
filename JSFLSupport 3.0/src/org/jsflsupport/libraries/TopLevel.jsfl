@@ -431,6 +431,14 @@ Flash.prototype.openDocument = function (fileURI) {
 Flash.prototype.openScript = function (fileURI, createExtension, className) {
 };
 /**
+ * @since Flash CS5
+ * @param {string} flaURI
+ * @param {string} publishProfile
+ * @return {boolean}
+ */
+Flash.prototype.publishDocument = function (flaURI, publishProfile) {
+};
+/**
  * @since Flash MX 2004
  * @param {boolean} [bPromptIfNeeded]
  */
@@ -465,6 +473,13 @@ Flash.prototype.resetAS3PackagePaths = function () {
  * @deprecated
  */
 Flash.prototype.resetPackagePaths = function () {
+};
+/**
+ * @since Flash MX 2004
+ * @param {Document} documentObject
+ * @return {boolean}
+ */
+Flash.prototype.revertDocument = function (documentObject) {
 };
 /**
  * @since Flash MX 2004
@@ -1267,174 +1282,6 @@ ElementFindAndSelect.prototype.timeline = undefined;
  * @type {SymbolInstance}
  */
 ElementFindAndSelect.prototype.parent = undefined;
-/**
- * @since Flash CS6
- * @class {SpriteSheetExporter}
- */
-SpriteSheetExporter = function () {
-};
-/**
- * @since Flash CS6
- * @type {"basic"|"maxRects"}
- */
-SpriteSheetExporter.prototype.algorithm = undefined;
-/**
- * @since Flash CS6
- * @type {boolean}
- */
-SpriteSheetExporter.prototype.allowRotate = false;
-/**
- * @since Flash CS6
- * @type {boolean}
- */
-SpriteSheetExporter.prototype.allowTrimming = false;
-/**
- * @since Flash CS6
- * @type {string}
- * @const
- */
-SpriteSheetExporter.prototype.app = undefined;
-/**
- * @since Flash CS6
- * @type {boolean}
- */
-SpriteSheetExporter.prototype.autoSize = false;
-/**
- * @since Flash CS6
- * @type {number}
- */
-SpriteSheetExporter.prototype.borderPadding = 0;
-/**
- * @since Flash CS6
- * @type {boolean}
- * @const
- */
-SpriteSheetExporter.prototype.canBorderPad = false;
-/**
- * @since Flash CS6
- * @type {boolean}
- * @const
- */
-SpriteSheetExporter.prototype.canRotate = false;
-/**
- * @since Flash CS6
- * @type {boolean}
- * @const
- */
-SpriteSheetExporter.prototype.canShapePad = false;
-/**
- * @since Flash CS6
- * @type {boolean}
- * @const
- */
-SpriteSheetExporter.prototype.canStackDuplicateFrames = false;
-/**
- * @since Flash CS6
- * @type {boolean}
- * @const
- */
-SpriteSheetExporter.prototype.canTrim = false;
-/**
- * @since Flash CS6
- * @type {"RGBA8888"|"RGB888x"|"RGB8"}
- * @const
- */
-SpriteSheetExporter.prototype.format = undefined;
-/**
- * @since Flash CS6
- * @type {string}
- * @const
- */
-SpriteSheetExporter.prototype.image = undefined;
-/**
- * @since Flash CS6
- * @type {string}
- */
-SpriteSheetExporter.prototype.layoutFormat = undefined;
-/**
- * @since Flash CS6
- * @type {boolean}
- * @const
- */
-SpriteSheetExporter.prototype.overflowed = false;
-/**
- * @since Flash CS6
- * @type {number}
- */
-SpriteSheetExporter.prototype.shapePadding = 0;
-/**
- * @since Flash CS6
- * @type {number}
- */
-SpriteSheetExporter.prototype.sheetHeight = 0;
-/**
- * @since Flash CS6
- * @type {number}
- */
-SpriteSheetExporter.prototype.sheetWidth = 0;
-/**
- * @since Flash CS6
- * @type {boolean}
- */
-SpriteSheetExporter.prototype.stackDuplicateFrames = false;
-/**
- * @since Flash CS6
- * @type {string}
- * @const
- */
-SpriteSheetExporter.prototype.version = undefined;
-/**
- * @since Flash CS6
- * @param {BitmapItem|BitmapInstance} bitmap
- */
-SpriteSheetExporter.prototype.addBitmap = function (bitmap) {
-};
-/**
- * @since Flash CS6
- * @param {SymbolItem|SymbolInstance} symbol
- * @param {string} [name]
- * @param {number} [beginFrame]
- * @param {number} [endFrame]
- * @return {boolean}
- */
-SpriteSheetExporter.prototype.addSymbol = function (symbol, name, beginFrame, endFrame) {
-};
-/**
- * @since Flash CS6
- */
-SpriteSheetExporter.prototype.beginExport = function () {
-};
-/**
- * @since Flash CS6
- * @param {SymbolItem|SymbolInstance} symbol
- * @param {number} [beginFrame]
- * @param {number} [endFrame]
- * @return {boolean}
- */
-SpriteSheetExporter.prototype.changeSymbol = function (symbol, beginFrame, endFrame) {
-};
-/**
- * @since Flash CS6
- * @param {string} path
- * @param {"png"|"jpg"|{format:"png"|"jpg",backgroundColor?:(string|number),quality?:number,bitDepth?:number}} imageFormat
- * @param {boolean} [writeMetaData]
- * @return {string}
- */
-SpriteSheetExporter.prototype.exportSpriteSheet = function (path, imageFormat, writeMetaData) {
-};
-/**
- * @since Flash CS6
- * @param {BitmapItem|BitmapInstance} bitmap
- */
-SpriteSheetExporter.prototype.removeBitmap = function (bitmap) {
-};
-/**
- * @since Flash CS6
- * @param {SymbolItem|SymbolInstance} symbol
- * @return {boolean}
- */
-SpriteSheetExporter.prototype.removeSymbol = function (symbol) {
-};
 /**
  * @since Flash MX 2004
  * @class {FlashFile}

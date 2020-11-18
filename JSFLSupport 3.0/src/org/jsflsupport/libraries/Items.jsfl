@@ -138,6 +138,12 @@ BitmapItem.prototype.hasValidAlphaLayer = false;
  * @type {number}
  * @const
  */
+BitmapItem.prototype.hPixels = 0;
+/**
+ * @since Flash CS6
+ * @type {number}
+ * @const
+ */
 BitmapItem.prototype.lastModifiedDate = 0;
 /**
  * @since Flash CS4
@@ -145,6 +151,11 @@ BitmapItem.prototype.lastModifiedDate = 0;
  * @const
  */
 BitmapItem.prototype.originalCompressionType = undefined;
+/**
+ * @since Flash MX 2004
+ * @type {number}
+ */
+BitmapItem.prototype.quality = 0;
 /**
  * @since Flash CS4
  * @type {boolean}
@@ -173,6 +184,12 @@ BitmapItem.prototype.useDeblocking = false;
  * @type {boolean}
  */
 BitmapItem.prototype.useImportedJPEGQuality = false;
+/**
+ * @since Flash CS6
+ * @type {number}
+ * @const
+ */
+BitmapItem.prototype.vPixels = 0;
 /**
  * @since Flash CS4
  * @param {string} fileURI
@@ -461,6 +478,186 @@ VideoItem.prototype.videoType = undefined;
  * @return {boolean}
  */
 VideoItem.prototype.exportToFLV = function (fileURI) {
+};
+/**
+ * @since Flash CS6
+ * @class {SpriteSheetExporter}
+ * @extends {Item}
+ */
+SpriteSheetExporter = function () {
+};
+SpriteSheetExporter.prototype = new Item();
+/**
+ * @since Flash CS6
+ * @type {"basic"|"maxRects"}
+ */
+SpriteSheetExporter.prototype.algorithm = undefined;
+/**
+ * @since Flash CS6
+ * @type {boolean}
+ */
+SpriteSheetExporter.prototype.allowRotate = false;
+/**
+ * @since Flash CS6
+ * @type {boolean}
+ */
+SpriteSheetExporter.prototype.allowTrimming = false;
+/**
+ * @since Flash CS6
+ * @type {string}
+ * @const
+ */
+SpriteSheetExporter.prototype.app = undefined;
+/**
+ * @since Flash CS6
+ * @type {boolean}
+ */
+SpriteSheetExporter.prototype.autoSize = false;
+/**
+ * @since Flash CS6
+ * @type {number}
+ */
+SpriteSheetExporter.prototype.borderPadding = 0;
+/**
+ * @since Flash CS6
+ * @type {boolean}
+ * @const
+ */
+SpriteSheetExporter.prototype.canBorderPad = false;
+/**
+ * @since Flash CS6
+ * @type {boolean}
+ * @const
+ */
+SpriteSheetExporter.prototype.canRotate = false;
+/**
+ * @since Flash CS6
+ * @type {boolean}
+ * @const
+ */
+SpriteSheetExporter.prototype.canShapePad = false;
+/**
+ * @since Flash CS6
+ * @type {boolean}
+ * @const
+ */
+SpriteSheetExporter.prototype.canStackDuplicateFrames = false;
+/**
+ * @since Flash CS6
+ * @type {boolean}
+ * @const
+ */
+SpriteSheetExporter.prototype.canTrim = false;
+/**
+ * @since Flash CS6
+ * @type {"RGBA8888"|"RGB888x"|"RGB8"}
+ * @const
+ */
+SpriteSheetExporter.prototype.format = undefined;
+/**
+ * @since Flash CS6
+ * @type {string}
+ * @const
+ */
+SpriteSheetExporter.prototype.image = undefined;
+/**
+ * @since Flash CS6
+ * @type {string}
+ */
+SpriteSheetExporter.prototype.layoutFormat = undefined;
+/**
+ * @since Flash CC
+ * @type {number}
+ */
+SpriteSheetExporter.prototype.maxSheetHeight = 0;
+/**
+ * @since Flash CC
+ * @type {number}
+ */
+SpriteSheetExporter.prototype.maxSheetWidth = 0;
+/**
+ * @since Flash CS6
+ * @type {boolean}
+ * @const
+ */
+SpriteSheetExporter.prototype.overflowed = false;
+/**
+ * @since Flash CS6
+ * @type {number}
+ */
+SpriteSheetExporter.prototype.shapePadding = 0;
+/**
+ * @since Flash CS6
+ * @type {number}
+ */
+SpriteSheetExporter.prototype.sheetHeight = 0;
+/**
+ * @since Flash CS6
+ * @type {number}
+ */
+SpriteSheetExporter.prototype.sheetWidth = 0;
+/**
+ * @since Flash CS6
+ * @type {boolean}
+ */
+SpriteSheetExporter.prototype.stackDuplicateFrames = false;
+/**
+ * @since Flash CS6
+ * @type {string}
+ * @const
+ */
+SpriteSheetExporter.prototype.version = undefined;
+/**
+ * @since Flash CS6
+ * @param {BitmapItem|BitmapInstance} bitmap
+ */
+SpriteSheetExporter.prototype.addBitmap = function (bitmap) {
+};
+/**
+ * @since Flash CS6
+ * @param {SymbolItem|SymbolInstance} symbol
+ * @param {string} [name]
+ * @param {number} [beginFrame]
+ * @param {number} [endFrame]
+ * @return {boolean}
+ */
+SpriteSheetExporter.prototype.addSymbol = function (symbol, name, beginFrame, endFrame) {
+};
+/**
+ * @since Flash CS6
+ */
+SpriteSheetExporter.prototype.beginExport = function () {
+};
+/**
+ * @since Flash CS6
+ * @param {SymbolItem|SymbolInstance} symbol
+ * @param {number} [beginFrame]
+ * @param {number} [endFrame]
+ * @return {boolean}
+ */
+SpriteSheetExporter.prototype.changeSymbol = function (symbol, beginFrame, endFrame) {
+};
+/**
+ * @since Flash CS6
+ * @param {string} path
+ * @param {"png"|"jpg"|{format:"png"|"jpg",backgroundColor?:(string|number),quality?:number,bitDepth?:number}} imageFormat
+ * @param {boolean} [writeMetaData]
+ * @return {string}
+ */
+SpriteSheetExporter.prototype.exportSpriteSheet = function (path, imageFormat, writeMetaData) {
+};
+/**
+ * @since Flash CS6
+ * @param {BitmapItem|BitmapInstance} bitmap
+ */
+SpriteSheetExporter.prototype.removeBitmap = function (bitmap) {
+};
+/**
+ * @since Flash CS6
+ * @param {SymbolItem|SymbolInstance} symbol
+ * @return {boolean}
+ */
+SpriteSheetExporter.prototype.removeSymbol = function (symbol) {
 };
 /**
  * @since Animate 2020
