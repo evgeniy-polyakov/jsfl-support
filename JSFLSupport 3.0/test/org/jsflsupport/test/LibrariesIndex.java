@@ -26,13 +26,13 @@ public class LibrariesIndex {
 
     public static List<String> create() {
         String[] libraries = {
-                "src/org/jsflsupport/libraries/JSFLDocument.js",
-                "src/org/jsflsupport/libraries/JSFLDrawing.js",
-                "src/org/jsflsupport/libraries/JSFLElements.js",
-                "src/org/jsflsupport/libraries/JSFLGeom.js",
-                "src/org/jsflsupport/libraries/JSFLItems.js",
-                "src/org/jsflsupport/libraries/JSFLTimeline.js",
-                "src/org/jsflsupport/libraries/JSFLTopLevel.js"
+                "src/org/jsflsupport/libraries/Document.jsfl",
+                "src/org/jsflsupport/libraries/Drawing.jsfl",
+                "src/org/jsflsupport/libraries/Elements.jsfl",
+                "src/org/jsflsupport/libraries/Geom.jsfl",
+                "src/org/jsflsupport/libraries/Items.jsfl",
+                "src/org/jsflsupport/libraries/Timeline.jsfl",
+                "src/org/jsflsupport/libraries/TopLevel.jsfl"
         };
         BufferedReader reader;
         List<String> list = new ArrayList<String>();
