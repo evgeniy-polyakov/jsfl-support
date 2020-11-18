@@ -9,10 +9,15 @@
 Timeline = function () {
 };
 /**
+ * @since Animate 2020
+ * @type {boolean}
+ */
+Timeline.prototype.advancedLayersEnabled = false;
+/**
  * @since Animate 2019
  * @type {Camera}
  */
-Timeline.prototype.camera = null;
+Timeline.prototype.camera = undefined;
 /**
  * @since Flash MX 2004
  * @type {number}
@@ -236,6 +241,14 @@ Timeline.prototype.insertFrames = function (numFrames, bAllLayers, frameNumIndex
  * @param {number} [frameNumIndex]
  */
 Timeline.prototype.insertKeyframe = function (frameNumIndex) {
+};
+/**
+ * @since Animate 2020
+ * @param {number} startLayerNum
+ * @param {number} endLayerNum
+ * @return {Layer}
+ */
+Timeline.prototype.mergeLayers = function (startLayerNum, endLayerNum) {
 };
 /**
  * @since Flash MX 2004
