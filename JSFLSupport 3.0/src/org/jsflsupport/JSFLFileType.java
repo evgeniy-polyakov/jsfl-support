@@ -1,6 +1,5 @@
 package org.jsflsupport;
 
-import com.intellij.lang.javascript.JavaScriptSupportLoader;
 import com.intellij.openapi.fileTypes.LanguageFileType;
 import com.intellij.ui.IconManager;
 import org.jetbrains.annotations.NotNull;
@@ -28,7 +27,7 @@ public class JSFLFileType extends LanguageFileType {
     public static final JSFLFileType INSTANCE = new JSFLFileType();
 
     public JSFLFileType() {
-        super(JavaScriptSupportLoader.JAVASCRIPT_1_8);
+        super(JS16SupportLoader.LANGUAGE_DIALECT);
     }
 
     @NotNull
