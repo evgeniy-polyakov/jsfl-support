@@ -31,13 +31,13 @@ public class JSFLPredefinedLibraryProvider extends JSPredefinedLibraryProvider {
     private static final String NAME = "JSFL";
 
     private static final String[] FILES = {
-            "/org/jsflsupport/libraries/Document.jsfl",
-            "/org/jsflsupport/libraries/Drawing.jsfl",
-            "/org/jsflsupport/libraries/Elements.jsfl",
-            "/org/jsflsupport/libraries/Geom.jsfl",
-            "/org/jsflsupport/libraries/Items.jsfl",
-            "/org/jsflsupport/libraries/Timeline.jsfl",
-            "/org/jsflsupport/libraries/TopLevel.jsfl"
+            "/org/jsflsupport/libraries/document.jsfl",
+            "/org/jsflsupport/libraries/drawing.jsfl",
+            "/org/jsflsupport/libraries/elements.jsfl",
+            "/org/jsflsupport/libraries/geom.jsfl",
+            "/org/jsflsupport/libraries/items.jsfl",
+            "/org/jsflsupport/libraries/timeline.jsfl",
+            "/org/jsflsupport/libraries/toplevel.jsfl"
     };
 
     @NotNull
@@ -46,8 +46,8 @@ public class JSFLPredefinedLibraryProvider extends JSPredefinedLibraryProvider {
         Set<VirtualFile> libFiles = getFiles();
         return new ScriptingLibraryModel[]{
                 ScriptingLibraryModel.createPredefinedLibrary(NAME,
-                                                              libFiles.toArray(new VirtualFile[0]),
-                                                              true)};
+                        libFiles.toArray(new VirtualFile[0]),
+                        true)};
     }
 
     @NotNull
