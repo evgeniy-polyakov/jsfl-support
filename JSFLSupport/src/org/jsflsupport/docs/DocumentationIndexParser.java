@@ -32,7 +32,7 @@ public class DocumentationIndexParser {
             ObjectMapper mapper = new ObjectMapper();
             mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
             DocumentationIndexJson index = mapper.readValue(new URL(url), DocumentationIndexJson.class);
-            FileWriter fileWriter = new FileWriter("JSFLSupport 3.0/src/org/jsflsupport/docs/docs.properties");
+            FileWriter fileWriter = new FileWriter("JSFLSupport/src/org/jsflsupport/docs/docs.properties");
 
             // Iterate all chapters except of first and last
             for (int i = 1; i < index.pages.length - 1; i++) {
