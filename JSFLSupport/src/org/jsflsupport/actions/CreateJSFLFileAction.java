@@ -1,11 +1,3 @@
-package org.jsflsupport.actions;
-
-import com.intellij.ide.actions.CreateFileFromTemplateAction;
-import com.intellij.openapi.project.Project;
-import com.intellij.psi.PsiDirectory;
-import org.jetbrains.annotations.NotNull;
-import org.jsflsupport.JSFLFileType;
-
 /*
  * Copyright 2011 Evgeniy Polyakov
  *
@@ -21,6 +13,14 @@ import org.jsflsupport.JSFLFileType;
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+package org.jsflsupport.actions;
+
+import com.intellij.ide.actions.CreateFileFromTemplateAction;
+import com.intellij.openapi.project.Project;
+import com.intellij.psi.PsiDirectory;
+import org.jetbrains.annotations.NotNull;
+import org.jsflsupport.JSFLFileType;
+
 public class CreateJSFLFileAction extends CreateFileFromTemplateAction {
 
     public CreateJSFLFileAction() {

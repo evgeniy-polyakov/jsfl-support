@@ -1,16 +1,3 @@
-package org.jsflsupport;
-
-import com.intellij.lang.javascript.library.JSPredefinedLibraryProvider;
-import com.intellij.openapi.project.Project;
-import com.intellij.openapi.vfs.VfsUtil;
-import com.intellij.openapi.vfs.VirtualFile;
-import com.intellij.webcore.libraries.ScriptingLibraryModel;
-import org.jetbrains.annotations.NotNull;
-
-import java.net.URL;
-import java.util.HashSet;
-import java.util.Set;
-
 /*
  * Copyright 2011 Evgeniy Polyakov
  *
@@ -26,6 +13,19 @@ import java.util.Set;
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+package org.jsflsupport;
+
+import com.intellij.lang.javascript.library.JSPredefinedLibraryProvider;
+import com.intellij.openapi.project.Project;
+import com.intellij.openapi.vfs.VfsUtil;
+import com.intellij.openapi.vfs.VirtualFile;
+import com.intellij.webcore.libraries.ScriptingLibraryModel;
+import org.jetbrains.annotations.NotNull;
+
+import java.net.URL;
+import java.util.HashSet;
+import java.util.Set;
+
 public class JSFLPredefinedLibraryProvider extends JSPredefinedLibraryProvider {
 
     private static final String NAME = "JSFL";

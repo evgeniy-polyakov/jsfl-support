@@ -1,14 +1,3 @@
-package org.jsflsupport.test;
-
-import org.junit.Assert;
-import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.junit.runners.Parameterized;
-import org.junit.runners.Parameterized.Parameters;
-
-import java.util.Collection;
-import java.util.ResourceBundle;
-
 /*
  * Copyright 2011 Evgeniy Polyakov
  *
@@ -24,6 +13,17 @@ import java.util.ResourceBundle;
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+package org.jsflsupport.test;
+
+import org.junit.Assert;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.Parameterized;
+import org.junit.runners.Parameterized.Parameters;
+
+import java.util.Collection;
+import java.util.ResourceBundle;
+
 @RunWith(Parameterized.class)
 public class TestDocumentationCoverage {
 

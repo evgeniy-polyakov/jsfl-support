@@ -1,12 +1,3 @@
-package org.jsflsupport;
-
-import com.intellij.openapi.fileTypes.LanguageFileType;
-import com.intellij.ui.IconManager;
-import org.jetbrains.annotations.NotNull;
-import org.jsflsupport.lang.JS16SupportLoader;
-
-import javax.swing.*;
-
 /*
  * Copyright 2011 Evgeniy Polyakov
  *
@@ -22,6 +13,15 @@ import javax.swing.*;
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+package org.jsflsupport;
+
+import com.intellij.openapi.fileTypes.LanguageFileType;
+import com.intellij.ui.IconManager;
+import org.jetbrains.annotations.NotNull;
+import org.jsflsupport.lang.JS16SupportLoader;
+
+import javax.swing.*;
+
 public class JSFLFileType extends LanguageFileType {
 
     private static final Icon ICON = IconManager.getInstance().getIcon("/org/jsflsupport/icons/jsfl.png", JSFLFileType.class);

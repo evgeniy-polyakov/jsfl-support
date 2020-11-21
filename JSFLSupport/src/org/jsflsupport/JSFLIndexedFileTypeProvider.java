@@ -1,8 +1,3 @@
-package org.jsflsupport;
-
-import com.intellij.lang.javascript.index.IndexedFileTypeProvider;
-import com.intellij.openapi.fileTypes.FileType;
-
 /*
  * Copyright 2011 Evgeniy Polyakov
  *
@@ -18,6 +13,11 @@ import com.intellij.openapi.fileTypes.FileType;
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+package org.jsflsupport;
+
+import com.intellij.lang.javascript.index.IndexedFileTypeProvider;
+import com.intellij.openapi.fileTypes.FileType;
+
 public class JSFLIndexedFileTypeProvider implements IndexedFileTypeProvider {
 
     public FileType[] getFileTypesToIndex() {

@@ -1,14 +1,3 @@
-package org.jsflsupport.docs;
-
-import com.fasterxml.jackson.databind.DeserializationFeature;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import org.apache.commons.lang.ArrayUtils;
-import org.apache.commons.lang.StringUtils;
-
-import java.io.FileWriter;
-import java.io.IOException;
-import java.net.URL;
-
 /*
  * Copyright 2011 Evgeniy Polyakov
  *
@@ -24,6 +13,17 @@ import java.net.URL;
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+package org.jsflsupport.docs;
+
+import com.fasterxml.jackson.databind.DeserializationFeature;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import org.apache.commons.lang.ArrayUtils;
+import org.apache.commons.lang.StringUtils;
+
+import java.io.FileWriter;
+import java.io.IOException;
+import java.net.URL;
+
 public class DocumentationIndexParser {
 
     public static void main(String[] args) {

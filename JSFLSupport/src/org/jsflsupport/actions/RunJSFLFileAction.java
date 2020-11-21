@@ -1,15 +1,3 @@
-package org.jsflsupport.actions;
-
-import com.intellij.openapi.actionSystem.AnAction;
-import com.intellij.openapi.actionSystem.AnActionEvent;
-import com.intellij.openapi.actionSystem.PlatformDataKeys;
-import com.intellij.openapi.vfs.VirtualFile;
-import org.jsflsupport.JSFLFileType;
-
-import java.awt.*;
-import java.io.File;
-import java.io.IOException;
-
 /*
  * Copyright 2011 Evgeniy Polyakov
  *
@@ -25,6 +13,18 @@ import java.io.IOException;
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+package org.jsflsupport.actions;
+
+import com.intellij.openapi.actionSystem.AnAction;
+import com.intellij.openapi.actionSystem.AnActionEvent;
+import com.intellij.openapi.actionSystem.PlatformDataKeys;
+import com.intellij.openapi.vfs.VirtualFile;
+import org.jsflsupport.JSFLFileType;
+
+import java.awt.*;
+import java.io.File;
+import java.io.IOException;
+
 public class RunJSFLFileAction extends AnAction {
 
     @Override

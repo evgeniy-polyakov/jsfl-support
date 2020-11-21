@@ -1,12 +1,3 @@
-package org.jsflsupport.test;
-
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-
 /*
  * Copyright 2011 Evgeniy Polyakov
  *
@@ -22,6 +13,15 @@ import java.util.regex.Pattern;
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+package org.jsflsupport.test;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 public class LibrariesIndex {
 
     public static List<String> create() {
