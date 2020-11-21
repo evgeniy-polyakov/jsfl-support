@@ -16,11 +16,18 @@ limitations under the License.
 <idea-plugin>
 
     <name>JSFL Support</name>
-    <version>3.5.5</version>
+    <version>4.0.0</version>
     <vendor>Evgeniy Polyakov</vendor>
-    <description>Support of JSFL, the scripting language for automating Adobe Flash.</description>
+    <description>Support of Adobe Animate JavaScript API.</description>
     <change-notes>
         <![CDATA[
+        <h3>4.0.0</h3>
+        <ul>
+            <li>Definitions of new API objects and methods added in Animate 2019, 2020.</li>
+            <li>Integrated new <a href="https://www.adobe.io/apis/creativecloud/animate/docs.html">API reference</a>.</li>
+            <li>Language of JSFL files is changed Javascript 1.6 since that is the version of Adobe Animate JS interpreter:<br><i>for each</i> is supported but no <i>let</i>, <i>const</i> and newer features.</li>
+            <li>JSFL files recognise only definitions from basic JS libraries and other JSFL files:<br>Document, Element and other objects do not conflict with HTML DOM definitions.</li>
+        </ul>
         <h3>3.5.5</h3>
         Added fl.copyLibraryItem. Update of fl.createDocument.<br>
         Contributors: <a href="https://github.com/jcmdonald">James McDonald</a>
