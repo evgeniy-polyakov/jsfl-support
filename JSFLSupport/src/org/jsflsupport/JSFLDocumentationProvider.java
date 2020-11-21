@@ -1,20 +1,3 @@
-package org.jsflsupport;
-
-import com.intellij.ide.BrowserUtil;
-import com.intellij.lang.documentation.AbstractDocumentationProvider;
-import com.intellij.lang.documentation.ExternalDocumentationHandler;
-import com.intellij.lang.documentation.ExternalDocumentationProvider;
-import com.intellij.lang.javascript.psi.ecmal4.JSQualifiedNamedElement;
-import com.intellij.openapi.project.Project;
-import com.intellij.psi.PsiElement;
-import com.intellij.psi.PsiManager;
-import org.jetbrains.annotations.NotNull;
-import org.jetbrains.annotations.Nullable;
-
-import java.util.Collections;
-import java.util.List;
-import java.util.ResourceBundle;
-
 /*
  * Copyright 2011 Evgeniy Polyakov
  *
@@ -30,18 +13,28 @@ import java.util.ResourceBundle;
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-public class JSFLDocumentationProvider extends AbstractDocumentationProvider
-        implements ExternalDocumentationProvider, ExternalDocumentationHandler {
+package org.jsflsupport;
 
-    private static String helpUrl = "https://help.adobe.com/archive/en_US/flash/cs5/flash_cs5_extending.pdf#";
-    private static ResourceBundle docs = ResourceBundle.getBundle("org.jsflsupport.docs.docs");
+import com.intellij.ide.BrowserUtil;
+import com.intellij.lang.documentation.DocumentationProvider;
+import com.intellij.lang.documentation.ExternalDocumentationHandler;
+import com.intellij.lang.documentation.ExternalDocumentationProvider;
+import com.intellij.lang.javascript.psi.ecmal4.JSQualifiedNamedElement;
+import com.intellij.psi.PsiElement;
+import com.intellij.psi.PsiManager;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
+
+import java.util.Collections;
+import java.util.List;
+import java.util.ResourceBundle;
+
+public class JSFLDocumentationProvider implements DocumentationProvider, ExternalDocumentationProvider, ExternalDocumentationHandler {
+
+    private static final String helpUrl = "https://www.adobe.io/apis/creativecloud/animate/docs.html#!";
+    private static final ResourceBundle docs = ResourceBundle.getBundle("org.jsflsupport.docs.docs");
 
     //region Implement ExternalDocumentationProvider to enable/disable actions
-    @Nullable
-    public String fetchExternalDocumentation(Project _project, PsiElement _psiElement, List<String> _list) {
-        return null;
-    }
-
     public boolean hasDocumentationFor(PsiElement element, PsiElement originalElement) {
         return false;
     }
@@ -56,7 +49,7 @@ public class JSFLDocumentationProvider extends AbstractDocumentationProvider
 
     //region Implement ExternalDocumentationHandler to perform actions
     public boolean handleExternal(PsiElement element, PsiElement originalElement) {
-        String documentName = getDocumentName(element);
+        String documentName = getQualifiedName(element);
         if (documentName != null && docs.containsKey(documentName)) {
             BrowserUtil.browse(helpUrl + docs.getString(documentName));
             return true;
@@ -80,14 +73,14 @@ public class JSFLDocumentationProvider extends AbstractDocumentationProvider
 
     @Override
     public List<String> getUrlFor(PsiElement element, PsiElement originalElement) {
-        String documentName = getDocumentName(element);
+        String documentName = getQualifiedName(element);
         if (documentName != null && docs.containsKey(documentName)) {
             return Collections.singletonList(helpUrl + docs.getString(documentName));
         }
         return null;
     }
 
-    private String getDocumentName(PsiElement element) {
+    private String getQualifiedName(PsiElement element) {
         if (element instanceof JSQualifiedNamedElement) {
             return ((JSQualifiedNamedElement) element).getQualifiedName();
         }

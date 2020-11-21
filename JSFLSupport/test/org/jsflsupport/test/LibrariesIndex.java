@@ -1,20 +1,3 @@
-package org.jsflsupport.test;
-
-import org.junit.Assert;
-import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.junit.runners.Parameterized;
-import org.junit.runners.Parameterized.Parameters;
-
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.List;
-import java.util.ResourceBundle;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-
 /*
  * Copyright 2011 Evgeniy Polyakov
  *
@@ -30,28 +13,35 @@ import java.util.regex.Pattern;
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-@RunWith(Parameterized.class)
-public class DocumentationTest {
+package org.jsflsupport.test;
 
-    @Parameters(name = "{0}")
-    public static Collection<String> getTestData() {
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class LibrariesIndex {
+
+    public static List<String> create() {
         String[] libraries = {
-                "src/org/jsflsupport/libraries/JSFLDocument.js",
-                "src/org/jsflsupport/libraries/JSFLDrawing.js",
-                "src/org/jsflsupport/libraries/JSFLElements.js",
-                "src/org/jsflsupport/libraries/JSFLGeom.js",
-                "src/org/jsflsupport/libraries/JSFLItems.js",
-                "src/org/jsflsupport/libraries/JSFLTimeline.js",
-                "src/org/jsflsupport/libraries/JSFLTopLevel.js"
+                "src/org/jsflsupport/libraries/document.jsfl",
+                "src/org/jsflsupport/libraries/drawing.jsfl",
+                "src/org/jsflsupport/libraries/elements.jsfl",
+                "src/org/jsflsupport/libraries/geom.jsfl",
+                "src/org/jsflsupport/libraries/items.jsfl",
+                "src/org/jsflsupport/libraries/timeline.jsfl",
+                "src/org/jsflsupport/libraries/toplevel.jsfl"
         };
-        List<String> list = new ArrayList<String>();
         BufferedReader reader;
+        List<String> list = new ArrayList<String>();
         Pattern classRe = Pattern.compile("^(\\w+)\\s*=\\s*function");
         Pattern instanceRe = Pattern.compile("^(\\w+)\\s*=\\s*new\\s+");
         Pattern fieldRe = Pattern.compile("^(\\w+)\\.prototype\\.(\\w+)");
-        for (int i = 0; i < libraries.length; i++) {
+        for (String library : libraries) {
             try {
-                reader = new BufferedReader(new FileReader(libraries[i]));
+                reader = new BufferedReader(new FileReader(library));
                 String line;
                 Matcher matcher;
                 while ((line = reader.readLine()) != null) {
@@ -74,23 +64,5 @@ public class DocumentationTest {
             }
         }
         return list;
-    }
-
-    private String _librarySymbol;
-
-    public DocumentationTest(String librarySymbol) {
-        _librarySymbol = librarySymbol;
-    }
-
-    @Test
-    public void testMethod() {
-        try {
-            ResourceBundle resource = ResourceBundle.getBundle("org.jsflsupport.docs.docs");
-            if (!resource.containsKey(this._librarySymbol)) {
-                Assert.fail();
-            }
-        } catch (Exception e) {
-            Assert.fail(e.getMessage());
-        }
     }
 }

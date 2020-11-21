@@ -1,18 +1,3 @@
-package org.jsflsupport;
-
-import com.intellij.openapi.project.Project;
-import com.intellij.openapi.vfs.VirtualFile;
-import com.intellij.psi.PsiFile;
-import com.intellij.psi.PsiManager;
-import com.intellij.psi.ResolveScopeEnlarger;
-import com.intellij.psi.search.LocalSearchScope;
-import com.intellij.psi.search.SearchScope;
-import org.jetbrains.annotations.NotNull;
-
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.Set;
-
 /*
  * Copyright 2011 Evgeniy Polyakov
  *
@@ -28,13 +13,28 @@ import java.util.Set;
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+package org.jsflsupport;
+
+import com.intellij.openapi.project.Project;
+import com.intellij.openapi.vfs.VirtualFile;
+import com.intellij.psi.PsiFile;
+import com.intellij.psi.PsiManager;
+import com.intellij.psi.ResolveScopeEnlarger;
+import com.intellij.psi.search.LocalSearchScope;
+import com.intellij.psi.search.SearchScope;
+import org.jetbrains.annotations.NotNull;
+
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.Set;
+
 public class JSFLPredefinedLibraryScopeEnlarger extends ResolveScopeEnlarger {
 
     public SearchScope getAdditionalResolveScope(@NotNull VirtualFile virtualFile, Project project) {
         if (virtualFile.getFileType() instanceof JSFLFileType) {
             JSFLPredefinedLibraryProvider provider = new JSFLPredefinedLibraryProvider();
             Iterator<VirtualFile> iterator = provider.getRequiredLibraryFilesForResolve(project).iterator();
-            Set<PsiFile> psiFiles = new HashSet<PsiFile>();
+            Set<PsiFile> psiFiles = new HashSet<>();
             while (iterator.hasNext()) {
                 PsiFile psiFile = PsiManager.getInstance(project).findFile(iterator.next());
                 if (psiFile != null) {
@@ -42,7 +42,7 @@ public class JSFLPredefinedLibraryScopeEnlarger extends ResolveScopeEnlarger {
                 }
             }
             if (psiFiles.size() > 0) {
-                return new LocalSearchScope(psiFiles.toArray(new PsiFile[psiFiles.size()]));
+                return new LocalSearchScope(psiFiles.toArray(new PsiFile[0]));
             }
         }
         return null;

@@ -1,16 +1,3 @@
-package org.jsflsupport;
-
-import com.intellij.lang.javascript.library.JSPredefinedLibraryProvider;
-import com.intellij.openapi.project.Project;
-import com.intellij.openapi.vfs.VfsUtil;
-import com.intellij.openapi.vfs.VirtualFile;
-import com.intellij.webcore.libraries.ScriptingLibraryModel;
-import org.jetbrains.annotations.NotNull;
-
-import java.net.URL;
-import java.util.HashSet;
-import java.util.Set;
-
 /*
  * Copyright 2011 Evgeniy Polyakov
  *
@@ -26,18 +13,31 @@ import java.util.Set;
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+package org.jsflsupport;
+
+import com.intellij.lang.javascript.library.JSPredefinedLibraryProvider;
+import com.intellij.openapi.project.Project;
+import com.intellij.openapi.vfs.VfsUtil;
+import com.intellij.openapi.vfs.VirtualFile;
+import com.intellij.webcore.libraries.ScriptingLibraryModel;
+import org.jetbrains.annotations.NotNull;
+
+import java.net.URL;
+import java.util.HashSet;
+import java.util.Set;
+
 public class JSFLPredefinedLibraryProvider extends JSPredefinedLibraryProvider {
 
     private static final String NAME = "JSFL";
 
-    private static final String FILES[] = {
-            "/org/jsflsupport/libraries/JSFLDocument.js",
-            "/org/jsflsupport/libraries/JSFLDrawing.js",
-            "/org/jsflsupport/libraries/JSFLElements.js",
-            "/org/jsflsupport/libraries/JSFLGeom.js",
-            "/org/jsflsupport/libraries/JSFLItems.js",
-            "/org/jsflsupport/libraries/JSFLTimeline.js",
-            "/org/jsflsupport/libraries/JSFLTopLevel.js"
+    private static final String[] FILES = {
+            "/org/jsflsupport/libraries/document.jsfl",
+            "/org/jsflsupport/libraries/drawing.jsfl",
+            "/org/jsflsupport/libraries/elements.jsfl",
+            "/org/jsflsupport/libraries/geom.jsfl",
+            "/org/jsflsupport/libraries/items.jsfl",
+            "/org/jsflsupport/libraries/timeline.jsfl",
+            "/org/jsflsupport/libraries/toplevel.jsfl"
     };
 
     @NotNull
@@ -46,8 +46,8 @@ public class JSFLPredefinedLibraryProvider extends JSPredefinedLibraryProvider {
         Set<VirtualFile> libFiles = getFiles();
         return new ScriptingLibraryModel[]{
                 ScriptingLibraryModel.createPredefinedLibrary(NAME,
-                                                              libFiles.toArray(new VirtualFile[libFiles.size()]),
-                                                              true)};
+                        libFiles.toArray(new VirtualFile[0]),
+                        true)};
     }
 
     @NotNull
@@ -56,8 +56,8 @@ public class JSFLPredefinedLibraryProvider extends JSPredefinedLibraryProvider {
         return getFiles();
     }
 
-    private static Set<VirtualFile> getFiles() {
-        Set<VirtualFile> libFiles = new HashSet<VirtualFile>();
+    public static Set<VirtualFile> getFiles() {
+        Set<VirtualFile> libFiles = new HashSet<>();
         for (String fileName : FILES) {
             VirtualFile file = getPredefinedLibFile(fileName);
             if (file != null)
