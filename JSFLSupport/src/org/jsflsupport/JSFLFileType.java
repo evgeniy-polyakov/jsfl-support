@@ -3,6 +3,7 @@ package org.jsflsupport;
 import com.intellij.openapi.fileTypes.LanguageFileType;
 import com.intellij.ui.IconManager;
 import org.jetbrains.annotations.NotNull;
+import org.jsflsupport.lang.JS16SupportLoader;
 
 import javax.swing.*;
 

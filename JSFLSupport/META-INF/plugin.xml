@@ -156,7 +156,7 @@ limitations under the License.
         <internalFileTemplate name="JSFL Command"/>
         <internalFileTemplate name="JSFL Tool"/>
         <documentationProvider implementation="org.jsflsupport.JSFLDocumentationProvider"/>
-        <lang.parserDefinition language="JavaScript 1.6" implementationClass="org.jsflsupport.JS16ParserDefinition"/>
+        <lang.parserDefinition language="JavaScript 1.6" implementationClass="org.jsflsupport.lang.JS16ParserDefinition"/>
     </extensions>
 
     <extensions defaultExtensionNs="JavaScript">

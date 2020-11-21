@@ -7,6 +7,7 @@ import com.intellij.openapi.fileTypes.SyntaxHighlighterProvider;
 import com.intellij.openapi.project.Project;
 import com.intellij.openapi.vfs.VirtualFile;
 import org.jetbrains.annotations.NotNull;
+import org.jsflsupport.lang.JS16SupportLoader;
 
 /*
  * Copyright 2011 Evgeniy Polyakov
