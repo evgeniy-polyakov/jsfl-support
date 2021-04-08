@@ -16,11 +16,13 @@ limitations under the License.
 <idea-plugin>
 
     <name>JSFL Support</name>
-    <version>4.0.1</version>
+    <version>4.0.2</version>
     <vendor>Evgeniy Polyakov</vendor>
     <description>Support of Adobe Animate JavaScript API.</description>
     <change-notes>
         <![CDATA[
+        <h3>4.0.2</h3>
+        Compatible with IntelliJ IDEA 2021.1.
         <h3>4.0.1</h3>
         Compatible with IntelliJ IDEA 2020.3.
         <h3>4.0.0</h3>
@@ -135,7 +137,7 @@ limitations under the License.
     <depends>com.intellij.modules.lang</depends>
 
     <!-- please see http://confluence.jetbrains.net/display/IDEADEV/Build+Number+Ranges for description -->
-    <idea-version since-build="203.0000" until-build="203.*"/>
+    <idea-version since-build="211.0000" until-build="211.*"/>
 
     <application-components>
     </application-components>
