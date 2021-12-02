@@ -23,6 +23,7 @@ import com.intellij.webcore.libraries.ScriptingLibraryModel;
 import org.jetbrains.annotations.NotNull;
 
 import java.net.URL;
+import java.util.Collection;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -50,9 +51,8 @@ public class JSFLPredefinedLibraryProvider extends JSPredefinedLibraryProvider {
                         true)};
     }
 
-    @NotNull
     @Override
-    public Set<VirtualFile> getRequiredLibraryFilesForResolve() {
+    public Collection<VirtualFile> getFilesForGlobalsProcessing() {
         return getFiles();
     }
 

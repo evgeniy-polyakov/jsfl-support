@@ -31,8 +31,8 @@ public class JS16DialectOptionHolder extends DialectOptionHolder {
     @Override
     protected Constructor<?> findLexerClass() {
         try {
-            return com.intellij.lang.javascript._JS_1_8Lexer.class.getConstructor(Reader.class, Boolean.TYPE);
-        } catch (NoSuchMethodException e) {
+            return Class.forName("com.intellij.lang.javascript._JS_1_8Lexer").getConstructor(Reader.class, Boolean.TYPE, Boolean.TYPE);
+        } catch (NoSuchMethodException | ClassNotFoundException e) {
             throw new RuntimeException(e);
         }
     }

@@ -40,6 +40,6 @@ public class JS16ParserDefinition extends JavascriptParserDefinition {
 
     @NotNull
     public JavaScriptParser<?, ?, ?, ?> createJSParser(@NotNull PsiBuilder builder) {
-        return new JavaScriptParser(JS16SupportLoader.DIALECT_OPTION_HOLDER, builder);
+        return new JavaScriptParser(JS16SupportLoader.LANGUAGE_DIALECT, builder);
     }
 }
