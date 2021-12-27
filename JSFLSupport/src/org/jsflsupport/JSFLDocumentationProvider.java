@@ -18,64 +18,65 @@ package org.jsflsupport;
 import com.intellij.ide.BrowserUtil;
 import com.intellij.lang.documentation.DocumentationProvider;
 import com.intellij.lang.documentation.ExternalDocumentationHandler;
-import com.intellij.lang.documentation.ExternalDocumentationProvider;
+import com.intellij.lang.javascript.documentation.JavaScriptDocumentationProvider;
 import com.intellij.lang.javascript.psi.ecmal4.JSQualifiedNamedElement;
 import com.intellij.psi.PsiElement;
-import com.intellij.psi.PsiManager;
-import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nls;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.Collections;
 import java.util.List;
 import java.util.ResourceBundle;
 
-public class JSFLDocumentationProvider implements DocumentationProvider, ExternalDocumentationProvider, ExternalDocumentationHandler {
+public class JSFLDocumentationProvider implements DocumentationProvider, ExternalDocumentationHandler {
 
     private static final String helpUrl = "https://www.adobe.io/apis/creativecloud/animate/docs.html#!";
     private static final ResourceBundle docs = ResourceBundle.getBundle("org.jsflsupport.docs.docs");
+    private DocumentationProvider javaScriptDocumentationProvider;
 
-    //region Implement ExternalDocumentationProvider to enable/disable actions
-    public boolean hasDocumentationFor(PsiElement element, PsiElement originalElement) {
-        return false;
+    //region Implement DocumentationProvider
+    @Override
+    public @Nullable
+    @Nls
+    String generateDoc(PsiElement element, @Nullable PsiElement originalElement) {
+        String docUrl = getDocumentationUrl(element);
+        if (docUrl != null) {
+            if (javaScriptDocumentationProvider == null) {
+                javaScriptDocumentationProvider = new JavaScriptDocumentationProvider();
+            }
+            String doc = javaScriptDocumentationProvider.generateDoc(element, originalElement);
+            if (doc != null) {
+                doc += "<div class=\"content\"><a href=\"" + docUrl + "\">www.adobe.io</a></div>";
+            }
+            return doc;
+        }
+        return null;
     }
 
-    public boolean canPromptToConfigureDocumentation(PsiElement element) {
-        return false;
-    }
-
-    public void promptToConfigureDocumentation(PsiElement element) {
+    @Override
+    public @Nullable
+    List<String> getUrlFor(PsiElement element, PsiElement originalElement) {
+        String docUrl = getDocumentationUrl(element);
+        return docUrl != null ? Collections.singletonList(docUrl) : null;
     }
     //endregion
 
-    //region Implement ExternalDocumentationHandler to perform actions
+    //region Implement ExternalDocumentationHandler
+    @Override
     public boolean handleExternal(PsiElement element, PsiElement originalElement) {
-        String documentName = getQualifiedName(element);
-        if (documentName != null && docs.containsKey(documentName)) {
-            BrowserUtil.browse(helpUrl + docs.getString(documentName));
+        String docUrl = getDocumentationUrl(element);
+        if (docUrl != null) {
+            BrowserUtil.browse(docUrl);
             return true;
         }
         return false;
     }
-
-    public boolean handleExternalLink(PsiManager psiManager, String link, PsiElement context) {
-        return false;
-    }
-
-    public boolean canFetchDocumentationLink(String link) {
-        return false;
-    }
-
-    @NotNull
-    public String fetchExternalDocumentation(@NotNull String link, @Nullable PsiElement element) {
-        return link;
-    }
     //endregion
 
-    @Override
-    public List<String> getUrlFor(PsiElement element, PsiElement originalElement) {
-        String documentName = getQualifiedName(element);
-        if (documentName != null && docs.containsKey(documentName)) {
-            return Collections.singletonList(helpUrl + docs.getString(documentName));
+    private String getDocumentationUrl(PsiElement element) {
+        String qualifiedName = getQualifiedName(element);
+        if (qualifiedName != null && docs.containsKey(qualifiedName)) {
+            return helpUrl + docs.getString(qualifiedName);
         }
         return null;
     }

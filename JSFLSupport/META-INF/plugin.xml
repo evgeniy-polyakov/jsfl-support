@@ -174,7 +174,7 @@ limitations under the License.
         <resolveScopeProvider implementation="org.jsflsupport.JSFLResolveScopeProvider" order="first"/>
         <internalFileTemplate name="JSFL Command"/>
         <internalFileTemplate name="JSFL Tool"/>
-        <documentationProvider implementation="org.jsflsupport.JSFLDocumentationProvider"/>
+        <lang.documentationProvider language="JavaScript 1.6" implementationClass="org.jsflsupport.JSFLDocumentationProvider" order="first"/>
         <lang.parserDefinition language="JavaScript 1.6" implementationClass="org.jsflsupport.lang.JS16ParserDefinition"/>
     </extensions>
 
