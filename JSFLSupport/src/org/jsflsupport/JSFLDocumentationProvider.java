@@ -47,7 +47,7 @@ public class JSFLDocumentationProvider implements DocumentationProvider, Externa
             String doc = javaScriptDocumentationProvider.generateDoc(element, originalElement);
             if (doc != null) {
                 doc = doc.replace("AllIcons.FileTypes.JavaScript", "/org/jsflsupport/icons/jsfl.png");
-                doc += "<div class=\"content\"><a href=\"" + docUrl + "\">www.adobe.io</a></div>";
+                doc += "<div class=\"content\"><a href=\"" + docUrl + "\">`" + getQualifiedName(element) + "` on www.adobe.io</a></div>";
                 return doc;
             }
         }
