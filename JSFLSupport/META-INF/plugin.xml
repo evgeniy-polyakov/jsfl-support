@@ -157,7 +157,7 @@ limitations under the License.
 
     <actions>
         <action id="RunJSFLFile" class="org.jsflsupport.actions.RunJSFLFileAction"
-                icon="/org/jsflsupport/icons/run.png"
+                icon="/org/jsflsupport/icons/run.svg"
                 text="Run JSFL Script" description="Run JSFL Script in Flash IDE">
             <add-to-group group-id="ProjectViewPopupMenu"/>
             <add-to-group group-id="EditorTabPopupMenu"/>

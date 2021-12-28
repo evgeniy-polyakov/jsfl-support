@@ -26,7 +26,7 @@ import javax.swing.*;
 
 public class JSFLFileType extends LanguageFileType implements JavaScriptDialectFileType {
 
-    private static final Icon ICON = IconManager.getInstance().getIcon("/org/jsflsupport/icons/jsfl.png", JSFLFileType.class);
+    private static final Icon ICON = IconManager.getInstance().getIcon("/org/jsflsupport/icons/jsfl.svg", JSFLFileType.class);
     public static final JSFLFileType INSTANCE = new JSFLFileType();
 
     public JSFLFileType() {
