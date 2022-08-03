@@ -30,7 +30,7 @@ import java.util.ResourceBundle;
 
 public class JSFLDocumentationProvider implements DocumentationProvider, ExternalDocumentationHandler {
 
-    private static final String helpUrl = "https://adobeio-prod.adobemsbasic.com/apis/creativecloud/animate/docs.html#!";
+    private static final String helpUrl = "https://github.com/AdobeDocs/developers-animatesdk-docs/blob/master/";
     private static final ResourceBundle docs = ResourceBundle.getBundle("org.jsflsupport.docs.docs");
     private DocumentationProvider javaScriptDocumentationProvider;
 
@@ -78,7 +78,9 @@ public class JSFLDocumentationProvider implements DocumentationProvider, Externa
     private String getDocumentationUrl(PsiElement element) {
         String qualifiedName = getQualifiedName(element);
         if (qualifiedName != null && docs.containsKey(qualifiedName)) {
-            return helpUrl + docs.getString(qualifiedName);
+            return helpUrl + docs.getString(qualifiedName).replace(
+                    "AdobeDocs/developers-animatesdk-docs/master/",
+                    "AdobeDocs/developers-animatesdk-docs/blob/master/");
         }
         return null;
     }

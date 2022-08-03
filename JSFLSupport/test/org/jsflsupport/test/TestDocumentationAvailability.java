@@ -64,7 +64,7 @@ public class TestDocumentationAvailability {
     @Test
     public void testMethod() {
         try {
-            URL url = new URL("https://raw.githubusercontent.com/" + _docIdentifier);
+            URL url = new URL("https://raw.githubusercontent.com/AdobeDocs/developers-animatesdk-docs/master/" + _docIdentifier);
             URLConnection connection = url.openConnection();
             String redirect = connection.getHeaderField("Location");
             if (redirect != null) {
