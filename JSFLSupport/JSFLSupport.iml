@@ -7,12 +7,11 @@
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/test" isTestSource="true" />
     </content>
-    <orderEntry type="jdk" jdkName="IntelliJ IDEA IU-221.5080.210" jdkType="IDEA JDK" />
-    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="jdk" jdkName="IntelliJ IDEA IU-223.7571.182" jdkType="IDEA JDK" />
     <orderEntry type="module-library" scope="PROVIDED">
       <library>
         <CLASSES>
-          <root url="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/" />
+          <root url="jar://$APPLICATION_HOME_DIR$/plugins/javascript-impl/lib/javascript-impl.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -38,5 +37,6 @@
         <SOURCES />
       </library>
     </orderEntry>
+    <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>
