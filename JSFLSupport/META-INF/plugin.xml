@@ -16,7 +16,7 @@ limitations under the License.
 <idea-plugin>
 
     <name>JSFL Support</name>
-    <version>4.3.2</version>
+    <version>4.3.3</version>
     <vendor>Evgeniy Polyakov</vendor>
     <description>
         <![CDATA[
@@ -25,6 +25,8 @@ limitations under the License.
     </description>
     <change-notes>
         <![CDATA[
+        <h3>4.3.3</h3>
+        Compatible with IntelliJ IDEA 2023.2.
         <h3>4.3.2</h3>
         Compatible with IntelliJ IDEA 2022.3.
         <h3>4.3.1</h3>
@@ -158,7 +160,7 @@ limitations under the License.
     <depends>com.intellij.modules.lang</depends>
 
     <!-- please see http://confluence.jetbrains.net/display/IDEADEV/Build+Number+Ranges for description -->
-    <idea-version since-build="223.0000" until-build="223.*"/>
+    <idea-version since-build="231.0000" until-build="232.*"/>
 
     <application-components>
     </application-components>
