@@ -18,7 +18,8 @@ package org.jsflsupport;
 import com.intellij.lang.javascript.JSLanguageDialect;
 import com.intellij.lang.javascript.types.JavaScriptDialectFileType;
 import com.intellij.openapi.fileTypes.LanguageFileType;
-import com.intellij.ui.IconManager;
+import com.intellij.openapi.util.IconLoader;
+import com.intellij.ui.NewUI;
 import org.jetbrains.annotations.NotNull;
 import org.jsflsupport.lang.JS16SupportLoader;
 
@@ -26,7 +27,9 @@ import javax.swing.*;
 
 public class JSFLFileType extends LanguageFileType implements JavaScriptDialectFileType {
 
-    private static final Icon ICON = IconManager.getInstance().getIcon("/org/jsflsupport/icons/jsfl.svg", JSFLFileType.class);
+    private static final Icon ICON = IconLoader.getIcon(
+            NewUI.isEnabled() ? "/org/jsflsupport/icons/expui/jsfl.svg" : "/org/jsflsupport/icons/jsfl.svg",
+            JSFLFileType.class.getClassLoader());
     public static final JSFLFileType INSTANCE = new JSFLFileType();
 
     public JSFLFileType() {

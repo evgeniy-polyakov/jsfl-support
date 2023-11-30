@@ -18,14 +18,21 @@ package org.jsflsupport.actions;
 import com.intellij.openapi.actionSystem.AnAction;
 import com.intellij.openapi.actionSystem.AnActionEvent;
 import com.intellij.openapi.actionSystem.PlatformDataKeys;
+import com.intellij.openapi.util.IconLoader;
 import com.intellij.openapi.vfs.VirtualFile;
+import com.intellij.ui.NewUI;
 import org.jsflsupport.JSFLFileType;
 
+import javax.swing.*;
 import java.awt.*;
 import java.io.File;
 import java.io.IOException;
 
 public class RunJSFLFileAction extends AnAction {
+
+    private static final Icon ICON = IconLoader.getIcon(
+            NewUI.isEnabled() ? "/org/jsflsupport/icons/expui/run.svg" : "/org/jsflsupport/icons/run.svg",
+            RunJSFLFileAction.class.getClassLoader());
 
     @Override
     public void actionPerformed(AnActionEvent _anActionEvent) {
@@ -43,7 +50,9 @@ public class RunJSFLFileAction extends AnAction {
     public void update(AnActionEvent e) {
         VirtualFile file = e.getData(PlatformDataKeys.VIRTUAL_FILE);
         boolean enabled = file != null && file.getFileType() instanceof JSFLFileType;
-        e.getPresentation().setEnabled(enabled);
-        e.getPresentation().setVisible(enabled);
+        var presentation = e.getPresentation();
+        presentation.setEnabled(enabled);
+        presentation.setVisible(enabled);
+        presentation.setIcon(ICON);
     }
 }
