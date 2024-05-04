@@ -16,7 +16,7 @@ limitations under the License.
 <idea-plugin>
 
     <name>JSFL Support</name>
-    <version>4.4.1</version>
+    <version>4.4.2</version>
     <vendor>Evgeniy Polyakov</vendor>
     <description>
         <![CDATA[
@@ -25,6 +25,8 @@ limitations under the License.
     </description>
     <change-notes>
         <![CDATA[
+        <h3>4.4.2</h3>
+        Fixed deprecation warning in RunJSFLFileAction.
         <h3>4.4.1</h3>
         Compatible with IntelliJ IDEA 2024.1.
         <h3>4.4.0</h3>
