@@ -15,12 +15,14 @@
  */
 package org.jsflsupport.actions;
 
+import com.intellij.openapi.actionSystem.ActionUpdateThread;
 import com.intellij.openapi.actionSystem.AnAction;
 import com.intellij.openapi.actionSystem.AnActionEvent;
 import com.intellij.openapi.actionSystem.PlatformDataKeys;
 import com.intellij.openapi.util.IconLoader;
 import com.intellij.openapi.vfs.VirtualFile;
 import com.intellij.ui.NewUI;
+import org.jetbrains.annotations.NotNull;
 import org.jsflsupport.JSFLFileType;
 
 import javax.swing.*;
@@ -54,5 +56,10 @@ public class RunJSFLFileAction extends AnAction {
         presentation.setEnabled(enabled);
         presentation.setVisible(enabled);
         presentation.setIcon(ICON);
+    }
+
+    @Override
+    public @NotNull ActionUpdateThread getActionUpdateThread() {
+        return ActionUpdateThread.BGT;
     }
 }
