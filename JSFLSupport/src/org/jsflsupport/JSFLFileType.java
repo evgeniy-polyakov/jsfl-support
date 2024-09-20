@@ -16,12 +16,12 @@
 package org.jsflsupport;
 
 import com.intellij.lang.javascript.JSLanguageDialect;
+import com.intellij.lang.javascript.JavascriptLanguage;
 import com.intellij.lang.javascript.types.JavaScriptDialectFileType;
 import com.intellij.openapi.fileTypes.LanguageFileType;
 import com.intellij.openapi.util.IconLoader;
 import com.intellij.ui.NewUI;
 import org.jetbrains.annotations.NotNull;
-import org.jsflsupport.lang.JS16SupportLoader;
 
 import javax.swing.*;
 
@@ -33,7 +33,7 @@ public class JSFLFileType extends LanguageFileType implements JavaScriptDialectF
     public static final JSFLFileType INSTANCE = new JSFLFileType();
 
     public JSFLFileType() {
-        super(JS16SupportLoader.LANGUAGE_DIALECT);
+        super(JavascriptLanguage.INSTANCE);
     }
 
     @NotNull
@@ -58,6 +58,6 @@ public class JSFLFileType extends LanguageFileType implements JavaScriptDialectF
     @NotNull
     @Override
     public JSLanguageDialect getDefaultLanguage() {
-        return JS16SupportLoader.LANGUAGE_DIALECT;
+        return JavascriptLanguage.INSTANCE;
     }
 }

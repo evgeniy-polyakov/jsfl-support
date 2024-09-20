@@ -15,6 +15,7 @@
  */
 package org.jsflsupport;
 
+import com.intellij.lang.javascript.JavascriptLanguage;
 import com.intellij.openapi.fileTypes.FileType;
 import com.intellij.openapi.fileTypes.SyntaxHighlighter;
 import com.intellij.openapi.fileTypes.SyntaxHighlighterFactory;
@@ -22,11 +23,10 @@ import com.intellij.openapi.fileTypes.SyntaxHighlighterProvider;
 import com.intellij.openapi.project.Project;
 import com.intellij.openapi.vfs.VirtualFile;
 import org.jetbrains.annotations.NotNull;
-import org.jsflsupport.lang.JS16SupportLoader;
 
 public class JSFLSyntaxHighlighterProvider implements SyntaxHighlighterProvider {
 
     public SyntaxHighlighter create(@NotNull FileType fileType, Project project, VirtualFile virtualFile) {
-        return SyntaxHighlighterFactory.getSyntaxHighlighter(JS16SupportLoader.LANGUAGE_DIALECT, project, virtualFile);
+        return SyntaxHighlighterFactory.getSyntaxHighlighter(JavascriptLanguage.INSTANCE, project, virtualFile);
     }
 }

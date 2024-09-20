@@ -189,13 +189,12 @@ limitations under the License.
     </actions>
 
     <extensions defaultExtensionNs="com.intellij">
-        <fileType name="JSFL" fieldName="INSTANCE" implementationClass="org.jsflsupport.JSFLFileType" language="JavaScript 1.6" extensions="jsfl"/>
+        <fileType name="JSFL" fieldName="INSTANCE" implementationClass="org.jsflsupport.JSFLFileType" language="JavaScript" extensions="jsfl"/>
         <syntaxHighlighter key="JSFL" factoryClass="org.jsflsupport.JSFLSyntaxHighlighterProvider"/>
         <resolveScopeProvider implementation="org.jsflsupport.JSFLResolveScopeProvider" order="first"/>
         <internalFileTemplate name="JSFL Command"/>
         <internalFileTemplate name="JSFL Tool"/>
-        <lang.documentationProvider language="JavaScript 1.6" implementationClass="org.jsflsupport.JSFLDocumentationProvider" order="first"/>
-        <lang.parserDefinition language="JavaScript 1.6" implementationClass="org.jsflsupport.lang.JS16ParserDefinition"/>
+        <lang.documentationProvider language="JavaScript" implementationClass="org.jsflsupport.JSFLDocumentationProvider" order="first"/>
     </extensions>
 
     <extensions defaultExtensionNs="JavaScript">
