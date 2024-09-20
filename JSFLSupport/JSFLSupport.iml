@@ -11,7 +11,7 @@
     <orderEntry type="module-library" scope="PROVIDED">
       <library>
         <CLASSES>
-          <root url="jar://$APPLICATION_HOME_DIR$/plugins/javascript-impl/lib/javascript-impl.jar!/" />
+          <root url="jar://$APPLICATION_HOME_DIR$/plugins/javascript-plugin/lib/javascript-plugin.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
