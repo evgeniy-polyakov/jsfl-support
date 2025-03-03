@@ -22,7 +22,8 @@ import org.apache.commons.lang3.StringUtils;
 
 import java.io.FileWriter;
 import java.io.IOException;
-import java.net.URL;
+import java.net.URI;
+import java.net.URISyntaxException;
 
 public class DocumentationIndexParser {
 
@@ -31,7 +32,7 @@ public class DocumentationIndexParser {
         try {
             ObjectMapper mapper = new ObjectMapper();
             mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
-            DocumentationIndexJson index = mapper.readValue(new URL(url), DocumentationIndexJson.class);
+            DocumentationIndexJson index = mapper.readValue(new URI(url).toURL(), DocumentationIndexJson.class);
             FileWriter fileWriter = new FileWriter("JSFLSupport/src/org/jsflsupport/docs/docs.properties");
 
             // Iterate all chapters except of first and last
@@ -107,7 +108,7 @@ public class DocumentationIndexParser {
             }
 
             fileWriter.close();
-        } catch (IOException e) {
+        } catch (IOException | URISyntaxException e) {
             e.printStackTrace();
         }
     }
