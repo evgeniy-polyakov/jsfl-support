@@ -18,10 +18,9 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library" scope="PROVIDED">
-      <library name="Jackson">
+      <library>
         <CLASSES>
-          <root url="jar://$APPLICATION_HOME_DIR$/lib/jackson-core-2.11.0.jar!/" />
-          <root url="jar://$APPLICATION_HOME_DIR$/lib/jackson-databind-2.11.0.jar!/" />
+          <root url="jar://$APPLICATION_HOME_DIR$/plugins/javascript-plugin/lib/javascript-frontback.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -39,5 +38,15 @@
       </library>
     </orderEntry>
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library" scope="PROVIDED">
+      <library name="Jackson">
+        <CLASSES>
+          <root url="jar://$APPLICATION_HOME_DIR$/lib/jackson-core-2.11.0.jar!/" />
+          <root url="jar://$APPLICATION_HOME_DIR$/lib/jackson-databind-2.11.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
   </component>
 </module>
