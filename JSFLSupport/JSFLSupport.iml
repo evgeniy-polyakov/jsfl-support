@@ -7,33 +7,17 @@
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/test" isTestSource="true" />
     </content>
-    <orderEntry type="jdk" jdkName="IntelliJ IDEA IU-261.22158.277" jdkType="IDEA JDK" />
+    <orderEntry type="jdk" jdkName="IntelliJ IDEA IU-262.9437.185" jdkType="IDEA JDK" />
     <orderEntry type="module-library" scope="PROVIDED">
-      <library>
+      <library name="JavaScriptPlugin">
         <CLASSES>
           <root url="jar://$APPLICATION_HOME_DIR$/plugins/javascript-plugin/lib/javascript-plugin.jar!/" />
+          <root url="jar://$APPLICATION_HOME_DIR$/plugins/javascript-plugin/lib/modules/intellij.javascript.parser.jar!/" />
+          <root url="file://$APPLICATION_HOME_DIR$/plugins/javascript-plugin/lib/modules" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" scope="PROVIDED">
-      <library>
-        <CLASSES>
-          <root url="jar://$APPLICATION_HOME_DIR$/plugins/javascript-plugin/lib/javascript-plugin-frontend.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" scope="PROVIDED">
-      <library name="Jackson">
-        <CLASSES>
-          <root url="jar://$APPLICATION_HOME_DIR$/lib/module-intellij.libraries.jackson.jar!/" />
-          <root url="jar://$APPLICATION_HOME_DIR$/lib/module-intellij.libraries.jackson.databind.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
+        <jarDirectory url="file://$APPLICATION_HOME_DIR$/plugins/javascript-plugin/lib/modules" recursive="false" />
       </library>
     </orderEntry>
     <orderEntry type="module-library" scope="TEST">
