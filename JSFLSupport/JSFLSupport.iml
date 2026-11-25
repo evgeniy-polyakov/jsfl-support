@@ -7,7 +7,7 @@
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/test" isTestSource="true" />
     </content>
-    <orderEntry type="jdk" jdkName="IntelliJ IDEA IU-262.9437.185" jdkType="IDEA JDK" />
+    <orderEntry type="jdk" jdkName="IntelliJ IDEA IU-263.7307.200" jdkType="IDEA JDK" />
     <orderEntry type="module-library" scope="PROVIDED">
       <library name="JavaScriptPlugin">
         <CLASSES>
